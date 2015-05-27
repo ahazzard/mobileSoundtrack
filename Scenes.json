@@ -1,0 +1,28 @@
+{
+  "meta": {
+    "mimetype": "application/x-daoplayer-composition",
+    "version": 1,
+    "title": "Mobile Soundtrack - Scenes",
+    "description" : "Scenes for the mobile soundtrack - Nottingham University to Wollaton Hall"
+  },
+  "scenes": [
+    {
+      "name": "Track1/start",
+      "partial": false,
+      "waypoints":{"W1":"J_CS","W2":"J_CP"},
+      "routes":{"R1":"J_CS-J_CP", "Rnext":"J_CP-WR"}, // Jubilee CS to Car Park. Put some timer on the GPS either in the car park or on Wollaton Road?
+      "onload": "daoplayer.speak('Starting track one', true);",
+      "onupdate": "if (!routes['R1'].near) { daoplayer.setScene('Start/any'); } else if (routes['Rnext'].nearest) { daoplayer.setScene('Track2/start'); }",
+      "updatePeriod":1.0,
+	  "tracks": [
+        {
+          "name": "holdingPad",
+          "volume": "sceneTime<2 ? [sceneTime,trackVolume,sceneTime+1,0] : 0" 
+        }
+      ]
+    },
+    
+	{
+	// ...
+	
+	}

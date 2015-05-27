@@ -1,0 +1,394 @@
+{
+  "meta": {
+    "mimetype": "application/x-daoplayer-composition",
+    "version": 1,
+    "title": "Jubilee Campus to Wollaton Hall Waypoints"
+  },
+  "context": {
+    "waypoints": [
+		{
+		"name": "J_CS"
+		“lat”:52.953571600  “lng”:-1.187735800  
+		“description”:”Start-Finish - Jubilee Campus CS”
+		"origin": true
+		},
+		{
+		"name": "J_CP"
+		“lat”:52.954441000  “lng”:-1.189575800  
+		“description”:”Jubilee campus - right turn towards car park”
+		},
+		{
+		"name": "WR"
+		“lat”:52.955247300  “lng”:-1.189852100  
+		“description”:”Wollaton Road - left turn”
+		},
+		{
+		"name": "PC_A"
+		“lat”:52.953730000  “lng”:-1.192141300
+		“description”:”Pedestrian crossing A - Middleton Blvd”
+		},
+		{
+		"name": "PC_B"
+		“lat”:52.953690400  “lng”:-1.192294200
+		“description”:”Pedestrian crossing B - Middleton Blvd”
+		},
+		{
+		"name": "PC_C"
+		“lat”:52.953775200  “lng”:-1.192410900
+		“description”:”Pedestrian crossing C - Middleton Blvd”
+		},
+		{
+		"name": "PC_D"
+		“lat”:52.953725100  “lng”:-1.192614700
+		“description”:”Pedestrian crossing D - Middleton Blvd”
+		},
+		{
+		"name": "HR_L"
+		“lat”:52.953800300  “lng”:-1.192787700
+		“description”:”Harrow Road - Left turn”
+		},
+		{
+		"name": "HR_HG"
+		“lat”:52.953549000  “lng”:-1.196951900
+		“description”:”Harrow Road Junction with Harrow Gardens”
+		},
+		{
+		"name": "HR_DA"
+		“lat”:52.953463300  “lng”:-1.199446300
+		“description”:”Harrow Road lead up to Digby Ave”
+		},
+		{
+		"name": "DA_IG"
+		“lat”:52.953419700  “lng”:-1.199608600
+		“description”:”Digby Ave - inside gate”
+		},
+		{
+		"name": "DA_GC"
+		“lat”:52.952476000  “lng”:-1.201302400
+		“description”:”Digby Ave - Transition from playing field to Golf course”
+		},
+		{
+		"name": "DA_TH"
+		“lat”:52.948974000  “lng”:-1.206503200
+		“description”:”Digby Ave - Top of hill path intersection”
+		},
+		{
+		"name": "DA_LTA"
+		“lat”:52.947997900  “lng”:-1.205663700
+		“description”:”Digby Ave and Lime Tree Ave intersection”
+		},
+		{
+		"name": "LTA_LT"
+		“lat”:52.948919100  “lng”:-1.209579700
+		“description”:”Lime Tree Ave - left turn towards Wollaton Hall ”
+		},
+		{
+		"name": "LTA_WH"
+		“lat”:52.948427800  “lng”:-1.209746000
+		“description”:”Lime Tree Ave - Wollaton hall driveway”
+		},
+		{
+		"name": "WH"
+		“lat”:52.948117500  “lng”:-1.209874700
+		“description”:”Wollaton Hall – arrive”
+		},
+		{
+		"name": "WH_EP"
+		“lat”:52.948371200  “lng”:-1.209440200
+		“description”:”Wollaton Hall - alternative exit path”
+		},
+		{
+		"name": "EP_LTA"
+		“lat”:52.948178900  “lng”:-1.206393200
+		“description”:”Alternative exit path intersection with Lime Tree Ave”
+		},
+		{
+		"name": "LTA_OP"
+		“lat”:52.947779700  “lng”:-1.204663200
+		“description”:”Lime Tree Ave - Open parkland to tree covered”
+		},
+		{
+		"name": "LTA_GIR"
+		“lat”:52.947125200  “lng”:-1.196204900
+		“description”:”Lime Tree Ave - Gate into Road section”
+		},
+		{
+		"name": "LTA_MB"
+		“lat”:52.946665400  “lng”:-1.191150200
+		“description”:”Lime Tree Ave intersection with Middleton Blvd”
+		},
+		{
+		"name": "MB_PCA"
+		“lat”:52.947343400  “lng”:-1.190825700
+		“description”:”Middleton Blvd - Pedestrian crossing A”
+		},
+		{
+		"name": "MB_PCB"
+		“lat”:52.947328000  “lng”:-1.190646000
+		“description”:”Middleton Blvd - Pedestrian crossing B”
+		},
+		{
+		"name": "MB_PCC"
+		“lat”:52.947554300  “lng”:-1.190612500
+		“description”:”Middleton Blvd - Pedestrian crossing C”
+		},
+		{
+		"name": "MB_PCD"
+		“lat”:52.947546200  “lng”:-1.190418000
+		“description”:”Middleton Blvd - Pedestrian crossing D”
+		},
+		{
+		"name": "CA_LT"
+		“lat”:52.947419300  “lng”:-1.190309400
+		“description”:”Charnock Ave - Left turn”
+		},
+		{
+		"name": "CA_DD"
+		“lat”:52.947959900  “lng”:-1.187645900
+		“description”:”Charnock Ave - intersection with Dorkey Dr”
+		},
+		{
+		"name": "JC_SFG"
+		“lat”:52.948190200  “lng”:-1.186031300
+		“description”:”Gate entrance into Jubilee Campus sports field”
+		},
+		{
+		"name": "JC_SFV"
+		“lat”:52.948397900  “lng”:-1.185995000
+		“description”:”Visible entrance into Jubilee Campus sports field”
+		},
+		{
+		"name": "SF_JCCP"
+		“lat”:52.949521900  “lng”:-1.185309700
+		“description”:”Sports Field transition to Car park”
+		},
+		{
+		"name": "JC_NCL"
+		“lat”:52.950367900  “lng”:-1.185571300
+		“description”:”JC - Left turn to NCL”
+		},
+		{
+		"name": "JC_RSL"
+		“lat”:52.950294400  “lng”:-1.185869000
+		“description”:”JC - Right turn by side of lake”
+		},
+		{
+		"name": "JC_WF"
+		“lat”:52.951243000  “lng”:-1.186558300
+		“description”:”JC - Water feature on path by lake”
+		},
+		{
+		"name": "JC_AB"
+		“lat”:52.952122100  “lng”:-1.187017000
+		“description”:”Intersection by Atrium building”
+		}
+    ],
+	
+    "routes": [
+	//Route1
+			{
+				"name": "J_CS-J_CP",
+				"from": "J_CS",
+				"to": "J_CP",
+				"nearDistance": "20"
+			},
+			{
+				"name": "J_CP-WR",
+				"from": "J_CP",
+				"to": "WR",
+				"nearDistance": "20"
+			},
+			{
+				"name": "WR-PC_A",
+				"from": "WR",
+				"to": "PC_A",
+				"nearDistance": "20"
+			},
+			{
+				"name": "PC_A-PC_B",
+				"from": "PC_A",
+				"to": "PC_B",
+				"nearDistance": "20"
+			},
+			{
+				"name": "PC_B-PC_C",
+				"from": "PC_B",
+				"to": "PC_C",
+				"nearDistance": "20"
+			},
+			{
+				"name": "PC_C-PC_D",
+				"from": "PC_C",
+				"to": "PC_D",
+				"nearDistance": "20"
+			},
+				
+			{
+				"name": "PC_D-HR_L"
+				"from": "PC_D",
+				"to";"HR_L"
+				"nearDistance": "20"
+			},
+				
+			{
+				"name": "HR_L-HR_HG"
+				"from": "HR_L",
+				"to";"HR_HG",
+				"nearDistance": "20"
+			},
+			{
+				"name": "HR_HG-HR_DA"
+				"from": "HR_HG"
+				"to";"HR_DA"
+				"nearDistance": "20"
+			},
+			{
+				"name": "HR_DA-DA_IG"
+				"from": "HR_DA"
+				"to";"DA_IG"
+				"nearDistance": "20"
+			},
+			{
+				"name": "DA_IG"-"DA_GC"
+				"from": "DA_IG"
+				"to";"DA_GC"
+				"nearDistance": "20"
+			},
+			{
+				"name": "DA_GC-DA_TH"
+				"from": "DA_GC"
+				"to";"DA_TH"
+				"nearDistance": "20"
+			},
+			{
+				"name": "DA_TH-DA_LTA"
+				"from": "DA_TH"
+				"to";"DA_LTA"
+				"nearDistance": "20"
+			},
+			{
+				"name": "DA_LTA-LTA_LI"
+				"from": "DA_LTA"
+				"to";"LTA_LI"
+				"nearDistance": "20"
+			},
+			{
+				"name": "LTA_LT-LTA_WH"
+				"from": "LTA_LT"
+				"to";"LTA_WH"
+				"nearDistance": "20"
+			},
+			{
+				"name": "LTA_WH",
+				"from": "LTA",
+				"to";"WH",
+				"nearDistance": "20"
+		},
+		
+		//Route2
+			{ 
+			"name": "WH_EP-EP_LTA",
+			"from": "WH_EP",
+			"to": "EP_LTA",
+			"nearDistance": "20"
+			},
+			{
+			"name": "EP_LTA-LTA_OP",
+			"from": "EP_LTA",
+			"to": "LTA_OP",
+			"nearDistance": "20"
+			},
+			}
+			{ 
+			"name": "LTA_OP-LTA_GIR",
+			"from": "LTA_OP",
+			"to": "LTA_GIR",
+			"nearDistance": "20"
+			},
+			{ 
+			"name": "LTA_GIR-LTA_MB",
+			"from": "LTA_GIR",
+			"to": "LTA_MB",
+			"nearDistance": "20"
+			},
+			{ 
+			"name": "LTA_MB-MB_PCA",
+			"from": "LTA_MB",
+			"to": "MB_PCA",
+			"nearDistance": "20"
+			},
+			{ 
+			"name": "MB_PCA-MB_PCB",
+			"from": "MB_PCA",
+			"to": "MB_PCB",
+			"nearDistance": "20"
+			},
+			{ 
+			"name": "MB_PCB-MB_PCC",
+			"from": "MB_PCB",
+			"to": "MB_PCC",
+			"nearDistance": "20"
+			},
+			{ 
+			"name": "MB_PCC-MB_PCD",
+			"from": "MB_PCC",
+			"to": "MB_PCD",
+			"nearDistance": "20"
+			},
+			{ 
+			"name": "MB_PCD-CA_LT",
+			"from": "MB_PCD",
+			"to": "CA_LT",
+			"nearDistance": "20"
+			},
+			{ 
+			"name": "CA_LT-CA_DD",
+			"from": "CA_LT",
+			"to": "CA_DD",
+			"nearDistance": "20"
+			},
+			{ 
+			"name": "CA_DD-JC_SFG"
+			"from": "CA_DD",
+			"to": "JC_SFG",
+			"nearDistance": "20"
+			},
+			{ 
+			"name": "JC_SFG-JC_SFV",
+			"from": "JC_SFG",
+			"to": "JC_SFV"
+			"nearDistance": "20"
+			},
+			{ 
+			"name": "JC_SFV-SF_JCCP",
+			"from": "JC_SFV",
+			"to": "SF_JCCP",
+			"nearDistance": "20"
+			},
+			{ 
+			"name": "SF_JCCP-JC_NCL",
+			"from": "SF_JCCP",
+			"to": "JC_NCL",
+			"nearDistance": "20"
+			},
+			{ 
+			"name": "JC_NCL-JC_RSL"
+			"from": "JC_NCL",
+			"to": "JC_RSL",
+			"nearDistance": "20"
+			},
+			{ 
+			"name": "JC_RSL-JC_WF",
+			"from": "JC_RSL",
+			"to": "JC_WF",
+			"nearDistance": "20"
+			},
+			{ 
+			"name": "JC_WF-JC_AB",
+			"from": "JC_WF",
+			"to": "JC_AB",
+			"nearDistance": "20"
+			}
+    ]
+  }
+}
