@@ -10,7 +10,7 @@
       "name": "Track1/start",
       "partial": false,
       "waypoints":{"W1":"J_CS","W2":"J_CP"},
-      "routes":{"R1":"J_CS-J_CP", "Rnext":"J_CP-WR"}, // Jubilee CS to Car Park. Put some timer on the GPS either in the car park or on Wollaton Road?
+      "routes":{"R1":"J_CS-J_CP", "Rnext":"J_CP-WR"}, // Waiting for GPS here
       "onload": "daoplayer.speak('Starting track one', true);",
       "onupdate": "if (!routes['R1'].near) { daoplayer.setScene('Start/any'); } else if (routes['Rnext'].nearest) { daoplayer.setScene('Track2/start'); }",
       "updatePeriod":1.0,
@@ -21,8 +21,77 @@
         }
       ]
     },
+	{
+    "name": "Track2/start",
+    "partial": false,
+    "waypoints":{"W1":"WR", "W2":"PC_A", "W3":"PC_B", "W4":"PC_C", "W5":"PC_D"},
+	"routes":{},
+	"onload": "",
+	"onupdate: "",
+	"updatePeriod":1.0
+	"tracks": 
+	[
+	"name": "",
+	"volume": "sceneTime<2 ? [sceneTime,trackVolume,sceneTime+1,0] : 0" 
+	]
+	},
+	{
+    "name": "Track3/start",
+    "partial": false,
+	"waypoints":{"W1":"HR_L", "W2":"HR_HG", "W3":"HR_DA"},
+	"routes":{},
+	"onload": "",
+	"onupdate: "",
+	"updatePeriod":1.0
+	"tracks": 
+	[
+	"name": "",
+	"volume": "sceneTime<2 ? [sceneTime,trackVolume,sceneTime+1,0] : 0" 
+	]
+	},
+		{
+    "name": "Track4/start",
+    "partial": false,
+	"waypoints":{"W1":"DA_IG", "W2":"DA_GC"},
+	"routes":{},
+	"onload": "",
+	"onupdate: "",
+	"updatePeriod":1.0
+	"tracks": 
+	[
+	"name": "",
+	"volume": "sceneTime<2 ? [sceneTime,trackVolume,sceneTime+1,0] : 0" 
+	]
+	},
+	{
+    "name": "Track5/start",
+    "partial": false,
+	"waypoints":{"W1":"DA_TH", "W2":"DA_LTA"},
+	"routes":{},
+	"onload": "",
+	"onupdate: "",
+	"updatePeriod":1.0
+	"tracks": 
+	[
+	"name": "",
+	"volume": "sceneTime<2 ? [sceneTime,trackVolume,sceneTime+1,0] : 0" 
+	]
+	},
+	{
+    "name": "Track6/start",
+    "partial": false,
+	"waypoints":{"W1":"LTA_LT", "W2":"LTA_WH", "W3":"WH"},
+	"routes":{},
+	"onload": "",
+	"onupdate: "",
+	"updatePeriod":1.0
+	"tracks": 
+	[
+	"name": "",
+	"volume": "sceneTime<2 ? [sceneTime,trackVolume,sceneTime+1,0] : 0" 
+	]
+	},
     
 	{
-	// ...
 	
 	}
