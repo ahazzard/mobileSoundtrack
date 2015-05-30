@@ -1,0 +1,202 @@
+{
+  "meta": {
+    "mimetype": "application/x-daoplayer-composition",
+    "version": 1,
+    "title":  "JC-WH_tracksAll",
+    "description": "All tracks, but without any sections or costs"
+  },
+  
+  "tracks": [
+    {
+      "name": "MitadDelMundo",
+      "files": [
+        { 
+          "path": "MitadDelMundo.wav",
+          "trackPos": 0,
+          "length": 181.77,
+          "repeat": -1
+        }
+      ]
+    },
+    {
+      "name": "SisterCities_Drums",
+      "files": [
+        { 
+          "path": "SC_Drums.wav",
+          "trackPos": 0,
+          "length": 280.475,
+          "repeat": -1
+        }
+      ]
+    },
+    {
+      "name": "SisterCities_Bass",
+      "pauseIfSilent": false,
+      "files": [
+        { 
+          "path": "SC_Bass.wav",
+          "trackPos": 0,
+          "length": 280.475,
+          "repeat": -1
+        }
+      ]
+    },
+    {
+      "name": "SisterCities_Guitars",
+      "pauseIfSilent": false,
+      "files": [
+        { 
+          "path": "SC_Guitars.wav",
+          "trackPos": 0,
+          "length": 280.475,
+          "repeat": -1
+        }
+      ]
+    },
+    {
+      "name": "SisterCities_AcousticKeys",
+      "pauseIfSilent": false,
+      "files": [
+        { 
+          "path": "SC_AcousticKeys.wav",
+          "trackPos": 0,
+          "length": 280.475,
+          "repeat": -1
+        }
+      ]
+    },
+    {
+      "name": "SisterCities_Vox",
+      "pauseIfSilent": false,
+      "files": [
+        { 
+          "path": "SC_Vox.wav",
+          "trackPos": 0,
+          "length": 280.475,
+          "repeat": -1
+        }
+      ]
+    },
+    {
+      "name": "NotAlone",
+      "files": [
+        { 
+          "path": "NotAlone.wav",
+          "trackPos": 0,
+          "length": 1175,
+          "repeat": -1
+        }
+      ]
+    },
+    {
+      "name": "StellaA",
+      "files": [
+        { 
+          "path": "Stella.wav",
+          "trackPos": 0.012,
+          "length": 17.169,
+          "repeat": -1
+        }
+      ]
+    },
+    {
+      "name": "StellaB",
+      "files": [
+        { 
+          "path": "Stella.wav",
+          "trackPos": 17.170,
+          "length": 177.83,
+          "repeat": -1
+        }
+      ]
+    },
+    {
+      "name": "TheBadGuys",
+      "files": [
+        { 
+          "path": "TheBadGuys.wav",
+          "trackPos": 0,
+          "length": 254.54,
+          "repeat": -1
+        }
+      ]
+    },
+    {
+      "name": "WaitingForGA",
+      "files": [
+        { 
+          "path": "WaitingForGA.wav",
+          "trackPos": 0,
+          "length": 255.673,
+          "repeat": -1
+        }
+      ]
+    },
+    {
+      "name": "WollatonHallArriveA_Layer1",
+      "files": [
+        { 
+          "path": "WollatonHallArriveA_Layer1.wav",
+          "trackPos": 0,
+          "length": 118.154,
+          "repeat": -1
+        }
+      ]
+    },
+    {
+      "name": "WollatonHallArriveA_Layer2",
+      "files": [
+        { 
+          "path": "WollatonHallArriveA_Layer2.wav",
+          "trackPos": 0,
+          "length": 118.154,
+          "repeat": -1
+        }
+      ]
+    },
+    {
+      "name": "WollatonHallArriveA_Layer3a",
+      "files": [
+        { 
+          "path": "WollatonHallArriveA_Layer3a.wav",
+          "trackPos": 0,
+          "length": 119.94,
+          "repeat": -1
+        }
+      ]
+    },
+    {
+      "name": "WollatonHallArriveA_Layer3b",
+      "files": [
+        { 
+          "path": "WollatonHallArriveA_Layer3b.wav",
+          "trackPos": 0,
+          "length": 119.94,
+          "repeat": -1
+        }
+      ]
+    },
+    {
+      "name": "WollatonHallArriveB_Accent",
+      "files": [
+        { 
+          "path": "WollatonHallArriveB_Accent.wav",
+          "trackPos": 0,
+          "length": 30,
+          "repeat": -1
+        }
+      ]
+    },
+    {
+      "name": "WollatonHallArriveB_Layer1",
+      "files": [
+        { 
+          "path": "WollatonHallArriveB_Layer1.wav",
+          "trackPos": 0,
+          "length": 118.154,
+          "repeat": -1
+        }
+      ]
+    }
+  ]
+}
