@@ -90,13 +90,23 @@
 		},
 		{
 		"name": "LTA_LT",
-		"lat":52.948919100,  "lng":-1.209579700,
+		"lat":52.948969200,  "lng":-1.209475100,
 		"description":"Lime Tree Ave - left turn towards Wollaton Hall"
 		},
 		{
 		"name": "LTA_WH",
-		"lat":52.948427800,  "lng":-1.209746000,
+		"lat":52.948697700,  "lng":-1.209652100,
 		"description":"Lime Tree Ave - Wollaton hall driveway"
+		},
+		{
+		"name": "LTA_WHa",
+		"lat":52.948563500,  "lng":-1.209703100,
+		"description":"Lime Tree Ave - Wollaton hall driveway approach point 1"
+		},
+		{
+		"name": "LTA_WHb",
+		"lat":52.948385800,  "lng":-1.209732600,
+		"description":"Lime Tree Ave - Wollaton hall driveway approach point 2"
 		},
 		{
 		"name": "WH",
@@ -299,15 +309,36 @@
 				"nearDistance": "20"
 			},
 			{
-				"name": "DA_LTA-LTA_LI",
+				"name": "DA_LTA-LTA_LT",
 				"from": "DA_LTA",
-				"to":"LTA_LI",
+				"to":"LTA_LT",
 				"nearDistance": "20"
 			},
 			{
 				"name": "LTA_LT-LTA_WH",
 				"from": "LTA_LT",
 				"to":"LTA_WH",
+				"nearDistance": "20"
+			},
+			{
+				"name": "LTA_WH-LTA_WHa",
+				"description": "to use an approach zone for Wollaton hall music - auxiliary",
+				"from": "LTA_WH",
+				"to":"LTA_WHa",
+				"nearDistance": "20"
+			},
+			{
+				"name": "LTA_WHa-LTA_WHb",
+				"description": "to use an approach zone for Wollaton hall music - auxiliary",
+				"from": "LTA_WHa",
+				"to":"LTA_WHb",
+				"nearDistance": "20"
+			},
+			{
+				"name": "LTA_WHb-WH",
+				"description": "to use an approach zone for Wollaton hall music - auxiliary",
+				"from": "LTA_WHb",
+				"to":"WH",
 				"nearDistance": "20"
 			},
 			{
