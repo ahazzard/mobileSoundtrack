@@ -1,0 +1,113 @@
+{
+  "meta": {
+    "mimetype": "application/x-daoplayer-composition",
+    "version": 1,
+    "title":  "JubileeCampusContext",
+    "description":  "basic waypoints and routes for JC tests"
+  },
+  
+  "context": {
+    "title":  "Walk around Lake",
+    
+    
+    "waypoints": [
+      {
+        "name": "1",
+        "lat": 52.952107, 
+        "lng": -1.186999 ,
+        
+        "title":  "Start",
+        "description":  "corner of the Atrium / path / trail by lake"
+      },
+      {
+        "name": "2",
+        "lat": 52.951942, 
+        "lng": -1.188325  ,
+        
+        "description":  "left hand turn on trail around lake"
+      },
+      {
+        "name": "3",
+        "lat": 52.950005, 
+        "lng": -1.187583,
+        
+        "description":  "junction on trial by NCL"
+      },
+      {
+        "name": "4",
+        "lat": 52.949338, 
+        "lng": -1.187413,
+        
+        "description":  "entering sports field"
+      },
+      {
+        "name": "5",
+        "lat": 52.949294, 
+        "lng": -1.186221 ,
+        
+        "description":  "middle / bottom (car park side) of sports field"
+      },
+      {
+        "name": "6",
+        "lat": 52.949482, 
+        "lng": -1.185305 ,
+        
+        "description":  "edge of sports field / road /car park"
+      },
+      {
+        "name": "7",
+        "lat": 52.950374, 
+        "lng": -1.185560 ,
+        
+        "description":  "Left-hand turn: junction of road and path that leads to the right-hand side of the NCL"
+      },
+      {
+        "name": "8",
+        "lat": 52.950313, 
+        "lng":  -1.185886,
+        "description":  "Right-hand turn: junction of path and lake path"
+      },
+      {
+        "name": "9",
+        "lat": 52.951210, 
+        "lng": -1.186528  ,
+        
+        "description":  "junction on path with water feature"
+      },
+      {
+        "name": "10",
+        "lat": 52.952045, 
+        "lng":  -1.187672 ,
+        
+        "title":  "end",
+        "description":  "return to start (end)"
+      }
+    ],
+    "routes": [
+			{
+				"name": "1-8",
+				"from": "1",
+				"to": "8",
+				"nearDistance": "20"
+			},
+			{
+				"name": "8-3",
+				"from": "8",
+				"to": "3",
+				"nearDistance": "20"
+			},
+			{
+				"name": "3-2",
+				"from": "3",
+				"to": "2",
+				"nearDistance": "20"
+			},
+			{
+				"name": "2-10",
+				"from": "2",
+				"to": "10",
+				"nearDistance": "20"
+			}
+    ]
+  }
+}
