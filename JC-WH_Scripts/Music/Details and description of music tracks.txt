@@ -1,0 +1,20 @@
+This is a list of the music tracks provisionally chosen for use in the Jubilee Campous to Wollaton hall music walk.
+
+Stella - Clara Berry and Wooldog:             source medleyDB http://medleydb.weebly.com/
+The Bad Guys - Clara Berry and Wooldog:       source medleyDB
+Mitad Del Mundo - Helado Negro:               source medleyDB
+Waiting For G.A - Faces On Film:              source medleyDB
+Sister Cities - Hop Along:                    source medleyDB
+Not Alone - Fredy V:                          source The Open Multitrack Testbed (qmul) http://multitrack.eecs.qmul.ac.uk/
+
+Various music segments composed by Adrian Hazzard - previously used at The Yorkshire Sculpture Park
+
+
+Tracks in resrerve:
+Boys - Clara Berry and Wooldog:               source medleyDB
+Invisible Familiars - Disturbing Wildlife     source medleyDB
+A Classic Education - Night Owl               source medleyDB
+Lead Me - The Done Fors:                      source The Open Multitrack Testbed (qmul)
+Pouring Room - The Done Fors:                 source The Open Multitrack Testbed (qmul)
+In The Meantime - Fredy V:                     source The Open Multitrack Testbed (qmul)
+Red to Blue - Broken Crank                    source The Open Multitrack Testbed (qmul)
