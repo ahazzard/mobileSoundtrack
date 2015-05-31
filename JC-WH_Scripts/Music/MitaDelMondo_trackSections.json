@@ -1,0 +1,202 @@
+{
+  "meta": {
+    "mimetype": "application/x-daoplayer-composition",
+    "version": 1,
+    "title":  "MitaDelMondo_trackSections"
+  },
+  
+  "tracks": [
+    {
+      "name": "MitaDelMondo",
+      "pauseIfSilent": false,
+      "files": [
+        { 
+          "path": "MitaDelMondo.wav",
+          "trackPos": 0,
+          "length": 181.77
+
+        }
+      ],
+      "unitTime": 8.59306,
+      "sections": [
+        { "name": "start", "trackPos": 0.0, "length":  7.828571428, "startCost": 0,
+          "next": [ {"name":"introA","cost":0},
+          {"name":"","cost":0
+          },
+          {"name":"","cost":0}]
+        },
+        
+        { "name": "introA", "trackPos": 0.0, "length":  7.828571428, "startCost": 0,
+          "next": [ {"name":"introB","cost":0},
+          {"name":"","cost":0
+          },
+          {"name":"","cost":0}]
+        },
+        
+        { "name": "introB", "trackPos": 7.828571428, "length":  7.749886621,
+          "next": [ {"name":"introC","cost":0},
+          {"name":"","cost":0
+          },
+          {"name":"","cost":0}]
+        },
+        
+        { "name": "verse1", "trackPos": 30.17324263, "length":  29.10947846, 
+          "next": [ {"name":"verse2","cost":0},
+          {"name":"","cost":0
+          },
+          {"name":"","cost":0}]
+        },  
+        
+        { "name": "verse2", "trackPos": 59.28272109, "length":29.85578231
+, 
+          "next": [ {"name":"verse3","cost":0
+          },
+          {"name":"","cost":0
+          },
+          {"name":"","cost":0}]
+          },
+          
+        { "name": "verse3", "trackPos": 89.1385034, "length":  7.61632653, 
+          "next": [ {"name":"verse4","cost":0
+          },
+          {"name":"","cost":0
+          },
+          {"name":"","cost":0}]
+          },
+          
+          { "name": "verse4", "trackPos": 96.75482993, "length":  29.29244898, 
+          "next": [ {"name":"verse5","cost":0
+          },
+          {"name":"","cost":0
+          },
+          {"name":"","cost":0}]
+          },
+          
+        { "name": "verse5", "trackPos": 126.0472789, "length":  30.02301587
+, 
+          "next": [ {"name":"bridgeA","cost":0
+          },
+          {"name":"","cost":0
+          },
+          {"name":"","cost":0}]
+          },
+          
+        { "name": "bridgeA", "trackPos": 156.0702948, "length":  7.590997733, 
+          "next": [ {"name":"bridgeB","cost":0
+        },
+          {"name":"","cost":0
+          },
+          {"name":"","cost":0}]
+        },
+        
+        { "name": "bridgeB", "trackPos": 163.6612925, "length":  29.13108844, 
+          "next": [ {"name":"bridgeC","cost":0
+        },
+          {"name":"","cost":0
+          },
+          {"name":"","cost":0}]
+        },
+        
+        { "name": "bridgeC", "trackPos": 192.792381, "length": 29.20433107, 
+          "next": [ {"name":"verse6","cost":0
+        },
+          {"name":"","cost":0
+          },
+          {"name":"","cost":0}]
+        },
+        
+        { "name": "verse6", "trackPos": 221.996712, "length":  15.55503401,
+          "next": [ {"name":"verse7","cost":0
+        },
+          {"name":"","cost":0
+          },
+          {"name":"","cost":0}]
+        },
+        
+        { "name": "verse7", "trackPos": 237.551746, "length":  16.8460771, 
+          "next": [ {"name":"verse8","cost":0
+        },
+          {"name":"","cost":0
+          },
+          {"name":"","cost":0}]
+        },
+        
+        { "name": "verse8", "trackPos": 221.996712, "length":  15.55503401,
+          "next": [ {"name":"verse9","cost":0
+        },
+          {"name":"","cost":0
+          },
+          {"name":"","cost":0}]
+        },
+        
+        { "name": "verse9", "trackPos": 237.551746, "length":  16.8460771, 
+          "next": [ {"name":"verse10","cost":0
+        },
+          {"name":"","cost":0
+          },
+          {"name":"","cost":0}]
+        },
+        
+        { "name": "verse10", "trackPos": 221.996712, "length":  15.55503401,
+          "next": [ {"name":"verse11","cost":0
+        },
+          {"name":"","cost":0
+          },
+          {"name":"","cost":0}]
+        },
+        
+        { "name": "verse11", "trackPos": 237.551746, "length":  16.8460771, 
+          "next": [ {"name":"verse12","cost":0
+        },
+          {"name":"","cost":0
+          },
+          {"name":"","cost":0}]
+        },
+        
+        { "name": "verse12", "trackPos": 237.551746, "length":  16.8460771, 
+          "next": [ {"name":"verse13","cost":0
+        },
+          {"name":"","cost":0
+          },
+          {"name":"","cost":0}]
+        },
+        
+        { "name": "verse13", "trackPos": 221.996712, "length":  15.55503401,
+          "next": [ {"name":"verse14","cost":0
+        },
+          {"name":"","cost":0
+          },
+          {"name":"","cost":0}]
+        },
+        
+        { "name": "verse14", "trackPos": 237.551746, "length":  16.8460771, 
+          "next": [ {"name":"coda","cost":0
+        },
+          {"name":"","cost":0
+          },
+          {"name":"","cost":0}]
+        },
+        
+        { "name": "coda", "trackPos": 237.551746, "length":  16.8460771, 
+          "next": [ {"name":"endEvent","cost":0
+        },
+          {"name":"","cost":0
+          },
+          {"name":"","cost":0}]
+        },
+        
+        { "name": "endEvent", "trackPos": 237.551746, "length":  16.8460771, 
+          "next": [ {"name":"end","cost":0
+        },
+          {"name":"","cost":0
+          },
+          {"name":"","cost":0}]
+        },
+        
+        { "name": "end", "trackPos": 254.3978231
+        }
+        
+      ]
+    }
+  ]
+}
