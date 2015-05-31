@@ -1,0 +1,18 @@
+{
+  "meta": {
+    "mimetype": "application/x-daoplayer-composition",
+    "version": 1,
+    "title":  "JCTest_SisterCities2",
+    "description":  "JCTest_SisterCities2"
+  },
+  
+  "merge": [
+    "_JCTest3_context.json",
+    "_JCTest3_SisterCities_trackSections.json",
+    "_JCTest3_Stella_trackSections1.0.json",
+    "_JCTest3_start.json",
+    "_JCTest3_scenes.json"
+    
+  ],
+  "defaultScene": "Start"
+}
