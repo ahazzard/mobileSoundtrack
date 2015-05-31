@@ -9,10 +9,10 @@
   "tracks": [
     {
       "name": "fixedPlaylist",
-      "pauseIfSilent": true,
+      "pauseIfSilent": false,
       "files": [
         { 
-          "path": "MitaDelMondo.wav",
+          "path": "MitaDelMundo.wav",
           "length": 181,
           "filePos": 0,
           "trackPos": 0
