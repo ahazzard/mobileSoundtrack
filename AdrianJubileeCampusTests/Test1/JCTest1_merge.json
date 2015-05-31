@@ -1,0 +1,17 @@
+{
+  "meta": {
+    "mimetype": "application/x-daoplayer-composition",
+    "version": 1,
+    "title":  "JCTest1_merge",
+    "description":  "Merge file or JCTest1"
+  },
+  
+  "merge": [
+    "_JCTest1_tracks.json",
+    "_JCTest1_context.json",
+    "_JCTest1_scenes.json"
+    
+    
+  ],
+  "defaultScene": "start_end"
+}
