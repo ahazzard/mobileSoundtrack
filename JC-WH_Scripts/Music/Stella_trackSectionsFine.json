@@ -1,0 +1,153 @@
+{
+  "meta": {
+    "mimetype": "application/x-daoplayer-composition",
+    "version": 1,
+    "title":  "Stella_trackSectionsFine"
+  },
+  
+  "tracks": [
+    {
+      "name": "Stella",
+      "pauseIfSilent": true,
+      "files": [
+        { 
+          "path": "Stella.wav",
+          "trackPos": 0.012,
+          "length": 195.000
+        }
+      ],
+      "unitTime": 7.7,
+      "maxDuration": 780,
+      "sections": [
+        { "name": "intro1A", "trackPos": 0.012, "length":  8.579, "startCost": 0, "endCost": 10,
+          "next": [ {"name":"intro1B","cost":0},
+          {"name":"intro1A","cost":5
+          },
+          {"name":"verse1A","cost":10},{"name":"verse2A","cost":20},{"name":"verse3A","cost":30}]
+        },  
+        
+        { "name": "intro1B", "trackPos": 8.591, "length":  8.580, "startCost": 100, "endCost": 50,
+          "next": [ {"name":"verse1A","cost":0
+          },
+          {"name":"intro1A","cost":5
+          },
+          {"name":"verse2A","cost":10},{"name":"verse3A","cost":20}]
+          },
+          
+        { "name": "verse1A", "trackPos": 17.171, "length":  17.148, "startCost": 100, "endCost": 100,
+          "next": [ {"name":"verse1B","cost":0
+          },
+          {"name":"intro1A","cost":5
+          },
+          {"name":"verse2B","cost":10},{"name":"verse2A","cost":20},{"name":"verse3A","cost":30}]
+          },
+          
+          { "name": "verse1B", "trackPos": 34.319, "length":  12.841, "startCost": 100, "endCost": 150,
+          "next": [ {"name":"verse2A","cost":0
+          },
+          {"name":"intro1A","cost":5
+          },
+          {"name":"verse3A","cost":10},{"name":"verse4A","cost":20}]
+          },
+          
+        { "name": "verse2A", "trackPos": 47.160, "length":  17.148, "startCost": 100, "endCost": 120,
+          "next": [ {"name":"verse2B","cost":0
+          },
+          {"name":"intro1A","cost":5
+          },
+          {"name":"verse3B","cost":10},{"name":"verse4B","cost":20}]
+          },
+          
+        { "name": "verse2B", "trackPos": 64.308, "length":  11.256, "startCost": 100, "endCost": 150,
+          "next": [ {"name":"intro2","cost":0
+        },
+          {"name":"intro1A","cost":5
+          },
+          {"name":"verse3A","cost":10},{"name":"verse4A","cost":20}]
+        },
+        
+        { "name": "intro2", "trackPos": 75.564, "length":  8.563, "startCost": 100, "endCost": 40,
+          "next": [ {"name":"verse3A","cost":0
+        },
+          {"name":"intro1A","cost":5
+          },
+          {"name":"verse4A","cost":10},{"name":"outroA","cost":40}]
+        },
+        
+        { "name": "verse3A", "trackPos": 84.127, "length":  17.154, "startCost": 100, "endCost": 100,
+          "next": [ {"name":"verse3B","cost":0
+        },
+          {"name":"intro1A","cost":5
+          },
+          {"name":"verse4B","cost":10},{"name":"outroA","cost":40}]
+        },
+        
+        { "name": "verse3B", "trackPos": 101.281, "length":  12.853, "startCost": 100, "endCost": 150,
+          "next": [ {"name":"verse4A","cost":0
+        },
+          {"name":"intro1A","cost":5
+          },
+          {"name":"intro3","cost":10},{"name":"outroA","cost":40}]
+        },
+        
+        { "name": "verse4A", "trackPos": 114.134, "length":  17.137, "startCost": 100, "endCost": 120,
+          "next": [ {"name":"verse4B","cost":0
+        },
+          {"name":"intro1A","cost":5
+          },
+          {"name":"intro3","cost":20},{"name":"outroA","cost":40}]
+        },
+        
+        { "name": "verse4B", "trackPos": 131.271, "length":  10.569, "startCost": 100, "endCost": 150,
+          "next": [ {"name":"intro3","cost":0
+        },
+          {"name":"intro1A","cost":5
+          },
+          {"name":"outroA","cost":20}]
+        },
+        
+        { "name": "intro3", "trackPos": 141.840, "length":  18.598, "startCost": 100, "endCost": 50,
+          "next": [ {"name":"bridge","cost":0
+        },
+          {"name":"intro1A","cost":5
+          },
+          {"name":"outroA","cost":20}]
+        },
+        
+        { "name": "bridge", "trackPos": 150.439, "length":  9.442, "startCost": 100, "endCost": 50,
+          "next": [ {"name":"outroA","cost":0
+        },
+          {"name":"intro1A","cost":5
+          },
+          {"name":"outroB","cost":10}]
+        },
+        
+        { "name": "outroA", "trackPos": 159.881, "length":  7.595, "startCost": 100, "endCost": 40,
+          "next": [ {"name":"outroB","cost":0
+        },
+          {"name":"intro1A","cost":5},{"name":"outroA","cost":10
+          },
+          {"name":"outroC","cost":10}]
+        },
+        
+        { "name": "outroB", "trackPos": 167.477, "length":  8.682, "startCost": 100, "endCost": 20,
+          "next": [ {"name":"outroC","cost":0
+        },
+          {"name":"intro1A","cost":5},{"name":"outroA","cost":10
+          },
+          {"name":"endChord","cost":10}]
+        },
+        
+        { "name": "outroC", "trackPos": 176.158, "length":  6.406, "startCost": 100, "endCost": 0,
+          "next": [ {"name":"endChord","cost":0
+        },
+          {"name":"intro1A","cost":5},{"name":"outroA","cost":10
+          }]
+        },
+        
+        { "name": "endChord", "trackPos": 182.564
+        }
+      ]
+    }
+  ]
+}
