@@ -1,0 +1,97 @@
+{
+  "meta": {
+    "mimetype": "application/x-daoplayer-composition",
+    "version": 1,
+    "title": "Jubilee Campus Test 1 scenes",
+    "description" : "Jubilee Campus Test 1 scenes"
+  },
+  "scenes": [
+    {
+      "name": "Stella",
+      "partial": false,
+      "waypoints":{"W1":"1","W2":"8"},
+      "routes":{"R1":"1-8", "Rnext":"8-3"},
+      "onload": "daoplayer.speak('Starting Stella', true); if (waypoints['W2'].distance!==undefined) window.estimatedEnd=totalTime+(waypoints['W2'].distance)/1.5; else window.estimatedEnd=195;",
+      "onupdate": "if (!routes['R1'].near) { daoplayer.setScene('Start/any'); } else if (routes['Rnext'].nearest) { daoplayer.setScene('R8'); } else if (waypoints['W2'].distance!==undefined) window.estimatedEnd=totalTime+(waypoints['W2'].distance)/1.5; ",
+      "updatePeriod":1.0,
+      "tracks": [
+        {
+          "name": "holdingPad",
+          "volume": "sceneTime<2 ? [sceneTime,trackVolume,sceneTime+1,0] : 0" 
+        },
+        {
+          "name": "Stella",
+          "volume": 1,
+          "pos": "daoplayer.selectSections('Stella',currentSection,sceneTime,window.estimatedEnd-totalTime,totalTime)"
+        }
+      ]
+    },
+    {
+      "name": "R8",
+      "partial": false,
+      "waypoints":{"W1":"8","W2":"3"},
+      "routes":{"R1":"8-3", "Rnext":"3-2"},
+      "onload": "daoplayer.speak('Starting Track R8', true);",
+      "onupdate": "if (!routes['R1'].near) { daoplayer.setScene('Start/any'); } else if (routes['Rnext'].nearest) { daoplayer.setScene('Sister Cities'); }",
+      "updatePeriod":1.0,
+      "tracks": [
+        {
+          "name": "Stella",
+          "volume": "sceneTime<2 ? [sceneTime,trackVolume,sceneTime+1,0] : 0" 
+        },
+        {
+          "name": "R8",
+          "volume": 1,
+          "pos": 0
+        },
+        {
+          "name": "holdingPad",
+          "volume": "sceneTime<2 ? [sceneTime,trackVolume,sceneTime+1,0] : 0" 
+        }
+      ]
+    },
+    {
+      "name": "Sister Cities",
+      "partial": false,
+      "waypoints":{"W1":"3","W2":"2"},
+      "routes":{"R1":"3-2", "Rnext":"2-10"},
+      "onload": "daoplayer.speak('Starting Sister Cities', true); if (waypoints['W2'].distance!==undefined) window.estimatedEnd=totalTime+(waypoints['W2'].distance)/1.5; else window.estimatedEnd=280;",
+      "onupdate": "if (!routes['R1'].near) { daoplayer.setScene('Start/any'); } else if (routes['Rnext'].nearest) { daoplayer.setScene('fade'); } else if (waypoints['W2'].distance!==undefined) window.estimatedEnd=totalTime+(waypoints['W2'].distance)/1.5; ",
+      "updatePeriod":1.0,
+      "tracks": [
+        {
+          "name": "holdingPad",
+          "volume": "sceneTime<2 ? [sceneTime,trackVolume,sceneTime+1,0] : 0" 
+        },
+        {
+          "name": "R8",
+          "volume": "sceneTime<2 ? [sceneTime,trackVolume,sceneTime+1,0] : 0" 
+        },
+        {
+          "name": "SisterCities",
+          "volume": 1,
+          "pos": "daoplayer.selectSections('SisterCities',currentSection,sceneTime,window.estimatedEnd-totalTime,totalTime)"
+        }
+      ]
+    },
+    {
+      "name": "fade",
+      "partial": false,
+      "waypoints":{"W1":"2","W2":"10"},
+      "routes":{"R1":"2-10", "Rnext":"1-8"},
+      "onload": "daoplayer.speak('Fade to end', true);",
+      "onupdate": "if (!routes['R1'].near) { daoplayer.setScene('Start/any'); } else if (routes['Rnext'].nearest) { daoplayer.setScene('Stella'); }",
+      "updatePeriod":1.0,
+      "tracks": [
+        {
+          "name": "SisterCities",
+          "volume": "sceneTime<2 ? [sceneTime,trackVolume,sceneTime+1,0] : 0" 
+        },
+        {
+          "name": "holdingPad",
+          "volume": "sceneTime<2 ? [sceneTime,trackVolume,sceneTime+1,0] : 0" 
+        }
+      ]
+    }
+  ]
+}
