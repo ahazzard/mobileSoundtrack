@@ -342,16 +342,16 @@
 				"nearDistance": "20"
 			},
 			{
-				"name": "LTA-WH",
-				"from": "LTA",
+				"name": "LTA_WH-WH",
+				"from": "LTA_WH",
 				"to":"WH",
 				"nearDistance": "20"
 			},
 			{
-				"name": "J_CS-LTA_WH",
+				"name": "J_CS-LTA_LT",
 				"description": "route for fixed playlist on outward leg of walk",
 				"from": "J_CS",
-				"to": "LTA_WH",
+				"to": "LTA_LT",
 				"nearDistance": "20"
 		},
 		
