@@ -1,0 +1,297 @@
+{
+  "meta": {
+    "mimetype": "application/x-daoplayer-composition",
+    "version": 1,
+    "title":  "SisterCities_multiTrackSections"
+  },
+  
+  "tracks": [
+    {
+      "name": "SisterCities_Drums",
+      "pauseIfSilent": false,
+      "files": [
+        { 
+          "path": "SC_Drums.wav",
+          "trackPos": 0,
+          "length": 280.475
+        }
+      ],
+      "unitTime": 6.102,
+      "sections": [
+        { "name": "drumFill", "trackPos": 0.0, "length":  0.499115646, "startCost": 0,
+          "next": [ {"name":"intro1A","cost":0}]
+        },
+        
+        { "name": "intro1A", "trackPos": 0.499115646, "length":  10.67027211, "startCost": 10, "endCost": 20,
+          "next": [ {"name":"intro1B","cost":0}]
+        },  
+        
+        { "name": "intro1B", "trackPos": 11.16938776, "length": 10.65809524, "startCost": 10, "endCost": 20,
+          "next": [ {"name":"verse1A","cost":0
+          },
+          {"name":"intro1A","cost":10
+          },
+          {"name":"verse2A","cost":10},{"name":"verse3A","cost":10},{"name":"verse4A","cost":10},{"name":"verse5A","cost":10},{"name":"bridge1A","cost":30},{"name":"bridge2A","cost":30},{"name":"bridge3A","cost":30},{"name":"bridge4A","cost":30},{"name":"bridge5A","cost":30},{"name":"bridge6A","cost":30},{"name":"bridge7A","cost":30},{"name":"bridge8A","cost":30},{"name":"intro2A","cost":50},{"name":"outro","cost":30}]
+          },
+          
+        { "name": "verse1A", "trackPos": 21.82748299, "length":  10.669161, "startCost": 30, "endCost": 100,
+          "next": [ {"name":"verse1B","cost":0
+          }]
+          },
+          
+          { "name": "verse1B", "trackPos": 32.49664399, "length":  10.64993197, "startCost": 100, "endCost": 50,
+          "next": [ {"name":"verse2A","cost":0
+          },
+          {"name":"intro1A","cost":10
+          },
+          {"name":"bridge1A","cost":10},{"name":"verse3A","cost":10},{"name":"verse4A","cost":10},{"name":"bridge2A","cost":10},{"name":"bridge3A","cost":10},{"name":"verse5A","cost":10},{"name":"bridge4A","cost":10},{"name":"bridge5A","cost":10},{"name":"bridge6A","cost":10},{"name":"bridge7A","cost":10},{"name":"bridge8A","cost":20},{"name":"intro2A","cost":20}]
+          },
+          
+        { "name": "verse2A", "trackPos": 43.14657596, "length":  10.67764172, "startCost": 30, "endCost": 100,
+          "next": [ {"name":"verse2B","cost":0
+          }]
+          },
+          
+        { "name": "verse2B", "trackPos": 53.82421769, "length":  10.64671202, "startCost": 100, "endCost": 50,
+          "next": [ {"name":"bridge1A","cost":0
+        },
+          {"name":"intro1A","cost":10
+          },
+          {"name":"verse3A","cost":10},{"name":"verse4A","cost":10},{"name":"bridge2A","cost":10},{"name":"bridge3A","cost":10},{"name":"verse5A","cost":10},{"name":"bridge4A","cost":10},{"name":"bridge5A","cost":10},{"name":"bridge6A","cost":10},{"name":"bridge7A","cost":10},{"name":"bridge8A","cost":20},{"name":"intro2A","cost":20}]
+        },
+        
+        { "name": "bridge1A", "trackPos": 64.47092971, "length":  5.358412698, "startCost": 100, "endCost": 100,
+          "next": [ {"name":"bridge1B","cost":0
+        }]
+        },
+        
+        { "name": "bridge1B", "trackPos": 69.8293424, "length": 5.3669161, "startCost": 100, "endCost": 100,
+          "next": [ {"name":"verse3A","cost":0
+        },
+          {"name":"intro1A","cost":10
+          },
+          {"name":"verse4A","cost":10},{"name":"bridge2A","cost":10},{"name":"bridge3A","cost":10},{"name":"verse5A","cost":10},{"name":"bridge4A","cost":10},{"name":"bridge5A","cost":10},{"name":"bridge6A","cost":10},{"name":"bridge7A","cost":10},{"name":"bridge8A","cost":20},{"name":"intro2A","cost":20}]
+        },
+        
+         { "name": "verse3A", "trackPos": 75.1962585, "length":  10.62519274, "startCost": 30, "endCost": 100,
+          "next": [ {"name":"verse3B","cost":0
+        }]
+        },
+        
+        { "name": "verse3B", "trackPos": 85.82145125, "length":  10.65818594, "startCost": 100, "endCost": 50,
+          "next": [ {"name":"verse4A","cost":0
+        },
+          {"name":"intro1A","cost":10
+          },
+          {"name":"bridge2A","cost":10},{"name":"bridge3A","cost":10},{"name":"verse5A","cost":10},{"name":"bridge4A","cost":10},{"name":"bridge5A","cost":10},{"name":"bridge6A","cost":10},{"name":"bridge7A","cost":10},{"name":"bridge8A","cost":20},{"name":"intro2A","cost":20}]
+        },
+        
+        { "name": "verse4A", "trackPos": 96.47963719, "length":  10.61117914, "startCost": 30, "endCost": 100,
+          "next": [ {"name":"verse4B","cost":0
+        }]
+        },
+        
+        { "name": "verse4B", "trackPos": 107.0908163, "length":  10.72795918, "startCost": 100, "endCost": 50,
+          "next": [ {"name":"bridge2A","cost":0
+        },
+          {"name":"intro1A","cost":10
+          },
+          {"name":"bridge3A","cost":10},{"name":"verse5A","cost":10},{"name":"bridge4A","cost":10},{"name":"bridge5A","cost":10},{"name":"bridge6A","cost":10},{"name":"bridge7A","cost":10},{"name":"bridge8A","cost":20},{"name":"intro2A","cost":20}]
+        },
+        
+        { "name": "bridge2A", "trackPos": 117.8187755, "length":  5.327891156, "startCost": 100, "endCost": 100,
+          "next": [ {"name":"bridge2B","cost":0
+        }]
+        },
+        
+        { "name": "bridge2B", "trackPos": 123.1466667, "length":  5.364263039, "startCost": 100, "endCost": 100,
+          "next": [ {"name":"bridge3A","cost":0
+        },
+          {"name":"intro1A","cost":10
+          },
+          {"name":"verse5A","cost":10},{"name":"bridge4A","cost":10},{"name":"bridge5A","cost":10},{"name":"bridge6A","cost":10},{"name":"bridge7A","cost":10},{"name":"bridge8A","cost":20},{"name":"intro2A","cost":20}]
+        },
+        
+        { "name": "bridge3A", "trackPos": 128.5109297, "length":  5.26648526, "startCost": 100, "endCost": 100,
+          "next": [ {"name":"bridge3B","cost":0
+        }]
+        },
+        
+        { "name": "bridge3B", "trackPos": 133.777415, "length":  5.441088436, "startCost": 100, "endCost": 100,
+          "next": [ {"name":"verse5A","cost":0
+        },
+          {"name":"intro1A","cost":10
+          },
+          {"name":"bridge4A","cost":10},{"name":"bridge5A","cost":10},{"name":"bridge6A","cost":10},{"name":"bridge7A","cost":10},{"name":"bridge8A","cost":20},{"name":"intro2A","cost":20}]
+        },
+        
+        { "name": "verse5A", "trackPos": 139.2185034, "length":  10.64340136, "startCost": 30, "endCost": 100,
+          "next": [ {"name":"verse5B","cost":0
+        }]
+        },
+        
+        { "name": "verse5B", "trackPos": 149.8619048, "length":  10.61156463, "startCost": 100, "endCost": 500,
+          "next": [ {"name":"bridge4A","cost":0
+        },
+          {"name":"intro1A","cost":10
+          },
+          {"name":"bridge5A","cost":10},{"name":"bridge6A","cost":10},{"name":"bridge7A","cost":10},{"name":"bridge8A","cost":20},{"name":"intro2A","cost":20}]
+        },
+        
+        { "name": "bridge4A", "trackPos": 160.4734694, "length":  5.367346939, "startCost": 100, "endCost": 100,
+          "next": [ {"name":"bridge4B","cost":0
+        }]
+        },
+        
+        { "name": "bridge4B", "trackPos": 165.8408163, "length":  5.352834467, "startCost": 100, "endCost": 100,
+          "next": [ {"name":"bridge5A","cost":0
+        },
+          {"name":"intro1A","cost":10
+          },
+          {"name":"bridge6A","cost":10},{"name":"bridge7A","cost":10},{"name":"bridge8A","cost":20},{"name":"intro2A","cost":20}]
+        },
+        
+        { "name": "bridge5A", "trackPos": 171.1936508, "length": 5.301405896, "startCost": 100, "endCost": 100,
+          "next": [ {"name":"bridge5B","cost":0
+        }]
+        },
+        
+        { "name": "bridge5B", "trackPos": 176.4950567, "length":  5.354285714, "startCost": 100, "endCost": 100,
+          "next": [ {"name":"bridge6A","cost":0
+        },
+          {"name":"intro1A","cost":10
+          },
+          {"name":"bridge7A","cost":10},{"name":"bridge8A","cost":20},{"name":"intro2A","cost":20}]
+        },
+        
+        { "name": "bridge6A", "trackPos": 181.8493424, "length":  5.341315193, "startCost": 100, "endCost": 50,
+          "next": [ {"name":"bridge6B","cost":0
+        }]
+        },
+        
+        { "name": "bridge6B", "trackPos": 187.1906576, "length":  5.314580499, "startCost": 100, "endCost": 50,
+          "next": [ {"name":"bridge7A","cost":0
+        },
+          {"name":"intro1A","cost":10
+          },
+          {"name":"bridge8A","cost":20},{"name":"intro2A","cost":20}]
+        },
+        
+        { "name": "bridge7A", "trackPos": 192.5052381, "length":  5.340340136, "startCost": 100, "endCost": 40,
+          "next": [ {"name":"bridge7B","cost":0
+        }]
+        },
+        
+        { "name": "bridge7B", "trackPos": 197.8455782, "length":  5.341360544, "startCost": 100, "endCost": 40,
+          "next": [ {"name":"bridge8A","cost":0
+        },
+          {"name":"intro1A","cost":10
+          },
+          {"name":"intro2A","cost":10}]
+        },
+        
+        { "name": "bridge8A", "trackPos": 203.1869388, "length":  5.317732426, "startCost": 100, "endCost": 20,
+          "next": [ {"name":"link","cost":0
+        }]
+        },
+        
+        { "name": "link", "trackPos": 208.5046712, "length":  7.02367347, "startCost": 100, "endCost": 50,
+          "next": [ {"name":"intro2A","cost":0
+        },
+          {"name":"intro1A","cost":10
+          },
+          {"name":"outro","cost":10}]
+        },
+        
+        { "name": "intro2A", "trackPos": 215.5283447, "length":  5.282063492, "startCost": 100, "endCost": 10,
+          "next": [ {"name":"intro2B","cost":0
+        },
+          {"name":"intro2A","cost":10
+          },
+          {"name":"outro","cost":10}]
+        },
+        
+        { "name": "intro2B", "trackPos": 220.8104082, "length":  5.317165533, "startCost": 100, "endCost": 10,
+          "next": [ {"name":"outro","cost":0
+        },
+          {"name":"intro1A","cost":10
+          }]
+        },
+        
+        { "name": "outro", "trackPos": 226.1275737, "length": 21.3831746, "startCost": 100, "endCost": 10,
+          "next": [ {"name":"outroFade","cost":0
+        }]
+        },
+        
+        { "name": "outroFade", "trackPos": 247.5107483, "length":  32.9630839, "startCost": 100, "endCost": 10,
+          "next": [ {"name":"end","cost":0
+        }]
+        },
+       
+       { "name": "end", "trackPos": 280.4738322, "startCost": 100, "endCost": 0
+        }
+      ],
+      
+      "unitTime": 6.102,
+      "maxDuration": 280.475
+
+    },
+    
+    {
+      "name": "SisterCities_Bass",
+      "pauseIfSilent": false,
+      "files": [
+        { 
+          "path": "SC_Bass.wav",
+          "trackPos": 0,
+          "length": 280.475
+        }
+      ],
+      
+      "unitTime": 6.102,
+      "maxDuration": 280.475
+    },
+    
+    {
+      "name": "SisterCities_Guitars",
+      "pauseIfSilent": false,
+      "files": [
+        { 
+          "path": "SC_Guitars.wav",
+          "trackPos": 0,
+          "length": 280.475
+        }
+      ],
+      
+      "unitTime": 6.102,
+      "maxDuration": 280.475
+    },
+    
+    {
+      "name": "SisterCities_AcousticKeys",
+      "pauseIfSilent": false,
+      "files": [
+        { 
+          "path": "SC_AcousticKeys.wav",
+          "trackPos": 0,
+          "length": 280.475
+        }
+      ],
+      
+      "unitTime": 6.102,
+      "maxDuration": 280.475
+    },
+    
+    {
+      "name": "SisterCities_Vox",
+      "pauseIfSilent": false,
+      "files": [
+        { 
+          "path": "SC_Vox.wav",
+          "trackPos": 0,
+          "length": 280.475
+        }
+      ]
+    }
+  ]
+}
