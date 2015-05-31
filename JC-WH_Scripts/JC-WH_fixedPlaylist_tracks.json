@@ -9,7 +9,7 @@
   "tracks": [
     {
       "name": "fixedPlaylist",
-      "pauseIfSilent": false,
+      "pauseIfSilent": true,
       "files": [
         { 
           "path": "MitaDelMundo.wav",
