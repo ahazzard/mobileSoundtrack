@@ -1,0 +1,199 @@
+{
+  "meta": {
+    "mimetype": "application/x-daoplayer-composition",
+    "version": 1,
+    "title":  "NotAlone_trackSections"
+  },
+  
+  "tracks": [
+    {
+      "name": "NotAlone",
+      "pauseIfSilent": false,
+      "files": [
+        { 
+          "path": "NotAlone.wav",
+          "trackPos": 0,
+          "length": 418.7579
+        }
+      ],
+       
+      "unitTime": 3.565,
+      "sections": [
+        { "name": "NA_intro1a", "trackPos": 0, "length":  7.1286, "startCost": 0,
+          "next": [ {"name":"NA_intro1b","cost":0},
+          {"name":"NA_intro1a","cost":10
+          },
+          {"name":"NA_intro2a","cost":10},{"name":"NA_intro2c","cost":20}]
+        },  
+          
+        { "name": "NA_intro1b", "trackPos": 7.1286, "length":  7.0242, 
+          "next": [ {"name":"NA_intro2a","cost":0
+          },
+          {"name":"NA_intro1a","cost":10},{"name":"NA_intro1b","cost":20
+          },
+          {"name":"NA_intro2c","cost":10},{"name":"NA_intro2b","cost":20},{"name":"NA_intro2d","cost":30},{"name":"NA_verse1a","cost":1000}]
+          },
+          
+        { "name": "NA_intro2a", "trackPos": 14.1528, "length":  7.0333, "startCost": 20,
+          "next": [ {"name":"NA_intro2b","cost":0
+          },
+          {"name":"NA_intro2a","cost":10},{"name":"NA_intro1a","cost":20},{"name":"NA_intro1b","cost":30
+          },
+          {"name":"NA_intro2c","cost":20},{"name":"NA_intro2d","cost":30},{"name":"NA_verse1a","cost":500},{"name":"NA_verse1b","cost":1000}]
+          },
+          
+        { "name": "NA_intro2b", "trackPos": 21.1861, "length":  7.09, "startCost": 40,
+          "next": [ {"name":"NA_intro2c","cost":0
+        },
+          {"name":"NA_intro2a","cost":10},{"name":"NA_intro2b","cost":20},{"name":"NA_intro1a","cost":100},{"name":"NA_intro1b","cost":200
+          },
+          {"name":"NA_intro2d","cost":10},{"name":"NA_verse1a","cost":20},{"name":"NA_verse1b","cost":50},{"name":"NA_chorus1a","cost":1000}]
+        },
+          
+        { "name": "NA_intro2c", "trackPos": 28.2761, "length":  7.1246, "startCost": 30,
+          "next": [ {"name":"NA_intro2d","cost":0
+          },
+          {"name":"NA_intro2a","cost":10},{"name":"NA_intro2b","cost":20},{"name":"NA_intro2c","cost":30},{"name":"NA_link1a","cost":100},{"name":"NA_link1b","cost":200
+          },
+          {"name":"NA_verse1a","cost":10},{"name":"NA_verse1b","cost":20},{"name":"NA_chorus1a","cost":1000},{"name":"NA_chorus1b","cost":10000}] 
+          },
+          
+        { "name": "NA_intro2d", "trackPos": 35.4007, "length":  7.09, "startCost": 50,
+          "next": [ {"name":"NA_verse1a","cost":0
+          },
+          {"name":"NA_intro2a","cost":10},{"name":"NA_intro2b","cost":20},{"name":"NA_intro2c","cost":30},{"name":"NA_intro2d","cost":40},{"name":"NA_link1a","cost":1000},{"name":"NA_link1b","cost":10000
+          },
+          {"name":"NA_verse1b","cost":10},{"name":"NA_chorus1a","cost":100},{"name":"NA_chorus1b","cost":1000}] 
+        },
+        
+          { "name": "NA_verse1a", "trackPos": 42.4907, "length":  14.2542, "startCost": 100,
+          "next": [ {"name":"NA_verse1b","cost":0
+          },
+          {"name":"NA_intro2a","cost":10},{"name":"NA_intro2c","cost":20},{"name":"NA_intro2b","cost":30},{"name":"NA_intro2d","cost":40
+          },
+          {"name":"NA_chorus1a","cost":10},{"name":"NA_chorus1b","cost":100},{"name":"NA_link1a","cost":1000},{"name":"NA_link1b","cost":10000}]
+          },
+        
+        { "name": "NA_verse1b", "trackPos": 56.7449, "length":  14.3904, "startCost": 100,
+          "next": [ {"name":"NA_chorus1a","cost":0
+          },
+          {"name":"NA_intro2a","cost":10},{"name":"NA_intro2c","cost":50},{"name":"NA_verse1a","cost":100},{"name":"NA_verse1b","cost":1000
+          },
+          {"name":"NA_chorus1b","cost":10},{"name":"NA_link1a","cost":100},{"name":"NA_link1b","cost":100},{"name":"NA_verse2a","cost":10000}]
+          },
+        
+        { "name": "NA_chorus1a", "trackPos": 71.1353, "length":  14.3018, "startCost": 100,
+          "next": [ {"name":"NA_chorus1b","cost":0
+          },
+          {"name":"NA_chorus1a","cost":10},{"name":"NA_intro2a","cost":50},{"name":"NA_intro2c","cost":100},{"name":"NA_intro2b","cost":200},{"name":"NA_intro2d","cost":250},{"name":"NA_verse1a","cost":500},{"name":"NA_verse1b","cost":600
+          },
+          {"name":"NA_link1a","cost":10},{"name":"NA_link1b","cost":20},{"name":"NA_verse2a","cost":100}]
+        },
+        
+        { "name": "NA_chorus1b", "trackPos": 85.4371, "length":  14.2986, "startCost": 1000,
+          "next": [ {"name":"NA_link1a","cost":0
+          },
+          {"name":"NA_chorus1a","cost":10},{"name":"NA_chorus1b","cost":20},{"name":"NA_intro2a","cost":1000},{"name":"NA_intro2c","cost":5000
+          },
+          {"name":"NA_link1b","cost":10},{"name":"NA_verse2a","cost":100},{"name":"NA_verse2c","cost":1000}]
+        },
+        
+        { "name": "NA_link1a", "trackPos": 99.7357, "length":  7.1332, 
+          "next": [ {"name":"NA_link1b","cost":0
+          },
+          {"name":"NA_link1a","cost":10},{"name":"NA_intro2a","cost":100},{"name":"NA_intro2c","cost":1000
+          },
+          {"name":"NA_verse2a","cost":10},{"name":"NA_verse2c","cost":100},{"name":"NA_verse3a","cost":1000},{"name":"NA_chorus2a","cost":10000}]
+        },
+        
+        { "name": "NA_link1b", "trackPos": 106.8689, "length":  7.1257, "endCost": 20000,
+          "next": [ {"name":"NA_verse2a","cost":0
+          },
+          {"name":"NA_link1a","cost":10},{"name":"NA_link1b","cost":20},{"name":"NA_intro2a","cost":100},{"name":"NA_intro2c","cost":200
+          },
+          {"name":"NA_verse2c","cost":10},{"name":"NA_verse3a","cost":100},{"name":"NA_chorus2a","cost":1000},{"name":"NA_chorus2b","cost":10000}]
+        },
+        
+        { "name": "NA_verse2a", "trackPos": 113.9946, "length":  3.5639,
+          "next": [ {"name":"NA_verse2c","cost":0
+          },
+          {"name":"NA_link1a","cost":10},{"name":"NA_link1b","cost":50
+          },
+          {"name":"NA_verse3a","cost":10},{"name":"NA_chorus2a","cost":100},{"name":"NA_chorus2b","cost":10000}]
+        },
+  
+        { "name": "NA_verse2c", "trackPos": 128.3189, "length":  14.3016,
+          "next": [ {"name":"NA_verse3a","cost":0
+          },
+          {"name":"NA_link1a","cost":10},{"name":"NA_link1b","cost":100},{"name":"NA_verse1a","cost":1000
+          },
+          {"name":"NA_chorus2a","cost":10},{"name":"NA_chorus2b","cost":100}]
+        },
+        
+        { "name": "NA_verse3a", "trackPos": 142.6205, "length":  7.233,
+          "next": [ {"name":"NA_verse3b","cost":0
+          },
+          {"name":"NA_verse2a","cost":10},{"name":"NA_verse2c","cost":100},{"name":"NA_verse3a","cost":1000},{"name":"NA_link1a","cost":10000},{"name":"NA_link1b","cost":50000
+          },
+          {"name":"NA_chorus2a","cost":10},{"name":"NA_chorus2b","cost":100},{"name":"NA_link2a","cost":1000},{"name":"NA_link2c","cost":5000}]
+        },
+          
+        { "name": "NA_verse3b", "trackPos": 149.8535, "length":  7.8465,
+          "next": [ {"name":"NA_chorus2a","cost":0
+          },
+          {"name":"NA_link1a","cost":10},{"name":"NA_link1b","cost":100},{"name":"NA_verse1a","cost":1000},{"name":"NA_verse1b","cost":5000
+          },
+          {"name":"NA_chorus2b","cost":10},{"name":"NA_link2a","cost":100},{"name":"NA_link2c","cost":1000},{"name":"NA_link2b","cost":10000},{"name":"NA_link2d","cost":30000}]
+        }, 
+        
+        { "name": "NA_chorus2a", "trackPos": 157.7, "length":  13.4207, 
+          "next": [ {"name":"NA_chorus2b","cost":0
+          },
+          {"name":"NA_chorus2a","cost":10},{"name":"NA_link2a","cost":1000},{"name":"NA_link2c","cost":5000
+          },
+          {"name":"NA_link2a","cost":10},{"name":"NA_link2c","cost":100},{"name":"NA_link2b","cost":1000},{"name":"NA_link2d","cost":10000}]
+        }, 
+        
+        { "name": "NA_chorus2b", "trackPos": 171.2207, "length":  14.1153, 
+          "next": [ {"name":"NA_link2a","cost":0
+          },
+          {"name":"NA_chorus2a","cost":10},{"name":"NA_chorus2b","cost":100
+          },
+          {"name":"NA_link2b","cost":10},{"name":"NA_link2c","cost":100},{"name":"NA_link2d","cost":1000}]
+        },
+        
+        { "name": "NA_link2a", "trackPos": 185.3360, "length":  7.149, 
+          "next": [ {"name":"NA_link2b","cost":0
+          },
+          {"name":"NA_link2a","cost":10},{"name":"NA_intro2c","cost":100},{"name":"NA_intro2b","cost":1000},{"name":"NA_intro2d","cost":10000
+          },
+          {"name":"NA_link2c","cost":10},{"name":"NA_link2d","cost":20},{"name":"NA_bridge1a","cost":1000}]
+        },
+        
+        { "name": "NA_link2b", "trackPos": 192.485, "length":  7.0971, 
+          "next": [ {"name":"NA_link2c","cost":0
+          },
+          {"name":"NA_link2a","cost":10},{"name":"NA_link2b","cost":50
+          },
+          {"name":"NA_link2d","cost":10},{"name":"NA_bridge1a","cost":1000}]
+        },
+        
+        { "name": "NA_link2c", "trackPos": 199.5821, "length":  7.1258, 
+          "next": [ {"name":"NA_link2d","cost":0
+          },
+          {"name":"NA_link2a","cost":10},{"name":"NA_link2b","cost":20},{"name":"NA_link2c","cost":30
+          },
+          {"name":"NA_bridge1a","cost":100}]
+        },
+        
+        { "name": "NA_link2d", "trackPos": 206.7079, "length":  7.2009, 
+          "next": [ {"name":"NA_bridge1a","cost":0
+        },
+          {"name":"NA_link2a","cost":10},{"name":"NA_link2b","cost":100},{"name":"NA_link2c","cost":1000}]
+        },
+        
+         { "name": "NA_bridge1a", "trackPos": 1213.9088, "length":  7.0699, "endCost": 0}
+      ]
+    }
+  ]
+}
