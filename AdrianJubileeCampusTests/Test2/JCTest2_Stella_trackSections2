@@ -1,0 +1,172 @@
+{
+  "meta": {
+    "mimetype": "application/x-daoplayer-composition",
+    "version": 1,
+    "title":  "JC_stellaTest_tracks"
+  },
+  
+  "tracks": [
+    {
+      "name": "Stella",
+      "pauseIfSilent": true,
+      "files": [
+        { 
+          "path": "Stella.wav",
+          "trackPos": 0,
+          "length": 195.000
+        }
+      ],
+      "unitTime": 7.7,
+      "sections": [
+        { "name": "intro1A", "trackPos": 0.011609977, "length":  8.5793905, "startCost": 0, "endCost": 30,
+          "next": [ {"name":"intro1B","cost":0},
+          {"name":"intro1A","cost":10},{"name":"intro1B","cost":20},{"name":"outroA","cost":40},{"name":"outroB","cost":50},{"name":"outroC","cost":60
+          },
+          {"name":"verse1A","cost":10},{"name":"verse2A","cost":20},{"name":"verse3A","cost":30},{"name":"bridge","cost":50}]
+        },  
+        
+        { "name": "intro1B", "trackPos": 8.591, "length":  8.5801565, "startCost": 50, "endCost": 50,
+          "next": [ {"name":"verse1A","cost":0
+          },
+          {"name":"intro1A","cost":10},{"name":"intro1B","cost":20},{"name":"outroA","cost":40},{"name":"outroB","cost":50},{"name":"outroC","cost":60
+          },
+          {"name":"verse2A","cost":10},{"name":"verse3A","cost":20},{"name":"bridge","cost":40}]
+          },
+          
+        { "name": "verse1A", "trackPos": 17.171156, "length":  17.14793651, "startCost": 100, "endCost": 100,
+          "next": [ {"name":"verse1B","cost":0
+          },
+          {"name":"intro1A","cost":10},{"name":"intro1B","cost":20},{"name":"outroA","cost":40},{"name":"outroB","cost":50},{"name":"outroC","cost":60
+          },
+          {"name":"verse2B","cost":10},{"name":"verse2A","cost":20},{"name":"verse3A","cost":30},{"name":"bridge","cost":50}]
+          },
+          
+          { "name": "verse1B", "trackPos": 34.319093, "length":  12.84063492, "startCost": 100, "endCost": 150,
+          "next": [ {"name":"verse2A","cost":0
+          },
+          {"name":"intro1A","cost":10},{"name":"intro1B","cost":20},{"name":"outroA","cost":40},{"name":"outroB","cost":50},{"name":"outroC","cost":60
+          },
+          {"name":"verse3A","cost":10},{"name":"verse4A","cost":20},{"name":"bridge","cost":40}]
+          },
+          
+        { "name": "verse2A", "trackPos": 47.15972789, "length":  17.14793651, "startCost": 100, "endCost": 120,
+          "next": [ {"name":"verse2B","cost":0
+          },
+          {"name":"intro1A","cost":10},{"name":"intro1B","cost":20},{"name":"outroA","cost":40},{"name":"outroB","cost":50},{"name":"outroC","cost":60
+          },
+          {"name":"verse3B","cost":10},{"name":"verse4B","cost":20},{"name":"bridge","cost":40}]
+          },
+          
+        { "name": "verse2B", "trackPos": 64.3076644, "length":  11.2563356, "startCost": 150, "endCost": 150,
+          "next": [ {"name":"intro2","cost":0
+        },
+          {"name":"intro1A","cost":10},{"name":"intro1B","cost":20},{"name":"outroA","cost":40},{"name":"outroB","cost":50},{"name":"outroC","cost":60
+          },
+          {"name":"verse3A","cost":10},{"name":"verse4A","cost":20},{"name":"bridge","cost":40}]
+        },
+        
+        { "name": "intro2", "trackPos": 75.564, "length":  8.56348, "startCost": 100, "endCost": 40,
+          "next": [ {"name":"verse3A","cost":0
+        },
+          {"name":"intro1A","cost":10},{"name":"intro1B","cost":20},{"name":"outroA","cost":40},{"name":"outroB","cost":50},{"name":"outroC","cost":60
+          },
+          {"name":"verse4A","cost":10},{"name":"bridge","cost":20},{"name":"outroA","cost":40}]
+        },
+        
+        { "name": "verse3A", "trackPos": 84.12748, "length":  17.15372, "startCost": 100, "endCost": 100,
+          "next": [ {"name":"verse3B","cost":0
+        },
+          {"name":"intro1A","cost":10},{"name":"intro1B","cost":20},{"name":"outroA","cost":40},{"name":"outroB","cost":50},{"name":"outroC","cost":60
+          },
+          {"name":"verse4B","cost":10},{"name":"bridge","cost":20},{"name":"outroA","cost":40}]
+        },
+        
+        { "name": "verse3B", "trackPos": 101.2812, "length":  12.85263, "startCost": 70, "endCost": 150,
+          "next": [ {"name":"verse4A","cost":0
+        },
+          {"name":"intro1A","cost":10},{"name":"intro1B","cost":20},{"name":"outroA","cost":40},{"name":"outroB","cost":50},{"name":"outroC","cost":60
+          },
+          {"name":"intro3","cost":10},{"name":"bridge","cost":20},{"name":"outroA","cost":40}]
+        },
+        
+        { "name": "verse4A", "trackPos": 114.13383, "length":  17.13728, "startCost": 100, "endCost": 120,
+          "next": [ {"name":"verse4B","cost":0
+        },
+          {"name":"intro1A","cost":10},{"name":"intro1B","cost":20},{"name":"outroA","cost":40},{"name":"outroB","cost":50},{"name":"outroC","cost":60
+          },
+          {"name":"bridge","cost":10},{"name":"intro3","cost":20},{"name":"outroA","cost":40}]
+        },
+        
+        { "name": "verse4B", "trackPos": 131.27111, "length":  10.56948, "startCost": 150, "endCost": 150,
+          "next": [ {"name":"intro3","cost":0
+        },
+          {"name":"outroA","cost":10},{"name":"outroB","cost":20},{"name":"outroC","cost":40},{"name":"intro1A","cost":50},{"name":"intro1B","cost":60
+          },
+          {"name":"bridge","cost":10},{"name":"outroA","cost":20}]
+        },
+        
+        { "name": "intro3", "trackPos": 141.84059, "length":  18.59825, "startCost": 100, "endCost": 50,
+          "next": [ {"name":"bridge","cost":0
+        },
+          {"name":"outroA","cost":10},{"name":"outroB","cost":20},{"name":"outroC","cost":40},{"name":"intro1A","cost":50},{"name":"intro1B","cost":60
+          },
+          {"name":"outroA","cost":20}]
+        },
+        
+        { "name": "bridge", "trackPos": 150.43884, "length":  9.44212, "startCost": 100, "endCost": 50,
+          "next": [ {"name":"outroA","cost":0
+        },
+          {"name":"outroA","cost":10},{"name":"outroB","cost":20},{"name":"outroC","cost":40},{"name":"intro1A","cost":50},{"name":"intro1B","cost":60
+          },
+          {"name":"outroB","cost":20}]
+        },
+        
+        { "name": "outroA", "trackPos": 159.88096, "length":  7.59556, "startCost": 100, "endCost": 40,
+          "next": [ {"name":"outroB","cost":0
+        },
+          {"name":"outroA","cost":10},{"name":"outroB","cost":20},{"name":"outroC","cost":40},{"name":"intro1A","cost":50},{"name":"intro1B","cost":60
+          },
+          {"name":"outroC","cost":20}]
+        },
+        
+        { "name": "outroB", "trackPos": 167.47652, "length":  8.681938, "startCost": 100, "endCost": 20,
+          "next": [ {"name":"outroC","cost":0
+        },
+          {"name":"outroA","cost":10},{"name":"outroB","cost":20},{"name":"outroC","cost":40},{"name":"intro1A","cost":50},{"name":"intro1B","cost":60
+          },
+          {"name":"end","cost":20}]
+        },
+        
+        { "name": "outroC", "trackPos": 176.158458, "length":  6.405532, "startCost": 100, "endCost": 0,
+          "next": [ {"name":"end","cost":0
+        },
+          {"name":"outroA","cost":10},{"name":"outroB","cost":20},{"name":"outroC","cost":40},{"name":"intro1A","cost":50},{"name":"intro1B","cost":60
+          }]
+        },
+        
+        { "name": "end", "trackPos": 182.56399
+        }
+      ]
+    },
+    {
+      "name": "holdingPad",
+      "files": [
+        { 
+          "path": "R3.wav",
+          "trackPos": 0,
+          "repeats": -1
+        }
+      ]
+    },
+    {
+      "name": "R8",
+      "files": [
+        { 
+          "path": "R8.wav",
+          "trackPos": 0,
+          "repeats": -1
+        }
+      ]
+    }
+  ]
+}
