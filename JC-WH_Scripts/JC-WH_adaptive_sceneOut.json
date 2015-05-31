@@ -7,7 +7,7 @@
   },
   "scenes": [
     {
-      "name": "track1/MitaDelMondo",
+      "name": "track1/MitaDelMundo",
       "description": "first track, starts at CS building on Jubilee campus",
       "partial": false,
       "waypoints":{"W1":"J_CS","W2":"WR"},
@@ -17,7 +17,7 @@
       "updatePeriod":1.0,
       "tracks": [
         {
-          "name": "MitaDelMondo",
+          "name": "MitaDelMundo",
           "pos": 0,
           "volume": 1 
         },
@@ -63,8 +63,8 @@
           "volume": 1 
         },
         {
-          "name": "MitaDelMondo",
-          "volume": "sceneTime<2 ? [sceneTime,trackVolume,sceneTime+1,0] : 0"  
+          "name": "MitaDelMundo",
+          "volume": "sceneTime<2 ? [sceneTime,trackVolume,sceneTime+1,0] : 0" 
         },
         {
           "name": "holdingPad",
@@ -162,7 +162,7 @@
         {
           "name": "StellaA",
           "pos": 0,
-          "volume": "sceneTime<2 ? [sceneTime,trackVolume,sceneTime+1,1] : 0"
+          "volume": "sceneTime<2 ? [sceneTime,trackVolume,sceneTime+1,1] : 1"
         },
         {
           "name": "NotAlone",
@@ -176,22 +176,22 @@
     },
     {
       "name": "track4B/Stella",
-      "description": "this scene changes track to 'StellaB' which starts from the entry of the vocals after the introducti0on heard in track4A/Stella",
+      "description": "this scene changes track to 'StellaB' ",
       "partial": false,
       "waypoints":{"W1":"DA_IG","W2":"DA_HW"},
       "routes":{"R1":"DA_IG-DA_HW", "Rnext":"DA_HW-DA_TH"},
-      "onload": "daoplayer.speak('You are now on Digby Avenue, enjoy your walk to Wollaton Hall, lets bring Stella's voice in', true);",
-      "onupdate": "if (!routes['R1'].near) { daoplayer.setScene('Start/any'); } else if (routes['Rnext'].nearest) { daoplayer.setScene('track5/TheBadGuys'); }",
+      "onload": "daoplayer.speak('Your have entered Wollaton Hall, lets continue with Stella', true);",
+       "onupdate": "if (!routes['R1'].near) { daoplayer.setScene('Start/any'); } else if (routes['Rnext'].nearest) { daoplayer.setScene('track5/TheBadGuys'); }",
       "updatePeriod":1.0,
       "tracks": [
         {
           "name": "StellaB",
           "pos": 0,
-          "volume": "sceneTime<1 ? [sceneTime,trackVolume,sceneTime+1,1] : 0"
+          "volume": "sceneTime<2 ? [sceneTime,trackVolume,sceneTime+1,1] : 1"
         },
         {
           "name": "StellaA",
-          "volume": "sceneTime<1 ? [sceneTime,trackVolume,sceneTime+1,0] : 0"  
+          "volume": "sceneTime<2 ? [sceneTime,trackVolume,sceneTime+1,0] : 0"  
         },
         {
           "name": "holdingPad",
@@ -225,7 +225,7 @@
       ]
     },
     {
-      "name": "track6/waitingForGA",
+      "name": "track6/WaitingForGA",
       "description": "this scene changes track to 'WaitingForGA' at the top of the hill on Digby Ave",
       "partial": false,
       "waypoints":{"W1":"DA_TH","W2":"LTA_LT"},
@@ -262,7 +262,7 @@
         {
           "name": "WollatonHallArriveA_Layer1",
           "pos": 0,
-          "volume": "sceneTime<4 ? [sceneTime,trackVolume,sceneTime+1,1] : 0" 
+          "volume": "sceneTime<4 ? [sceneTime,trackVolume,sceneTime+1,1] : 1" 
         },
         {
           "name": "WollatonHallArriveA_Layer2",
@@ -295,7 +295,7 @@
         },
         {
           "name": "WollatonHallArriveA_Layer2",
-          "volume": "sceneTime<3 ? [sceneTime,trackVolume,sceneTime+1,1] : 0" 
+          "volume": "sceneTime<3 ? [sceneTime,trackVolume,sceneTime+1,1] : 1" 
         },
         {
           "name": "holdingPad",
@@ -324,7 +324,7 @@
         {
           "name": "WollatonHallArriveA_Layer3a",
           "pos": 0,
-          "volume": "sceneTime<2 ? [sceneTime,trackVolume,sceneTime+1,1] : 0" 
+          "volume": "sceneTime<2 ? [sceneTime,trackVolume,sceneTime+1,1] : 1" 
         },
         {
           "name": "holdingPad",
@@ -357,7 +357,7 @@
         {
           "name": "WollatonHallArriveA_Layer3b",
           "pos": 0,
-          "volume": "sceneTime<2 ? [sceneTime,trackVolume,sceneTime+1,1] : 0" 
+          "volume": "sceneTime<2 ? [sceneTime,trackVolume,sceneTime+1,1] : 1" 
         },
         {
           "name": "holdingPad",
@@ -383,19 +383,19 @@
         {
           "name": "WollatonHallArriveB_Layer1",
           "pos": 0,
-          "volume": 1
+          "volume": "sceneTime<2 ? [sceneTime,trackVolume,sceneTime+1,1] : 1" 
         },
         {
           "name": "WollatonHallArriveA_Layer1",
-          "volume": 0 
+          "volume": "sceneTime<1 ? [sceneTime,trackVolume,sceneTime+1,0] : 0"  
         },
         {
           "name": "WollatonHallArriveA_Layer2",
-          "volume": 0 
+          "volume": "sceneTime<1 ? [sceneTime,trackVolume,sceneTime+1,0] : 0"   
         },
         {
           "name": "WollatonHallArriveA_Layer3b",
-          "volume": 0
+          "volume": "sceneTime<1 ? [sceneTime,trackVolume,sceneTime+1,0] : 0"  
         },
         {
           "name": "holdingPad",
@@ -414,7 +414,6 @@
       "tracks": [
         {
           "name": "fixedPlaylist",
-          "pos": 0,
           "volume": 1 
         },
         {
