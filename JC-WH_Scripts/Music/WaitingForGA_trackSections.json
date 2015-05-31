@@ -1,0 +1,152 @@
+{
+  "meta": {
+    "mimetype": "application/x-daoplayer-composition",
+    "version": 1,
+    "title":  "WaitingForGA_trackSections"
+  },
+  
+  "tracks": [
+    {
+      "name": "WaitingForGA",
+      "pauseIfSilent": false,
+      "files": [
+        { 
+          "path": "WaitingForGA.wav",
+          "trackPos": 0,
+          "length": 255.673
+        }
+      ],
+      "unitTime": 8.48353,
+      "sections": [
+        { "name": "intro", "trackPos": 0.0, "length":  17.90612244, "startCost": 0,
+          "next": [ {"name":"verse1","cost":0},
+          {"name":"","cost":0
+          },
+          {"name":"","cost":0}]
+        },
+        
+        { "name": "verse1", "trackPos": 17.90612245, "length":  24.38102041, "startCost": 20,
+          "next": [ {"name":"bridge1A","cost":0},
+          {"name":"","cost":0
+          },
+          {"name":"","cost":0}]
+        },  
+        
+        { "name": "bridge1A", "trackPos": 42.28714286, "length": 12.1346712, 
+          "next": [ {"name":"bridge1B","cost":0
+          },
+          {"name":"","cost":0
+          },
+          {"name":"","cost":0}]
+          },
+          
+        { "name": "bridge1B", "trackPos": 54.42181406, "length":  12.27818594, 
+          "next": [ {"name":"verse2","cost":0
+          },
+          {"name":"","cost":0
+          },
+          {"name":"","cost":0}]
+          },
+          
+          { "name": "verse2", "trackPos": 66.7, "length":  24.39333333, 
+          "next": [ {"name":"bridge2A","cost":0
+          },
+          {"name":"","cost":0
+          },
+          {"name":"","cost":0}]
+          },
+          
+        { "name": "bridge2A", "trackPos": 91.09333333, "length":  12.21260771, 
+          "next": [ {"name":"bridge2B","cost":0
+          },
+          {"name":"","cost":0
+          },
+          {"name":"","cost":0}]
+          },
+          
+        { "name": "bridge2B", "trackPos": 103.305941, "length":  12.20208617, 
+          "next": [ {"name":"chorus1A","cost":0
+        },
+          {"name":"","cost":0
+          },
+          {"name":"","cost":0}]
+        },
+        
+        { "name": "chorus1A", "trackPos": 115.5080272, "length":  12.19124717, 
+          "next": [ {"name":"chorus1B","cost":0
+        },
+          {"name":"","cost":0
+          },
+          {"name":"","cost":0}]
+        },
+        
+        { "name": "chorus1B", "trackPos": 127.6992744, "length": 12.24741497, 
+          "next": [ {"name":"verse3","cost":0
+        },
+          {"name":"","cost":0
+          },
+          {"name":"","cost":0}]
+        },
+        
+         { "name": "verse3", "trackPos": 139.9466893, "length":  24.36555556,
+          "next": [ {"name":"link","cost":0
+        },
+          {"name":"","cost":0
+          },
+          {"name":"","cost":0}]
+        },
+        
+        { "name": "link", "trackPos": 164.3122449, "length":  12.14272109, 
+          "next": [ {"name":"chorus2A","cost":0
+        },
+          {"name":"","cost":0
+          },
+          {"name":"","cost":0}]
+        },
+        
+        { "name": "chorus2A", "trackPos": 176.454966, "length":  12.23111111, 
+          "next": [ {"name":"chorus2B","cost":0
+        },
+          {"name":"","cost":0
+          },
+          {"name":"","cost":0}]
+        },
+        
+        { "name": "chorus2B", "trackPos": 188.6860771, "length":  12.2492517, 
+          "next": [ {"name":"outroA","cost":0
+        },
+          {"name":"","cost":0
+          },
+          {"name":"","cost":0}]
+        },
+        
+        { "name": "outroA", "trackPos": 200.9353288, "length":  12.13170068, 
+          "next": [ {"name":"outroB","cost":0
+        },
+          {"name":"","cost":0
+          },
+          {"name":"","cost":0}]
+        },
+        
+        { "name": "outroB", "trackPos": 213.0670295, "length":  12.21369615, 
+          "next": [ {"name":"outroFade","cost":0
+        },
+          {"name":"","cost":0
+          },
+          {"name":"","cost":0}]
+        },
+        
+        { "name": "outroFade", "trackPos": 225.2807256, "length":  30.39274376, 
+          "next": [ {"name":"end","cost":0
+        },
+          {"name":"","cost":0
+          },
+          {"name":"","cost":0}]
+        },
+        
+        { "name": "end", "trackPos": 255.6734694
+        }
+      ]
+    }
+  ]
+}
