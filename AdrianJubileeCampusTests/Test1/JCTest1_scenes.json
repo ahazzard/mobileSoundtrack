@@ -1,0 +1,48 @@
+{
+  "meta": {
+    "mimetype": "application/x-daoplayer-composition",
+    "version": 1,
+    "title":  "JCTest1_scenes"
+  },
+  
+  "scenes": [
+    {
+      "name": "start_end",
+      "waypoints":{"1":"1"},
+      "partial": false,
+       "onupdate": "if (waypoints['1'].near) { daoplayer.setScene('walk1'); }",
+      "updatePeriod":1.0,
+      "tracks": [
+        {
+          "name": "Stella",
+          "volume": 0,
+          "pos": 0
+        },
+        {
+          "name": "R3",
+          "volume": 1, 
+          "pos":  0
+        }
+      ] 
+    },
+    {
+      "name": "walk1",
+      "waypoints":{"8":"8"},
+      "description":  "walk from corner of atrium to NCL",
+      "partial": false,
+      "onupdate": "if (waypoints['8'].distance!==undefined) { window.estimatedEnd=totalTime+(waypoints['8'].distance-10)/1.5; if (waypoints['8'].near) daoplayer.setScene('start_end'); }",
+      "updatePeriod":1.0,
+      "tracks": [
+        {
+          "name": "R3",
+          "volume": 0
+        },
+        {
+          "name": "Stella",
+          "volume": 1,
+          "pos": "daoplayer.selectSections('walk1',currentSection,sceneTime,window.estimatedEnd-totalTime)"
+        }
+      ]
+    }
+  ]
+}
