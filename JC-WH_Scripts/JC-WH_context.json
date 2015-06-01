@@ -25,12 +25,12 @@
 		},
 		{
 		"name": "WR_MR",
-		"lat": 52.954898300, "lng": -1.192644200,
+		"lat": 52.954930, "lng": -1.192722,
 		"description": "Wollaton Road - left turn onto Middleton Road by roundabout"
 		},
 		{
 		"name": "PC_A",
-		"lat":52.953730000,  "lng":-1.192141300,
+		"lat":52.953761,  "lng":-1.192116,
 		"description":"Pedestrian crossing A - Middleton Blvd"
 		},
 		{
@@ -55,17 +55,17 @@
 		},
 		{
 		"name": "HR_HG",
-		"lat":52.953549000,  "lng":-1.196951900,
+		"lat":52.953520,  "lng":-1.196962,
 		"description":"Harrow Road Junction with Harrow Gardens"
 		},
 		{
 		"name": "HR_DA",
-		"lat":52.953463300,  "lng":-1.199446300,
+		"lat":52.953460,  "lng":-1.199385,
 		"description":"Harrow Road lead up to Digby Ave"
 		},
 		{
 		"name": "DA_IG",
-		"lat":52.953419700,  "lng":-1.199608600,
+		"lat":52.953409,  "lng":-1.199635,
 		"description":"Digby Ave - inside gate"
 		},
 		{
@@ -90,7 +90,7 @@
 		},
 		{
 		"name": "LTA_LT",
-		"lat":52.948969200,  "lng":-1.209475100,
+		"lat":52.949016,  "lng":1.209416,
 		"description":"Lime Tree Ave - left turn towards Wollaton Hall"
 		},
 		{
@@ -214,6 +214,13 @@
 				"nearDistance": "20"
 			},
 			{
+				"name": "J_CS-WR",
+				"description": "a route to stretch from the start location (CS building) to Wollaton Road",
+				"from": "J_CS",
+				"to": "WR",
+				"nearDistance": "20"
+			},
+			{
 				"name": "J_CP-WR",
 				"from": "J_CP",
 				"to": "WR",
@@ -265,6 +272,13 @@
 				"nearDistance": "20"
 			},
 			{
+				"name": "HR_L-HR_DA",
+				"description": "route for th whole lenggth of Harrow Rd",
+				"from": "HR_L",
+				"to":"HR_DA",
+				"nearDistance": "20"
+			},
+			{
 				"name": "HR_HG-HR_DA",
 				"from": "HR_HG",
 				"to":"HR_DA",
@@ -272,6 +286,7 @@
 			},
 			{
 				"name": "HR_DA-DA_IG",
+				"description": "for transition through gate",
 				"from": "HR_DA",
 				"to":"DA_IG",
 				"nearDistance": "20"
@@ -294,6 +309,13 @@
 				"description": "approx. half way point for stage initiation of 'The Bad Guys' to Digbey Ave and top of hill",
 				"from": "DA_HW",
 				"to":"DA_TH",
+				"nearDistance": "20"
+			},
+			{
+				"name": "DA_HW-DA_LTA",
+				"description": "alternative duration route for The bad Guys - Digbey Ave half way to junction of Dgby Rd and Limetree Av",
+				"from": "DA_HW",
+				"to":"DA_LTA",
 				"nearDistance": "20"
 			},
 			{
