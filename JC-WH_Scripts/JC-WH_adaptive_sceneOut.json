@@ -203,8 +203,8 @@
       "name": "track5/TheBadGuys",
       "description": "this scene changes track to 'TheBadGuys' approx half-way along Digby Ave",
       "partial": false,
-      "waypoints":{"W1":"DA_HW","W2":"DA_TH"},
-      "routes":{"R1":"DA_HW-DA_TH", "Rnext":"DA_TH-LTA_WH"},
+      "waypoints":{"W1":"DA_HW","W2":"DA_LTA"},
+      "routes":{"R1":"DA_HW-DA_LTA", "Rnext":"DA_LTA-LTA_LT"},
       "onload": "daoplayer.speak('Now playing The bad Guys', true);",
       "onupdate": "if (!routes['R1'].near) { daoplayer.setScene('Start/any'); } else if (routes['Rnext'].nearest) { daoplayer.setScene('track6/WaitingForGA'); }",
       "updatePeriod":1.0,
@@ -228,8 +228,8 @@
       "name": "track6/WaitingForGA",
       "description": "this scene changes track to 'WaitingForGA' at the top of the hill on Digby Ave",
       "partial": false,
-      "waypoints":{"W1":"DA_TH","W2":"LTA_LT"},
-      "routes":{"R1":"DA_TH-LTA_LT", "Rnext":"LTA_LT-LTA_WH"},
+      "waypoints":{"W1":"DA_LTA","W2":"LTA_LT"},
+      "routes":{"R1":"DA_LTA-LTA_LT", "Rnext":"LTA_LT-LTA_WH"},
       "onload": "daoplayer.speak('Now playing Waiting For G A', true);",
       "onupdate": "if (!routes['R1'].near) { daoplayer.setScene('Start/any'); } else if (routes['Rnext'].nearest) { daoplayer.setScene('WollatonHallArriveA1'); }",
       "updatePeriod":1.0,
@@ -433,7 +433,10 @@
     {
     "name": "end",
       "partial": false,
+      "waypoints":{"W1":"J_CS"},
+    
       "onload": "daoplayer.speak('You have reached the end of your walk', true); { daoplayer.setScene('end'); }",
+      "onupdate": "if (!routes['W1'].near) { daoplayer.setScene('Start/any'); }",
       "updatePeriod":1.0,
       "tracks": [
         {
