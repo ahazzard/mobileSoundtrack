@@ -1,0 +1,94 @@
+{
+  "meta": {
+    "mimetype": "application/x-daoplayer-composition",
+    "version": 1,
+    "title":  "Stella_trackSectionsFine"
+  },
+  
+  "tracks": [
+    {
+      "name": "StellaA",
+      "pauseIfSilent": true,
+      "files": [
+        { 
+          "path": "StellaA.wav",
+          "trackPos": 0.012,
+          "length": 17.159
+        }
+      ],
+      "unitTime": 7.7,
+      "sections": [
+        { "name": "intro1A", "trackPos": 0.012, "length":  8.579, "startCost": 0, "endCost": 10,
+          "next": [ {"name":"intro1B","cost":0},
+          {"name":"intro1A","cost":10
+          }]
+        },  
+        { "name": "intro1B", "trackPos": 8.580, "length":  8.580, "startCost": 100, "endCost": 0,
+          "next": [ {"name":"verse1A","cost":0
+          },
+          {"name":"intro1B","cost":10
+          }]
+        }         
+      ]
+    },
+    {
+      "name": "StellaB",
+      "pauseIfSilent": true,
+      "files": [
+        { 
+          "path": "StellaB.wav",
+          "trackPos": 0,
+          "length": 178.17
+        }
+      ],
+      "unitTime": 7.7,
+      "sections": [
+          
+        { "name": "verse1A", "trackPos": 17.171, "length":  17.148
+          },
+          
+        { "name": "verse1B", "trackPos": 34.319, "length":  12.841
+          },
+          
+        { "name": "verse2A", "trackPos": 47.160, "length":  17.148 
+          },
+          
+        { "name": "verse2B", "trackPos": 64.308, "length":  11.256 
+        },
+        
+        { "name": "intro2", "trackPos": 75.564, "length":  8.563 
+        },
+        
+        { "name": "verse3A", "trackPos": 84.127, "length":  17.154 
+        },
+        
+        { "name": "verse3B", "trackPos": 101.281, "length":  12.853 
+        },
+        
+        { "name": "verse4A", "trackPos": 114.134, "length":  17.137 
+        },
+        
+        { "name": "verse4B", "trackPos": 131.271, "length":  10.569 
+        },
+        
+        { "name": "intro3", "trackPos": 141.840, "length":  18.59
+        },
+        
+        { "name": "bridge", "trackPos": 150.439, "length":  9.442
+        },
+        
+        { "name": "outroA", "trackPos": 159.881, "length":  7.595
+        },
+        
+        { "name": "outroB", "trackPos": 167.477, "length":  8.682
+        },
+        
+        { "name": "outroC", "trackPos": 176.158, "length":  6.406
+        },
+        
+        { "name": "endChord", "trackPos": 182.564
+        }
+      ]
+    }
+  ]
+}
