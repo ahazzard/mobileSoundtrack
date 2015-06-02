@@ -1,0 +1,50 @@
+{
+  "meta": {
+    "mimetype": "application/x-daoplayer-composition",
+    "version": 1,
+    "title":  "SW1_tracks",
+    "description": "All tracks, but without any sections or costs"
+  },
+  
+  "tracks": [
+    {
+      "name": "holdingPad",
+      "pauseIfSilent": true,
+      "files": [
+        { 
+          "path": "holdingPad.wav",
+          "trackPos": 0,
+          "filePos": 0,
+          "length": 214,
+          "repeat": -1
+        }
+      ]
+    },
+    {
+      "name": "WollatonHallArriveA_Layer1",
+      "pauseIfSilent": true,
+      "files": [
+        { 
+          "path": "WollatonHallArriveA_Layer1.wav",
+          "trackPos": 0,
+          "filePos": 0,
+          "length": 118.154,
+          "repeat": -1
+        }
+      ]
+    },
+    {
+      "name": "WollatonHallArriveA_Layer2",
+      "pauseIfSilent": true,
+      "files": [
+        { 
+          "path": "WollatonHallArriveA_Layer2.wav",
+          "trackPos": 0,
+          "filePos": 0,
+          "length": 118.154,
+          "repeat": -1
+        }
+      ]
+    }
+  ]
+}
