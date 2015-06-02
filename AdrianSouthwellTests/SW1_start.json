@@ -1,0 +1,45 @@
+{
+  "meta": {
+    "mimetype": "application/x-daoplayer-composition",
+    "version": 1,
+    "title": "SW1_start",
+    "description" : "start file for JCTest_3_start"
+  },
+  "defaultScene": "Start",
+  "scenes": [
+    {
+      "name": "Start",
+      "waypoints":{},
+      "routes":{},
+      "partial": false,
+      "onload": "window.lastGpsWarning=totalTime; daoplayer.speak('Waiting for G P S.',true);",
+      "onupdate": "if (activity!=null && activity!='NOGPS') { daoplayer.speak('OK.',true); daoplayer.setScene('Start/any'); } else if (totalTime-window.lastGpsWarning>10) { window.lastGpsWarning=totalTime; daoplayer.speak('Waiting for G P S.', true); }",
+      "updatePeriod":1.0,
+      "description": "wait for gps",
+      "tracks": [
+        {
+          "name": "holdingPad",
+          "volume": 1,
+          "pos": 0
+        }
+      ]
+    },
+    {
+      "name": "Start/any",
+      "partial": false,
+      "waypoints":{},
+      "onload": "window.lastWarning=(-10);",
+      "onupdate": "if (routes['1-2'].nearest) { daoplayer.setScene('track1/TheBadGuys'); } else if (routes['2-3'].nearest) { daoplayer.setScene('WollatonHallArriveA1'); } else if (routes['3-4'].nearest) { daoplayer.setScene('track3/Stella'); } else if (routes['4-5'].nearest) { daoplayer.setScene('track4/TheBadGuys'); } else if (routes['5-6'].nearest) { daoplayer.setScene('track5/Stella'); } else if (routes['6-2'].nearest) { daoplayer.setScene('track6/TheBadGuys'); } else if (routes['2-1'].nearest) { daoplayer.setScene('track7/Stella');} else if (activity=='NOGPS') { daoplayer.setScene('Start'); } else if (totalTime-window.lastWarning>20) { window.lastWarning=totalTime; daoplayer.speak('Music will continue when GPS reports you are near the route', false); }",
+      "updatePeriod":1.0,
+      "description": "where are we??",
+      "tracks": [
+        {
+          "name": "holdingPad",
+          "volume": 1
+        }
+      ]
+    }
+  ]
+}
+
+  
