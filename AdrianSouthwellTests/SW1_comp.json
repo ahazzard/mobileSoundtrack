@@ -1,0 +1,22 @@
+{
+  "meta": {
+    "mimetype": "application/x-daoplayer-composition",
+    "version": 1,
+    "title":  "SW1_comp"
+  },
+  
+  "merge": [
+    "_SW1_context.json",
+    "_SW1_TheBadGuys1_track.json",
+    "_SW1_TheBadGuys2_track.json",
+    "_SW1_TheBadGuys3_track.json",
+    "_SW1_Stella1_track.json",
+    "_SW1_Stella2_track.json",
+    "_SW1_Stella3_track.json",
+    "_SW1_tracks.json",
+    "_SW1_start.json",
+    "_SW1_adaptive_scene.json"
+    
+  ],
+  "defaultScene": "Start"
+}
