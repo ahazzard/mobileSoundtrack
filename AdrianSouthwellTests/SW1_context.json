@@ -1,0 +1,90 @@
+{
+  "meta": {
+    "mimetype": "application/x-daoplayer-composition",
+    "version": 1,
+    "title": "Southwell test_context",
+    "description": "waypoints and routes for Jubilee Campus to Wollaton Hall and back"
+  },
+  "context": {
+    "waypoints": [
+		{
+		"name": "1",
+		"lat": 53.076639700, 	"lng": -0.958227200,
+		"description": "Lowes wong and dunelm",
+		"origin": true
+		},
+		{
+		"name": "2",
+		"lat":53.076304600,  "lng":-0.957017500, 
+		"description":"lowes wong and westgate"
+		},
+		{
+		"name": "3",
+		"lat": 53.076037900, "lng": -0.957170400,
+		"description": "westgate and path"
+		},
+		{
+		"name": "4",
+		"lat": 53.075233000, "lng": -0.956057300,
+		"description": "path and park"
+		},
+		{
+		"name": "5",
+		"lat":53.076346500,  "lng":-0.955268700,
+		"description":"bishops drive"
+		},
+		{
+		"name": "6",
+		"lat":53.076784800,  "lng":-0.956408700,
+		"description":"bishops drive and westgate"
+		}
+    ],
+    
+    "routes": [
+			{
+				"name": "1-2",
+				"description": "Outward route",
+				"from": "1",
+				"to": "2",
+				"nearDistance": "20"
+			},
+			{
+				"name": "2-3",
+			
+				"from": "2",
+				"to": "3",
+				"nearDistance": "20"
+			},
+			{
+				"name": "3-4",
+				"from": "3",
+				"to": "4",
+				"nearDistance": "20"
+			},
+			{
+				"name": "4-5",
+				"from": "4",
+				"to": "5",
+				"nearDistance": "20"
+			},
+			{
+				"name": "5-6",
+				"from": "5",
+				"to": "6",
+				"nearDistance": "20"
+			},
+			{
+				"name": "6-2",
+				"from": "6",
+				"to": "2",
+				"nearDistance": "20"
+			},
+			{
+				"name": "2-1",
+				"from": "2",
+				"to": "1",
+				"nearDistance": "20"
+			}
+		]	
+  }
+}
