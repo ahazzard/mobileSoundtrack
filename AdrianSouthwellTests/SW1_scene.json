@@ -1,0 +1,192 @@
+{
+  "meta": {
+    "mimetype": "application/x-daoplayer-composition",
+    "version": 1,
+    "title": "SW1_Outward_scene",
+    "description" : "Scene for the adaptive tracks when used on the outward leg of walk (JC to WH)"
+  },
+  "scenes": [
+    {
+      "name": "track1/TheBadGuys",
+      "description": "first track, starts at CS building on Jubilee campus",
+      "partial": false,
+      "waypoints":{"W1":"1","W2":"2"},
+      "routes":{"R1":"1-2", "Rnext":"2-3"},
+      "onload": "daoplayer.speak('The bad Guys', true); if (waypoints['W2'].distance!==undefined) window.estimatedEnd=totalTime+(waypoints['W2'].distance)/1.5; else window.estimatedEnd=254;",
+      "onupdate": "if (!routes['R1'].near) { daoplayer.setScene('Start/any'); } else if (routes['Rnext'].nearest) { daoplayer.setScene('WollatonHallArriveA1'); } else if (waypoints['W2'].distance!==undefined) window.estimatedEnd=totalTime+(waypoints['W2'].distance)/1.5; ",
+      "updatePeriod":1.0,
+      "tracks": [
+        {
+          "name": "TheBadGuys1",
+          "pos": "daoplayer.selectSections('TheBadGuys1',currentSection,sceneTime,window.estimatedEnd-totalTime,totalTime)",
+          "volume": 1 
+        },
+        {
+          "name": "holdingPad",
+          "volume": "sceneTime<2 ? [sceneTime,trackVolume,sceneTime+1,0] : 0" 
+        }
+      ]
+    },
+    {
+      "name": "WollatonHallArriveA1",
+      "description": "this scene changes to the first layer of Wollaton Hall arrival music when approaching",
+      "partial": false,
+      "waypoints":{"W1":"2","W2":"3"},
+      "routes":{"R1":"2-3", "Rnext":"3-4"},
+      "onload": "daoplayer.speak('track2', true);",
+      "onupdate": "if (!routes['R1'].near) { daoplayer.setScene('Start/any'); } else if (routes['Rnext'].nearest) { daoplayer.setScene('track3/Stella'); }",
+      "updatePeriod":1.0,
+      "tracks": [
+        {
+          "name": "WollatonHallArriveA_Layer1",
+          "pos": 0,
+          "volume": "sceneTime<4 ? [sceneTime,trackVolume,sceneTime+1,1] : 1" 
+        },
+        {
+          "name": "WollatonHallArriveA_Layer2",
+          "pos": 0,
+          "volume": "sceneTime<4 ? [sceneTime,trackVolume,sceneTime+1,1] : 1" 
+        },
+        {
+          "name": "TheBadGuys1",
+          "volume": "sceneTime<2 ? [sceneTime,trackVolume,sceneTime+1,0] : 0" 
+        },
+        {
+          "name": "holdingPad",
+          "volume": "sceneTime<2 ? [sceneTime,trackVolume,sceneTime+1,0] : 0" 
+        }
+      ]
+    },
+    {
+      "name": "track3/Stella",
+      "description": "this scene changes track to 'StellaA' which just loops the intro of Stella for the peiod that people negotiatet he gate into Digby Ave",
+      "partial": false,
+      "waypoints":{"W1":"3","W2":"4"},
+      "routes":{"R1":"3-4", "Rnext":"4-5"},
+      "onload": "daoplayer.speak('now playing Stella', true); if (waypoints['W2'].distance!==undefined) window.estimatedEnd=totalTime+(waypoints['W2'].distance)/1.5; else window.estimatedEnd=195;",
+      "onupdate": "if (!routes['R1'].near) { daoplayer.setScene('Start/any'); } else if (routes['Rnext'].nearest) { daoplayer.setScene('track4/TheBadGuys'); } else if (waypoints['W2'].distance!==undefined) window.estimatedEnd=totalTime+(waypoints['W2'].distance)/1.5; ",
+      "updatePeriod":1.0,
+      "tracks": [
+        {
+          "name": "Stella1",
+          "pos": "daoplayer.selectSections('Stella1',currentSection,sceneTime,window.estimatedEnd-totalTime,totalTime)",
+          "volume": 1
+        },
+        {
+          "name": "WollatonHallArriveA_Layer1",
+          "pos": 0,
+          "volume": "sceneTime<4 ? [sceneTime,trackVolume,sceneTime+1,0] : 0" 
+        },
+        {
+          "name": "WollatonHallArriveA_Layer2",
+          "pos": 0,
+          "volume": "sceneTime<4 ? [sceneTime,trackVolume,sceneTime+1,0] : 0" 
+        },
+        {
+          "name": "holdingPad",
+          "volume": "sceneTime<2 ? [sceneTime,trackVolume,sceneTime+1,0] : 0" 
+        }
+      ]
+    },
+    {
+      "name": "track4/TheBadGuys",
+      "description": "this scene changes track to 'TheBadGuys' approx half-way along Digby Ave",
+      "partial": false,
+      "waypoints":{"W1":"4","W2":"5"},
+      "routes":{"R1":"4-5", "Rnext":"5-6"},
+      "onload": "daoplayer.speak('now playing The Bad Guys', true); if (waypoints['W2'].distance!==undefined) window.estimatedEnd=totalTime+(waypoints['W2'].distance)/1.5; else window.estimatedEnd=60;",
+      "onupdate": "if (!routes['R1'].near) { daoplayer.setScene('Start/any'); } if (routes['Rnext'].nearest) { daoplayer.setScene('track5/Stella'); } else if (waypoints['W2'].distance!==undefined) window.estimatedEnd=totalTime+(waypoints['W2'].distance)/1.5; ",
+      "updatePeriod":1.0,
+      "tracks": [
+        {
+          "name": "TheBadGuys2",
+          "pos": "daoplayer.selectSections('TheBadGuys2',currentSection,sceneTime,window.estimatedEnd-totalTime,totalTime)",
+          "volume": 1 
+        },
+        {
+          "name": "Stella1",
+          "volume": "sceneTime<2 ? [sceneTime,trackVolume,sceneTime+1,0] : 0"
+        },
+        {
+          "name": "holdingPad",
+          "volume": "sceneTime<2 ? [sceneTime,trackVolume,sceneTime+1,0] : 0" 
+        }
+      ]
+    },
+    {
+      "name": "track5/Stella",
+      "description": "this scene changes track to 'WaitingForGA' at the top of the hill on Digby Ave",
+      "partial": false,
+      "waypoints":{"W1":"5","W2":"6"},
+      "routes":{"R1":"5-6", "Rnext":"6-2"},
+      "onload": "daoplayer.speak('now playing Stella', true); if (waypoints['W2'].distance!==undefined) window.estimatedEnd=totalTime+(waypoints['W2'].distance)/1.5; else window.estimatedEnd=60;",
+      "onupdate": "if (!routes['R1'].near) { daoplayer.setScene('Start/any'); } else if (routes['Rnext'].nearest) { daoplayer.setScene('track6/TheBadGuys'); } else if (waypoints['W2'].distance!==undefined) window.estimatedEnd=totalTime+(waypoints['W2'].distance)/1.5; ",
+      "updatePeriod":1.0,
+      "tracks": [
+        {
+          "name": "Stella2",
+          "pos": "daoplayer.selectSections('Stella2',currentSection,sceneTime,window.estimatedEnd-totalTime,totalTime)",
+          "volume": 1 
+        },
+        {
+          "name": "TheBadGuys2",
+          "volume": "sceneTime<2 ? [sceneTime,trackVolume,sceneTime+1,0] : 0"
+        },
+        {
+          "name": "holdingPad",
+          "volume": "sceneTime<2 ? [sceneTime,trackVolume,sceneTime+1,0] : 0" 
+        }
+      ]
+    },
+    {
+      "name": "track6/TheBadGuys",
+      "description": "this scene changes to the first layer of Wollaton Hall arrival music when approaching",
+      "partial": false,
+      "waypoints":{"W1":"6","W2":"2"},
+      "routes":{"R1":"6-2", "Rnext":"2-1"},
+      "onload": "daoplayer.speak('now playing The Bad Guys', true); if (waypoints['W2'].distance!==undefined) window.estimatedEnd=totalTime+(waypoints['W2'].distance)/1.5; else window.estimatedEnd=386.6877;",
+      "onupdate": "if (!routes['R1'].near) { daoplayer.setScene('Start/any'); } else if (routes['Rnext'].nearest) { daoplayer.setScene('track7/Stella'); } else if (waypoints['W2'].distance!==undefined) window.estimatedEnd=totalTime+(waypoints['W2'].distance)/1.5; ",
+      "updatePeriod":1.0,
+      "tracks": [
+        {
+          "name": "TheBadGuys3",
+          "pos": "daoplayer.selectSections('TheBadGuys3',currentSection,sceneTime,window.estimatedEnd-totalTime,totalTime)",
+          "volume": "sceneTime<4 ? [sceneTime,trackVolume,sceneTime+1,1] : 1" 
+        },
+        {
+          "name": "Stella2",
+          "volume": "sceneTime<2 ? [sceneTime,trackVolume,sceneTime+1,0] : 0"
+        },
+        {
+          "name": "holdingPad",
+          "volume": "sceneTime<2 ? [sceneTime,trackVolume,sceneTime+1,0] : 0" 
+        }
+      ]
+    },
+    {
+      "name": "track7/Stella",
+      "description": "this scene changes track to 'WaitingForGA' at the top of the hill on Digby Ave",
+      "partial": false,
+      "waypoints":{"W1":"2","W2":"1"},
+      "routes":{"R1":"2-1"},
+       "onload": "daoplayer.speak('now playing Stella', true); if (waypoints['W2'].distance!==undefined) window.estimatedEnd=totalTime+(waypoints['W2'].distance)/1.5; else window.estimatedEnd=346.5;",
+      "onupdate": "if (!routes['R1'].near) { daoplayer.setScene('Start/any'); } else if (waypoints['W2'].distance!==undefined) window.estimatedEnd=totalTime+(waypoints['W2'].distance)/1.5; ",
+      "updatePeriod":1.0,
+      "tracks": [
+        {
+          "name": "Stella3",
+          "pos": "daoplayer.selectSections('Stella3',currentSection,sceneTime,window.estimatedEnd-totalTime,totalTime)",
+          "volume": 1 
+        },
+        {
+          "name": "TheBadGuys3",
+          "volume": "sceneTime<2 ? [sceneTime,trackVolume,sceneTime+1,0] : 0"
+        },
+        {
+          "name": "holdingPad",
+          "volume": "sceneTime<2 ? [sceneTime,trackVolume,sceneTime+1,0] : 0" 
+        }
+      ]
+    }
+  ]
+}
