@@ -1,0 +1,130 @@
+{
+  "meta": {
+    "mimetype": "application/x-daoplayer-composition",
+    "version": 1,
+    "title":  "TheBadGuys_trackSections"
+  },
+  
+  "tracks": [
+    {
+      "name": "TheBadGuys3",
+      "pauseIfSilent": true,
+      "files": [
+        { 
+          "path": "TheBadGuys.wav",
+          "trackPos": 0,
+          "length": 254.539
+        }
+      ],
+      
+      "unitTime": 8.59306,
+      "sections": [
+        { "name": "introA", "trackPos": 0.0, "length":  7.828571428, "startCost": 0, 
+          "next": [ {"name":"introB","cost":0},
+          {"name":"introA","cost":0
+          },
+          {"name":"introC","cost":0}]
+        },
+        
+        { "name": "introB", "trackPos": 7.828571428, "length":  7.749886621,
+          "next": [ {"name":"introC","cost":0},
+          {"name":"introB","cost":0
+          },
+          {"name":"introD","cost":0}]
+        },
+        
+        { "name": "introC", "trackPos": 15.57845805, "length":  7.49920635, "startCost": 100,
+          "next": [ {"name":"introD","cost":0},
+          {"name":"introC","cost":0
+          },
+          {"name":"verse1","cost":0}]
+        },
+        
+        { "name": "introD", "trackPos": 23.0776644, "length":  7.095578231, 
+          "next": [ {"name":"verse1","cost":0},
+          {"name":"introD","cost":0
+          },
+          {"name":"verse2","cost":0}]
+        },
+        
+        { "name": "verse1", "trackPos": 30.17324263, "length":  29.10947846, "startCost": 500,
+          "next": [ {"name":"verse2","cost":0},
+          {"name":"verse1","cost":0
+          },
+          {"name":"link1","cost":0}]
+        },  
+        
+        { "name": "verse2", "trackPos": 59.28272109, "length":29.85578231
+, 
+          "next": [ {"name":"link1","cost":0
+          },
+          {"name":"verse2","cost":0
+          },
+          {"name":"chorus1","cost":0}]
+          },
+          
+        { "name": "link1", "trackPos": 89.1385034, "length":  7.61632653, 
+          "next": [ {"name":"chorus1","cost":0
+          },
+          {"name":"link1","cost":0
+          },
+          {"name":"verse3","cost":0}]
+          },
+          
+          { "name": "chorus1", "trackPos": 96.75482993, "length":  29.29244898, 
+          "next": [ {"name":"verse3","cost":0
+          },
+          {"name":"chorus1","cost":0
+          },
+          {"name":"link2","cost":0}]
+          },
+          
+        { "name": "verse3", "trackPos": 126.0472789, "length":  30.02301587
+, 
+          "next": [ {"name":"link2","cost":0
+          },
+          {"name":"verse3","cost":0
+          },
+          {"name":"chorus2","cost":0}]
+          },
+          
+        { "name": "link2", "trackPos": 156.0702948, "length":  7.590997733, 
+          "next": [ {"name":"chorus2","cost":0
+        },
+          {"name":"link2","cost":0
+          },
+          {"name":"chorus3","cost":0}]
+        },
+        
+        { "name": "chorus2", "trackPos": 163.6612925, "length":  29.13108844, "endCost": 1000,
+          "next": [ {"name":"chorus3","cost":0
+        },
+          {"name":"introA","cost":0},{"name":"introC","cost":0},{"name":"link1","cost":0},{"name":"chorus2","cost":0
+          },
+          {"name":"coda","cost":0}]
+        },
+        
+        { "name": "chorus3", "trackPos": 192.792381, "length": 29.20433107, "endCost": 100,
+          "next": [ {"name":"coda","cost":0
+        },
+          {"name":"introA","cost":0},{"name":"introC","cost":0},{"name":"link1","cost":0},{"name":"chorus2","cost":0
+          },
+          {"name":"finalChord","cost":0}]
+        },
+        
+         { "name": "coda", "trackPos": 221.996712, "length":  15.55503401, "endCost": 0,
+          "next": [ {"name":"finalChord","cost":0
+        }]
+          },
+        
+        { "name": "finalChord", "trackPos": 237.551746, "length":  16.8460771, "endCost": 100,
+          "next": [ {"name":"end","cost":0
+        }]
+          
+        },
+        { "name": "end", "trackPos": 254.3978231
+        }
+      ]
+    }
+  ]
+}
