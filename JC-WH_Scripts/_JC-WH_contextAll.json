@@ -215,7 +215,7 @@
 			},
 			{
 				"name": "J_CS-WR",
-				"description": "a route to stretch from the start location (CS building) to Wollaton Road",
+				"description": "Scene track1/MitaDelMondo",
 				"from": "J_CS",
 				"to": "WR",
 				"nearDistance": "20"
@@ -228,6 +228,7 @@
 			},
 			{
 				"name": "WR-PC_A",
+				"description": "Scene track2A/SisterCities",
 				"from": "WR",
 				"to": "PC_A",
 				"nearDistance": "20"
@@ -259,7 +260,7 @@
 			},
 			{
 				"name": "PC_A-HR_L",
-				"description": "Pedestrian crossing on Middleton Road to Enterance to harrow Road - does not engage with inbteween waypoitns at crossing",
+				"description": "Scene track2B/SisterCities",
 				"from": "PC_A",
 				"to":"HR_L",
 				"nearDistance": "20"
@@ -273,7 +274,7 @@
 			},
 			{
 				"name": "HR_L-HR_DA",
-				"description": "route for th whole lenggth of Harrow Rd",
+				"description": "Scene track3/NotAlone",
 				"from": "HR_L",
 				"to":"HR_DA",
 				"nearDistance": "20"
@@ -286,7 +287,7 @@
 			},
 			{
 				"name": "HR_DA-DA_IG",
-				"description": "for transition through gate",
+				"description": "Scene track4A/Stella",
 				"from": "HR_DA",
 				"to":"DA_IG",
 				"nearDistance": "20"
@@ -299,7 +300,7 @@
 			},
 			{
 				"name": "DA_IG-DA_HW",
-				"description": "approx. half way point for transition drom stella to 'The Bad Guys'",
+				"description": "Scene track4B/Stella",
 				"from": "DA_IG",
 				"to":"DA_HW",
 				"nearDistance": "20"
@@ -313,7 +314,7 @@
 			},
 			{
 				"name": "DA_HW-DA_LTA",
-				"description": "alternative duration route for The bad Guys - Digbey Ave half way to junction of Dgby Rd and Limetree Av",
+				"description": "Scene track5/TheBadGuys",
 				"from": "DA_HW",
 				"to":"DA_LTA",
 				"nearDistance": "20"
@@ -332,33 +333,35 @@
 			},
 			{
 				"name": "DA_LTA-LTA_LT",
+				"description": "Scene track6/WaitingForGA - Digby Av. to Lime Tree Av left turn",
 				"from": "DA_LTA",
 				"to":"LTA_LT",
 				"nearDistance": "20"
 			},
 			{
 				"name": "LTA_LT-LTA_WH",
+				"description": "Scene WollatonHallArriveA1",
 				"from": "LTA_LT",
 				"to":"LTA_WH",
 				"nearDistance": "20"
 			},
 			{
 				"name": "LTA_WH-LTA_WHa",
-				"description": "to use an approach zone for Wollaton hall music - auxiliary",
+				"description": "Scene WollatonHallArriveA2",
 				"from": "LTA_WH",
 				"to":"LTA_WHa",
 				"nearDistance": "20"
 			},
 			{
 				"name": "LTA_WHa-LTA_WHb",
-				"description": "to use an approach zone for Wollaton hall music - auxiliary",
+				"description": "Scene WollatonHallArriveA3",
 				"from": "LTA_WHa",
 				"to":"LTA_WHb",
 				"nearDistance": "20"
 			},
 			{
 				"name": "LTA_WHb-WH",
-				"description": "to use an approach zone for Wollaton hall music - auxiliary",
+				"description": "Scene WollatonHallArriveA4",
 				"from": "LTA_WHb",
 				"to":"WH",
 				"nearDistance": "20"
@@ -369,6 +372,13 @@
 				"to":"WH",
 				"nearDistance": "20"
 			},
+			{
+				"name": "WH_EP-J_CS",
+				"description": "Scene fixedPlaylistIn",
+				"from": "WH_EP",
+				"to": "J_CS",
+				"nearDistance": "20"
+	  		},
 			{
 				"name": "J_CS-LTA_LT",
 				"description": "route for fixed playlist on outward leg of walk",
@@ -480,14 +490,7 @@
 			"from": "JC_WF",
 			"to": "JC_AB",
 			"nearDistance": "20"
-			},
-			{
-			"name": "WH_EP-J_CS",
-			"description": "route for fixed playlist on return leg of walk",
-			"from": "WH_EP",
-			"to": "J_CS",
-			"nearDistance": "20"
-	  	}
+			}
     ]
   }
 }
