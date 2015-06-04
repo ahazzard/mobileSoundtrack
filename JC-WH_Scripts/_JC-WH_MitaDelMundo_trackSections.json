@@ -2,16 +2,16 @@
   "meta": {
     "mimetype": "application/x-daoplayer-composition",
     "version": 1,
-    "title":  "MitaDelMondo_trackSections"
+    "title":  "MitaDelMundo_trackSections"
   },
   
   "tracks": [
     {
-      "name": "MitaDelMondo",
+      "name": "MitaDelMundo",
       "pauseIfSilent": true,
       "files": [
         { 
-          "path": "MitaDelMondo.wav",
+          "path": "MitaDelMundo.wav",
           "filePos": 0,
           "trackPos": 0,
           "length": 181.232
