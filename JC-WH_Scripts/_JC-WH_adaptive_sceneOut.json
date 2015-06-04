@@ -7,18 +7,18 @@
   },
   "scenes": [
     {
-      "name": "track1/MitaDelMundo",
+      "name": "track1/MitaDelMondo",
       "description": "first track, starts at CS building on Jubilee campus",
       "partial": false,
       "waypoints":{"W1":"J_CS","W2":"WR"},
       "routes":{"R1":"J_CS-WR", "Rnext":"WR-PC_A"},
-      "onload": "daoplayer.speak('Starting your walk, now playing Mita Del Mondo', true);",
-      "onupdate": "if (!routes['R1'].near) { daoplayer.setScene('Start/any'); } else if (routes['Rnext'].nearest) { daoplayer.setScene('track2A/SisterCities'); }",
+      "onload": "daoplayer.speak('Mita Del Mundo', true); if (waypoints['W2'].distance!==undefined) window.estimatedEnd=totalTime+(waypoints['W2'].distance)/1.5; else window.estimatedEnd=170;",
+      "onupdate": "if (!routes['R1'].near) { daoplayer.setScene('Start/any'); } else if (routes['Rnext'].nearest) { daoplayer.setScene('track2A/SisterCities'); } else if (waypoints['W2'].distance!==undefined) window.estimatedEnd=totalTime+(waypoints['W2'].distance)/1.5; ",
       "updatePeriod":1.0,
       "tracks": [
         {
-          "name": "MitaDelMundo",
-          "pos": 0,
+          "name": "MitaDelMondo",
+          "pos": "daoplayer.selectSections('MitaDelMondo',currentSection,sceneTime,window.estimatedEnd-totalTime,totalTime)",
           "volume": 1 
         },
         {
@@ -33,37 +33,37 @@
       "partial": false,
       "waypoints":{"W1":"WR","W2":"PC_A"},
       "routes":{"R1":"WR-PC_A", "Rnext":"PC_A-HR_L"},
-      "onload": "daoplayer.speak('Turning left onto Wollaton Road, now playing Sister Cities', true);",
-      "onupdate": "if (!routes['R1'].near) { daoplayer.setScene('Start/any'); } else if (routes['Rnext'].nearest) { daoplayer.setScene('track2B/SisterCities'); }",
+      "onload": "daoplayer.speak('Sister Cities', true); if (waypoints['W2'].distance!==undefined) window.estimatedEnd=totalTime+(waypoints['W2'].distance)/1.5; else window.estimatedEnd=180;",
+      "onupdate": "if (!routes['R1'].near) { daoplayer.setScene('Start/any'); } else if (routes['Rnext'].nearest) { daoplayer.setScene('track2B/SisterCities'); } else if (waypoints['W2'].distance!==undefined) window.estimatedEnd=totalTime+(waypoints['W2'].distance)/1.5; ",
       "updatePeriod":1.0,
       "tracks": [
         {
           "name": "SisterCities_Drums",
-          "pos": 0,
+          "pos": "daoplayer.selectSections('SisterCities_Drums',currentSection,sceneTime,window.estimatedEnd-totalTime,totalTime)",
           "volume": 1 
         },
         {
           "name": "SisterCities_Bass",
-          "pos": 0,
+          "pos": "daoplayer.selectSections('SisterCities_Drums',currentSection,sceneTime,window.estimatedEnd-totalTime,totalTime)",
           "volume": 1 
         },
         {
           "name": "SisterCities_Guitars",
-          "pos": 0,
+          "pos": "daoplayer.selectSections('SisterCities_Drums',currentSection,sceneTime,window.estimatedEnd-totalTime,totalTime)",
           "volume": 1 
         },
         {
           "name": "SisterCities_AcousticKeys",
-          "pos": 0,
+          "pos": "daoplayer.selectSections('SisterCities_Drums',currentSection,sceneTime,window.estimatedEnd-totalTime,totalTime)",
           "volume": 1 
         },
         {
           "name": "SisterCities_Vox",
-          "pos": 0,
+          "pos": "daoplayer.selectSections('SisterCities_Drums',currentSection,sceneTime,window.estimatedEnd-totalTime,totalTime)",
           "volume": 1 
         },
         {
-          "name": "MitaDelMundo",
+          "name": "MitaDelMondo",
           "volume": "sceneTime<2 ? [sceneTime,trackVolume,sceneTime+1,0] : 0" 
         },
         {
@@ -78,29 +78,35 @@
       "partial": false,
       "waypoints":{"W1":"PC_A","W2":"HR_L"},
       "routes":{"R1":"PC_A-HR_L", "Rnext":"HR_L-HR_DA"},
-      "onload": "daoplayer.speak('Crossing the road, lets lower the music', true);",
-      "onupdate": "if (!routes['R1'].near) { daoplayer.setScene('Start/any'); } else if (routes['Rnext'].nearest) { daoplayer.setScene('track3/NotAlone'); }",
+      "onload": "daoplayer.speak('Lets thin out Sister Cities', true); if (waypoints['W2'].distance!==undefined) window.estimatedEnd=totalTime+(waypoints['W2'].distance)/1.5; else window.estimatedEnd=80;",
+      "onupdate": "if (!routes['R1'].near) { daoplayer.setScene('Start/any'); } else if (routes['Rnext'].nearest) { daoplayer.setScene('track3/NotAlone'); } else if (waypoints['W2'].distance!==undefined) window.estimatedEnd=totalTime+(waypoints['W2'].distance)/1.5; ",
       "updatePeriod":1.0,
       "tracks": [
         {
           "name": "SisterCities_Drums",
+          "pos": "daoplayer.selectSections('SisterCities_Drums',currentSection,sceneTime,window.estimatedEnd-totalTime,totalTime)",
           "volume": "sceneTime<2 ? [sceneTime,trackVolume,sceneTime+1,0] : 0" 
         },
         {
           "name": "SisterCities_Bass",
+          "pos": "daoplayer.selectSections('SisterCities_Drums',currentSection,sceneTime,window.estimatedEnd-totalTime,totalTime)",
           "volume": 1 
         },
         {
           "name": "SisterCities_Guitars",
+          "pos": "daoplayer.selectSections('SisterCities_Drums',currentSection,sceneTime,window.estimatedEnd-totalTime,totalTime)",
           "volume": "sceneTime<2 ? [sceneTime,trackVolume,sceneTime+1,0] : 0" 
         },
         {
           "name": "SisterCities_AcousticKeys",
+          "pos": "daoplayer.selectSections('SisterCities_Drums',currentSection,sceneTime,window.estimatedEnd-totalTime,totalTime)",
           "volume": 1 
         },
         {
           "name": "SisterCities_Vox",
+          "pos": "daoplayer.selectSections('SisterCities_Drums',currentSection,sceneTime,window.estimatedEnd-totalTime,totalTime)",
           "volume": "sceneTime<2 ? [sceneTime,trackVolume,sceneTime+1,0] : 0" 
+          
         },
         {
           "name": "holdingPad",
@@ -114,14 +120,14 @@
       "partial": false,
       "waypoints":{"W1":"HR_L","W2":"HR_DA"},
       "routes":{"R1":"HR_L-HR_DA", "Rnext":"HR_DA-DA_IG"},
-      "onload": "daoplayer.speak('Turning left onto Harrow Road, now playing Not Alone', true);",
-      "onupdate": "if (!routes['R1'].near) { daoplayer.setScene('Start/any'); } else if (routes['Rnext'].nearest) { daoplayer.setScene('track4A/Stella'); }",
+      "onload": "daoplayer.speak('Not Alone', true); if (waypoints['W2'].distance!==undefined) window.estimatedEnd=totalTime+(waypoints['W2'].distance)/1.5; else window.estimatedEnd=315;",
+      "onupdate": "if (!routes['R1'].near) { daoplayer.setScene('Start/any'); } else if (routes['Rnext'].nearest) { daoplayer.setScene('track4A/Stella'); } else if (waypoints['W2'].distance!==undefined) window.estimatedEnd=totalTime+(waypoints['W2'].distance)/1.5; ",
       "updatePeriod":1.0,
       "tracks": [
         {
           "name": "NotAlone",
-          "pos": 0,
-          "volume": 1 
+          "pos": "daoplayer.selectSections('NotAlone',currentSection,sceneTime,window.estimatedEnd-totalTime,totalTime)",
+          "volume": "sceneTime<2 ? [sceneTime,trackVolume,sceneTime+1,1] : 1"  
         },
         {
           "name": "SisterCities_Drums",
@@ -155,13 +161,13 @@
       "partial": false,
       "waypoints":{"W1":"HR_DA","W2":"DA_IG"},
       "routes":{"R1":"HR_DA-DA_IG", "Rnext":"DA_IG-DA_HW"},
-      "onload": "daoplayer.speak('Your are about to enter the gate in Wollaton Hall, now playing Stella', true);",
-      "onupdate": "if (!routes['R1'].near) { daoplayer.setScene('Start/any'); } else if (routes['Rnext'].nearest) { daoplayer.setScene('track4B/Stella'); }",
+      "onload": "daoplayer.speak('Stella intro', true); if (waypoints['W2'].distance!==undefined) window.estimatedEnd=totalTime+(waypoints['W2'].distance)/1.5; else window.estimatedEnd=15;",
+      "onupdate": "if (!routes['R1'].near) { daoplayer.setScene('Start/any'); } else if (routes['Rnext'].nearest) { daoplayer.setScene('track4B/Stella'); } else if (waypoints['W2'].distance!==undefined) window.estimatedEnd=totalTime+(waypoints['W2'].distance)/1.5; ",
       "updatePeriod":1.0,
       "tracks": [
         {
           "name": "StellaA",
-          "pos": 0,
+          "pos": "daoplayer.selectSections('StellaA',currentSection,sceneTime,window.estimatedEnd-totalTime,totalTime)",
           "volume": "sceneTime<2 ? [sceneTime,trackVolume,sceneTime+1,1] : 1"
         },
         {
@@ -179,19 +185,19 @@
       "description": "this scene changes track to 'StellaB' ",
       "partial": false,
       "waypoints":{"W1":"DA_IG","W2":"DA_HW"},
-      "routes":{"R1":"DA_IG-DA_HW", "Rnext":"DA_HW-DA_TH"},
-      "onload": "daoplayer.speak('Your have entered Wollaton Hall, lets continue with Stella', true);",
-       "onupdate": "if (!routes['R1'].near) { daoplayer.setScene('Start/any'); } else if (routes['Rnext'].nearest) { daoplayer.setScene('track5/TheBadGuys'); }",
+      "routes":{"R1":"DA_IG-DA_HW", "Rnext":"DA_HW-DA_LTA"},
+      "onload": "daoplayer.speak('Stella vocals', true); if (waypoints['W2'].distance!==undefined) window.estimatedEnd=totalTime+(waypoints['W2'].distance)/1.5; else window.estimatedEnd=180;",
+      "onupdate": "if (!routes['R1'].near) { daoplayer.setScene('Start/any'); } else if (routes['Rnext'].nearest) { daoplayer.setScene('track5/TheBadGuys'); } else if (waypoints['W2'].distance!==undefined) window.estimatedEnd=totalTime+(waypoints['W2'].distance)/1.5; ",
       "updatePeriod":1.0,
       "tracks": [
         {
           "name": "StellaB",
-          "pos": 0,
-          "volume": "sceneTime<2 ? [sceneTime,trackVolume,sceneTime+1,1] : 1"
+          "pos": "daoplayer.selectSections('StellaB',currentSection,sceneTime,window.estimatedEnd-totalTime,totalTime)",
+          "volume": "sceneTime<1 ? [sceneTime,trackVolume,sceneTime+1,1] : 1"
         },
         {
           "name": "StellaA",
-          "volume": "sceneTime<2 ? [sceneTime,trackVolume,sceneTime+1,0] : 0"  
+          "volume": "sceneTime<1 ? [sceneTime,trackVolume,sceneTime+1,0] : 0"  
         },
         {
           "name": "holdingPad",
@@ -205,14 +211,14 @@
       "partial": false,
       "waypoints":{"W1":"DA_HW","W2":"DA_LTA"},
       "routes":{"R1":"DA_HW-DA_LTA", "Rnext":"DA_LTA-LTA_LT"},
-      "onload": "daoplayer.speak('Now playing The bad Guys', true);",
-      "onupdate": "if (!routes['R1'].near) { daoplayer.setScene('Start/any'); } else if (routes['Rnext'].nearest) { daoplayer.setScene('track6/WaitingForGA'); }",
+      "onload": "daoplayer.speak('The Bad Guys', true); if (waypoints['W2'].distance!==undefined) window.estimatedEnd=totalTime+(waypoints['W2'].distance)/1.5; else window.estimatedEnd=300;",
+      "onupdate": "if (!routes['R1'].near) { daoplayer.setScene('Start/any'); } else if (routes['Rnext'].nearest) { daoplayer.setScene('track6/WaitingForGA'); } else if (waypoints['W2'].distance!==undefined) window.estimatedEnd=totalTime+(waypoints['W2'].distance)/1.5; ",
       "updatePeriod":1.0,
       "tracks": [
         {
           "name": "TheBadGuys",
-          "pos": 0,
-          "volume": 1 
+          "pos": "daoplayer.selectSections('TheBadGuys',currentSection,sceneTime,window.estimatedEnd-totalTime,totalTime)",
+          "volume": "sceneTime<2 ? [sceneTime,trackVolume,sceneTime+1,1] : 1" 
         },
         {
           "name": "StellaB",
@@ -230,14 +236,14 @@
       "partial": false,
       "waypoints":{"W1":"DA_LTA","W2":"LTA_LT"},
       "routes":{"R1":"DA_LTA-LTA_LT", "Rnext":"LTA_LT-LTA_WH"},
-      "onload": "daoplayer.speak('Now playing Waiting For G A', true);",
-      "onupdate": "if (!routes['R1'].near) { daoplayer.setScene('Start/any'); } else if (routes['Rnext'].nearest) { daoplayer.setScene('WollatonHallArriveA1'); }",
+      "onload": "daoplayer.speak('Waiting For G A', true); if (waypoints['W2'].distance!==undefined) window.estimatedEnd=totalTime+(waypoints['W2'].distance)/1.5; else window.estimatedEnd=240;",
+      "onupdate": "if (!routes['R1'].near) { daoplayer.setScene('Start/any'); } else if (routes['Rnext'].nearest) { daoplayer.setScene('WollatonHallArriveA1'); } else if (waypoints['W2'].distance!==undefined) window.estimatedEnd=totalTime+(waypoints['W2'].distance)/1.5; ",
       "updatePeriod":1.0,
       "tracks": [
         {
           "name": "WaitingForGA",
-          "pos": 0,
-          "volume": 1 
+          "pos": "daoplayer.selectSections('WaitingForGA',currentSection,sceneTime,window.estimatedEnd-totalTime,totalTime)",
+          "volume": "sceneTime<2 ? [sceneTime,trackVolume,sceneTime+1,1] : 1" 
         },
         {
           "name": "TheBadGuys",
@@ -255,7 +261,7 @@
       "partial": false,
       "waypoints":{"W1":"LTA_LT","W2":"LTA_WH"},
       "routes":{"R1":"LTA_LT-LTA_WH", "Rnext":"LTA_WH-LTA_WHa"},
-      "onload": "daoplayer.speak('Head towards Wollaton Hall, now playing arrival music', true);",
+      "onload": "daoplayer.speak('Head towards Wollaton Hall', true);",
       "onupdate": "if (!routes['R1'].near) { daoplayer.setScene('Start/any'); } else if (routes['Rnext'].nearest) { daoplayer.setScene('WollatonHallArriveA2'); }",
       "updatePeriod":1.0,
       "tracks": [
@@ -270,7 +276,7 @@
           "volume": 0
         },
         {
-          "name": "TheBadGuys",
+          "name": "WaitingForGA",
           "volume": "sceneTime<2 ? [sceneTime,trackVolume,sceneTime+1,0] : 0"
         },
         {
@@ -286,7 +292,7 @@
       "waypoints":{"W1":"LTA_WH","W2":"LTA_WHa"},
       "routes":{"R1":"LTA_WH-LTA_WHa", "Rnext":"LTA_WHa-LTA_WHb"},
       "onload": "daoplayer.speak('Keep going towards Wollaton Hall, next layer of music entering', true);",
-      "onupdate": "if (!waypoints['W1'].near) { daoplayer.setScene('Start/any'); } else if (routes['Rnext'].nearest) { daoplayer.setScene('WollatonHallArriveA3'); }",
+      "onupdate": "if (!routes['R1'].near) { daoplayer.setScene('Start/any'); } else if (routes['Rnext'].nearest) { daoplayer.setScene('WollatonHallArriveA3'); }",
       "updatePeriod":1.0,
       "tracks": [
         {
@@ -310,7 +316,7 @@
       "waypoints":{"W1":"LTA_WHa","W2":"LTA_WHb"},
       "routes":{"R1":"LTA_WHa-LTA_WHb", "Rnext":"LTA_WHb-WH"},
       "onload": "daoplayer.speak('You are almsot at Wollaton Hall, high strings entering', true);",
-      "onupdate": "if (!waypoints['W1'].near) { daoplayer.setScene('Start/any'); } else if (routes['Rnext'].nearest) { daoplayer.setScene('WollatonHallArriveA4'); }",
+      "onupdate": "if (!routes['R1'].near) { daoplayer.setScene('Start/any'); } else if (routes['Rnext'].nearest) { daoplayer.setScene('WollatonHallArriveA4'); }",
       "updatePeriod":1.0,
       "tracks": [
         {
@@ -324,7 +330,7 @@
         {
           "name": "WollatonHallArriveA_Layer3a",
           "pos": 0,
-          "volume": "sceneTime<2 ? [sceneTime,trackVolume,sceneTime+1,1] : 1" 
+          "volume": "sceneTime<4 ? [sceneTime,trackVolume,sceneTime+1,0.7] : 0.7" 
         },
         {
           "name": "holdingPad",
@@ -338,8 +344,8 @@
       "partial": false,
       "waypoints":{"W1":"LTA_WHb","W2":"WH"},
       "routes":{"R1":"LTA_WHb-WH"},
-      "onload": "daoplayer.speak('You have arrived at Wollaton Hall, please fill in the questionnaire', true);",
-      "onupdate": "if (!waypoints['W1'].near) { daoplayer.setScene('Start/any'); } else if (waypoints['W2'].nearest) { daoplayer.setScene('WollatonHallArriveB'); }",
+      "onload": "daoplayer.speak('Almost there', true);",
+      "onupdate": "if (!routes['R1'].near) { daoplayer.setScene('Start/any'); } else if (waypoints['W2'].nearest) { daoplayer.setScene('WollatonHallArriveB'); }",
       "updatePeriod":1.0,
       "tracks": [
         {
@@ -357,7 +363,7 @@
         {
           "name": "WollatonHallArriveA_Layer3b",
           "pos": 0,
-          "volume": "sceneTime<2 ? [sceneTime,trackVolume,sceneTime+1,1] : 1" 
+          "volume": "sceneTime<2 ? [sceneTime,trackVolume,sceneTime+1,0.7] : 0.7" 
         },
         {
           "name": "holdingPad",
@@ -372,7 +378,7 @@
       "waypoints":{"W1":"WH"},
       "routes":{"Rnext":"WH_EP-J_CS"},
       "onload": "daoplayer.speak('You have arrived at Wollaton Hall, please fill in the questionnaire', true);",
-      "onupdate": "if (!waypoints['W1'].near) { daoplayer.setScene('Start/any'); } else if (routes['Rnext'].nearest) { daoplayer.setScene('fixedPlaylistIn'); }",
+      "onupdate": "if (!routes['R1'].near) { daoplayer.setScene('Start/any'); } else if (routes['Rnext'].nearest) { daoplayer.setScene('fixedPlaylistIn'); }",
       "updatePeriod":1.0,
       "tracks": [
         {
@@ -414,6 +420,7 @@
       "tracks": [
         {
           "name": "fixedPlaylist",
+          "pos": 0,
           "volume": 1 
         },
         {
@@ -436,12 +443,12 @@
       "waypoints":{"W1":"J_CS"},
     
       "onload": "daoplayer.speak('You have reached the end of your walk', true); { daoplayer.setScene('end'); }",
-      "onupdate": "if (!routes['W1'].near) { daoplayer.setScene('Start/any'); }",
+      "onupdate": "if (!routes['R1'].near) { daoplayer.setScene('Start/any'); } else if (!waypoints['W1'].near) { daoplayer.setScene('Start/any'); }",
       "updatePeriod":1.0,
       "tracks": [
         {
           "name": "fixedPlaylist",
-          "volume": "sceneTime<4 ? [sceneTime,trackVolume,sceneTime+1,0] : 0"  
+          "volume": "sceneTime<5 ? [sceneTime,trackVolume,sceneTime+1,0] : 0"  
         },
         {
           "name": "holdingPad",
