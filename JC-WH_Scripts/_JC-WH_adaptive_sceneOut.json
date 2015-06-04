@@ -7,7 +7,7 @@
   },
   "scenes": [
     {
-      "name": "track1/MitaDelMondo",
+      "name": "track1/MitaDelMundo",
       "description": "first track, starts at CS building on Jubilee campus",
       "partial": false,
       "waypoints":{"W1":"J_CS","W2":"WR"},
@@ -17,7 +17,7 @@
       "updatePeriod":1.0,
       "tracks": [
         {
-          "name": "MitaDelMondo",
+          "name": "MitaDelMundo",
           "pos": "daoplayer.selectSections('MitaDelMondo',currentSection,sceneTime,window.estimatedEnd-totalTime,totalTime)",
           "volume": 1 
         },
@@ -63,7 +63,7 @@
           "volume": 1 
         },
         {
-          "name": "MitaDelMondo",
+          "name": "MitaDelMundo",
           "volume": "sceneTime<2 ? [sceneTime,trackVolume,sceneTime+1,0] : 0" 
         },
         {
