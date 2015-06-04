@@ -3,15 +3,21 @@
     "mimetype": "application/x-daoplayer-composition",
     "version": 1,
     "title":  "JC-WH_compOut",
-    "description":  "Merge file for Jubilee Campus to Wollaton Hall - adaptive outward, fixed playlist on return "
+    "description":  "Merge file for Jubilee Campus to Wollaton Hall Test 2 - adaptive outward, fixed playlist on return "
   },
   
   "merge": [
-    "_JC-WH_context.json",
-    "_JC-WH_tracksAll.json",
+    "_JC-WH_tracksWithoutSections.json",
+    "_JC-WH_Stella_splitTrackSections.json",
+    "_JC-WH_TheBadGuys_trackSections.json",
+    "_JC-WH_MitaDelMondo_trackSections.json",
+    "_JC-WH_SisterCities_multiTrackSectionsOnEachStem.json",
+    "_JC-WH_NotAlone_trackSections.json",
+    "_JC-WH_WaitingForGA_trackSections.json",
     "_JC-WH_fixedPlaylist_tracks.json",
-    "_JC-WH_startOut.json",
-    "_JC-WH_adaptive_sceneOut.json"
+    "_JC-WH_contextAll.json",
+    "_JC-WH_adaptive_sceneOut.json",
+    "_JC-WH_startOut.json"
     
   ],
   "defaultScene": "Start"
