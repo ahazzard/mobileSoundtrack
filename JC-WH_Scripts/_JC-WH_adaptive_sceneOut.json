@@ -443,7 +443,7 @@
       "waypoints":{"W1":"J_CS"},
     
       "onload": "daoplayer.speak('You have reached the end of your walk', true); { daoplayer.setScene('end'); }",
-      "onupdate": "if (!routes['R1'].near) { daoplayer.setScene('Start/any'); } else if (!waypoints['W1'].near) { daoplayer.setScene('Start/any'); }",
+      "onupdate": " if (!waypoints['W1'].near) { daoplayer.setScene('Start/any'); }",
       "updatePeriod":1.0,
       "tracks": [
         {
