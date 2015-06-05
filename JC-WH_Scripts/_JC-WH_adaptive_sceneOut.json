@@ -378,7 +378,7 @@
       "waypoints":{"W1":"WH"},
       "routes":{"Rnext":"WH_EP-J_CS"},
       "onload": "daoplayer.speak('You have arrived at Wollaton Hall, please fill in the questionnaire', true);",
-      "onupdate": "if (!waypoints['WH'].near) { daoplayer.setScene('Start/any'); } else if (routes['Rnext'].nearest) { daoplayer.setScene('fixedPlaylistIn'); }",
+      "onupdate": "if (!waypoints['W1'].near) { daoplayer.setScene('Start/any'); } else if (routes['Rnext'].nearest) { daoplayer.setScene('fixedPlaylistIn'); }",
       "updatePeriod":1.0,
       "tracks": [
         {
