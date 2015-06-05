@@ -18,7 +18,7 @@
       "tracks": [
         {
           "name": "MitaDelMundo",
-          "pos": "daoplayer.selectSections('MitaDelMondo',currentSection,sceneTime,window.estimatedEnd-totalTime,totalTime)",
+          "pos": "daoplayer.selectSections('MitaDelMundo',currentSection,sceneTime,window.estimatedEnd-totalTime,totalTime)",
           "volume": 1 
         },
         {
