@@ -376,9 +376,9 @@
       "description": "Final arrival music for Wollaton Hall",
       "partial": false,
       "waypoints":{"W1":"WH"},
-      "routes":{},
+      "routes":{"Rnext":"WH_EP-J_CS"},
       "onload": "daoplayer.speak('You have arrived at Wollaton Hall, please fill in the questionnaire', true);",
-      "onupdate": "if (!waypoints['W1'].near) { daoplayer.setScene('Start/any'); }",
+      "onupdate": "if (!waypoints['W1'].near) { daoplayer.setScene('Start/any'); } else if (routes['Rnext'].nearest) { daoplayer.setScene('fixedPlaylistIn'); }",
       "updatePeriod":1.0,
       "tracks": [
         {
@@ -412,9 +412,11 @@
     {
     "name": "fixedPlaylistIn",
       "partial": false,
-      "waypoints":{},
-      "routes":{},
+      "waypoints":{"W1":"WH_EP","W2":"J_CS"},
+      "routes":{"R1":"WH_EP-J_CS"},
       "onload": "daoplayer.speak('Enjoy your walk back to Jubilee campus', true);",
+      "onupdate": "if (!routes['R1'].near) { daoplayer.setScene('Start/any'); } else if (waypoints['W2'].nearest) { daoplayer.setScene('end'); }",
+      "updatePeriod":1.0,
       "tracks": [
         {
           "name": "fixedPlaylist",
@@ -428,6 +430,25 @@
         {
           "name": "WollatonHallArriveB_Layer1",
           "volume": "sceneTime<2 ? [sceneTime,trackVolume,sceneTime+1,0] : 0"
+        },
+        {
+          "name": "holdingPad",
+          "volume": "sceneTime<2 ? [sceneTime,trackVolume,sceneTime+1,0] : 0" 
+        }
+      ]
+    },
+    {
+    "name": "end",
+      "partial": false,
+      "waypoints":{"W1":"J_CS"},
+    
+      "onload": "daoplayer.speak('You have reached the end of your walk', true); { daoplayer.setScene('end'); }",
+      "onupdate": " if (!waypoints['W1'].near) { daoplayer.setScene('Start/any'); }",
+      "updatePeriod":1.0,
+      "tracks": [
+        {
+          "name": "fixedPlaylist",
+          "volume": "sceneTime<5 ? [sceneTime,trackVolume,sceneTime+1,0] : 0"  
         },
         {
           "name": "holdingPad",
