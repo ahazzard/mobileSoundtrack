@@ -1,0 +1,19 @@
+The wollatonHallWalk_150615 log file used the following set of scripts:
+
+    "_JC-WH_tracksWithoutSections.json",
+    "_JC-WH_Stella_splitTrackSections.json",
+    "_JC-WH_TheBadGuys_trackSections.json",
+    "_JC-WH_MitaDelMundo_trackSections.json",
+    "_JC-WH_SisterCities_multiTrackSectionsOnEachStem.json",
+    "_JC-WH_NotAlone_trackSections.json",
+    "_JC-WH_WaitingForGA_trackSections.json",
+    "_JC-WH_fixedPlaylist_tracks.json",
+    "_JC-WH_contextAll2.json",
+    "_JC-WH_adaptive_sceneOut2.json",
+    "_JC-WH_startOut2.json"
+    
+    The merge file (that loads all the scripts was:
+    
+    JC-WH_compOut2.json
+    
+    The log file is complied from two logs, the second covers the last quater of the walk (not sure why they are split into two?)
