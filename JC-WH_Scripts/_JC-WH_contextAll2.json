@@ -26,12 +26,13 @@
 		},
 		{
 		"name": "WR_MR",
-		"lat": 52.954930, "lng": -1.192722,
+		"lat": 52.954769, "lng": -1.192768,
 		"description": "Wollaton Road - left turn onto Middleton Road by roundabout"
 		},
 		{
 		"name": "PC_A",
-		"lat":52.953761,  "lng":-1.192116,
+		"lat":52.953769,  "lng":-1.192121,
+		"nearDistance": 20,
 		"description":"Pedestrian crossing A - Middleton Blvd"
 		},
 		{
@@ -91,7 +92,7 @@
 		},
 		{
 		"name": "LTA_LT",
-		"lat":52.949016,  "lng":1.209416,
+		"lat":52.949126,  "lng":-1.208799,
 		"description":"Lime Tree Ave - left turn towards Wollaton Hall"
 		},
 		{
@@ -101,17 +102,17 @@
 		},
 		{
 		"name": "LTA_WHa",
-		"lat":52.948563500,  "lng":-1.209703100,
+		"lat":52.948707,  "lng":-1.209675,
 		"description":"Lime Tree Ave - Wollaton hall driveway approach point 1"
 		},
 		{
 		"name": "LTA_WHb",
-		"lat":52.948385800,  "lng":-1.209732600,
+		"lat":52.948493,  "lng":-1.209722,
 		"description":"Lime Tree Ave - Wollaton hall driveway approach point 2"
 		},
 		{
 		"name": "WH",
-		"lat":52.948117500,  "lng":-1.209874700,
+		"lat":52.948161,  "lng":-1.209890,
 		"nearDistance": 25,
 		"description":"Wollaton Hall – arrive"
 		},
@@ -232,6 +233,20 @@
 				"name": "WR-PC_A",
 				"description": "Scene track2A/SisterCities",
 				"from": "WR",
+				"to": "PC_A",
+				"nearDistance": "100"
+			},
+			{
+				"name": "WR-WR_MR",
+				"description": "Scene track2A/SisterCities",
+				"from": "WR",
+				"to": "WR_MR",
+				"nearDistance": "100"
+			},
+			{
+				"name": "WR_MR-PC_A",
+				"description": "Scene track2A/SisterCities",
+				"from": "WR_MR",
 				"to": "PC_A",
 				"nearDistance": "100"
 			},
