@@ -2,7 +2,7 @@
   "meta": {
     "mimetype": "application/x-daoplayer-composition",
     "version": 1,
-    "title":  "MitaDelMundo_trackSections"
+    "title":  "MitaDelMondo_trackSections"
   },
   
   "tracks": [
@@ -18,7 +18,7 @@
 
         }
       ],
-      "unitTime": 15,
+      "unitTime": 4,
       "sections": [
         { "name": "start", "trackPos": 0.0, "length":  0.294, "startCost": 0,
           "next": [ {"name":"introA","cost":0},
