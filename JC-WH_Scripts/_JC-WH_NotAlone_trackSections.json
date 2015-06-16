@@ -14,7 +14,7 @@
           "path": "NotAlone.wav",
           "filePos": 0,
           "trackPos": 0,
-          "length": 418.758
+          "length": 285.362
         }
       ],
       "unitTime": 3.565,
@@ -193,7 +193,8 @@
         },
           {"name":"NA_bridge1b","cost":5},{"name":"NA_bridge1c","cost":5},
           
-        { "name": "NA_bridge1a", "trackPos": 1213.909, "length":  7.070, "endCost": 100,
+          
+        { "name": "NA_bridge1a", "trackPos": 213.909, "length":  7.070, "endCost": 100,
           "next": [ {"name":"NA_bridge1b","cost":0
           },
           {"name":"NA_bridge1a","cost":5
@@ -201,7 +202,7 @@
           {"name":"NA_bridge1c","cost":5},{"name":"NA_bridge2a","cost":5},{"name":"NA_bridge3a","cost":5},{"name":"NA_bridge3c","cost":5},{"name":"NA_bridge1d","cost":5}]
         },
         
-        { "name": "NA_bridge1b", "trackPos": 1220.979, "length":  7.156,"endCost": 100,
+        { "name": "NA_bridge1b", "trackPos": 220.979, "length":  7.156,"endCost": 100,
           "next": [ {"name":"NA_bridge1c","cost":0
           },
           {"name":"NA_bridge1a","cost":5},{"name":"NA_intro2a","cost":50
@@ -209,7 +210,7 @@
           {"name":"NA_bridge1d","cost":5},{"name":"NA_bridge2a","cost":5},{"name":"NA_bridge3a","cost":5},{"name":"NA_bridge3c","cost":5},{"name":"NA_bridge3b","cost":5}]
         },
         
-        { "name": "NA_bridge1c", "trackPos": 1228.134, "length":  6.967,"endCost": 50,
+        { "name": "NA_bridge1c", "trackPos": 228.134, "length":  6.967,"endCost": 50,
           "next": [ {"name":"NA_bridge1d","cost":0
           },
           {"name":"NA_bridge1a","cost":5},{"name":"NA_bridge1b","cost":5},{"name":"NA_intro2a","cost":50
@@ -217,7 +218,7 @@
           {"name":"NA_bridge2a","cost":5},{"name":"NA_bridge3a","cost":5},{"name":"NA_bridge3c","cost":5},{"name":"NA_bridge2b","cost":5}]
         },
         
-        { "name": "NA_bridge1d", "trackPos": 1235.101, "length":  7.032,"endCost": 0,
+        { "name": "NA_bridge1d", "trackPos": 235.101, "length":  7.032,"endCost": 0,
           "next": [ {"name":"NA_bridge2a","cost":0
           },
           {"name":"NA_bridge1a","cost":5},{"name":"NA_bridge1b","cost":5},{"name":"NA_bridge1c","cost":5},{"name":"NA_bridge1d","cost":5
@@ -225,7 +226,7 @@
           {"name":"NA_bridge2b","cost":5},{"name": "NA_bridge3a","cost":5},{"name":"NA_bridge3c","cost":5},{"name":"NA_bridge3b","cost":5},{"name":"NA_bridge3d","cost":5}]
         },
         
-        { "name": "NA_bridge2a", "trackPos": 1242.133, "length":  7.206,"endCost": 0,
+        { "name": "NA_bridge2a", "trackPos": 242.133, "length":  7.206,"endCost": 0,
           "next": [ {"name":"NA_bridge2b","cost":0
           },
           {"name":"NA_bridge2a","cost":5},{"name":"NA_bridge1a","cost":5},{"name":"NA_bridge1b","cost":5},{"name":"NA_bridge1c","cost":5},{"name":"NA_bridge1d","cost":5
@@ -233,7 +234,7 @@
           {"name":"NA_bridge3a","cost":5},{"name":"NA_bridge3c","cost":5},{"name":"NA_bridge3b","cost":5},{"name":"NA_bridge3d","cost":5}]
         },
         
-        { "name": "NA_bridge2b", "trackPos": 1249.339, "length":  7.189,"endCost": 0,
+        { "name": "NA_bridge2b", "trackPos": 249.339, "length":  7.189,"endCost": 0,
           "next": [ {"name":"NA_bridge3a","cost":0
           },
           {"name":"NA_bridge2a","cost":5},{"name":"NA_bridge2b","cost":5},{"name":"NA_bridge1a","cost":5},{"name":"NA_bridge1b","cost":5},{"name":"NA_bridge1c","cost":5},{"name":"NA_bridge1d","cost":5
@@ -241,7 +242,7 @@
           {"name":"NA_bridge3c","cost":5},{"name":"NA_bridge3b","cost":5},{"name":"NA_bridge3d","cost":5}]
         },
         
-        { "name": "NA_bridge3a", "trackPos": 1256.529, "length":  7.365,"endCost": 0,
+        { "name": "NA_bridge3a", "trackPos": 256.529, "length":  7.365,"endCost": 0,
           "next": [ {"name":"NA_bridge3b","cost":0
           },
           {"name":"NA_bridge3a","cost":5},{"name":"NA_bridge2a","cost":5},{"name":"NA_bridge2b","cost":5},{"name":"NA_bridge1a","cost":5},{"name":"NA_bridge1c","cost":5},{"name":"NA_bridge1b","cost":5},{"name":"NA_bridge1d","cost":5
@@ -249,7 +250,7 @@
           {"name":"NA_bridge3c","cost":5},{"name":"NA_bridge3d","cost":5}]
         },
         
-        { "name": "NA_bridge3b", "trackPos": 1263.894, "length":  7.304,"endCost": 0,
+        { "name": "NA_bridge3b", "trackPos": 263.894, "length":  7.304,"endCost": 0,
           "next": [ {"name":"NA_bridge3c","cost":0
           },
           {"name":"NA_bridge3a","cost":5},{"name":"NA_bridge3b","cost":5},{"name":"NA_bridge2a","cost":5},{"name":"NA_bridge2b","cost":5},{"name":"NA_bridge1a","cost":5},{"name":"NA_bridge1c","cost":5},{"name":"NA_bridge1b","cost":5},{"name":"NA_bridge1d","cost":5
@@ -257,13 +258,13 @@
           {"name":"NA_bridge3d","cost":5}]
         },
         
-        { "name": "NA_bridge3c", "trackPos": 1271.197, "length":  7.267,"endCost": 0,
+        { "name": "NA_bridge3c", "trackPos": 271.197, "length":  7.267,"endCost": 0,
            "next": [ {"name":"NA_bridge3d","cost":0
           },
           {"name":"NA_bridge3a","cost":5},{"name":"NA_bridge3b","cost":5},{"name":"NA_bridge3c","cost":5},{"name":"NA_bridge2a","cost":5},{"name":"NA_bridge2b","cost":5},{"name":"NA_bridge1a","cost":5},{"name":"NA_bridge1c","cost":5},{"name":"NA_bridge1b","cost":5}]
         },
         
-        { "name": "NA_bridge3d", "trackPos": 1278.465, "length":  6.897, "endCost": 0,
+        { "name": "NA_bridge3d", "trackPos": 278.465, "length":  6.897, "endCost": 0,
           "next": [ 
           {"name":"NA_bridge3a","cost":5},{"name":"NA_bridge3b","cost":5},{"name":"NA_bridge3c","cost":5},{"name":"NA_bridge2a","cost":5},{"name":"NA_bridge2b","cost":5},{"name":"NA_bridge1a","cost":5}]
         }
