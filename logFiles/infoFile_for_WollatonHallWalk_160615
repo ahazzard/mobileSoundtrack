@@ -1,0 +1,24 @@
+1 - Mita Del Mundo - no apprent adaptations - lots of minior glitches
+2 - Transition into Sister Cities, track did not start at beginning, but rather half-way / twothirds into it
+    Lost GPS at one stage
+    Did no fade to thinned down version of multi-track at d=pedestrian crossing (PC_A), but rather when half-way across, i.e. on island in middle of road
+3 - Not Alone start just slightly to late when enetering Harrow Road
+    Not Alone lost GPS on Harrow Road, re-found it, but styed on Start / any scene, did not restart song. Used 'songSelection' on app UI and then it continued with the NotAlone track
+4 - Transition into StellaA good
+5 - Transition into StellaB: test to Speech worked, but song did not initalise. Reloaded Composition, song then started playing
+    Then lost GPS
+6 - Tranisiton into StellaC: volume commands wrong in script, the currently playing files went to zero 
+7 - Traniston into 'The Bad Boys' was good
+    Lost GPS, music did not restart - reloaded composition, the 'fixedPlaylistIn' scene started, rather than 'The Bad Boys'
+    used sceneSelector on UI to restart 'The Bad Boys' track
+8 - Tranition into 'Waiting for G.A.': Text to speech worked but track did not initialise. Reloaded composition, track then started playing
+9 - Transition into Wollaton hall music good, although longer fade required
+    The  3 step process opf transitions in of 'arrival' layers good
+10 - Final arrival music transition went well, but a few second later it got locked into re-triggering on every update
+    Reloaded the composition, still retriggered, then stopped.
+11 - Transition into 'fixedPlaylistIn' worked well
+     A few seconds later it lost GPS, then refound GPS, but the track did not restarted. tried restarting using the sceneSelector twice, but did not work. Reloard composition again and the fixedPlalistIn scene then restarted.
+12 - No fade, or apprent transition into the 'end' scene upon a return to Jubilee campus, computer science building 
+
+others issues - a few more glitches than was exerienced in yesterday's walk
+The sound level of the Stela multi-tracks needs normalising as does Sister Cities
