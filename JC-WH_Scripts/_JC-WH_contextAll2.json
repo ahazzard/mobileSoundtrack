@@ -31,7 +31,7 @@
 		},
 		{
 		"name": "PC_A",
-		"lat":52.953769,  "lng":-1.192121,
+		"lat":52.953895,  "lng":-1.192224,
 		"nearDistance": 20,
 		"description":"Pedestrian crossing A - Middleton Blvd"
 		},
@@ -92,27 +92,39 @@
 		},
 		{
 		"name": "LTA_LT",
-		"lat":52.949126,  "lng":-1.208799,
+		"lat":52.949066,  "lng":-1.208473,
 		"description":"Lime Tree Ave - left turn towards Wollaton Hall"
 		},
 		{
 		"name": "LTA_WH",
-		"lat":52.948697700,  "lng":-1.209652100,
+		"lat":52.949064,  "lng":-1.209281,
 		"description":"Lime Tree Ave - Wollaton hall driveway"
 		},
 		{
 		"name": "LTA_WHa",
-		"lat":52.948707,  "lng":-1.209675,
+		"lat":52.94892,  "lng":-1.209558,
 		"description":"Lime Tree Ave - Wollaton hall driveway approach point 1"
 		},
 		{
 		"name": "LTA_WHb",
-		"lat":52.948493,  "lng":-1.209722,
+		"lat":52.948705,  "lng":-1.209665,
 		"description":"Lime Tree Ave - Wollaton hall driveway approach point 2"
 		},
 		{
-		"name": "WH",
-		"lat":52.948161,  "lng":-1.209890,
+		"name": "WH1",
+		"lat":52.948424,  "lng":-1.209720,
+		"nearDistance": 25,
+		"description":"Wollaton Hall – arrive"
+		},
+		{
+		"name": "WH2",
+		"lat":52.948135,  "lng":-1.209890,
+		"nearDistance": 25,
+		"description":"Wollaton Hall – arrive"
+		},
+		{
+		"name": "WH3",
+		"lat":52.948044,  "lng":-1.210212,
 		"nearDistance": 25,
 		"description":"Wollaton Hall – arrive"
 		},
@@ -205,6 +217,11 @@
 		"name": "JC_AB",
 		"lat":52.952122100,  "lng":-1.187017000,
 		"description":"Intersection by Atrium building"
+		},
+		{
+		"name": "JC_AB2",
+		"lat":52.953068,  "lng": -1.187527,
+		"description":"Intersection by Atrium building"
 		}
     ],
     
@@ -248,6 +265,13 @@
 				"description": "Scene track2A/SisterCities",
 				"from": "WR_MR",
 				"to": "PC_A",
+				"nearDistance": "100"
+			},
+			{
+				"name": "WR_MR-HR_L",
+				"description": "Scene track2A/SisterCities",
+				"from": "WR_MR",
+				"to": "HR_L",
 				"nearDistance": "100"
 			},
 			{
@@ -337,9 +361,9 @@
 				"nearDistance": "100"
 			},
 			{
-				"name": "DA_GC-DA_TH",
+				"name": "DA_GC-DA_HW",
 				"from": "DA_GC",
-				"to":"DA_TH",
+				"to":"DA_HW",
 				"nearDistance": "100"
 			},
 			{
@@ -377,16 +401,22 @@
 				"nearDistance": "100"
 			},
 			{
-				"name": "LTA_WHb-WH",
+				"name": "LTA_WHb-WH1",
 				"description": "Scene WollatonHallArriveA4",
 				"from": "LTA_WHb",
-				"to":"WH",
+				"to":"WH1",
 				"nearDistance": "100"
 			},
 			{
-				"name": "LTA_WH-WH",
+				"name": "LTA_WH-WH1",
 				"from": "LTA_WH",
-				"to":"WH",
+				"to":"WH1",
+				"nearDistance": "100"
+			},
+			{
+				"name": "WH1-WH3",
+				"from": "WH1",
+				"to":"WH3",
 				"nearDistance": "100"
 			},
 			{
@@ -402,7 +432,14 @@
 				"from": "J_CS",
 				"to": "LTA_LT",
 				"nearDistance": "100"
-		},
+		  },
+		  {
+				"name": "JC_AB2-J_CS",
+				"description": "route for fixed playlist on outward leg of walk",
+				"from": "JC_AB2",
+				"to": "J_CS",
+				"nearDistance": "100"
+	  	},
 		
 		
 			{ 
