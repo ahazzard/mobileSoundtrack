@@ -34,7 +34,7 @@
     },
     {
       "name": "StellaVox",
-      "pauseIfSilent": false,
+      "pauseIfSilent": true,
       "files": [
         { 
           "path": "StellaVox.wav",
@@ -132,7 +132,7 @@
     },
     {
       "name": "StellaRhythm",
-      "pauseIfSilent": false,
+      "pauseIfSilent": true,
       "files": [
         { 
           "path": "StellaRhythm.wav",
@@ -230,7 +230,7 @@
     },
     {
       "name": "StellaKeys",
-      "pauseIfSilent": false,
+      "pauseIfSilent": true,
       "files": [
         { 
           "path": "StellaKeys.wav",
@@ -328,7 +328,7 @@
     },
     {
       "name": "StellaPiano",
-      "pauseIfSilent": false,
+      "pauseIfSilent": true,
       "files": [
         { 
           "path": "StellaPiano.wav",
