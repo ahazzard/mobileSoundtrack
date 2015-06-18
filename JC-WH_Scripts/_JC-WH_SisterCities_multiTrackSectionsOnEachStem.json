@@ -8,7 +8,7 @@
   "tracks": [
     {
       "name": "SisterCities_Drums",
-      "pauseIfSilent": false,
+      "pauseIfSilent": true,
       "files": [
         { 
           "path": "SC_Drums.wav",
@@ -246,7 +246,7 @@
     },
     {
       "name": "SisterCities_Bass",
-      "pauseIfSilent": false,
+      "pauseIfSilent": true,
       "files": [
         { 
           "path": "SC_Bass.wav",
@@ -484,7 +484,7 @@
     },
     {
       "name": "SisterCities_Guitars",
-      "pauseIfSilent": false,
+      "pauseIfSilent": true,
       "files": [
         { 
           "path": "SC_Guitars.wav",
@@ -723,7 +723,7 @@
     },
     {
       "name": "SisterCities_AcousticKeys",
-      "pauseIfSilent": false,
+      "pauseIfSilent": true,
       "files": [
         { 
           "path": "SC_AcousticKeys.wav",
@@ -962,7 +962,7 @@
     },
     {
       "name": "SisterCities_Vox",
-      "pauseIfSilent": false,
+      "pauseIfSilent": true,
       "files": [
         { 
           "path": "SC_Vox.wav",
