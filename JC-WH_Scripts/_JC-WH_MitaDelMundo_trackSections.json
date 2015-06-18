@@ -27,7 +27,7 @@
           {"name":"introB","cost":5}]
         },
         
-        { "name": "introA", "trackPos": 0.296, "length":  11.993, "startCost": 100,
+        { "name": "introA", "trackPos": 0.296, "length":  11.993, "startCost": 1000,
           "next": [ {"name":"introB","cost":0},
           {"name":"introA","cost":5
           },
@@ -152,7 +152,7 @@
           {"name":"verse13","cost":5},{"name":"verse14","cost":5},{"name":"coda","cost":5}]
         },
         
-        { "name": "verse12", "trackPos": 139.533, "length":  8.023, "endCost": 100,
+        { "name": "verse12", "trackPos": 139.533, "length":  8.023, "endCost": 1000,
           "next": [ {"name":"verse13","cost":0
         },
           {"name":"introA","cost":5},{"name":"bridgeA","cost":5},{"name":"verse8","cost":5 
@@ -160,7 +160,7 @@
           {"name":"verse14","cost":5},{"name":"coda","cost":5}]
         },
         
-        { "name": "verse13", "trackPos": 147.557, "length":  11.993, "endCost": 100,
+        { "name": "verse13", "trackPos": 147.557, "length":  11.993, "endCost": 1000,
           "next": [ {"name":"verse14","cost":0
         },
           {"name":"introA","cost":5},{"name":"bridgeA","cost":5},{"name":"verse8","cost":5 
@@ -168,7 +168,7 @@
           {"name":"coda","cost":5}]
         },
         
-        { "name": "verse14", "trackPos": 159.550, "length":  8.000, "endCost": 100,
+        { "name": "verse14", "trackPos": 159.550, "length":  8.000, "endCost": 1000,
           "next": [ {"name":"coda","cost":0
         },
           {"name":"introA","cost":5},{"name":"bridgeA","cost":5},{"name":"verse8","cost":5 
