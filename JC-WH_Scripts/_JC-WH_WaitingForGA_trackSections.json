@@ -8,7 +8,7 @@
   "tracks": [
     {
       "name": "WaitingForGA",
-      "pauseIfSilent": false,
+      "pauseIfSilent": true,
       "files": [
         { 
           "path": "WaitingForGA.wav",
