@@ -33,7 +33,7 @@
       "partial": false,
       "waypoints":{"W1":"WR","W2":"WR_MR", "W3":"PC_A"},
       "routes":{"R1":"WR-WR_MR", "R2":"WR_MR-PC_A", "Rnext":"PC_A-HR_L"},
-      "onload": "daoplayer.speak('Sister Cities', true); if (waypoints['W3'].distance!==undefined) window.estimatedEnd=totalTime+(routes['R1'].nearest ? waypoints['W2'].distance+routes['R2'].length : waypoints['W3'].distance)/1.5; else window.estimatedEnd=totalTime+300; ",
+      "onload": "daoplayer.speak('Sister Cities', true); if (waypoints['W3'].distance!==undefined) window.estimatedEnd=totalTime+(routes['R1'].nearest ? waypoints['W2'].distance+routes['R2'].length : waypoints['W3'].distance)/1.5; else window.estimatedEnd=totalTime+220; ",
       "onupdate": "if (!routes['R1'].near && !routes['R2'].near) { daoplayer.speak('lost GPS', true); } else if (routes['Rnext'].nearest) { daoplayer.setScene('track2B/SisterCities'); } else if (waypoints['W3'].distance!==undefined) window.estimatedEnd=totalTime+(routes['R1'].nearest ? waypoints['W2'].distance+routes['R2'].length : waypoints['W3'].distance)/1.5; ",
       "updatePeriod":1.0,
       "tracks": [
@@ -78,7 +78,7 @@
       "partial": false,
       "waypoints":{"W1":"PC_A","W2":"HR_L"},
       "routes":{"R1":"PC_A-HR_L", "Rnext":"HR_L-HR_DA"},
-      "onload": "daoplayer.speak('Lets thin out Sister Cities', true); if (waypoints['W2'].distance!==undefined) window.estimatedEnd=totalTime+(waypoints['W2'].distance)/1.5; else window.estimatedEnd=60; ",
+      "onload": "daoplayer.speak('Lets thin out Sister Cities', true); if (waypoints['W2'].distance!==undefined) window.estimatedEnd=totalTime+(waypoints['W2'].distance)/1.5; else window.estimatedEnd=75; ",
       "onupdate": "if (!routes['R1'].near) { daoplayer.speak('lost GPS', true); } else if (routes['Rnext'].nearest) { daoplayer.setScene('track3/NotAlone'); } else if (waypoints['W2'].distance!==undefined) window.estimatedEnd=totalTime+(waypoints['W2'].distance)/1.5; ",
       "updatePeriod":1.0,
       "tracks": [
@@ -120,7 +120,7 @@
       "partial": false,
       "waypoints":{"W1":"HR_L","W2":"HR_DA"},
       "routes":{"R1":"HR_L-HR_DA", "Rnext":"HR_DA-DA_IG"},
-      "onload": "daoplayer.speak('Not Alone', true); if (waypoints['W2'].distance!==undefined) window.estimatedEnd=totalTime+(waypoints['W2'].distance)/1.5; else window.estimatedEnd=250;",
+      "onload": "daoplayer.speak('Not Alone', true); if (waypoints['W2'].distance!==undefined) window.estimatedEnd=totalTime+(waypoints['W2'].distance)/1.5; else window.estimatedEnd=350;",
       "onupdate": "if (!routes['R1'].near) { daoplayer.speak('lost GPS', true); } else if (routes['Rnext'].nearest) { daoplayer.setScene('track4A/Stella'); } else if (waypoints['W2'].distance!==undefined) window.estimatedEnd=totalTime+(waypoints['W2'].distance)/1.5; ",
       "updatePeriod":1.0,
       "tracks": [
@@ -186,7 +186,7 @@
       "partial": false,
       "waypoints":{"W1":"DA_IG","W2":"DA_HW"},
       "routes":{"R1":"DA_IG-DA_HW", "Rnext":"DA_GC-DA_HW"},
-      "onload": "daoplayer.speak('Stella vocals', true); if (waypoints['W2'].distance!==undefined) window.estimatedEnd=totalTime+(waypoints['W2'].distance)/1.5; else window.estimatedEnd=180;",
+      "onload": "daoplayer.speak('Stella vocals', true); if (waypoints['W2'].distance!==undefined) window.estimatedEnd=totalTime+(waypoints['W2'].distance)/1.5; else window.estimatedEnd=200;",
       "onupdate": "if (!routes['R1'].near) { daoplayer.speak('lost GPS', true); } else if (routes['Rnext'].nearest) { daoplayer.setScene('track4C/Stella'); } else if (waypoints['W2'].distance!==undefined) window.estimatedEnd=totalTime+(waypoints['W2'].distance)/1.5; ",
       "updatePeriod":1.0,
       "tracks": [
@@ -299,7 +299,7 @@
       "partial": false,
       "waypoints":{"W1":"DA_TH","W2":"DA_LTA", "W3":"LTA_LT"},
       "routes":{"R1":"DA_TH-DA_LTA", "R2":"DA_LTA-LTA_LT", "Rnext":"LTA_LT-LTA_WH"},
-      "onload": "daoplayer.speak('Waiting For G A', true); if (waypoints['W3'].distance!==undefined) window.estimatedEnd=totalTime+(routes['R1'].nearest ? waypoints['W2'].distance+routes['R2'].length : waypoints['W3'].distance)/1.5; else window.estimatedEnd=totalTime+240; ",
+      "onload": "daoplayer.speak('Waiting For G A', true); if (waypoints['W3'].distance!==undefined) window.estimatedEnd=totalTime+(routes['R1'].nearest ? waypoints['W2'].distance+routes['R2'].length : waypoints['W3'].distance)/1.5; else window.estimatedEnd=totalTime+300; ",
       "onupdate": "if (!routes['R1'].near && !routes['R2'].near) { daoplayer.speak('lost GPS', true); } else if (routes['Rnext'].nearest) { daoplayer.setScene('WollatonHallArriveA1'); } else if (waypoints['W3'].distance!==undefined) window.estimatedEnd=totalTime+(routes['R1'].nearest ? waypoints['W2'].distance+routes['R2'].length : waypoints['W3'].distance)/1.5; ",
       "updatePeriod":1.0,
       "tracks": [
