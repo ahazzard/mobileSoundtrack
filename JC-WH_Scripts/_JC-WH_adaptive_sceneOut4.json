@@ -203,12 +203,12 @@
         {
           "name": "StellaKeys",
           "pos": "daoplayer.selectSections('StellaVox',currentSection,sceneTime,window.estimatedEnd-totalTime,totalTime)",
-          "volume": 0
+          "volume": 0.1
         },
         {
           "name": "StellaRhythm",
           "pos": "daoplayer.selectSections('StellaVox',currentSection,sceneTime,window.estimatedEnd-totalTime,totalTime)",
-          "volume": 0
+          "volume": 0.1
         },
         {
           "name": "StellaA",
@@ -331,7 +331,7 @@
         {
           "name": "WollatonHallArriveA_Layer1",
           "pos": 0,
-          "volume": "sceneTime<4 ? [sceneTime,trackVolume,sceneTime+1,1] : 1" 
+          "volume": "sceneTime<8 ? [sceneTime,trackVolume,sceneTime+1,1] : 1" 
         },
         {
           "name": "WollatonHallArriveA_Layer2",
@@ -340,7 +340,7 @@
         },
         {
           "name": "WaitingForGA",
-          "volume": "sceneTime<3 ? [sceneTime,trackVolume,sceneTime+1,0] : 0"
+          "volume": "sceneTime<8 ? [sceneTime,trackVolume,sceneTime+1,0] : 0"
         },
         {
           "name": "holdingPad",
