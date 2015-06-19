@@ -1,0 +1,102 @@
+{
+  "meta": {
+    "mimetype": "application/x-daoplayer-composition",
+    "version": 1,
+    "title":  "JC-WH_tracksAll",
+    "description": "All tracks, but without any sections or costs"
+  },
+  
+  "tracks": [
+    {
+      "name": "holdingPad",
+      "pauseIfSilent": false,
+      "files": [
+        { 
+          "path": "holdingPad.wav",
+          "trackPos": 0,
+          "filePos": 0,
+          "length": 214,
+          "repeats": -1
+        }
+      ]
+    },
+    {
+      "name": "WollatonHallArriveA_Layer1",
+      "pauseIfSilent": false,
+      "files": [
+        { 
+          "path": "WollatonHallArriveA_Layer1.wav",
+          "trackPos": 0,
+          "filePos": 0,
+          "length": 118.154,
+          "repeats": -1
+        }
+      ]
+    },
+    {
+      "name": "WollatonHallArriveA_Layer2",
+      "pauseIfSilent": false,
+      "files": [
+        { 
+          "path": "WollatonHallArriveA_Layer2.wav",
+          "trackPos": 0,
+          "filePos": 0,
+          "length": 118.154,
+          "repeats": -1
+        }
+      ]
+    },
+    {
+      "name": "WollatonHallArriveA_Layer3a",
+      "pauseIfSilent": true,
+      "files": [
+        { 
+          "path": "WollatonHallArriveA_Layer3a.wav",
+          "trackPos": 0,
+          "filePos": 0,
+          "length": 119.94,
+          "repeats": -1
+        }
+      ]
+    },
+    {
+      "name": "WollatonHallArriveA_Layer3b",
+      "pauseIfSilent": true,
+      "files": [
+        { 
+          "path": "WollatonHallArriveA_Layer3b.wav",
+          "trackPos": 0,
+          "filePos": 0,
+          "length": 119.94,
+          "repeats": -1
+        }
+      ]
+    },
+    {
+      "name": "WollatonHallArriveB_Accent",
+      "pauseIfSilent": false,
+      "files": [
+        { 
+          "path": "WollatonHallArriveB_Accent.wav",
+          "trackPos": 0,
+          "filePos": 0,
+          "length": 30,
+          "repeats": -1
+        }
+      ]
+    },
+    {
+      "name": "WollatonHallArriveB_Layer1",
+      "pauseIfSilent": false,
+      "files": [
+        { 
+          "path": "WollatonHallArriveB_Layer1.wav",
+          "trackPos": 0,
+          "filePos": 0,
+          "length": 118.154,
+          "repeats": -1
+        }
+      ]
+    }
+  ]
+}
