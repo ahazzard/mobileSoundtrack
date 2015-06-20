@@ -228,48 +228,49 @@
     "routes": [
 			{
 				"name": "J_CS-J_CP",
-				"description": "Outward route",
+				"description": "Scene track1/MitaDelMundo stage 1",
 				"from": "J_CS",
 				"to": "J_CP",
 				"nearDistance": "100"
 			},
 			{
 				"name": "J_CS-WR",
-				"description": "Scene track1/MitaDelMondo",
+				"description": "",
 				"from": "J_CS",
 				"to": "WR",
 				"nearDistance": "100"
 			},
 			{
 				"name": "J_CP-WR",
+				"description": "Scene track1/MitaDelMundo stage 2",
 				"from": "J_CP",
 				"to": "WR",
 				"nearDistance": "50"
 			},
 			{
 				"name": "WR-PC_A",
-				"description": "Scene track2A/SisterCities",
+				"description": "",
 				"from": "WR",
 				"to": "PC_A",
 				"nearDistance": "50"
 			},
 			{
 				"name": "WR-WR_MR",
-				"description": "Scene track2A/SisterCities",
+				"description": "Scene track2/SisterCities stage 1",
 				"from": "WR",
 				"to": "WR_MR",
 				"nearDistance": "60"
 			},
 			{
 				"name": "WR_MR-PC_A",
-				"description": "Scene track2A/SisterCities",
+				"description": "Scene track2/SisterCities stage 2",
 				"from": "WR_MR",
 				"to": "PC_A",
 				"nearDistance": "50"
 			},
 			{
 				"name": "WR_MR-HR_L",
-				"description": "Scene track2A/SisterCities",
+				"description": "",
 				"from": "WR_MR",
 				"to": "HR_L",
 				"nearDistance": "70"
@@ -301,36 +302,43 @@
 			},
 			{
 				"name": "PC_A-HR_L",
-				"description": "Scene track2B/SisterCities",
+				"description": "Scene track2/SisterCities stage 3",
 				"from": "PC_A",
 				"to":"HR_L",
-				"nearDistance": "100"
+				"nearDistance": "50"
 			},
 				
 			{
 				"name": "HR_L-HR_HG",
+				"description": "Scene track3/NotAlone stage 1 full volume",
 				"from": "HR_L",
 				"to":"HR_HG",
-				"nearDistance": "100"
+				"nearDistance": "50"
 			},
 			{
 				"name": "HR_L-HR_DA",
-				"description": "Scene track3/NotAlone",
 				"from": "HR_L",
 				"to":"HR_DA",
 				"nearDistance": "50"
 			},
 			{
 				"name": "HR_HG-HR_DA",
+				"description": "Scene track3/NotAlone stage 2 long fade",
 				"from": "HR_HG",
 				"to":"HR_DA",
-				"nearDistance": "100"
+				"nearDistance": "50"
 			},
 			{
 				"name": "HR_DA-DA_IG",
-				"description": "Scene track4A/Stella",
 				"from": "HR_DA",
 				"to":"DA_IG",
+				"nearDistance": "50"
+			},
+			{
+				"name": "HR_DA-DA_GC",
+				"description": "Scene track4/Stella stage 1 - multitrack just vox and piano",
+				"from": "HR_DA",
+				"to":"DA_GC",
 				"nearDistance": "50"
 			},
 			{
@@ -341,40 +349,40 @@
 			},
 			{
 				"name": "DA_IG-DA_HW",
-				"description": "Scene track4B/Stella",
 				"from": "DA_IG",
 				"to":"DA_HW",
 				"nearDistance": "50"
 			},
 			{
+				"name": "DA_GC-DA_HW",
+				"description": "Scene track4/Stella stage 2 - multitrack introduce rhythm section",
+				"from": "DA_GC",
+				"to":"DA_HW",
+				"nearDistance": "50"
+			},
+			{
 				"name": "DA_HW-DA_TH",
-				"description": "approx. half way point for stage initiation of 'The Bad Guys' to Digbey Ave and top of hill",
+				"description": "'The Bad Guys' to Digbey Ave and top of hill",
 				"from": "DA_HW",
 				"to":"DA_TH",
 				"nearDistance": "50"
 			},
 			{
 				"name": "DA_HW-DA_LTA",
-				"description": "Scene track5/TheBadGuys",
 				"from": "DA_HW",
 				"to":"DA_LTA",
 				"nearDistance": "50"
 			},
 			{
-				"name": "DA_GC-DA_HW",
-				"from": "DA_GC",
-				"to":"DA_HW",
-				"nearDistance": "50"
-			},
-			{
 				"name": "DA_TH-DA_LTA",
+				"description": "Scene track6/WaitingForGA - stage 1",
 				"from": "DA_TH",
 				"to":"DA_LTA",
 				"nearDistance": "50"
 			},
 			{
 				"name": "DA_LTA-LTA_LT",
-				"description": "Scene track6/WaitingForGA - Digby Av. to Lime Tree Av left turn",
+				"description": "Scene track6/WaitingForGA - stage 2",
 				"from": "DA_LTA",
 				"to":"LTA_LT",
 				"nearDistance": "50"
@@ -415,15 +423,16 @@
 			},
 			{
 				"name": "WH1-WH3",
+				"description": "arrived at Wollaton Hall",
 				"from": "WH1",
 				"to":"WH3",
 				"nearDistance": "100"
 			},
 			{
-				"name": "WH_EP-J_CS",
+				"name": "WH_EP-DA_LTA",
 				"description": "Scene fixedPlaylistIn",
 				"from": "WH_EP",
-				"to": "J_CS",
+				"to": "DA_LTA",
 				"nearDistance": "60"
 	  		},
 			{
@@ -433,13 +442,6 @@
 				"to": "LTA_LT",
 				"nearDistance": "100"
 		  },
-		  {
-				"name": "JC_AB2-J_CS",
-				"description": "route for fixed playlist on outward leg of walk",
-				"from": "JC_AB2",
-				"to": "J_CS",
-				"nearDistance": "100"
-	  	},
 		
 		
 			{ 
