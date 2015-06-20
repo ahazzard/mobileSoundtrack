@@ -36,16 +36,16 @@
       "waypoints": {"W1": "WR", "W2": "WR_MR", "W3": "PC_A", "W4": "HR_L"},
       "routes": {"R1": "WR-WR_MR", "R2": "WR_MR-PC_A", "R3": "PC_A-HR_L", "Rnext": "HR_L-HR_HG"},
       
-      "onload": "daoplayer.speak('Sister Cities', false); if (waypoints['W4'].distance!==undefined) window.estimatedEnd=totalTime+(routes['R1'].nearest ? waypoints['W2'].distance+routes['R2'].length : routes['R3'].length : waypoints['W4'].distance)(routes['R2'].nearest ? waypoints['W3'].distance+routes['R3'].length : waypoints['W4'].distance)/1.5; else window.estimatedEnd=totalTime+220; ",
+      "onload": "daoplayer.speak('Sister Cities', false); if (waypoints['W4'].distance!==undefined) window.estimatedEnd=totalTime+(routes['R1'].nearest ? waypoints['W2'].distance+routes['R2'].length+routes['R3'].length : waypoints['W4'].distance)(routes['R2'].nearest ? waypoints['W3'].distance+routes['R3'].length : waypoints['W4'].distance)/1.5; else window.estimatedEnd=totalTime+220; ",
       
-      "onupdate": " if (routes['Rnext'].nearest) { daoplayer.setScene('track3/NotAlone'); } else if (waypoints['W4'].distance!==undefined) window.estimatedEnd=totalTime+(routes['R1'].nearest ? waypoints['W2'].distance+routes['R2'].length : routes['R3'].length : waypoints['W4'].distance)(routes['R2'].nearest ? waypoints['W3'].distance+routes['R3'].length : waypoints['W4'].distance)/1.5;  ",
+      "onupdate": " if (routes['Rnext'].nearest) { daoplayer.setScene('track3/NotAlone'); } else if (waypoints['W4'].distance!==undefined) window.estimatedEnd=totalTime+(routes['R1'].nearest ? waypoints['W2'].distance+routes['R2'].length+routes['R3'].length : waypoints['W4'].distance),(routes['R2'].nearest ? waypoints['W3'].distance+routes['R3'].length : waypoints['W4'].distance)/1.5; ",
       
       "updatePeriod": 1,
       "tracks": [
         {
           "name": "SisterCities_Drums",
           "pos": "daoplayer.selectSections('SisterCities_Drums',currentSection,sceneTime,window.estimatedEnd-totalTime,totalTime)",
-          "volume": "[sceneTime,trackVolume,sceneTime+1,routes['R3'].nearest ? 0]: 1"
+          "volume": "routes['R3'].nearest ? [sceneTime,trackVolume,sceneTime+3,0] : 1"
         },
         {
           "name": "SisterCities_Bass",
@@ -55,7 +55,7 @@
         {
           "name": "SisterCities_Guitars",
           "pos": "daoplayer.selectSections('SisterCities_Drums',currentSection,sceneTime,window.estimatedEnd-totalTime,totalTime)",
-          "volume": "[sceneTime,trackVolume,sceneTime+1,routes['R3'].nearest ? 0]: 1"
+          "volume": "routes['R3'].nearest ? [sceneTime,trackVolume,sceneTime+3,0] : 1"
         },
         {
           "name": "SisterCities_AcousticKeys",
@@ -65,7 +65,7 @@
         {
           "name": "SisterCities_Vox",
           "pos": "daoplayer.selectSections('SisterCities_Drums',currentSection,sceneTime,window.estimatedEnd-totalTime,totalTime)",
-          "volume": "[sceneTime,trackVolume,sceneTime+1,routes['R3'].nearest ? 0]: 1"
+          "volume": "routes['R3'].nearest ? [sceneTime,trackVolume,sceneTime+3,0] : 1"
         },
         {
           "name": "MitaDelMundo",
@@ -86,13 +86,13 @@
       
       "onload": "daoplayer.speak('Not Alone', false); if (waypoints['W3'].distance!==undefined) window.estimatedEnd=totalTime+(routes['R1'].nearest ? waypoints['W2'].distance+routes['R2'].length : waypoints['W3'].distance)/1.5; else window.estimatedEnd=totalTime+350; ",
       
-      "onupdate": "if (routes['Rnext'].nearest) { daoplayer.setScene('track4/Stella'); else if (waypoints['W3'].distance!==undefined) window.estimatedEnd=totalTime+(routes['R1'].nearest ? waypoints['W2'].distance+routes['R2'].length : waypoints['W3'].distance)/1.5;",
+      "onupdate": " if (routes['Rnext'].nearest) { daoplayer.setScene('track4/Stella'); } else if (waypoints['W3'].distance!==undefined) window.estimatedEnd=totalTime+(routes['R1'].nearest ? waypoints['W2'].distance+routes['R2'].length : waypoints['W3'].distance)/1.5; ",
       "updatePeriod": 1,
       "tracks": [
         {
           "name": "NotAlone",
           "pos": "daoplayer.selectSections('NotAlone',currentSection,sceneTime,window.estimatedEnd-totalTime,totalTime)",
-          "volume": "[sceneTime,trackVolume,sceneTime+12,routes['R2'].nearest ? 0.2]: 1"
+          "volume": "routes['R2'].nearest ? [sceneTime,trackVolume,sceneTime+12,0] : 1"
         },
         {
           "name": "SisterCities_Drums",
@@ -124,8 +124,7 @@
       "name": "track4/Stella",
       "description": "this scene changes track to 'StellaB' ",
       "partial": false,
-      "waypoints": {
-        "W1": "HR_DA", "W2": "DA_GC", "W3": "DA_HW"},
+      "waypoints": {"W1": "HR_DA", "W2": "DA_GC", "W3": "DA_HW"},
       "routes": {"R1": "HR_DA-DA_GC", "R2": "DA_GC-DA_HW", "Rnext": "DA_HW-DA_TH"},
       
       "onload": "daoplayer.speak('Stella vocals', false); if (waypoints['W3'].distance!==undefined) window.estimatedEnd=totalTime+(routes['R1'].nearest ? waypoints['W2'].distance+routes['R2'].length : waypoints['W3'].distance)/1.5; else window.estimatedEnd=totalTime+200; ",
@@ -147,12 +146,12 @@
         {
           "name": "StellaKeys",
           "pos": "daoplayer.selectSections('StellaVox',currentSection,sceneTime,window.estimatedEnd-totalTime,totalTime)",
-          "volume": "[sceneTime,trackVolume,sceneTime+1,routes['R2'].nearest ? 1]: [0, 0]"
+          "volume": "routes['R2'].nearest ? [sceneTime,trackVolume,sceneTime+3,1] : 0"
         },
         {
           "name": "StellaRhythm",
           "pos": "daoplayer.selectSections('StellaVox',currentSection,sceneTime,window.estimatedEnd-totalTime,totalTime)",
-          "volume": "[sceneTime,trackVolume,sceneTime+1,routes['R2'].nearest ? 1]: [0, 0]"
+          "volume": "routes['R2'].nearest ? [sceneTime,trackVolume,sceneTime+3,1] : 0"
         },
         {
           "name": "holdingPad",
