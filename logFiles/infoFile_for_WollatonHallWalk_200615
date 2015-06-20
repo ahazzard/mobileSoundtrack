@@ -1,0 +1,19 @@
+This is an information file for the test walk on 20/06/15
+
+This walk used version outward5
+The main adjustments to this set of scripts were found in the _JC-WH_adaptive _outward5 script:
+ - track 1 / 2/ 3 / 4 / 6 all had addition waypoints and routes added.
+ - track 1/MitaDelMundo scene now has three waypoints and two routes to reflect the shape of the actual walking route. This worked well, and a number of adaption took place over this section.
+ - track 2/SisterCities now has four waypoints and three routes; The three routes are combined to form the shape of the actual walking route. The final route PC_A > HR_L was also used to control the volume on some of the multi-track stems. 
+   The segment adaptations worked well - but there were issues with the volume adjustments. Nothing happened until the pedestrian crossing had been crossed (volume should have dropped at the nearside of the crossing), upon which the volume faded down - for those stems treated with the new script - for a couple of seconds on the far side of the road near to Harrow Road, and then jumped back up to full volume just as it the transitioned into track3/NotAlone.
+   Also, the acoustic guitar and Keyboards were very slightly out of sync for the whole duraton of that this track played - these were the only two stems that did not have the new volume adjustment script added. So it appears that this script is adding a delay somewhere along the line.
+- track 3/NotAlone, worked well, appropriate segment adjustments. The final section ('R2') should have faded the volume down. This happened faster than anticipated and then jumped back up to full volume, when a segment adaption took place (looped a section).
+- Stella did not enter when going through the gate - NotAlone continued to play, until I manually selected the scene. Stella (multi-track) also had a route ('R2') to bring in two stems not playing in 'R1'.
+  The rhythm section did not enter where it should have. I continued to walk on and then deliberatly slowed down to force some segment adaptations, then the rhythm sections stems entered.
+- track4/TheBadBoys - worked very well, some good segment adaptations. 
+- track5/WaitingForGA - worked well apart from the fade into the Wollaton Hall arrival music. Here a long fade (7 sec) was dadded, but in practice, it started to fade and then cut out with a jump
+- Track 6...onwards. The WollatonHallArrival music all worked well. One adjustment to make in the final - at Wollaton Hall - scene, the top layer of music is set to loop, when it should only play once.
+- The fixedPlayList scene did not start playing, needed to be manually selected (Text-to-speech work though)
+
+
+Other thoughts - sometimes a fade out before the next track enters is effective. Maybe look at some of these track transitions having a fade followed by a moment’s pause and then the next track enters. Maybe this could be achieved by adding a short segment of silence at the front end of the track. The position of the waypoint could be brought back so the trigger point is slightly early, to compensate of the delay.
