@@ -8,31 +8,6 @@
   
   "tracks": [
     {
-      "name": "StellaA",
-      "pauseIfSilent": true,
-      "files": [
-        { 
-          "path": "StellaA.wav",
-          "trackPos": 0,
-          "length": 17.159
-        }
-      ],
-      "unitTime": 7.7,
-      "sections": [
-        { "name": "intro1A", "trackPos": 0.012, "length":  8.579, "startCost": 0, "endCost": 100,
-          "next": [ {"name":"intro1B","cost":0},
-          {"name":"intro1A","cost":5
-          }]
-        },  
-        { "name": "intro1B", "trackPos": 8.580, "length":  8.580, "startCost": 100, "endCost": 0,
-          "next": [ {"name":"intro1A","cost":0
-          },
-          {"name":"intro1B","cost":5
-          }]
-        }         
-      ]
-    },
-    {
       "name": "StellaVox",
       "pauseIfSilent": true,
       "files": [
@@ -45,7 +20,7 @@
       "unitTime": 7.7,
       "sections": [
           
-        { "name": "intro1", "trackPos": 0.012, "length":  17.159, 
+        { "name": "intro1", "trackPos": 0.012, "length":  17.159, "startCost": 0, 
           "next": [ {"name":"verse1","cost":0},
           {"name":"intro1","cost":5
           }]
@@ -56,7 +31,7 @@
           {"name":"outroB","cost":5}]
         },  
         
-        { "name": "verse1", "trackPos": 17.171, "length":  29.989, "startCost": 0, 
+        { "name": "verse1", "trackPos": 17.171, "length":  29.989, "startCost": 500, 
           "next": [ {"name":"verse2","cost":0
           },
           {"name":"intro1","cost":5}, {"name":"mainBody","cost":40
@@ -143,7 +118,7 @@
       "unitTime": 7.7,
       "sections": [
           
-        { "name": "intro1", "trackPos": 0.012, "length":  17.159, 
+        { "name": "intro1", "trackPos": 0.012, "length":  17.159, "startCost": 0, 
           "next": [ {"name":"verse1","cost":0},
           {"name":"intro1","cost":5
           }]
@@ -154,7 +129,7 @@
           {"name":"outroB","cost":5}]
         },  
         
-        { "name": "verse1", "trackPos": 17.171, "length":  29.989, "startCost": 0, 
+        { "name": "verse1", "trackPos": 17.171, "length":  29.989, "startCost": 500, 
           "next": [ {"name":"verse2","cost":0
           },
           {"name":"intro1","cost":5}, {"name":"mainBody","cost":40
@@ -241,7 +216,7 @@
       "unitTime": 7.7,
       "sections": [
           
-        { "name": "intro1", "trackPos": 0.012, "length":  17.159, 
+        { "name": "intro1", "trackPos": 0.012, "length":  17.159, "startCost": 0, 
           "next": [ {"name":"verse1","cost":0},
           {"name":"intro1","cost":5
           }]
@@ -252,7 +227,7 @@
           {"name":"outroB","cost":5}]
         },  
         
-        { "name": "verse1", "trackPos": 17.171, "length":  29.989, "startCost": 0, 
+        { "name": "verse1", "trackPos": 17.171, "length":  29.989, "startCost": 500, 
           "next": [ {"name":"verse2","cost":0
           },
           {"name":"intro1","cost":5}, {"name":"mainBody","cost":40
@@ -339,7 +314,7 @@
       "unitTime": 7.7,
       "sections": [
           
-        { "name": "intro1", "trackPos": 0.012, "length":  17.159, 
+        { "name": "intro1", "trackPos": 0.012, "length":  17.159, "startCost": 0, 
           "next": [ {"name":"verse1","cost":0},
           {"name":"intro1","cost":5
           }]
@@ -349,8 +324,7 @@
           
           {"name":"outroB","cost":5}]
         },  
-        
-        { "name": "verse1", "trackPos": 17.171, "length":  29.989, "startCost": 0, 
+        { "name": "verse1", "trackPos": 17.171, "length":  29.989, "startCost": 500, 
           "next": [ {"name":"verse2","cost":0
           },
           {"name":"intro1","cost":5}, {"name":"mainBody","cost":40
