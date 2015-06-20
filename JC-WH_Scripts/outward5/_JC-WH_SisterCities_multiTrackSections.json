@@ -18,7 +18,7 @@
       ],
       "unitTime": 6.1,
       "sections": [
-        { "name": "mainBody", "trackPos": 21.827483, "length":  186.677187, "startCost": 0,
+        { "name": "mainBody", "trackPos": 21.827483, "length":  186.677187, 
           "next": [ {"name":"intro1A","cost":0
           },
           {"name":"intro1A","cost":5
