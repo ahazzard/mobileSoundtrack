@@ -1,0 +1,446 @@
+{
+  "meta": {
+    "mimetype": "application/x-daoplayer-composition",
+    "version": 1,
+    "title": "WH-JC_context",
+    "description": "waypoints and routes for Wollaton Hall to Jubilee campus - return route"
+  },
+  "context": {
+    "waypoints": [
+
+		{
+		"name": "J_CS",
+		"lat": 52.953571600, 	"lng": -1.187735800,
+		"nearDistance": 20,
+		"description": "Start-Finish - Jubilee Campus CS",
+		"origin": true
+		},
+		{
+		"name": "WR",
+		"lat": 52.955247300, "lng": -1.189852100,
+		"description": "Wollaton Road - left turn"
+		},
+		{
+		"name": "DA_LTA",
+		"lat":52.947997900,  "lng":-1.205663700,
+		"description":"Digby Ave and Lime Tree Ave intersection"
+		},
+		{
+		"name": "LTA_LT",
+		"lat":52.949066,  "lng":-1.208473,
+		"description":"Lime Tree Ave - left turn towards Wollaton Hall"
+		},
+		{
+		"name": "LTA_WH",
+		"lat":52.949064,  "lng":-1.209281,
+		"description":"Lime Tree Ave - Wollaton hall driveway"
+		},
+		{
+		"name": "LTA_WHa",
+		"lat":52.94892,  "lng":-1.209558,
+		"description":"Lime Tree Ave - Wollaton hall driveway approach point 1"
+		},
+		{
+		"name": "LTA_WHb",
+		"lat":52.948705,  "lng":-1.209665,
+		"description":"Lime Tree Ave - Wollaton hall driveway approach point 2"
+		},
+		{
+		"name": "WH1",
+		"lat":52.948424,  "lng":-1.209720,
+		"nearDistance": 25,
+		"description":"Wollaton Hall – arrive"
+		},
+		{
+		"name": "WH2",
+		"lat":52.948135,  "lng":-1.209890,
+		"nearDistance": 25,
+		"description":"Wollaton Hall – arrive"
+		},
+		{
+		"name": "WH3",
+		"lat":52.948044,  "lng":-1.210212,
+		"nearDistance": 25,
+		"description":"Wollaton Hall – arrive"
+		},
+		{
+		"name": "WH_EP1",
+		"lat":52.948371200,  "lng":-1.209440200,
+		"description":"Wollaton Hall - alternative exit path"
+		},
+		{
+		"name": "WH_EP2",
+		"lat":52.948624,  "lng":-1.208664,
+		"description":"Wollaton Hall - alternative exit path"
+		},
+		{
+		"name": "WH_EP3",
+		"lat":52.948282,  "lng": -1.207614,
+		"description":"Wollaton Hall - alternative exit path"
+		},
+		{
+		"name": "EP_LTA",
+		"lat":52.948182,  "lng":-1.206390,
+		"description":"Alternative exit path intersection with Lime Tree Ave"
+		},
+		{
+		"name": "LTA_OP",
+		"lat":52.947779700,  "lng":-1.204663200,
+		"description":"Lime Tree Ave - Open parkland to tree covered"
+		},
+		{
+		"name": "LTA_HW",
+		"lat":52.947465,  "lng":-1.200761,
+		"description":"Lime Tree Ave - Open parkland to tree covered"
+		},
+		{
+		"name": "LTA_GIR1",
+		"lat":52.947125200,  "lng":-1.196204900,
+		"description":"Lime Tree Ave - Gate into Road section1"
+		},
+		{
+		"name": "LTA_GIR2",
+		"lat":52.947078,  "lng":-1.194594,
+		"description":"Lime Tree Ave - Gate into Road section2"
+		},
+		{
+		"name": "LTA_GIR3",
+		"lat":52.946832,  "lng":-1.192121,
+		"description":"Lime Tree Ave - Gate into Road section3"
+		},
+		{
+		"name": "LTA_MB",
+		"lat":52.946665400,  "lng":-1.191150200,
+		"description":"Lime Tree Ave intersection with Middleton Blvd"
+		},
+		{
+		"name": "MB_PCA",
+		"lat":52.947343400,  "lng":-1.190825700,
+		"description":"Middleton Blvd - Pedestrian crossing A"
+		},
+		{
+		"name": "MB_PCB",
+		"lat":52.947328000,  "lng":-1.190646000,
+		"description":"Middleton Blvd - Pedestrian crossing B"
+		},
+		{
+		"name": "MB_PCC",
+		"lat":52.947554300,  "lng":-1.190612500,
+		"description":"Middleton Blvd - Pedestrian crossing C"
+		},
+		{
+		"name": "MB_PCD",
+		"lat":52.947546200,  "lng":-1.190418000,
+		"description":"Middleton Blvd - Pedestrian crossing D"
+		},
+		{
+		"name": "CA_LT",
+		"lat":52.947419300,  "lng":-1.190309400,
+		"description":"Charnock Ave - Left turn"
+		},
+		{
+		"name": "CA_DD",
+		"lat":52.947959900,  "lng":-1.187645900,
+		"description":"Charnock Ave - intersection with Dorkey Dr"
+		},
+		{
+		"name": "JC_SFG",
+		"lat":52.948190200,  "lng":-1.186031300,
+		"description":"Gate entrance into Jubilee Campus sports field"
+		},
+		{
+		"name": "JC_SFV",
+		"lat":52.948397900,  "lng":-1.185995000,
+		"description":"Visible entrance into Jubilee Campus sports field"
+		},
+		{
+		"name": "SF_JCCP",
+		"lat":52.949521900,  "lng":-1.185309700,
+		"description":"Sports Field transition to Car park"
+		},
+		{
+		"name": "JC_NCL",
+		"lat":52.950367900,  "lng":-1.185571300,
+		"description":"JC - Left turn to NCL"
+		},
+		{
+		"name": "JC_RSL",
+		"lat":52.950294400,  "lng":-1.185869000,
+		"description":"JC - Right turn by side of lake"
+		},
+		{
+		"name": "JC_WF",
+		"lat":52.951243000,  "lng":-1.186558300,
+		"description":"JC - Water feature on path by lake"
+		},
+		{
+		"name": "JC_A1",
+		"lat":52.951551,  "lng":-1.186732,
+		"description":"Intersection by Atrium building"
+		},
+		{
+		"name": "JC_A2",
+		"lat":52.951787,  "lng":-1.186861,
+		"description":"Intersection by Atrium building"
+		},
+		{
+		"name": "JC_A3",
+		"lat":52.951958,  "lng":-1.186947,
+		"description":"Intersection by Atrium building"
+		},
+		{
+		"name": "JC_AB",
+		"lat":52.952122,  "lng": -1.187011,
+		"description":"Intersection by Atrium building"
+		}
+    ],
+    
+    "routes": [
+			{
+				"name": "J_CS-WR",
+				"description": "Fixed Playlist",
+				"from": "J_CS",
+				"to":"WR",
+				"nearDistance": "100"
+			},
+			{
+				"name": "LTA_LT-LTA_WH",
+				"description": "Scene WollatonHallArriveA1",
+				"from": "LTA_LT",
+				"to":"LTA_WH",
+				"nearDistance": "100"
+			},
+			{
+				"name": "LTA_WH-LTA_WHa",
+				"description": "Scene WollatonHallArriveA2",
+				"from": "LTA_WH",
+				"to":"LTA_WHa",
+				"nearDistance": "100"
+			},
+			{
+				"name": "LTA_WHa-LTA_WHb",
+				"description": "Scene WollatonHallArriveA3",
+				"from": "LTA_WHa",
+				"to":"LTA_WHb",
+				"nearDistance": "50"
+			},
+			{
+				"name": "LTA_WHb-WH1",
+				"description": "Scene WollatonHallArriveA4",
+				"from": "LTA_WHb",
+				"to":"WH1",
+				"nearDistance": "50"
+			},
+			{
+				"name": "WH1-WH3",
+				"description": "Scene WollatonHallArriveB - music for the location of Wollaton Hall",
+				"from": "WH1",
+				"to":"WH3",
+				"nearDistance": "100"
+			},
+			{ 
+			  "name": "WH_EP1-WH_EP2",
+			  "description": "waiting for GA stage 1",
+			  "from": "WH_EP1",
+			  "to": "WH_EP2",
+			  "nearDistance": "100"
+			},
+			{ 
+			  "name": "WH_EP2-WH_EP3",
+			  "description": "waiting for GA stage 2",
+			  "from": "WH_EP2",
+			  "to": "WH_EP3",
+			  "nearDistance": "100"
+			},
+			{ 
+			  "name": "WH_EP3-EP_LTA",
+			  "description": "waiting for GA stage 3",
+			  "from": "WH_EP3",
+			  "to": "EP_LTA",
+			  "nearDistance": "100"
+			},
+			{
+			  "name": "EP_LTA-LTA_OP",
+			  "description": "waiting for GA stage 4",
+			  "from": "EP_LTA",
+			  "to": "LTA_OP",
+			  "nearDistance": "100"
+			},
+			{ 
+			  "name": "LTA_OP-LTA_HW",
+			  "description": "The Bad Guys",
+			  "from": "LTA_OP",
+			  "to": "LTA_HW",
+			  "nearDistance": "100"
+			},
+			{ 
+			  "name": "LTA_HW-LTA_GIR1",
+			  "description": "Stella",
+			  "from": "LTA_HW",
+			  "to": "LTA_GIR1",
+			  "nearDistance": "100"
+			},
+			{ 
+			  "name": "LTA_GIR1-LTA_MB",
+			  "from": "LTA_GIR1",
+			  "to": "LTA_MB",
+			  "nearDistance": "100"
+			},
+			{ 
+			  "name": "LTA_GIR1-LTA_GIR2",
+			  "description": "MitaDelMundo - stage 1 multi-track reduced texture",
+			  "from": "LTA_GIR1",
+			  "to": "LTA_GIR2",
+			  "nearDistance": "100"
+			},
+			{ 
+			  "name": "LTA_GIR2-LTA_GIR3",
+			  "description": "MitaDelMundo - stage 2 multi-track full texture",
+			  "from": "LTA_GIR2",
+			  "to": "LTA_GIR3",
+			  "nearDistance": "100"
+			},
+			{ 
+			  "name": "LTA_GIR3-LTA_MB",
+			  "description": "MitaDelMundo - stage 3 multi-track reduced texture",
+			  "from": "LTA_GIR3",
+			  "to": "LTA_MB",
+			  "nearDistance": "100"
+			},
+			{ 
+			  "name": "LTA_MB-MB_PCA",
+			  "description": "Sister Cities stage 1 - multi-track full texture",
+			  "from": "LTA_MB",
+			  "to": "MB_PCA",
+			  "nearDistance": "100"
+			},
+			{ 
+			  "name": "MB_PCA-CA_LT",
+			  "description": "Sister Cities stage 2 - multi-track reduced texture",
+			  "from": "MB_PCA",
+			  "to": "CA_LT",
+			  "nearDistance": "100"
+			},
+			{ 
+			  "name": "MB_PCA-MB_PCB",
+			  "from": "MB_PCA",
+			  "to": "MB_PCB",
+			  "nearDistance": "100"
+			},
+			{ 
+			  "name": "MB_PCB-MB_PCC",
+			  "from": "MB_PCB",
+			  "to": "MB_PCC",
+			  "nearDistance": "100"
+			},
+			{ 
+			  "name": "MB_PCC-MB_PCD",
+			  "from": "MB_PCC",
+			  "to": "MB_PCD",
+			  "nearDistance": "100"
+			},
+			{ 
+			  "name": "MB_PCD-CA_LT",
+			  "from": "MB_PCD",
+			  "to": "CA_LT",
+			  "nearDistance": "100"
+			},
+			{ 
+			  "name": "CA_LT-JC_SFG",
+			  "description": "Sister Cities stage 4 - multi-track full texture",
+			  "from": "CA_LT",
+			  "to": "JC_SFG",
+			  "nearDistance": "100"
+			},
+			{ 
+			  "name": "CA_LT-CA_DD",
+			  "from": "CA_LT",
+			  "to": "CA_DD",
+			  "nearDistance": "100"
+			},
+			{ 
+			  "name": "CA_DD-JC_SFG",
+			  "from": "CA_DD",
+			  "to": "JC_SFG",
+			  "nearDistance": "100"
+			},
+			{ 
+			  "name": "JC_SFG-JC_SFV",
+			  
+			  "from": "JC_SFG",
+			  "to": "JC_SFV",
+			  "nearDistance": "100"
+			},
+			{ 
+			  "name": "JC_SFG-SF_JCCP",
+			  "description": "Not Alone - Stage 1",
+			  "from": "JC_SFG",
+			  "to": "SF_JCCP",
+			  "nearDistance": "100"
+			},
+			{ 
+			  "name": "JC_SFV-SF_JCCP",
+			  "description": "Not Alone - Stage 2",
+			  "from": "JC_SFV",
+			  "to": "SF_JCCP",
+			  "nearDistance": "100"
+			},
+			{ 
+			  "name": "SF_JCCP-JC_NCL",
+			  "description": "Not Alone - Stage 3",
+			  "from": "SF_JCCP",
+			  "to": "JC_NCL",
+			  "nearDistance": "100"
+			},
+			{ 
+			  "name": "JC_NCL-JC_RSL",
+			  "description": "Not Alone - Stage 4",
+			  "from": "JC_NCL",
+			  "to": "JC_RSL",
+			  "nearDistance": "100"
+			},
+			{ 
+			  "name": "JC_RSL-JC_WF",
+			  "description": "Not Alone - Stage 4",
+			  "from": "JC_RSL",
+			  "to": "JC_WF",
+			  "nearDistance": "100"
+			},
+			{ 
+			  "name": "JC_WF-JC_A1",
+			  "description": "Scene AtriumArriveA1",
+			  "from": "JC_WF",
+			  "to": "JC_A1",
+			  "nearDistance": "100"
+			},
+			{ 
+			  "name": "JC_A1-JC_A2",
+			  "description": "Scene AtriumArriveA2",
+			  "from": "JC_A1",
+			  "to": "JC_A2",
+			  "nearDistance": "100"
+			},
+			{ 
+			  "name": "JC_A2-JC_A3",
+			  "description": "Scene AtriumArriveA3",
+			  "from": "JC_A2",
+			  "to": "JC_A3",
+			  "nearDistance": "100"
+			},
+			{ 
+			  "name": "JC_A3-JC_AB",
+			  "description": "Scene AtriumArriveA4",
+			  "from": "JC_A3",
+			  "to": "JC_AB",
+			  "nearDistance": "100"
+			},
+			{ 
+			  "name": "JC_AB-J_CS",
+			  "description": "Scene AtriumArriveB",
+			  "from": "JC_AB",
+			  "to": "J_CS",
+			  "nearDistance": "100"
+			}
+    ]
+  }
+}
