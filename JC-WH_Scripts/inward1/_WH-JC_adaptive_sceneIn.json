@@ -148,7 +148,7 @@
       "partial": false,
       "waypoints":{"W1":"WH1", "W2":"WH3"},
       "routes":{"R1":"WH1-WH3", "Rnext": "WH_EP1-WH_EP2"},
-      "onload": "daoplayer.speak('You have arrived at Wollaton Hall, please fill in the questionnaire', true);",
+      
       "onupdate": " if (routes['Rnext'].nearest) { daoplayer.setScene('track1/WaitingForGA'); }",
       "updatePeriod":1.0,
       "tracks": [
@@ -496,7 +496,7 @@
       "partial": false,
       "waypoints":{"W1":"JC_AB", "W2":"J_CS"},
       "routes":{"R1":"JC_AB-J_CS"},
-      "onload": "daoplayer.speak('You have arrived at the atrium, please fill in the questionnaire', true);",
+      
       "onupdate": "if (!routes['R1'].near) { daoplayer.setScene('Start/any'); }",
       "updatePeriod":1.0,
       "tracks": [
