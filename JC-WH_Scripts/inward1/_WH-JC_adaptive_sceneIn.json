@@ -2,12 +2,13 @@
   "meta": {
     "mimetype": "application/x-daoplayer-composition",
     "version": 1,
-    "title": "JC-WH_Outward_scene",
-    "description" : "Scene for the adaptive tracks when used on the outward leg of walk (JC to WH)"
+    "title": "WH-JC_Inward_scene",
+    "description" : "Scene for the adaptive tracks when used on the Inward leg of walk (WH-JC)"
   },
   "scenes": [
     {
     "name": "fixedPlaylistIn",
+    "description": "this scene initiates playback of the fixed playlist of music for the leg of the walk that goes from JC to WH. One route initiates the playlist, but after that no other GPS is used until the approach of Wollaton Hall",
       "partial": false,
       "waypoints":{"W1":"J_CS","W2":"WR"},
      "routes":{"R1":"J_CS-WR", "Rnext":"LTA_LT-LTA_WH"},
@@ -28,7 +29,7 @@
     },
     {
       "name": "WollatonHallArriveA1",
-      "description": "this scene changes to the first layer of Wollaton Hall arrival music when approaching",
+      "description": "this scene brings in the first layer of Wollaton Hall arrival - 4 layers are used that enter progressively (across different scenes)",
       "partial": false,
       "waypoints":{"W1":"LTA_LT","W2":"LTA_WH"},
       "routes":{"R1":"LTA_LT-LTA_WH", "Rnext":"LTA_WH-LTA_WHa"},
@@ -39,7 +40,7 @@
         {
           "name": "ArriveA_Layer1",
           "pos": 0,
-          "volume": "sceneTime<2 ? [sceneTime,trackVolume,sceneTime+4,1] : 1" 
+          "volume": "sceneTime<2 ? [sceneTime,trackVolume,sceneTime+5,1] : 1" 
         },
         {
           "name": "ArriveA_Layer2",
@@ -48,11 +49,11 @@
         },
         {
           "name": "fixedPlaylist",
-          "volume": "sceneTime<2 ? [sceneTime,trackVolume,sceneTime+4,0] : 0"
+          "volume": "sceneTime<2 ? [sceneTime,trackVolume,sceneTime+5,0] : 0"
         },
         {
           "name": "holdingPad",
-          "volume": "sceneTime<3 ? [sceneTime,trackVolume,sceneTime+1,0] : 0" 
+          "volume": "sceneTime<2 ? [sceneTime,trackVolume,sceneTime+2,0] : 0" 
         }
       ]
     },
@@ -82,7 +83,7 @@
     },
     {
       "name": "WollatonHallArriveA3",
-      "description": "second part of arrival music for close proximity to Wollaton Hall",
+      "description": "third layer of arrival music for close proximity to Wollaton Hall",
       "partial": false,
       "waypoints":{"W1":"LTA_WHa","W2":"LTA_WHb"},
       "routes":{"R1":"LTA_WHa-LTA_WHb", "Rnext":"LTA_WHb-WH1"},
@@ -111,7 +112,7 @@
     },
     {
       "name": "WollatonHallArriveA4",
-      "description": "second part of arrival music for close proximity to Wollaton Hall",
+      "description": "fourth layer of arrival music for close proximity to Wollaton Hall",
       "partial": false,
       "waypoints":{"W1":"LTA_WHb","W2":"WH1"},
       "routes":{"R1":"LTA_WHb-WH1", "Rnext":"WH1-WH3"},
@@ -144,7 +145,7 @@
     },
     {
       "name": "WollatonHallArriveB",
-      "description": "Final arrival music for Wollaton Hall",
+      "description": "Final arrival music for Wollaton Hall - this scene is for when a participant has walked up to the hall and this music continues to accompany them while they fill in the questionnaire - there are two layers, 'ArriveB_Accent' sounds only once, whereas 'ArriveB_Layer1' loops indefinately ",
       "partial": false,
       "waypoints":{"W1":"WH1", "W2":"WH3"},
       "routes":{"R1":"WH1-WH3", "Rnext": "WH_EP1-WH_EP2"},
@@ -182,13 +183,13 @@
     },
     {
       "name": "track1/WaitingForGA",
-      "description": "this scene changes track to 'WaitingForGA' on route away from Wollaton hall",
+      "description": "this scene changes track to 'Waiting For GA' when the participnats leave the area around Wollaton hall. It uses 5 waypoints to form 4 routes, which makes for a complex calculation of distance / time. (may change this to a multi-track scene, so different twists and turns of this route are accompanied by different stem arrangements)",
       "partial": false,
       "waypoints":{"W1":"WH_EP1","W2":"WH_EP2", "W3":"WH_EP3", "W4":"EP_LTA", "W5":"LTA_OP"},
       "routes":{"R1":"WH_EP1-WH_EP2", "R2":"WH_EP2-WH_EP3", "R3":"WH_EP3-EP_LTA", "R4":"EP_LTA-LTA_OP", "Rnext":"LTA_OP-LTA_HW"},
-      "onload": "if (waypoints['W5'].distance!==undefined) window.estimatedEnd=totalTime+(routes['R1'].nearest ? waypoints['W2'].distance+routes['R2'].length+routes['R3'].length+routes['R4'].length : waypoints['W5'].distance);(routes['R2'].nearest ? waypoints['W3'].distance+routes['R3'].length+routes['R4'].length : waypoints['W5'].distance);(routes['R3'].nearest ? waypoints['W4'].distance+routes['R4'].length : waypoints['W5'].distance)/1.5; else window.estimatedEnd=totalTime+240; ",
+      "onload": "if (waypoints['W5'].distance!==undefined) window.estimatedEnd=totalTime+(routes['R1'].nearest ? waypoints['W2'].distance+routes['R2'].length+routes['R3'].length+routes['R4'].length : waypoints['W5'].distance),(routes['R2'].nearest ? waypoints['W3'].distance+routes['R3'].length+routes['R4'].length : waypoints['W5'].distance),(routes['R3'].nearest ? waypoints['W4'].distance+routes['R4'].length : waypoints['W5'].distance)/1.5; else window.estimatedEnd=totalTime+240; ",
       
-      "onupdate": "if (!routes['R1'].near && !routes['R2'].near && !routes['R3'].near && !routes['R4'].near) { daoplayer.setScene('Start/any'); } else if (routes['Rnext'].nearest) { daoplayer.setScene('track2/TheBadGuys'); } else if (waypoints['W5'].distance!==undefined) window.estimatedEnd=totalTime+(routes['R1'].nearest ? waypoints['W2'].distance+routes['R2'].length+routes['R3'].length+routes['R4'].length : waypoints['W5'].distance);(routes['R2'].nearest ? waypoints['W3'].distance+routes['R3'].length+routes['R4'].length : waypoints['W5'].distance);(routes['R3'].nearest ? waypoints['W4'].distance+routes['R4'].length : waypoints['W5'].distance)/1.5; ",
+      "onupdate": "if (!routes['R1'].near && !routes['R2'].near && !routes['R3'].near && !routes['R4'].near) { daoplayer.setScene('Start/any'); } else if (routes['Rnext'].nearest) { daoplayer.setScene('track2/TheBadGuys'); } else if (waypoints['W5'].distance!==undefined) window.estimatedEnd=totalTime+(routes['R1'].nearest ? waypoints['W2'].distance+routes['R2'].length+routes['R3'].length+routes['R4'].length : waypoints['W5'].distance),(routes['R2'].nearest ? waypoints['W3'].distance+routes['R3'].length+routes['R4'].length : waypoints['W5'].distance),(routes['R3'].nearest ? waypoints['W4'].distance+routes['R4'].length : waypoints['W5'].distance)/1.5; ",
       
       "updatePeriod":1.0,
       "tracks": [
@@ -213,7 +214,7 @@
     },
     {
       "name": "track2/TheBadGuys",
-      "description": "this scene changes track to 'TheBadGuys' when walking under the tree cover",
+      "description": "this scene transitions track to 'The Bad Guys' when Lime Tree Avenue changes to tree cover",
       "partial": false,
       "waypoints":{"W1":"LTA_OP","W2":"LTA_HW"},
       "routes":{"R1":"LTA_OP-LTA_HW", "Rnext":"LTA_HW-LTA_GIR1"},
@@ -238,7 +239,7 @@
     },
     {
       "name": "track3/Stella",
-      "description": "this scene changes track to 'Stella' half-way down Lime Tree Avenue - from tree cover to gate)",
+      "description": "this scene changes track to 'Stella' half-way down the Lime Tree Avenue tree cover",
       "partial": false,
       "waypoints":{"W1":"LTA_HW","W2":"LTA_GIR1"},
       "routes":{"R1":"LTA_HW-LTA_GIR1", "Rnext":"LTA_GIR1-LTA_GIR2"},
@@ -263,12 +264,12 @@
     },
     {
       "name": "track4/MitaDelMundo",
-      "description": "the Mita Del Mundo track commences after walking through the gate on lime tree avenue",
+      "description": "the Mita Del Mundo track commences after walking through the gate on lime tree avenue. There are a set of 4 waypoints and 3 routes, which are currently not needed to calculate the walking distance / time, but rather these are in place as there may be a plan to introduce a multi-track varient, so these routes would then control the volumes of different stems",
       "partial": false,
       "waypoints":{"W1":"LTA_GIR1","W2":"LTA_GIR2", "W3":"LTA_GIR3", "W4":"LTA_MB"},
       "routes":{"R1":"LTA_GIR1-LTA_GIR2", "R2":"LTA_GIR2-LTA_GIR3", "R3":"LTA_GIR3-LTA_MB", "Rnext":"LTA_MB-MB_PCA"},
-      "onload": "if (waypoints['W4'].distance!==undefined) window.estimatedEnd=totalTime+(routes['R1'].nearest ? waypoints['W2'].distance+routes['R2'].length+routes['R3'].length : waypoints['W4'].distance);(routes['R2'].nearest ? waypoints['W3'].distance+routes['R3'].length : waypoints['W4'].distance)/1.5; else window.estimatedEnd=240;",
-      "onupdate": "if (!routes['R1'].near && !routes['R2'].near && !routes['R3'].near) { daoplayer.setScene('Start/any'); } else if (routes['Rnext'].nearest) { daoplayer.setScene('track5/SisterCities'); } else if (waypoints['W4'].distance!==undefined) window.estimatedEnd=totalTime+(routes['R1'].nearest ? waypoints['W2'].distance+routes['R2'].length+routes['R3'].length : waypoints['W4'].distance);(routes['R2'].nearest ? waypoints['W3'].distance+routes['R3'].length : waypoints['W4'].distance)/1.5; ",
+      "onload": "if (waypoints['W4'].distance!==undefined) window.estimatedEnd=totalTime+(routes['R1'].nearest ? waypoints['W2'].distance+routes['R2'].length+routes['R3'].length : waypoints['W4'].distance),(routes['R2'].nearest ? waypoints['W3'].distance+routes['R3'].length : waypoints['W4'].distance)/1.5; else window.estimatedEnd=240;",
+      "onupdate": "if (!routes['R1'].near && !routes['R2'].near && !routes['R3'].near) { daoplayer.setScene('Start/any'); } else if (routes['Rnext'].nearest) { daoplayer.setScene('track5/SisterCities'); } else if (waypoints['W4'].distance!==undefined) window.estimatedEnd=totalTime+(routes['R1'].nearest ? waypoints['W2'].distance+routes['R2'].length+routes['R3'].length : waypoints['W4'].distance),(routes['R2'].nearest ? waypoints['W3'].distance+routes['R3'].length : waypoints['W4'].distance)/1.5; ",
       "updatePeriod":1.0,
       "tracks": [
         {
@@ -288,13 +289,13 @@
     },
     {
       "name": "track5/SisterCities",
-      "description": "the Sister Cities track starts when exiting Lime Tree avenue on to Middleton road",
+      "description": "the Sister Cities track starts when exiting Lime Tree avenue on to Middleton road It uses 4 waypoints and 3 routes to calculate the walking distance / time. This - as in the outward journey - is a multi-track and some stems are made silent when crossing the pedestrian crossing 'R2",
       "partial": false,
       "waypoints": {"W1": "LTA_MB", "W2": "MB_PCA", "W3": "CA_LT", "W4": "JC_SFG"},
       "routes": {"R1": "LTA_MB-MB_PCA", "R2": "MB_PCA-CA_LT", "R3": "CA_LT-JC_SFG", "Rnext": "JC_SFG-SF_JCCP"},
-      "onload": "if (waypoints['W4'].distance!==undefined) window.estimatedEnd=totalTime+(routes['R1'].nearest ? waypoints['W2'].distance+routes['R2'].length+routes['R3'].length : waypoints['W4'].distance);(routes['R2'].nearest ? waypoints['W3'].distance+routes['R3'].length : waypoints['W4'].distance)/1.5; else window.estimatedEnd=totalTime+350; ",
+      "onload": "if (waypoints['W4'].distance!==undefined) window.estimatedEnd=totalTime+(routes['R1'].nearest ? waypoints['W2'].distance+routes['R2'].length+routes['R3'].length : waypoints['W4'].distance),(routes['R2'].nearest ? waypoints['W3'].distance+routes['R3'].length : waypoints['W4'].distance)/1.5;  else window.estimatedEnd=totalTime+350; ",
       
-      "onupdate": "if (!routes['R1'].near && !routes['R2'].near && !routes['R3'].near) { daoplayer.setScene('Start/any'); } else if (routes['Rnext'].nearest) { daoplayer.setScene('track6/NotAlone'); } else if (waypoints['W4'].distance!==undefined) window.estimatedEnd=totalTime+(routes['R1'].nearest ? waypoints['W2'].distance+routes['R2'].length+routes['R3'].length : waypoints['W4'].distance);(routes['R2'].nearest ? waypoints['W3'].distance+routes['R3'].length : waypoints['W4'].distance)/1.5; ",
+      "onupdate": "if (!routes['R1'].near && !routes['R2'].near && !routes['R3'].near) { daoplayer.setScene('Start/any'); } else if (routes['Rnext'].nearest) { daoplayer.setScene('track6/NotAlone'); } else if (waypoints['W4'].distance!==undefined) window.estimatedEnd=totalTime+(routes['R1'].nearest ? waypoints['W2'].distance+routes['R2'].length+routes['R3'].length : waypoints['W4'].distance),(routes['R2'].nearest ? waypoints['W3'].distance+routes['R3'].length : waypoints['W4'].distance)/1.5; ",
       "updatePeriod":1.0,
       "tracks": [
         {
@@ -334,13 +335,13 @@
     },
     {
       "name": "track6/NotAlone",
-      "description": "this scene changes track to 'Not Alone' when entering the jubilee campus sports field",
+      "description": "this scene changes track to 'Not Alone' when entering the jubilee campus sports field. This uses 5 waypoints and 4 routes to calculate the walking distance / time",
       "partial": false,
       "waypoints":{"W1":"JC_SFG","W2":"SF_JCCP", "W3":"JC_NCL","W4":"JC_RSL", "W5":"JC_WF"},
       "routes":{"R1":"JC_SFG-SF_JCCP", "R2":"SF_JCCP-JC_NCL", "R3":"JC_NCL-JC_RSL", "R4":"JC_RSL-JC_WF", "Rnext":"JC_WF-JC_A1"},
-      "onload": "if (waypoints['W5'].distance!==undefined) window.estimatedEnd=totalTime+(routes['R1'].nearest ? waypoints['W2'].distance+routes['R2'].length+routes['R3'].length+routes['R4'].length : waypoints['W5'].distance);(routes['R2'].nearest ? waypoints['W3'].distance+routes['R3'].length+routes['R4'].length : waypoints['W5'].distance);(routes['R3'].nearest ? waypoints['W4'].distance+routes['R4'].length : waypoints['W5'].distance)/1.5; else window.estimatedEnd=350;",
+      "onload": "if (waypoints['W5'].distance!==undefined) window.estimatedEnd=totalTime+(routes['R1'].nearest ? waypoints['W2'].distance+routes['R2'].length+routes['R3'].length+routes['R4'].length : waypoints['W5'].distance),(routes['R2'].nearest ? waypoints['W3'].distance+routes['R3'].length+routes['R4'].length : waypoints['W5'].distance),(routes['R3'].nearest ? waypoints['W4'].distance+routes['R4'].length : waypoints['W5'].distance)/1.5; else window.estimatedEnd=350;",
       
-      "onupdate": "if (!routes['R1'].near && !routes['R2'].near && !routes['R3'].near && !routes['R4'].near) { daoplayer.setScene('Start/any'); } else if (routes['Rnext'].nearest) { daoplayer.setScene('AtriumArriveA1'); } else if (waypoints['W5'].distance!==undefined) window.estimatedEnd=totalTime+(routes['R1'].nearest ? waypoints['W2'].distance+routes['R2'].length+routes['R3'].length+routes['R4'].length : waypoints['W5'].distance);(routes['R2'].nearest ? waypoints['W3'].distance+routes['R3'].length+routes['R4'].length : waypoints['W5'].distance);(routes['R3'].nearest ? waypoints['W4'].distance+routes['R4'].length : waypoints['W5'].distance)/1.5; ",
+      "onupdate": "if (!routes['R1'].near && !routes['R2'].near && !routes['R3'].near && !routes['R4'].near) { daoplayer.setScene('Start/any'); } else if (routes['Rnext'].nearest) { daoplayer.setScene('AtriumArriveA1'); } else if (waypoints['W5'].distance!==undefined) window.estimatedEnd=totalTime+(routes['R1'].nearest ? waypoints['W2'].distance+routes['R2'].length+routes['R3'].length+routes['R4'].length : waypoints['W5'].distance),(routes['R2'].nearest ? waypoints['W3'].distance+routes['R3'].length+routes['R4'].length : waypoints['W5'].distance),(routes['R3'].nearest ? waypoints['W4'].distance+routes['R4'].length : waypoints['W5'].distance)/1.5; ",
       "updatePeriod":1.0,
       "tracks": [
         {
@@ -350,7 +351,7 @@
         },
         {
           "name": "SisterCities_Drums",
-          "volume": 0
+          "volume": "sceneTime<2 ? [sceneTime,trackVolume,sceneTime+2,0] : 0"
         },
         {
           "name": "SisterCities_Bass",
@@ -358,7 +359,7 @@
         },
         {
           "name": "SisterCities_Guitars",
-          "volume": 0
+          "volume": "sceneTime<2 ? [sceneTime,trackVolume,sceneTime+2,0] : 0"
         },
         {
           "name": "SisterCities_AcousticKeys",
@@ -366,7 +367,7 @@
         },
         {
           "name": "SisterCities_Vox",
-          "volume": 0 
+          "volume": "sceneTime<2 ? [sceneTime,trackVolume,sceneTime+2,0] : 0" 
         },
         {
           "name": "holdingPad",
@@ -376,7 +377,7 @@
     },
     {
       "name": "AtriumArriveA1",
-      "description": "this scene changes to the first layer of Atrium arrival music when approaching",
+      "description": "this scene changes to the first layer of Atrium arrival music when approaching it",
       "partial": false,
       "waypoints":{"W1":"JC_WF","W2":"JC_A1"},
       "routes":{"R1":"JC_WF-JC_A1", "Rnext":"JC_A1-JC_A2"},
@@ -387,7 +388,7 @@
         {
           "name": "ArriveA_Layer1",
           "pos": 0,
-          "volume": "sceneTime<2 ? [sceneTime,trackVolume,sceneTime+4,1] : 1" 
+          "volume": "sceneTime<2 ? [sceneTime,trackVolume,sceneTime+5,1] : 1" 
         },
         {
           "name": "ArriveA_Layer2",
@@ -396,7 +397,7 @@
         },
         {
           "name": "NotAlone",
-          "volume": "sceneTime<2 ? [sceneTime,trackVolume,sceneTime+4,0] : 0"
+          "volume": "sceneTime<2 ? [sceneTime,trackVolume,sceneTime+5,0] : 0"
         },
         {
           "name": "holdingPad",
@@ -453,13 +454,13 @@
         },
         {
           "name": "holdingPad",
-          "volume": "sceneTime<2 ? [sceneTime,trackVolume,sceneTime+1,0] : 0" 
+          "volume": "sceneTime<2 ? [sceneTime,trackVolume,sceneTime+2,0] : 0" 
         }
       ]
     },
     {
       "name": "AtriumArriveA4",
-      "description": "second part of arrival music for close proximity to Wollaton Hall",
+      "description": "third layer of Atrium arrival music - higher strings",
       "partial": false,
       "waypoints":{"W1":"JC_A3","W2":"JC_AB"},
       "routes":{"R1":"JC_A3-JC_AB", "Rnext":"JC_AB-J_CS"},
@@ -482,17 +483,17 @@
         {
           "name": "ArriveA_Layer3b",
           "pos": 0,
-          "volume": "sceneTime<3 ? [sceneTime,trackVolume,sceneTime+1,0.5] : 0.5" 
+          "volume": "sceneTime<2 ? [sceneTime,trackVolume,sceneTime+1,0.5] : 0.5" 
         },
         {
           "name": "holdingPad",
-          "volume": "sceneTime<3 ? [sceneTime,trackVolume,sceneTime+1,0] : 0" 
+          "volume": "sceneTime<2 ? [sceneTime,trackVolume,sceneTime+2,0] : 0" 
         }
       ]
     },
     {
       "name": "AtriumArriveB",
-      "description": "Final arrival music for Wollaton Hall",
+      "description": "Final arrival music for completion of the walk",
       "partial": false,
       "waypoints":{"W1":"JC_AB", "W2":"J_CS"},
       "routes":{"R1":"JC_AB-J_CS"},
@@ -508,7 +509,7 @@
         {
           "name": "ArriveB_Layer1",
           "pos": 0,
-          "volume": "sceneTime<2 ? [sceneTime,trackVolume,sceneTime+1,1] : 1" 
+          "volume": "sceneTime<2 ? [sceneTime,trackVolume,sceneTime+0.5,1] : 1" 
         },
         {
           "name": "ArriveA_Layer1",
