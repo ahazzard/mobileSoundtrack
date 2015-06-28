@@ -1,42 +1,36 @@
-This is an info file for a test walk on 28/06/15
-This walk tested both the outward (outward5 scripts) and inward (inward1 scripts) walks.
-The log files are contained over 4 seperate files: WollatonHallTestWalk_280615_parts 1-4
+This infoFile charts two journeys - the outward and inward versions. Walks took place on 28/06/15
 
 outward journey (Jubilee Campus to Wollaton Hall):
-1-  track1/MitaDelMundo: worked well, apart from a few glitches, which has been the case for some time. Some effective adaptations
-2-  transition into track2/SisterCities was slightly late, but smooth.
-3-  SisiterCities: some effective adaptions. The volume commands for route 2 (crossing the pedestrian crossing) did not work. Furthermore, the track faded out to end, without adaption to extend its length whilst I was located in the cntre of the pedestrian crossing.
-4-  Transition into track3/NotAlone (previous track had finished), but Not Alone faded in on cue.
-5-  track3/NotAlone had some effective adaptions. The fade out on across route 2 did not take place at first. I doubled back to the start of that rote and then it start to fade, then I turned around and walked back and the volume jumped up to full.
-6-  Transition into track 4/Stella did not take place, once inside the gate of Digby Av. continued to walk for a little while Not Alone continued to play, but nothing happened. Then selected track4/Stella manually and the track started.
-7-  track4/Stella: some effective adaptions. The multi-track volume commands did not work, tried walk back and then the rhythm track entered, but quickly disappeared. Continued to walk on route and the backing track that should fade in during route 2 (R2) was fluctuating in and out for a second or 2 at a time. Came in and out 5-6 times.
-8-  transition into track5/TheBadGuys worked well. Some effective adaptions 
-9-  the transition into track6/WaitingForGA worked well: some effective adaptations
-10- the transition into the WollatonHallArrival music was on cue. As with many of the other cross fades, they are not smooth / linear, they jump in and out, particularly the long fades. They start to fade then just suddenly cut out.
-11- the whole of the arrival / approach to Wollaton Hall worked well an was effective (need to re-export WollatonHallArriveB to have a cleaner impact / accent)
+1- track1/MitaDelMundo: worked well, apart from a few glitches, which has been happening for some time. Some effective adaptations took place.
+2- transition into track2/SisterCities was slightly late in position, but smooth.
+3- SisiterCities: some effective adaptions. The volume commands for ‘R2' (crossing the pedestrian crossing) did not work. Furthermore, the track faded out to end, without any adaption to extend its length whilst I was located in the centre of the pedestrian crossing. Just resulted in silence until the next scene initiated.
+4- Transition into track3/NotAlone (previous track had finished), but Not Alone faded in on cue.
+5- track3/NotAlone had some effective adaptions. The fade out on across route 2 did not take place at first. I doubled back to the start of that route and then it started to fade, then I turned around and walked back and the volume jumped up to full.
+6- Transition into track 4/Stella did not take place once inside the gate of Digby Av. continued to walk for a little while and track3/Not Alone continued to play. Then selected track4/Stella manually and the track started.
+7- track4/Stella: some effective adaptions. The multi-track volume commands did not work when I approached R2, tried walking back a little and then the silent stems (rhythm track) entered, but quickly disappeared again. Continued to walk on the route and these stems fluctuated in and out 5-6 times.
+8- transition into track5/TheBadGuys worked well. Some effective adaptions on route.
+9- the transition into track6/WaitingForGA worked well: some effective adaptations on route.
+10- the transition into the WollatonHallArrival music was on cue. As with many of the cross-fades, they are not smooth / linear, they jump in and out, particularly the long fades. They start to fade, but then just suddenly cut out.
+11- the whole of the arrival / approach to Wollaton Hall worked well an was effective (need to re-export WollatonHallArriveB audio file to have a cleaner impact / accent)
 12- The transition into the fixed playlist did not work, selected track manually and it then started.
 
 Inward journey (Wollaton Hall to Jubilee campus):
-1-  Approach to Wollaton hall worked well (jumpy fade in)
-2-  tranisiton from Wollaton Hall music into track1/WaitingForGA worked well
-3-  track1/WaitingForGA was effective
-4-  traniston from track1 to track2/TheBadGuys happened on cue, but a sudden change in feel, need to address somehow.
-5-  track2/TheBadGuys adapted and then reached the end, but no transition into track3/Stella. Manually selected the track and it started playing.
-6-  transition from track3/Stella into track4/MitaDelMundo was smooth and effective.
-7-  track4/MitaDelMundo had some effective adaptations.
-8-  transition from track4 to track5/SisterCities was late but smooth when it occured (possible reposition of the waypoint here)
-9-  As on outward journey, no volume adjustment took place at the pedestrian crossing, but adaptations were effective
-10- transition from track4/SisterCities to track5/NotAlone was jumbled. Came in late, then Not Alone started, sister cities started to fade, then quickly some of the multi-track stems disappeared briefly leaving two stems (acoustic and keys playing fro a second or two before stopping.
-11- track5/NotAlone: some effective adaptions. 
+1- Approach to Wollaton hall worked well (although with a jumpy fade in).
+2- tranisiton from Wollaton Hall music into track1/WaitingForGA worked well.
+3- track1/WaitingForGA was effective.
+4- traniston from track1 to track2/TheBadGuys happened on cue, but a sudden change in musical feel, need to address somehow.
+5- track2/TheBadGuys adapted and then reached the end, but no transition into track3/Stella took place. Manually selected the track and it started playing.
+6- transition from track3/Stella into track4/MitaDelMundo was smooth and effective.
+7- track4/MitaDelMundo had some effective adaptations on route.
+8- transition from track4 to track5/SisterCities was late but smooth when it occured (possible reposition of the waypoint here)
+9- As on outward journey, no volume adjustment took place at the pedestrian crossing, but adaptations were effective on route.
+10- transition from track4/SisterCities to track5/NotAlone was jumbled. Came in late, then Not Alone started, sister cities started to fade, then quickly some of the multi-track stems disappeared briefly leaving two stems (acoustic and keys) playing for a second or two before stopping - FIXED
+11- track5/NotAlone: some effective adaptions.
 12- None of the transitions into the Atrium arrival music worked, but when selected manually all came in.
 
 key issues:
-1-  those tracks that do not transitions (where manual selection does then initiate)
-2-  volume fades not smooth and linear. Is the problem the sceneTime duration<2 so when it is later than 2 seconds it then suddenly steps up or down the volume without a fade?
-3-  volume controls on multi-route / multi-track scenes (i.e. SisterCities on both outward and inward journeys and NotAlone on outward).
-4-  For some transitions it would be nice to fade out the currently playing track, but delay slightly the initiation of the next track. So rather than a crossfade, they is a slight pause in between. This could be achieved by placing a period of silence on the music file, but is tis better achieved using ‘file pos’ and ‘track pos’?
-5-  Regular loss of GPS. We spoke about placing in some script that meant there would not be any intervention if GPS was lost until a set time had passed (e.g. 20 secs), so rather than the music skipping in and out constantly, the track will only stop playing after GPS really has been lost
-
-
-
-
+1- those scenes that do not transition automatically (where manual selection does then initiate) - suggests an issue with the ‘Start/any’ scene that checks which route is nearest.
+2- volume fades not smooth and linear. Is the problem the 'sceneTime<2' so when the scene time gets passed ‘2’ it then suddenly steps the volume up or down to the default level?
+3- other volume adjustments on multi-routes / multi-track scenes (i.e. SisterCities on both outward and inward journeys and NotAlone on outward). Not currently working.
+4- For some transitions it would be nice to fade out the currently playing track, but delay slightly the initiation of the next track. So rather than having a crossfade, there is a slight pause in between one ending and the next starting. This could be achieved by placing a period of silence on the music file, but is this better achieved using ‘file pos’ and ‘track pos’?
+5- Getting regular loss of GPS. We spoke about placing in some script that meant there would not be any intervention if GPS was lost until a set time had passed (e.g. 20 secs), to stop the music skipping in and out constantly. This has not been added in yet.
