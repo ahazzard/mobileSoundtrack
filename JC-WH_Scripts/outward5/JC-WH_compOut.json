@@ -8,16 +8,16 @@
   
   "merge": [
     "_JC-WH_tracksWithoutSections.json",
-    "_JC-WH_Stella_multiTrackSections2.json",
+    "_JC-WH_Stella_multiTrackSections.json",
     "_JC-WH_TheBadGuys_trackSections.json",
     "_JC-WH_MitaDelMundo_trackSections.json",
-    "_JC-WH_SisterCities_multiTrackSectionsOnEachStem.json",
+    "_JC-WH_SisterCities_multiTrackSections.json",
     "_JC-WH_NotAlone_trackSections.json",
     "_JC-WH_WaitingForGA_trackSections.json",
     "_JC-WH_fixedPlaylist_tracks.json",
     "_JC-WH_context5.json",
-    "_JC-WH_adaptive_sceneOut5.json",
-    "_JC-WH_startOut5.json"
+    "_JC-WH_adaptive_sceneOut.json",
+    "_JC-WH_startOut.json"
     
   ],
   "defaultScene": "Start"
