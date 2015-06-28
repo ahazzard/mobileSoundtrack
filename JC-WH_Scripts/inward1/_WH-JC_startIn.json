@@ -19,7 +19,7 @@
       "tracks": [
         {
           "name": "holdingPad",
-          "volume": "sceneTime<3 ? [sceneTime,trackVolume,sceneTime+1,0] : 0",  
+          "volume": "sceneTime<2 ? [sceneTime,trackVolume,sceneTime+1,0] : 1",  
           "pos": 0
         }
       ]
