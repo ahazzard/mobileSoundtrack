@@ -31,7 +31,7 @@
           {"name":"outroB","cost":5}]
         },  
         
-        { "name": "verse1", "trackPos": 17.171, "length":  29.989, "startCost": 500, 
+        { "name": "verse1", "trackPos": 17.171, "length":  29.989, "startCost": 1000, 
           "next": [ {"name":"verse2","cost":0
           },
           {"name":"intro1","cost":5}, {"name":"mainBody","cost":40
