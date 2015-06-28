@@ -46,6 +46,42 @@
           "length": 418,
           "filePos": 0,
           "trackPos": 1175
+        },
+        { 
+          "path": "MitaDelMundo.wav",
+          "length": 181,
+          "filePos": 0,
+          "trackPos": 0
+        },
+        {
+          "path": "SisterCities.wav",
+          "length": 280,
+          "filePos": 0,
+          "trackPos": 183
+        },
+        {
+          "path": "Stella.wav",
+          "length": 195,
+          "filePos": 0,
+          "trackPos": 465
+        },
+        { 
+          "path": "WaitingForGA.wav",
+          "length": 255,
+          "filePos": 0,
+          "trackPos": 662
+        },
+        { 
+          "path": "TheBadGuys.wav",
+          "length": 254,
+          "filePos": 0,
+          "trackPos": 919
+        },
+        { 
+          "path": "NotAlone.wav",
+          "length": 418,
+          "filePos": 0,
+          "trackPos": 1175
         }
       ]
     }
