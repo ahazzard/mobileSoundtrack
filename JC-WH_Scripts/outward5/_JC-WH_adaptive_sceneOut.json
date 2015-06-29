@@ -33,15 +33,15 @@
       "partial": false,
       "waypoints": {"W1": "WR", "W2": "WR_MR", "W3": "PC_A", "W4": "HR_L"},
       "routes": {"R1": "WR-WR_MR", "R2": "WR_MR-PC_A", "R3": "PC_A-HR_L", "Rnext": "HR_L-HR_HG"},
-      "onload": "if (waypoints['W4'].distance!==undefined) window.estimatedEnd=totalTime+(routes['R1'].nearest ? waypoints['W2'].distance+routes['R2'].length+routes['R3'].length : waypoints['W4'].distance),(routes['R2'].nearest ? waypoints['W3'].distance+routes['R3'].length : waypoints['W4'].distance)/1.5; else window.estimatedEnd=totalTime+220; ",
-      "onupdate": "if (!routes['R1'].near && !routes['R2'].near && !routes['R3'].near) { daoplayer.setScene('Start/any'); } else if (routes['Rnext'].nearest) { daoplayer.setScene('track3/NotAlone'); } else if (waypoints['W4'].distance!==undefined) window.estimatedEnd=totalTime+(routes['R1'].nearest ? waypoints['W2'].distance+routes['R2'].length+routes['R3'].length : waypoints['W4'].distance),(routes['R2'].nearest ? waypoints['W3'].distance+routes['R3'].length : waypoints['W4'].distance)/1.5; ",
+      "onload": "if (waypoints['W4'].distance!==undefined) window.estimatedEnd=totalTime+(routes['R1'].nearest ? waypoints['W2'].distance+routes['R2'].length+routes['R3'].length : (routes['R2'].nearest ? waypoints['W3'].distance+routes['R3'].length : waypoints['W4'].distance))/1.5; else window.estimatedEnd=totalTime+220; ",
+      "onupdate": "if (!routes['R1'].near && !routes['R2'].near && !routes['R3'].near) { daoplayer.setScene('Start/any'); } else if (routes['Rnext'].nearest) { daoplayer.setScene('track3/NotAlone'); } else if (waypoints['W4'].distance!==undefined) window.estimatedEnd=totalTime+(routes['R1'].nearest ? waypoints['W2'].distance+routes['R2'].length+routes['R3'].length : (routes['R2'].nearest ? waypoints['W3'].distance+routes['R3'].length : waypoints['W4'].distance))/1.5; ",
       
       "updatePeriod": 1,
       "tracks": [
         {
           "name": "SisterCities_Drums",
           "pos": "daoplayer.selectSections('SisterCities_Drums',currentSection,sceneTime,window.estimatedEnd-totalTime,totalTime)",
-          "volume": "routes['R3'].nearest ? [sceneTime,trackVolume,sceneTime+2,0] : 1"
+          "volume": "routes['R3'].nearest ? [sceneTime,trackVolume,sceneTime+1,0] : 1"
         },
         {
           "name": "SisterCities_Bass",
@@ -51,7 +51,7 @@
         {
           "name": "SisterCities_Guitars",
           "pos": "daoplayer.selectSections('SisterCities_Drums',currentSection,sceneTime,window.estimatedEnd-totalTime,totalTime)",
-          "volume": "routes['R3'].nearest ? [sceneTime,trackVolume,sceneTime+2,0] : 1"
+          "volume": "routes['R3'].nearest ? [sceneTime,trackVolume,sceneTime+1,0] : 1"
         },
         {
           "name": "SisterCities_AcousticKeys",
@@ -61,15 +61,15 @@
         {
           "name": "SisterCities_Vox",
           "pos": "daoplayer.selectSections('SisterCities_Drums',currentSection,sceneTime,window.estimatedEnd-totalTime,totalTime)",
-          "volume": "routes['R3'].nearest ? [sceneTime,trackVolume,sceneTime+2,0] : 1"
+          "volume": "routes['R3'].nearest ? [sceneTime,trackVolume,sceneTime+1,0] : 1"
         },
         {
           "name": "MitaDelMundo",
-          "volume": "sceneTime<2 ? [sceneTime,trackVolume,sceneTime+2,0] : 0"
+          "volume": "sceneTime<2 ? [sceneTime,trackVolume,2,0] : 0"
         },
         {
           "name": "holdingPad",
-          "volume": "sceneTime<2 ? [sceneTime,trackVolume,sceneTime+2,0] : 0"
+          "volume": "sceneTime<2 ? [sceneTime,trackVolume,2,0] : 0"
         }
       ]
     },
@@ -80,37 +80,37 @@
       "waypoints": {"W1": "HR_L", "W2": "HR_HG", "W3": "HR_DA"},
       "routes": {"R1": "HR_L-HR_HG", "R2": "HR_HG-HR_DA", "Rnext": "HR_DA-DA_GC"},
       "onload": "if (waypoints['W3'].distance!==undefined) window.estimatedEnd=totalTime+(routes['R1'].nearest ? waypoints['W2'].distance+routes['R2'].length : waypoints['W3'].distance)/1.5; else window.estimatedEnd=totalTime+350; ",
-      "onupdate": "if (!routes['R1'].near && !routes['R2'].near) { daoplayer.setScene('Start/any'); } else if (routes['Rnext'].nearest) { daoplayer.setScene('track4/Stella'); } else if (waypoints['W3'].distance!==undefined) window.estimatedEnd=totalTime+(routes['R1'].nearest ? waypoints['W2'].distance+routes['R2'].length : waypoints['W3'].distance)/1.5; ",
+      "onupdate": "if (!routes['R1'].near && !routes['R2'].near) { daoplayer.setScene('Start/any'); } else if (routes['Rnext'].nearest || routes['Rnext'].distanceAlong>0) { daoplayer.setScene('track4/Stella'); } else if (waypoints['W3'].distance!==undefined) window.estimatedEnd=totalTime+(routes['R1'].nearest ? waypoints['W2'].distance+routes['R2'].length : waypoints['W3'].distance)/1.5; ",
       "updatePeriod": 1,
       "tracks": [
         {
           "name": "NotAlone",
           "pos": "daoplayer.selectSections('NotAlone',currentSection,sceneTime,window.estimatedEnd-totalTime,totalTime)",
-          "volume": "routes['R2'].nearest ? [sceneTime,trackVolume,sceneTime+12,0] : 1"
+          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(routes['R2'].distanceAlong/routes['R2'].length, [0,1,1,0], trackVolume)]"
         },
         {
           "name": "SisterCities_Drums",
-          "volume": "sceneTime<2 ? [sceneTime,trackVolume,sceneTime+2,0] : 0"
+          "volume": "sceneTime<2 ? [sceneTime,trackVolume,2,0] : 0"
         },
         {
           "name": "SisterCities_Bass",
-          "volume": "sceneTime<2 ? [sceneTime,trackVolume,sceneTime+2,0] : 0"
+          "volume": "sceneTime<2 ? [sceneTime,trackVolume,2,0] : 0"
         },
         {
           "name": "SisterCities_Guitars",
-          "volume": "sceneTime<2 ? [sceneTime,trackVolume,sceneTime+2,0] : 0"
+          "volume": "sceneTime<2 ? [sceneTime,trackVolume,2,0] : 0"
         },
         {
           "name": "SisterCities_AcousticKeys",
-          "volume": "sceneTime<2 ? [sceneTime,trackVolume,sceneTime+2,0] : 0"
+          "volume": "sceneTime<2 ? [sceneTime,trackVolume,2,0] : 0"
         },
         {
           "name": "SisterCities_Vox",
-          "volume": "sceneTime<2 ? [sceneTime,trackVolume,sceneTime+2,0] : 0"
+          "volume": "sceneTime<2 ? [sceneTime,trackVolume,2,0] : 0"
         },
         {
           "name": "holdingPad",
-          "volume": "sceneTime<2 ? [sceneTime,trackVolume,sceneTime+2,0] : 0"
+          "volume": "sceneTime<2 ? [sceneTime,trackVolume,2,0] : 0"
         }
       ]
     },
@@ -138,16 +138,16 @@
         {
           "name": "StellaKeys",
           "pos": "daoplayer.selectSections('StellaVox',currentSection,sceneTime,window.estimatedEnd-totalTime,totalTime)",
-          "volume": "routes['R2'].nearest ? [sceneTime,trackVolume,sceneTime+2,1] : 0"
+          "volume": "[sceneTime,trackVolume,sceneTime+1,(routes['R2'].distanceAlong>0 ? 1 : 0)]"
         },
         {
           "name": "StellaRhythm",
           "pos": "daoplayer.selectSections('StellaVox',currentSection,sceneTime,window.estimatedEnd-totalTime,totalTime)",
-          "volume": "routes['R2'].nearest ? [sceneTime,trackVolume,sceneTime+2,1] : 0"
+          "volume": "[sceneTime,trackVolume,sceneTime+1,(routes['R2'].distanceAlong>0 ? 1 : 0)]"
         },
         {
           "name": "holdingPad",
-          "volume": "sceneTime<2 ? [sceneTime,trackVolume,sceneTime+2,0] : 0"
+          "volume": "sceneTime<2 ? [sceneTime,trackVolume,2,0] : 0"
         }
       ]
     },
@@ -168,23 +168,23 @@
         },
         {
           "name": "StellaVox",
-          "volume": "sceneTime<2 ? [sceneTime,trackVolume,sceneTime+2,0] : 0"
+          "volume": "sceneTime<2 ? [sceneTime,trackVolume,2,0] : 0"
         },
         {
           "name": "StellaPiano",
-          "volume": "sceneTime<2 ? [sceneTime,trackVolume,sceneTime+2,0] : 0"
+          "volume": "sceneTime<2 ? [sceneTime,trackVolume,2,0] : 0"
         },
         {
           "name": "StellaKeys",
-          "volume": "sceneTime<2 ? [sceneTime,trackVolume,sceneTime+2,0] : 0"
+          "volume": "sceneTime<2 ? [sceneTime,trackVolume,2,0] : 0"
         },
         {
           "name": "StellaRhythm",
-          "volume": "sceneTime<2 ? [sceneTime,trackVolume,sceneTime+2,0] : 0"
+          "volume": "sceneTime<2 ? [sceneTime,trackVolume,2,0] : 0"
         },
         {
           "name": "holdingPad",
-          "volume": "sceneTime<2 ? [sceneTime,trackVolume,sceneTime+2,0] : 0"
+          "volume": "sceneTime<2 ? [sceneTime,trackVolume,2,0] : 0"
         }
       ]
     },
@@ -206,11 +206,11 @@
         },
         {
           "name": "TheBadGuys",
-          "volume": "sceneTime<2 ? [sceneTime,trackVolume,sceneTime+2,0] : 0"
+          "volume": "sceneTime<2 ? [sceneTime,trackVolume,2,0] : 0"
         },
         {
           "name": "holdingPad",
-          "volume": "sceneTime<2 ? [sceneTime,trackVolume,sceneTime+2,0] : 0"
+          "volume": "sceneTime<2 ? [sceneTime,trackVolume,2,0] : 0"
         }
       ]
     },
