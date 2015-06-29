@@ -226,7 +226,7 @@
         {
           "name": "WollatonHallArriveA_Layer1",
           "pos": 0,
-          "volume": "sceneTime<2 ? [sceneTime,trackVolume,sceneTime+5,1] : 1"
+          "volume": "sceneTime<5 ? [sceneTime,trackVolume,sceneTime+5,1] : 1"
         },
         {
           "name": "WollatonHallArriveA_Layer2",
@@ -235,11 +235,11 @@
         },
         {
           "name": "WaitingForGA",
-          "volume": "sceneTime<2 ? [sceneTime,trackVolume,sceneTime+5,0] : 0"
+          "volume": "sceneTime<5 ? [sceneTime,trackVolume,5,0] : 0"
         },
         {
           "name": "holdingPad",
-          "volume": "sceneTime<2 ? [sceneTime,trackVolume,sceneTime+2,0] : 0"
+          "volume": "sceneTime<2 ? [sceneTime,trackVolume,2,0] : 0"
         }
       ]
     },
