@@ -20,13 +20,6 @@
       
       "unitTime": 8.593,
       "sections": [
-        { "name": "mainBody", "trackPos": 30.173, "length":  133.488, 
-          "next": [ {"name":"chorus2","cost":0},
-          {"name":"introA","cost":5
-          },
-          {"name":"chorus3","cost":5}]
-        },
-        
         { "name": "introA", "trackPos": 0.0, "length":  7.829, "startCost": 0, 
           "next": [ {"name":"introB","cost":0},
           {"name":"introA","cost":5}, {"name":"mainBody","cost":5
