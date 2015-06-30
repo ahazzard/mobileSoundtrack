@@ -29,7 +29,7 @@
         { "name": "intro1B", "trackPos": 11.169388, "length": 10.65810, "startCost": 100, "endCost": 5000,
           "next": [ {"name":"verse1A","cost":0
           },
-          {"name":"intro1A","cost":5}, {"name":"mainBody","cost":40
+          {"name":"intro1A","cost":5
           },
           {"name":"verse2A","cost":5},{"name":"verse3A","cost":5},{"name":"verse4A","cost":5},{"name":"verse5A","cost":5},{"name":"bridge1A","cost":5},{"name":"bridge2A","cost":5},{"name":"bridge3A","cost":5},{"name":"bridge4A","cost":5},{"name":"bridge5A","cost":5},{"name":"bridge6A","cost":5},{"name":"bridge7A","cost":5},{"name":"bridge8A","cost":5},{"name":"intro2A","cost":5},{"name":"outro","cost":5}]
           },
@@ -42,7 +42,7 @@
           { "name": "verse1B", "trackPos": 32.496644, "length":  10.64993, 
           "next": [ {"name":"verse2A","cost":0
           },
-          {"name":"intro1A","cost":5}, {"name":"mainBody","cost":40
+          {"name":"intro1A","cost":5
           },
           {"name":"bridge1A","cost":5},{"name":"verse3A","cost":5},{"name":"verse4A","cost":5},{"name":"bridge2A","cost":5},{"name":"bridge3A","cost":5},{"name":"verse5A","cost":5},{"name":"bridge4A","cost":5},{"name":"bridge5A","cost":5},{"name":"bridge6A","cost":5},{"name":"bridge7A","cost":5},{"name":"bridge8A","cost":5},{"name":"intro2A","cost":5}]
           },
@@ -55,7 +55,7 @@
         { "name": "verse2B", "trackPos": 53.824218, "length":  10.64671, 
           "next": [ {"name":"bridge1A","cost":0
         },
-          {"name":"intro1A","cost":5}, {"name":"mainBody","cost":40
+          {"name":"intro1A","cost":5
           },
           {"name":"verse3A","cost":5},{"name":"verse4A","cost":5},{"name":"bridge2A","cost":5},{"name":"bridge3A","cost":5},{"name":"verse5A","cost":5},{"name":"bridge4A","cost":5},{"name":"bridge5A","cost":5},{"name":"bridge6A","cost":5},{"name":"bridge7A","cost":5},{"name":"bridge8A","cost":5},{"name":"intro2A","cost":5}]
         },
@@ -68,7 +68,7 @@
         { "name": "bridge1B", "trackPos": 69.82934, "length": 5.36692, 
           "next": [ {"name":"verse3A","cost":0
         },
-          {"name":"intro1A","cost":5}, {"name":"mainBody","cost":40
+          {"name":"intro1A","cost":5
           },
           {"name":"verse4A","cost":5},{"name":"bridge2A","cost":5},{"name":"bridge3A","cost":5},{"name":"verse5A","cost":5},{"name":"bridge4A","cost":5},{"name":"bridge5A","cost":5},{"name":"bridge6A","cost":5},{"name":"bridge7A","cost":5},{"name":"bridge8A","cost":5},{"name":"intro2A","cost":5}]
         },
@@ -81,7 +81,7 @@
         { "name": "verse3B", "trackPos": 85.821451, "length":  10.65819, 
           "next": [ {"name":"verse4A","cost":0
         },
-          {"name":"intro1A","cost":5}, {"name":"mainBody","cost":40
+          {"name":"intro1A","cost":5
           },
           {"name":"bridge2A","cost":5},{"name":"bridge3A","cost":5},{"name":"verse5A","cost":5},{"name":"bridge4A","cost":5},{"name":"bridge5A","cost":5},{"name":"bridge6A","cost":5},{"name":"bridge7A","cost":5},{"name":"bridge8A","cost":5},{"name":"intro2A","cost":5}]
         },
@@ -94,7 +94,7 @@
         { "name": "verse4B", "trackPos": 107.09082, "length":  10.72796, 
           "next": [ {"name":"bridge2A","cost":0
         },
-          {"name":"intro1A","cost":5}, {"name":"mainBody","cost":40
+          {"name":"intro1A","cost":5
           },
           {"name":"bridge3A","cost":5},{"name":"verse5A","cost":5},{"name":"bridge4A","cost":5},{"name":"bridge5A","cost":5},{"name":"bridge6A","cost":5},{"name":"bridge7A","cost":5},{"name":"bridge8A","cost":5},{"name":"intro2A","cost":5}]
         },
@@ -107,7 +107,7 @@
         { "name": "bridge2B", "trackPos": 123.14667, "length":  5.36426, 
           "next": [ {"name":"bridge3A","cost":0
         },
-          {"name":"intro1A","cost":5}, {"name":"mainBody","cost":40
+          {"name":"intro1A","cost":5
           },
           {"name":"verse5A","cost":5},{"name":"bridge4A","cost":5},{"name":"bridge5A","cost":5},{"name":"bridge6A","cost":5},{"name":"bridge7A","cost":5},{"name":"bridge8A","cost":5},{"name":"intro2A","cost":5}]
         },
@@ -120,7 +120,7 @@
         { "name": "bridge3B", "trackPos": 133.7774, "length":  5.44109, 
           "next": [ {"name":"verse5A","cost":0
         },
-          {"name":"intro1A","cost":5}, {"name":"mainBody","cost":40
+          {"name":"intro1A","cost":5
           },
           {"name":"bridge4A","cost":5},{"name":"bridge5A","cost":5},{"name":"bridge6A","cost":5},{"name":"bridge7A","cost":5},{"name":"bridge8A","cost":5},{"name":"intro2A","cost":5}]
         },
@@ -133,7 +133,7 @@
         { "name": "verse5B", "trackPos": 149.86190, "length":  10.61156, 
           "next": [ {"name":"bridge4A","cost":0
         },
-          {"name":"intro1A","cost":5},{"name":"verse1A","cost":5},{"name":"verse2A","cost":5},{"name":"verse3A","cost":5}, {"name":"mainBody","cost":40
+          {"name":"intro1A","cost":5},{"name":"verse1A","cost":5},{"name":"verse2A","cost":5},{"name":"verse3A","cost":5
           },
           {"name":"bridge5A","cost":5},{"name":"bridge6A","cost":5},{"name":"bridge7A","cost":5},{"name":"bridge8A","cost":5},{"name":"intro2A","cost":5}]
         },
@@ -146,7 +146,7 @@
         { "name": "bridge4B", "trackPos": 165.84082, "length":  5.35283, "endCost": 5000,
           "next": [ {"name":"bridge5A","cost":0
         },
-          {"name":"intro1A","cost":5},{"name":"verse1A","cost":5},{"name":"verse2A","cost":5},{"name":"verse3A","cost":5}, {"name":"mainBody","cost":40
+          {"name":"intro1A","cost":5},{"name":"verse1A","cost":5},{"name":"verse2A","cost":5},{"name":"verse3A","cost":5
           },
           {"name":"bridge6A","cost":5},{"name":"bridge7A","cost":5},{"name":"bridge8A","cost":5},{"name":"intro2A","cost":5}]
         },
@@ -159,7 +159,7 @@
         { "name": "bridge5B", "trackPos": 176.49506, "length":  5.35429, "endCost": 5000,
           "next": [ {"name":"bridge6A","cost":0
         },
-          {"name":"intro1A","cost":5},{"name":"verse1A","cost":5},{"name":"verse2A","cost":5},{"name":"verse3A","cost":5}, {"name":"mainBody","cost":40
+          {"name":"intro1A","cost":5},{"name":"verse1A","cost":5},{"name":"verse2A","cost":5},{"name":"verse3A","cost":5
           },
           {"name":"bridge7A","cost":5},{"name":"bridge8A","cost":5},{"name":"intro2A","cost":5}]
         },
@@ -172,7 +172,7 @@
         { "name": "bridge6B", "trackPos": 187.19066, "length":  5.31458, "endCost": 4000,
           "next": [ {"name":"bridge7A","cost":0
         },
-          {"name":"intro1A","cost":5},{"name":"verse1A","cost":5},{"name":"verse2A","cost":5},{"name":"verse3A","cost":5}, {"name":"mainBody","cost":40
+          {"name":"intro1A","cost":5},{"name":"verse1A","cost":5},{"name":"verse2A","cost":5},{"name":"verse3A","cost":5
           },
           {"name":"bridge8A","cost":5},{"name":"intro2A","cost":5}]
         },
@@ -180,7 +180,7 @@
         { "name": "bridge7A", "trackPos": 192.50524, "length":  5.34034, "endCost": 3000,
           "next": [ {"name":"bridge7B","cost":0
           },
-          {"name":"intro1A","cost":5},{"name":"verse1A","cost":5},{"name":"verse2A","cost":5},{"name":"verse3A","cost":5}, {"name":"mainBody","cost":40
+          {"name":"intro1A","cost":5},{"name":"verse1A","cost":5},{"name":"verse2A","cost":5},{"name":"verse3A","cost":5
           },
           {"name":"bridge8A","cost":5},{"name":"intro2A","cost":5}]
         
@@ -189,7 +189,7 @@
         { "name": "bridge7B", "trackPos": 197.84558, "length":  5.34136, "endCost": 2000,
           "next": [ {"name":"bridge8A","cost":0
         },
-          {"name":"intro1A","cost":5},{"name":"verse1A","cost":5},{"name":"verse2A","cost":5},{"name":"verse3A","cost":5}, {"name":"mainBody","cost":40
+          {"name":"intro1A","cost":5},{"name":"verse1A","cost":5},{"name":"verse2A","cost":5},{"name":"verse3A","cost":5
           },
           {"name":"intro2A","cost":5}]
         },
@@ -202,7 +202,7 @@
         { "name": "link", "trackPos": 208.50467, "length":  7.02367, "endCost": 1000,
           "next": [ {"name":"intro2A","cost":0
         },
-          {"name":"intro1A","cost":5},{"name":"verse1A","cost":5},{"name":"verse2A","cost":5},{"name":"verse3A","cost":5}, {"name":"mainBody","cost":40
+          {"name":"intro1A","cost":5},{"name":"verse1A","cost":5},{"name":"verse2A","cost":5},{"name":"verse3A","cost":5
           },
           {"name":"outro","cost":5}]
         },
@@ -218,7 +218,7 @@
         { "name": "intro2B", "trackPos": 220.81041, "length":  5.31717, "endCost": 100,
           "next": [ {"name":"outro","cost":0
         },
-          {"name":"intro1A","cost":5},{"name":"verse1A","cost":5},{"name":"verse2A","cost":5},{"name":"verse3A","cost":5}, {"name":"mainBody","cost":40
+          {"name":"intro1A","cost":5},{"name":"verse1A","cost":5},{"name":"verse2A","cost":5},{"name":"verse3A","cost":5
           }]
         },
         
@@ -246,7 +246,7 @@
           "length": 841.425
         }
       ],
-      "unitTime": 6.1,
+       "unitTime": 6.1,
       "sections": [
         { "name": "drumFill", "trackPos": 0.0, "length":  0.49912, "startCost": 0,
           "next": [ {"name":"intro1A","cost":0}]
@@ -259,7 +259,7 @@
         { "name": "intro1B", "trackPos": 11.169388, "length": 10.65810, "startCost": 100, "endCost": 5000,
           "next": [ {"name":"verse1A","cost":0
           },
-          {"name":"intro1A","cost":5}, {"name":"mainBody","cost":40
+          {"name":"intro1A","cost":5
           },
           {"name":"verse2A","cost":5},{"name":"verse3A","cost":5},{"name":"verse4A","cost":5},{"name":"verse5A","cost":5},{"name":"bridge1A","cost":5},{"name":"bridge2A","cost":5},{"name":"bridge3A","cost":5},{"name":"bridge4A","cost":5},{"name":"bridge5A","cost":5},{"name":"bridge6A","cost":5},{"name":"bridge7A","cost":5},{"name":"bridge8A","cost":5},{"name":"intro2A","cost":5},{"name":"outro","cost":5}]
           },
@@ -272,7 +272,7 @@
           { "name": "verse1B", "trackPos": 32.496644, "length":  10.64993, 
           "next": [ {"name":"verse2A","cost":0
           },
-          {"name":"intro1A","cost":5}, {"name":"mainBody","cost":40
+          {"name":"intro1A","cost":5
           },
           {"name":"bridge1A","cost":5},{"name":"verse3A","cost":5},{"name":"verse4A","cost":5},{"name":"bridge2A","cost":5},{"name":"bridge3A","cost":5},{"name":"verse5A","cost":5},{"name":"bridge4A","cost":5},{"name":"bridge5A","cost":5},{"name":"bridge6A","cost":5},{"name":"bridge7A","cost":5},{"name":"bridge8A","cost":5},{"name":"intro2A","cost":5}]
           },
@@ -285,7 +285,7 @@
         { "name": "verse2B", "trackPos": 53.824218, "length":  10.64671, 
           "next": [ {"name":"bridge1A","cost":0
         },
-          {"name":"intro1A","cost":5}, {"name":"mainBody","cost":40
+          {"name":"intro1A","cost":5
           },
           {"name":"verse3A","cost":5},{"name":"verse4A","cost":5},{"name":"bridge2A","cost":5},{"name":"bridge3A","cost":5},{"name":"verse5A","cost":5},{"name":"bridge4A","cost":5},{"name":"bridge5A","cost":5},{"name":"bridge6A","cost":5},{"name":"bridge7A","cost":5},{"name":"bridge8A","cost":5},{"name":"intro2A","cost":5}]
         },
@@ -298,7 +298,7 @@
         { "name": "bridge1B", "trackPos": 69.82934, "length": 5.36692, 
           "next": [ {"name":"verse3A","cost":0
         },
-          {"name":"intro1A","cost":5}, {"name":"mainBody","cost":40
+          {"name":"intro1A","cost":5
           },
           {"name":"verse4A","cost":5},{"name":"bridge2A","cost":5},{"name":"bridge3A","cost":5},{"name":"verse5A","cost":5},{"name":"bridge4A","cost":5},{"name":"bridge5A","cost":5},{"name":"bridge6A","cost":5},{"name":"bridge7A","cost":5},{"name":"bridge8A","cost":5},{"name":"intro2A","cost":5}]
         },
@@ -311,7 +311,7 @@
         { "name": "verse3B", "trackPos": 85.821451, "length":  10.65819, 
           "next": [ {"name":"verse4A","cost":0
         },
-          {"name":"intro1A","cost":5}, {"name":"mainBody","cost":40
+          {"name":"intro1A","cost":5
           },
           {"name":"bridge2A","cost":5},{"name":"bridge3A","cost":5},{"name":"verse5A","cost":5},{"name":"bridge4A","cost":5},{"name":"bridge5A","cost":5},{"name":"bridge6A","cost":5},{"name":"bridge7A","cost":5},{"name":"bridge8A","cost":5},{"name":"intro2A","cost":5}]
         },
@@ -324,7 +324,7 @@
         { "name": "verse4B", "trackPos": 107.09082, "length":  10.72796, 
           "next": [ {"name":"bridge2A","cost":0
         },
-          {"name":"intro1A","cost":5}, {"name":"mainBody","cost":40
+          {"name":"intro1A","cost":5
           },
           {"name":"bridge3A","cost":5},{"name":"verse5A","cost":5},{"name":"bridge4A","cost":5},{"name":"bridge5A","cost":5},{"name":"bridge6A","cost":5},{"name":"bridge7A","cost":5},{"name":"bridge8A","cost":5},{"name":"intro2A","cost":5}]
         },
@@ -337,7 +337,7 @@
         { "name": "bridge2B", "trackPos": 123.14667, "length":  5.36426, 
           "next": [ {"name":"bridge3A","cost":0
         },
-          {"name":"intro1A","cost":5}, {"name":"mainBody","cost":40
+          {"name":"intro1A","cost":5
           },
           {"name":"verse5A","cost":5},{"name":"bridge4A","cost":5},{"name":"bridge5A","cost":5},{"name":"bridge6A","cost":5},{"name":"bridge7A","cost":5},{"name":"bridge8A","cost":5},{"name":"intro2A","cost":5}]
         },
@@ -350,7 +350,7 @@
         { "name": "bridge3B", "trackPos": 133.7774, "length":  5.44109, 
           "next": [ {"name":"verse5A","cost":0
         },
-          {"name":"intro1A","cost":5}, {"name":"mainBody","cost":40
+          {"name":"intro1A","cost":5
           },
           {"name":"bridge4A","cost":5},{"name":"bridge5A","cost":5},{"name":"bridge6A","cost":5},{"name":"bridge7A","cost":5},{"name":"bridge8A","cost":5},{"name":"intro2A","cost":5}]
         },
@@ -363,7 +363,7 @@
         { "name": "verse5B", "trackPos": 149.86190, "length":  10.61156, 
           "next": [ {"name":"bridge4A","cost":0
         },
-          {"name":"intro1A","cost":5},{"name":"verse1A","cost":5},{"name":"verse2A","cost":5},{"name":"verse3A","cost":5}, {"name":"mainBody","cost":40
+          {"name":"intro1A","cost":5},{"name":"verse1A","cost":5},{"name":"verse2A","cost":5},{"name":"verse3A","cost":5
           },
           {"name":"bridge5A","cost":5},{"name":"bridge6A","cost":5},{"name":"bridge7A","cost":5},{"name":"bridge8A","cost":5},{"name":"intro2A","cost":5}]
         },
@@ -376,7 +376,7 @@
         { "name": "bridge4B", "trackPos": 165.84082, "length":  5.35283, "endCost": 5000,
           "next": [ {"name":"bridge5A","cost":0
         },
-          {"name":"intro1A","cost":5},{"name":"verse1A","cost":5},{"name":"verse2A","cost":5},{"name":"verse3A","cost":5}, {"name":"mainBody","cost":40
+          {"name":"intro1A","cost":5},{"name":"verse1A","cost":5},{"name":"verse2A","cost":5},{"name":"verse3A","cost":5
           },
           {"name":"bridge6A","cost":5},{"name":"bridge7A","cost":5},{"name":"bridge8A","cost":5},{"name":"intro2A","cost":5}]
         },
@@ -389,7 +389,7 @@
         { "name": "bridge5B", "trackPos": 176.49506, "length":  5.35429, "endCost": 5000,
           "next": [ {"name":"bridge6A","cost":0
         },
-          {"name":"intro1A","cost":5},{"name":"verse1A","cost":5},{"name":"verse2A","cost":5},{"name":"verse3A","cost":5}, {"name":"mainBody","cost":40
+          {"name":"intro1A","cost":5},{"name":"verse1A","cost":5},{"name":"verse2A","cost":5},{"name":"verse3A","cost":5
           },
           {"name":"bridge7A","cost":5},{"name":"bridge8A","cost":5},{"name":"intro2A","cost":5}]
         },
@@ -402,7 +402,7 @@
         { "name": "bridge6B", "trackPos": 187.19066, "length":  5.31458, "endCost": 4000,
           "next": [ {"name":"bridge7A","cost":0
         },
-          {"name":"intro1A","cost":5},{"name":"verse1A","cost":5},{"name":"verse2A","cost":5},{"name":"verse3A","cost":5}, {"name":"mainBody","cost":40
+          {"name":"intro1A","cost":5},{"name":"verse1A","cost":5},{"name":"verse2A","cost":5},{"name":"verse3A","cost":5
           },
           {"name":"bridge8A","cost":5},{"name":"intro2A","cost":5}]
         },
@@ -410,7 +410,7 @@
         { "name": "bridge7A", "trackPos": 192.50524, "length":  5.34034, "endCost": 3000,
           "next": [ {"name":"bridge7B","cost":0
           },
-          {"name":"intro1A","cost":5},{"name":"verse1A","cost":5},{"name":"verse2A","cost":5},{"name":"verse3A","cost":5}, {"name":"mainBody","cost":40
+          {"name":"intro1A","cost":5},{"name":"verse1A","cost":5},{"name":"verse2A","cost":5},{"name":"verse3A","cost":5
           },
           {"name":"bridge8A","cost":5},{"name":"intro2A","cost":5}]
         
@@ -419,7 +419,7 @@
         { "name": "bridge7B", "trackPos": 197.84558, "length":  5.34136, "endCost": 2000,
           "next": [ {"name":"bridge8A","cost":0
         },
-          {"name":"intro1A","cost":5},{"name":"verse1A","cost":5},{"name":"verse2A","cost":5},{"name":"verse3A","cost":5}, {"name":"mainBody","cost":40
+          {"name":"intro1A","cost":5},{"name":"verse1A","cost":5},{"name":"verse2A","cost":5},{"name":"verse3A","cost":5
           },
           {"name":"intro2A","cost":5}]
         },
@@ -432,7 +432,7 @@
         { "name": "link", "trackPos": 208.50467, "length":  7.02367, "endCost": 1000,
           "next": [ {"name":"intro2A","cost":0
         },
-          {"name":"intro1A","cost":5},{"name":"verse1A","cost":5},{"name":"verse2A","cost":5},{"name":"verse3A","cost":5}, {"name":"mainBody","cost":40
+          {"name":"intro1A","cost":5},{"name":"verse1A","cost":5},{"name":"verse2A","cost":5},{"name":"verse3A","cost":5
           },
           {"name":"outro","cost":5}]
         },
@@ -448,7 +448,7 @@
         { "name": "intro2B", "trackPos": 220.81041, "length":  5.31717, "endCost": 100,
           "next": [ {"name":"outro","cost":0
         },
-          {"name":"intro1A","cost":5},{"name":"verse1A","cost":5},{"name":"verse2A","cost":5},{"name":"verse3A","cost":5}, {"name":"mainBody","cost":40
+          {"name":"intro1A","cost":5},{"name":"verse1A","cost":5},{"name":"verse2A","cost":5},{"name":"verse3A","cost":5
           }]
         },
         
@@ -476,7 +476,6 @@
           "length": 841.425
         }
       ],
-      
       "unitTime": 6.1,
       "sections": [
         { "name": "drumFill", "trackPos": 0.0, "length":  0.49912, "startCost": 0,
@@ -490,7 +489,7 @@
         { "name": "intro1B", "trackPos": 11.169388, "length": 10.65810, "startCost": 100, "endCost": 5000,
           "next": [ {"name":"verse1A","cost":0
           },
-          {"name":"intro1A","cost":5}, {"name":"mainBody","cost":40
+          {"name":"intro1A","cost":5
           },
           {"name":"verse2A","cost":5},{"name":"verse3A","cost":5},{"name":"verse4A","cost":5},{"name":"verse5A","cost":5},{"name":"bridge1A","cost":5},{"name":"bridge2A","cost":5},{"name":"bridge3A","cost":5},{"name":"bridge4A","cost":5},{"name":"bridge5A","cost":5},{"name":"bridge6A","cost":5},{"name":"bridge7A","cost":5},{"name":"bridge8A","cost":5},{"name":"intro2A","cost":5},{"name":"outro","cost":5}]
           },
@@ -503,7 +502,7 @@
           { "name": "verse1B", "trackPos": 32.496644, "length":  10.64993, 
           "next": [ {"name":"verse2A","cost":0
           },
-          {"name":"intro1A","cost":5}, {"name":"mainBody","cost":40
+          {"name":"intro1A","cost":5
           },
           {"name":"bridge1A","cost":5},{"name":"verse3A","cost":5},{"name":"verse4A","cost":5},{"name":"bridge2A","cost":5},{"name":"bridge3A","cost":5},{"name":"verse5A","cost":5},{"name":"bridge4A","cost":5},{"name":"bridge5A","cost":5},{"name":"bridge6A","cost":5},{"name":"bridge7A","cost":5},{"name":"bridge8A","cost":5},{"name":"intro2A","cost":5}]
           },
@@ -516,7 +515,7 @@
         { "name": "verse2B", "trackPos": 53.824218, "length":  10.64671, 
           "next": [ {"name":"bridge1A","cost":0
         },
-          {"name":"intro1A","cost":5}, {"name":"mainBody","cost":40
+          {"name":"intro1A","cost":5
           },
           {"name":"verse3A","cost":5},{"name":"verse4A","cost":5},{"name":"bridge2A","cost":5},{"name":"bridge3A","cost":5},{"name":"verse5A","cost":5},{"name":"bridge4A","cost":5},{"name":"bridge5A","cost":5},{"name":"bridge6A","cost":5},{"name":"bridge7A","cost":5},{"name":"bridge8A","cost":5},{"name":"intro2A","cost":5}]
         },
@@ -529,7 +528,7 @@
         { "name": "bridge1B", "trackPos": 69.82934, "length": 5.36692, 
           "next": [ {"name":"verse3A","cost":0
         },
-          {"name":"intro1A","cost":5}, {"name":"mainBody","cost":40
+          {"name":"intro1A","cost":5
           },
           {"name":"verse4A","cost":5},{"name":"bridge2A","cost":5},{"name":"bridge3A","cost":5},{"name":"verse5A","cost":5},{"name":"bridge4A","cost":5},{"name":"bridge5A","cost":5},{"name":"bridge6A","cost":5},{"name":"bridge7A","cost":5},{"name":"bridge8A","cost":5},{"name":"intro2A","cost":5}]
         },
@@ -542,7 +541,7 @@
         { "name": "verse3B", "trackPos": 85.821451, "length":  10.65819, 
           "next": [ {"name":"verse4A","cost":0
         },
-          {"name":"intro1A","cost":5}, {"name":"mainBody","cost":40
+          {"name":"intro1A","cost":5
           },
           {"name":"bridge2A","cost":5},{"name":"bridge3A","cost":5},{"name":"verse5A","cost":5},{"name":"bridge4A","cost":5},{"name":"bridge5A","cost":5},{"name":"bridge6A","cost":5},{"name":"bridge7A","cost":5},{"name":"bridge8A","cost":5},{"name":"intro2A","cost":5}]
         },
@@ -555,7 +554,7 @@
         { "name": "verse4B", "trackPos": 107.09082, "length":  10.72796, 
           "next": [ {"name":"bridge2A","cost":0
         },
-          {"name":"intro1A","cost":5}, {"name":"mainBody","cost":40
+          {"name":"intro1A","cost":5
           },
           {"name":"bridge3A","cost":5},{"name":"verse5A","cost":5},{"name":"bridge4A","cost":5},{"name":"bridge5A","cost":5},{"name":"bridge6A","cost":5},{"name":"bridge7A","cost":5},{"name":"bridge8A","cost":5},{"name":"intro2A","cost":5}]
         },
@@ -568,7 +567,7 @@
         { "name": "bridge2B", "trackPos": 123.14667, "length":  5.36426, 
           "next": [ {"name":"bridge3A","cost":0
         },
-          {"name":"intro1A","cost":5}, {"name":"mainBody","cost":40
+          {"name":"intro1A","cost":5
           },
           {"name":"verse5A","cost":5},{"name":"bridge4A","cost":5},{"name":"bridge5A","cost":5},{"name":"bridge6A","cost":5},{"name":"bridge7A","cost":5},{"name":"bridge8A","cost":5},{"name":"intro2A","cost":5}]
         },
@@ -581,7 +580,7 @@
         { "name": "bridge3B", "trackPos": 133.7774, "length":  5.44109, 
           "next": [ {"name":"verse5A","cost":0
         },
-          {"name":"intro1A","cost":5}, {"name":"mainBody","cost":40
+          {"name":"intro1A","cost":5
           },
           {"name":"bridge4A","cost":5},{"name":"bridge5A","cost":5},{"name":"bridge6A","cost":5},{"name":"bridge7A","cost":5},{"name":"bridge8A","cost":5},{"name":"intro2A","cost":5}]
         },
@@ -594,7 +593,7 @@
         { "name": "verse5B", "trackPos": 149.86190, "length":  10.61156, 
           "next": [ {"name":"bridge4A","cost":0
         },
-          {"name":"intro1A","cost":5},{"name":"verse1A","cost":5},{"name":"verse2A","cost":5},{"name":"verse3A","cost":5}, {"name":"mainBody","cost":40
+          {"name":"intro1A","cost":5},{"name":"verse1A","cost":5},{"name":"verse2A","cost":5},{"name":"verse3A","cost":5
           },
           {"name":"bridge5A","cost":5},{"name":"bridge6A","cost":5},{"name":"bridge7A","cost":5},{"name":"bridge8A","cost":5},{"name":"intro2A","cost":5}]
         },
@@ -607,7 +606,7 @@
         { "name": "bridge4B", "trackPos": 165.84082, "length":  5.35283, "endCost": 5000,
           "next": [ {"name":"bridge5A","cost":0
         },
-          {"name":"intro1A","cost":5},{"name":"verse1A","cost":5},{"name":"verse2A","cost":5},{"name":"verse3A","cost":5}, {"name":"mainBody","cost":40
+          {"name":"intro1A","cost":5},{"name":"verse1A","cost":5},{"name":"verse2A","cost":5},{"name":"verse3A","cost":5
           },
           {"name":"bridge6A","cost":5},{"name":"bridge7A","cost":5},{"name":"bridge8A","cost":5},{"name":"intro2A","cost":5}]
         },
@@ -620,7 +619,7 @@
         { "name": "bridge5B", "trackPos": 176.49506, "length":  5.35429, "endCost": 5000,
           "next": [ {"name":"bridge6A","cost":0
         },
-          {"name":"intro1A","cost":5},{"name":"verse1A","cost":5},{"name":"verse2A","cost":5},{"name":"verse3A","cost":5}, {"name":"mainBody","cost":40
+          {"name":"intro1A","cost":5},{"name":"verse1A","cost":5},{"name":"verse2A","cost":5},{"name":"verse3A","cost":5
           },
           {"name":"bridge7A","cost":5},{"name":"bridge8A","cost":5},{"name":"intro2A","cost":5}]
         },
@@ -633,7 +632,7 @@
         { "name": "bridge6B", "trackPos": 187.19066, "length":  5.31458, "endCost": 4000,
           "next": [ {"name":"bridge7A","cost":0
         },
-          {"name":"intro1A","cost":5},{"name":"verse1A","cost":5},{"name":"verse2A","cost":5},{"name":"verse3A","cost":5}, {"name":"mainBody","cost":40
+          {"name":"intro1A","cost":5},{"name":"verse1A","cost":5},{"name":"verse2A","cost":5},{"name":"verse3A","cost":5
           },
           {"name":"bridge8A","cost":5},{"name":"intro2A","cost":5}]
         },
@@ -641,7 +640,7 @@
         { "name": "bridge7A", "trackPos": 192.50524, "length":  5.34034, "endCost": 3000,
           "next": [ {"name":"bridge7B","cost":0
           },
-          {"name":"intro1A","cost":5},{"name":"verse1A","cost":5},{"name":"verse2A","cost":5},{"name":"verse3A","cost":5}, {"name":"mainBody","cost":40
+          {"name":"intro1A","cost":5},{"name":"verse1A","cost":5},{"name":"verse2A","cost":5},{"name":"verse3A","cost":5
           },
           {"name":"bridge8A","cost":5},{"name":"intro2A","cost":5}]
         
@@ -650,7 +649,7 @@
         { "name": "bridge7B", "trackPos": 197.84558, "length":  5.34136, "endCost": 2000,
           "next": [ {"name":"bridge8A","cost":0
         },
-          {"name":"intro1A","cost":5},{"name":"verse1A","cost":5},{"name":"verse2A","cost":5},{"name":"verse3A","cost":5}, {"name":"mainBody","cost":40
+          {"name":"intro1A","cost":5},{"name":"verse1A","cost":5},{"name":"verse2A","cost":5},{"name":"verse3A","cost":5
           },
           {"name":"intro2A","cost":5}]
         },
@@ -663,7 +662,7 @@
         { "name": "link", "trackPos": 208.50467, "length":  7.02367, "endCost": 1000,
           "next": [ {"name":"intro2A","cost":0
         },
-          {"name":"intro1A","cost":5},{"name":"verse1A","cost":5},{"name":"verse2A","cost":5},{"name":"verse3A","cost":5}, {"name":"mainBody","cost":40
+          {"name":"intro1A","cost":5},{"name":"verse1A","cost":5},{"name":"verse2A","cost":5},{"name":"verse3A","cost":5
           },
           {"name":"outro","cost":5}]
         },
@@ -679,7 +678,7 @@
         { "name": "intro2B", "trackPos": 220.81041, "length":  5.31717, "endCost": 100,
           "next": [ {"name":"outro","cost":0
         },
-          {"name":"intro1A","cost":5},{"name":"verse1A","cost":5},{"name":"verse2A","cost":5},{"name":"verse3A","cost":5}, {"name":"mainBody","cost":40
+          {"name":"intro1A","cost":5},{"name":"verse1A","cost":5},{"name":"verse2A","cost":5},{"name":"verse3A","cost":5
           }]
         },
         
@@ -707,7 +706,6 @@
           "length": 841.425
         }
       ],
-      
       "unitTime": 6.1,
       "sections": [
         { "name": "drumFill", "trackPos": 0.0, "length":  0.49912, "startCost": 0,
@@ -721,7 +719,7 @@
         { "name": "intro1B", "trackPos": 11.169388, "length": 10.65810, "startCost": 100, "endCost": 5000,
           "next": [ {"name":"verse1A","cost":0
           },
-          {"name":"intro1A","cost":5}, {"name":"mainBody","cost":40
+          {"name":"intro1A","cost":5
           },
           {"name":"verse2A","cost":5},{"name":"verse3A","cost":5},{"name":"verse4A","cost":5},{"name":"verse5A","cost":5},{"name":"bridge1A","cost":5},{"name":"bridge2A","cost":5},{"name":"bridge3A","cost":5},{"name":"bridge4A","cost":5},{"name":"bridge5A","cost":5},{"name":"bridge6A","cost":5},{"name":"bridge7A","cost":5},{"name":"bridge8A","cost":5},{"name":"intro2A","cost":5},{"name":"outro","cost":5}]
           },
@@ -734,7 +732,7 @@
           { "name": "verse1B", "trackPos": 32.496644, "length":  10.64993, 
           "next": [ {"name":"verse2A","cost":0
           },
-          {"name":"intro1A","cost":5}, {"name":"mainBody","cost":40
+          {"name":"intro1A","cost":5
           },
           {"name":"bridge1A","cost":5},{"name":"verse3A","cost":5},{"name":"verse4A","cost":5},{"name":"bridge2A","cost":5},{"name":"bridge3A","cost":5},{"name":"verse5A","cost":5},{"name":"bridge4A","cost":5},{"name":"bridge5A","cost":5},{"name":"bridge6A","cost":5},{"name":"bridge7A","cost":5},{"name":"bridge8A","cost":5},{"name":"intro2A","cost":5}]
           },
@@ -747,7 +745,7 @@
         { "name": "verse2B", "trackPos": 53.824218, "length":  10.64671, 
           "next": [ {"name":"bridge1A","cost":0
         },
-          {"name":"intro1A","cost":5}, {"name":"mainBody","cost":40
+          {"name":"intro1A","cost":5
           },
           {"name":"verse3A","cost":5},{"name":"verse4A","cost":5},{"name":"bridge2A","cost":5},{"name":"bridge3A","cost":5},{"name":"verse5A","cost":5},{"name":"bridge4A","cost":5},{"name":"bridge5A","cost":5},{"name":"bridge6A","cost":5},{"name":"bridge7A","cost":5},{"name":"bridge8A","cost":5},{"name":"intro2A","cost":5}]
         },
@@ -760,7 +758,7 @@
         { "name": "bridge1B", "trackPos": 69.82934, "length": 5.36692, 
           "next": [ {"name":"verse3A","cost":0
         },
-          {"name":"intro1A","cost":5}, {"name":"mainBody","cost":40
+          {"name":"intro1A","cost":5
           },
           {"name":"verse4A","cost":5},{"name":"bridge2A","cost":5},{"name":"bridge3A","cost":5},{"name":"verse5A","cost":5},{"name":"bridge4A","cost":5},{"name":"bridge5A","cost":5},{"name":"bridge6A","cost":5},{"name":"bridge7A","cost":5},{"name":"bridge8A","cost":5},{"name":"intro2A","cost":5}]
         },
@@ -773,7 +771,7 @@
         { "name": "verse3B", "trackPos": 85.821451, "length":  10.65819, 
           "next": [ {"name":"verse4A","cost":0
         },
-          {"name":"intro1A","cost":5}, {"name":"mainBody","cost":40
+          {"name":"intro1A","cost":5
           },
           {"name":"bridge2A","cost":5},{"name":"bridge3A","cost":5},{"name":"verse5A","cost":5},{"name":"bridge4A","cost":5},{"name":"bridge5A","cost":5},{"name":"bridge6A","cost":5},{"name":"bridge7A","cost":5},{"name":"bridge8A","cost":5},{"name":"intro2A","cost":5}]
         },
@@ -786,7 +784,7 @@
         { "name": "verse4B", "trackPos": 107.09082, "length":  10.72796, 
           "next": [ {"name":"bridge2A","cost":0
         },
-          {"name":"intro1A","cost":5}, {"name":"mainBody","cost":40
+          {"name":"intro1A","cost":5
           },
           {"name":"bridge3A","cost":5},{"name":"verse5A","cost":5},{"name":"bridge4A","cost":5},{"name":"bridge5A","cost":5},{"name":"bridge6A","cost":5},{"name":"bridge7A","cost":5},{"name":"bridge8A","cost":5},{"name":"intro2A","cost":5}]
         },
@@ -799,7 +797,7 @@
         { "name": "bridge2B", "trackPos": 123.14667, "length":  5.36426, 
           "next": [ {"name":"bridge3A","cost":0
         },
-          {"name":"intro1A","cost":5}, {"name":"mainBody","cost":40
+          {"name":"intro1A","cost":5
           },
           {"name":"verse5A","cost":5},{"name":"bridge4A","cost":5},{"name":"bridge5A","cost":5},{"name":"bridge6A","cost":5},{"name":"bridge7A","cost":5},{"name":"bridge8A","cost":5},{"name":"intro2A","cost":5}]
         },
@@ -812,7 +810,7 @@
         { "name": "bridge3B", "trackPos": 133.7774, "length":  5.44109, 
           "next": [ {"name":"verse5A","cost":0
         },
-          {"name":"intro1A","cost":5}, {"name":"mainBody","cost":40
+          {"name":"intro1A","cost":5
           },
           {"name":"bridge4A","cost":5},{"name":"bridge5A","cost":5},{"name":"bridge6A","cost":5},{"name":"bridge7A","cost":5},{"name":"bridge8A","cost":5},{"name":"intro2A","cost":5}]
         },
@@ -825,7 +823,7 @@
         { "name": "verse5B", "trackPos": 149.86190, "length":  10.61156, 
           "next": [ {"name":"bridge4A","cost":0
         },
-          {"name":"intro1A","cost":5},{"name":"verse1A","cost":5},{"name":"verse2A","cost":5},{"name":"verse3A","cost":5}, {"name":"mainBody","cost":40
+          {"name":"intro1A","cost":5},{"name":"verse1A","cost":5},{"name":"verse2A","cost":5},{"name":"verse3A","cost":5
           },
           {"name":"bridge5A","cost":5},{"name":"bridge6A","cost":5},{"name":"bridge7A","cost":5},{"name":"bridge8A","cost":5},{"name":"intro2A","cost":5}]
         },
@@ -838,7 +836,7 @@
         { "name": "bridge4B", "trackPos": 165.84082, "length":  5.35283, "endCost": 5000,
           "next": [ {"name":"bridge5A","cost":0
         },
-          {"name":"intro1A","cost":5},{"name":"verse1A","cost":5},{"name":"verse2A","cost":5},{"name":"verse3A","cost":5}, {"name":"mainBody","cost":40
+          {"name":"intro1A","cost":5},{"name":"verse1A","cost":5},{"name":"verse2A","cost":5},{"name":"verse3A","cost":5
           },
           {"name":"bridge6A","cost":5},{"name":"bridge7A","cost":5},{"name":"bridge8A","cost":5},{"name":"intro2A","cost":5}]
         },
@@ -851,7 +849,7 @@
         { "name": "bridge5B", "trackPos": 176.49506, "length":  5.35429, "endCost": 5000,
           "next": [ {"name":"bridge6A","cost":0
         },
-          {"name":"intro1A","cost":5},{"name":"verse1A","cost":5},{"name":"verse2A","cost":5},{"name":"verse3A","cost":5}, {"name":"mainBody","cost":40
+          {"name":"intro1A","cost":5},{"name":"verse1A","cost":5},{"name":"verse2A","cost":5},{"name":"verse3A","cost":5
           },
           {"name":"bridge7A","cost":5},{"name":"bridge8A","cost":5},{"name":"intro2A","cost":5}]
         },
@@ -864,7 +862,7 @@
         { "name": "bridge6B", "trackPos": 187.19066, "length":  5.31458, "endCost": 4000,
           "next": [ {"name":"bridge7A","cost":0
         },
-          {"name":"intro1A","cost":5},{"name":"verse1A","cost":5},{"name":"verse2A","cost":5},{"name":"verse3A","cost":5}, {"name":"mainBody","cost":40
+          {"name":"intro1A","cost":5},{"name":"verse1A","cost":5},{"name":"verse2A","cost":5},{"name":"verse3A","cost":5
           },
           {"name":"bridge8A","cost":5},{"name":"intro2A","cost":5}]
         },
@@ -872,7 +870,7 @@
         { "name": "bridge7A", "trackPos": 192.50524, "length":  5.34034, "endCost": 3000,
           "next": [ {"name":"bridge7B","cost":0
           },
-          {"name":"intro1A","cost":5},{"name":"verse1A","cost":5},{"name":"verse2A","cost":5},{"name":"verse3A","cost":5}, {"name":"mainBody","cost":40
+          {"name":"intro1A","cost":5},{"name":"verse1A","cost":5},{"name":"verse2A","cost":5},{"name":"verse3A","cost":5
           },
           {"name":"bridge8A","cost":5},{"name":"intro2A","cost":5}]
         
@@ -881,7 +879,7 @@
         { "name": "bridge7B", "trackPos": 197.84558, "length":  5.34136, "endCost": 2000,
           "next": [ {"name":"bridge8A","cost":0
         },
-          {"name":"intro1A","cost":5},{"name":"verse1A","cost":5},{"name":"verse2A","cost":5},{"name":"verse3A","cost":5}, {"name":"mainBody","cost":40
+          {"name":"intro1A","cost":5},{"name":"verse1A","cost":5},{"name":"verse2A","cost":5},{"name":"verse3A","cost":5
           },
           {"name":"intro2A","cost":5}]
         },
@@ -894,7 +892,7 @@
         { "name": "link", "trackPos": 208.50467, "length":  7.02367, "endCost": 1000,
           "next": [ {"name":"intro2A","cost":0
         },
-          {"name":"intro1A","cost":5},{"name":"verse1A","cost":5},{"name":"verse2A","cost":5},{"name":"verse3A","cost":5}, {"name":"mainBody","cost":40
+          {"name":"intro1A","cost":5},{"name":"verse1A","cost":5},{"name":"verse2A","cost":5},{"name":"verse3A","cost":5
           },
           {"name":"outro","cost":5}]
         },
@@ -910,7 +908,7 @@
         { "name": "intro2B", "trackPos": 220.81041, "length":  5.31717, "endCost": 100,
           "next": [ {"name":"outro","cost":0
         },
-          {"name":"intro1A","cost":5},{"name":"verse1A","cost":5},{"name":"verse2A","cost":5},{"name":"verse3A","cost":5}, {"name":"mainBody","cost":40
+          {"name":"intro1A","cost":5},{"name":"verse1A","cost":5},{"name":"verse2A","cost":5},{"name":"verse3A","cost":5
           }]
         },
         
@@ -951,7 +949,7 @@
         { "name": "intro1B", "trackPos": 11.169388, "length": 10.65810, "startCost": 100, "endCost": 5000,
           "next": [ {"name":"verse1A","cost":0
           },
-          {"name":"intro1A","cost":5}, {"name":"mainBody","cost":40
+          {"name":"intro1A","cost":5
           },
           {"name":"verse2A","cost":5},{"name":"verse3A","cost":5},{"name":"verse4A","cost":5},{"name":"verse5A","cost":5},{"name":"bridge1A","cost":5},{"name":"bridge2A","cost":5},{"name":"bridge3A","cost":5},{"name":"bridge4A","cost":5},{"name":"bridge5A","cost":5},{"name":"bridge6A","cost":5},{"name":"bridge7A","cost":5},{"name":"bridge8A","cost":5},{"name":"intro2A","cost":5},{"name":"outro","cost":5}]
           },
@@ -964,7 +962,7 @@
           { "name": "verse1B", "trackPos": 32.496644, "length":  10.64993, 
           "next": [ {"name":"verse2A","cost":0
           },
-          {"name":"intro1A","cost":5}, {"name":"mainBody","cost":40
+          {"name":"intro1A","cost":5
           },
           {"name":"bridge1A","cost":5},{"name":"verse3A","cost":5},{"name":"verse4A","cost":5},{"name":"bridge2A","cost":5},{"name":"bridge3A","cost":5},{"name":"verse5A","cost":5},{"name":"bridge4A","cost":5},{"name":"bridge5A","cost":5},{"name":"bridge6A","cost":5},{"name":"bridge7A","cost":5},{"name":"bridge8A","cost":5},{"name":"intro2A","cost":5}]
           },
@@ -977,7 +975,7 @@
         { "name": "verse2B", "trackPos": 53.824218, "length":  10.64671, 
           "next": [ {"name":"bridge1A","cost":0
         },
-          {"name":"intro1A","cost":5}, {"name":"mainBody","cost":40
+          {"name":"intro1A","cost":5
           },
           {"name":"verse3A","cost":5},{"name":"verse4A","cost":5},{"name":"bridge2A","cost":5},{"name":"bridge3A","cost":5},{"name":"verse5A","cost":5},{"name":"bridge4A","cost":5},{"name":"bridge5A","cost":5},{"name":"bridge6A","cost":5},{"name":"bridge7A","cost":5},{"name":"bridge8A","cost":5},{"name":"intro2A","cost":5}]
         },
@@ -990,7 +988,7 @@
         { "name": "bridge1B", "trackPos": 69.82934, "length": 5.36692, 
           "next": [ {"name":"verse3A","cost":0
         },
-          {"name":"intro1A","cost":5}, {"name":"mainBody","cost":40
+          {"name":"intro1A","cost":5
           },
           {"name":"verse4A","cost":5},{"name":"bridge2A","cost":5},{"name":"bridge3A","cost":5},{"name":"verse5A","cost":5},{"name":"bridge4A","cost":5},{"name":"bridge5A","cost":5},{"name":"bridge6A","cost":5},{"name":"bridge7A","cost":5},{"name":"bridge8A","cost":5},{"name":"intro2A","cost":5}]
         },
@@ -1003,7 +1001,7 @@
         { "name": "verse3B", "trackPos": 85.821451, "length":  10.65819, 
           "next": [ {"name":"verse4A","cost":0
         },
-          {"name":"intro1A","cost":5}, {"name":"mainBody","cost":40
+          {"name":"intro1A","cost":5
           },
           {"name":"bridge2A","cost":5},{"name":"bridge3A","cost":5},{"name":"verse5A","cost":5},{"name":"bridge4A","cost":5},{"name":"bridge5A","cost":5},{"name":"bridge6A","cost":5},{"name":"bridge7A","cost":5},{"name":"bridge8A","cost":5},{"name":"intro2A","cost":5}]
         },
@@ -1016,7 +1014,7 @@
         { "name": "verse4B", "trackPos": 107.09082, "length":  10.72796, 
           "next": [ {"name":"bridge2A","cost":0
         },
-          {"name":"intro1A","cost":5}, {"name":"mainBody","cost":40
+          {"name":"intro1A","cost":5
           },
           {"name":"bridge3A","cost":5},{"name":"verse5A","cost":5},{"name":"bridge4A","cost":5},{"name":"bridge5A","cost":5},{"name":"bridge6A","cost":5},{"name":"bridge7A","cost":5},{"name":"bridge8A","cost":5},{"name":"intro2A","cost":5}]
         },
@@ -1029,7 +1027,7 @@
         { "name": "bridge2B", "trackPos": 123.14667, "length":  5.36426, 
           "next": [ {"name":"bridge3A","cost":0
         },
-          {"name":"intro1A","cost":5}, {"name":"mainBody","cost":40
+          {"name":"intro1A","cost":5
           },
           {"name":"verse5A","cost":5},{"name":"bridge4A","cost":5},{"name":"bridge5A","cost":5},{"name":"bridge6A","cost":5},{"name":"bridge7A","cost":5},{"name":"bridge8A","cost":5},{"name":"intro2A","cost":5}]
         },
@@ -1042,7 +1040,7 @@
         { "name": "bridge3B", "trackPos": 133.7774, "length":  5.44109, 
           "next": [ {"name":"verse5A","cost":0
         },
-          {"name":"intro1A","cost":5}, {"name":"mainBody","cost":40
+          {"name":"intro1A","cost":5
           },
           {"name":"bridge4A","cost":5},{"name":"bridge5A","cost":5},{"name":"bridge6A","cost":5},{"name":"bridge7A","cost":5},{"name":"bridge8A","cost":5},{"name":"intro2A","cost":5}]
         },
@@ -1055,7 +1053,7 @@
         { "name": "verse5B", "trackPos": 149.86190, "length":  10.61156, 
           "next": [ {"name":"bridge4A","cost":0
         },
-          {"name":"intro1A","cost":5},{"name":"verse1A","cost":5},{"name":"verse2A","cost":5},{"name":"verse3A","cost":5}, {"name":"mainBody","cost":40
+          {"name":"intro1A","cost":5},{"name":"verse1A","cost":5},{"name":"verse2A","cost":5},{"name":"verse3A","cost":5
           },
           {"name":"bridge5A","cost":5},{"name":"bridge6A","cost":5},{"name":"bridge7A","cost":5},{"name":"bridge8A","cost":5},{"name":"intro2A","cost":5}]
         },
@@ -1068,7 +1066,7 @@
         { "name": "bridge4B", "trackPos": 165.84082, "length":  5.35283, "endCost": 5000,
           "next": [ {"name":"bridge5A","cost":0
         },
-          {"name":"intro1A","cost":5},{"name":"verse1A","cost":5},{"name":"verse2A","cost":5},{"name":"verse3A","cost":5}, {"name":"mainBody","cost":40
+          {"name":"intro1A","cost":5},{"name":"verse1A","cost":5},{"name":"verse2A","cost":5},{"name":"verse3A","cost":5
           },
           {"name":"bridge6A","cost":5},{"name":"bridge7A","cost":5},{"name":"bridge8A","cost":5},{"name":"intro2A","cost":5}]
         },
@@ -1081,7 +1079,7 @@
         { "name": "bridge5B", "trackPos": 176.49506, "length":  5.35429, "endCost": 5000,
           "next": [ {"name":"bridge6A","cost":0
         },
-          {"name":"intro1A","cost":5},{"name":"verse1A","cost":5},{"name":"verse2A","cost":5},{"name":"verse3A","cost":5}, {"name":"mainBody","cost":40
+          {"name":"intro1A","cost":5},{"name":"verse1A","cost":5},{"name":"verse2A","cost":5},{"name":"verse3A","cost":5
           },
           {"name":"bridge7A","cost":5},{"name":"bridge8A","cost":5},{"name":"intro2A","cost":5}]
         },
@@ -1094,7 +1092,7 @@
         { "name": "bridge6B", "trackPos": 187.19066, "length":  5.31458, "endCost": 4000,
           "next": [ {"name":"bridge7A","cost":0
         },
-          {"name":"intro1A","cost":5},{"name":"verse1A","cost":5},{"name":"verse2A","cost":5},{"name":"verse3A","cost":5}, {"name":"mainBody","cost":40
+          {"name":"intro1A","cost":5},{"name":"verse1A","cost":5},{"name":"verse2A","cost":5},{"name":"verse3A","cost":5
           },
           {"name":"bridge8A","cost":5},{"name":"intro2A","cost":5}]
         },
@@ -1102,7 +1100,7 @@
         { "name": "bridge7A", "trackPos": 192.50524, "length":  5.34034, "endCost": 3000,
           "next": [ {"name":"bridge7B","cost":0
           },
-          {"name":"intro1A","cost":5},{"name":"verse1A","cost":5},{"name":"verse2A","cost":5},{"name":"verse3A","cost":5}, {"name":"mainBody","cost":40
+          {"name":"intro1A","cost":5},{"name":"verse1A","cost":5},{"name":"verse2A","cost":5},{"name":"verse3A","cost":5
           },
           {"name":"bridge8A","cost":5},{"name":"intro2A","cost":5}]
         
@@ -1111,7 +1109,7 @@
         { "name": "bridge7B", "trackPos": 197.84558, "length":  5.34136, "endCost": 2000,
           "next": [ {"name":"bridge8A","cost":0
         },
-          {"name":"intro1A","cost":5},{"name":"verse1A","cost":5},{"name":"verse2A","cost":5},{"name":"verse3A","cost":5}, {"name":"mainBody","cost":40
+          {"name":"intro1A","cost":5},{"name":"verse1A","cost":5},{"name":"verse2A","cost":5},{"name":"verse3A","cost":5
           },
           {"name":"intro2A","cost":5}]
         },
@@ -1124,7 +1122,7 @@
         { "name": "link", "trackPos": 208.50467, "length":  7.02367, "endCost": 1000,
           "next": [ {"name":"intro2A","cost":0
         },
-          {"name":"intro1A","cost":5},{"name":"verse1A","cost":5},{"name":"verse2A","cost":5},{"name":"verse3A","cost":5}, {"name":"mainBody","cost":40
+          {"name":"intro1A","cost":5},{"name":"verse1A","cost":5},{"name":"verse2A","cost":5},{"name":"verse3A","cost":5
           },
           {"name":"outro","cost":5}]
         },
@@ -1140,7 +1138,7 @@
         { "name": "intro2B", "trackPos": 220.81041, "length":  5.31717, "endCost": 100,
           "next": [ {"name":"outro","cost":0
         },
-          {"name":"intro1A","cost":5},{"name":"verse1A","cost":5},{"name":"verse2A","cost":5},{"name":"verse3A","cost":5}, {"name":"mainBody","cost":40
+          {"name":"intro1A","cost":5},{"name":"verse1A","cost":5},{"name":"verse2A","cost":5},{"name":"verse3A","cost":5
           }]
         },
         
@@ -1157,6 +1155,6 @@
        { "name": "end", "trackPos": 280.47383, "endCost": 5000
         }
       ]
-    }
+    }  
   ]
 }
