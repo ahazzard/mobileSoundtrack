@@ -232,17 +232,17 @@
         {
           "name": "WollatonHallArriveA_Layer2",
           "pos": 0,
-          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(routes['R1'].distanceAlong/routes['R1'].length, [0,0,0.25,1], trackVolume)]"
+          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(routes['R1'].distanceAlong/routes['R1'].length, [0.24,0,0.25,1], trackVolume)]"
         },
          {
           "name": "WollatonHallArriveA_Layer3a",
           "pos": 0,
-          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(routes['R1'].distanceAlong/routes['R1'].length, [0,0,0.5,0.5], trackVolume)]"
+          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(routes['R1'].distanceAlong/routes['R1'].length, [0.49,0,0.50,0.5], trackVolume),(routes['R1'].distanceAlong/routes['R1'].length, [0.49,0.5,0.50,0], trackVolume)]"
         },
         {
           "name": "WollatonHallArriveA_Layer3b",
           "pos": 0,
-          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(routes['R1'].distanceAlong/routes['R1'].length, [0,0,0.75,0.5], trackVolume)]"
+          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(routes['R1'].distanceAlong/routes['R1'].length, [0.74,0,0.75,0.5], trackVolume)]"
         },
         {
           "name": "WaitingForGA",
