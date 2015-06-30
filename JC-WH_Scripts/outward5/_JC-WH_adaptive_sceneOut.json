@@ -193,7 +193,7 @@
       "description": "this scene changes track to 'WaitingForGA' at the top of the hill on Digby Ave. This uses 3 waypoints and two routes to calculte distance/time, as the route double backs on itself",
       "partial": false,
       "waypoints": {"W1": "DA_TH", "W2": "DA_LTA", "W3": "LTA_LT"},
-      "routes": {"R1": "DA_TH-DA_LTA", "R2": "DA_LTA-LTA_LT", "Rnext": "LTA_LT-LTA_WH"},
+      "routes": {"R1": "DA_TH-DA_LTA", "R2": "DA_LTA-LTA_LT", "Rnext": "LTA_LT-LTA_WHb"},
       "onload": "window.lastGps=totalTime; if (waypoints['W3'].distance!==undefined) window.estimatedEnd=totalTime+(routes['R1'].nearest ? waypoints['W2'].distance+routes['R2'].length : waypoints['W3'].distance)/1.5; else window.estimatedEnd=totalTime+300; ",
       "onupdate": "if (activity=='NOGPS') { if (totalTime-window.lastGps>20) { daoplayer.setScene('Start'); } else if (window.estimatedEnd<totalTime+10) window.estimatedEnd=totalTime+10; } else { window.lastGps=totalTime; if (!routes['R1'].near && !routes['R2'].near) { daoplayer.setScene('Start/any'); } else if (routes['Rnext'].nearest) { daoplayer.setScene('WollatonHallArrivalMusic'); } else if (waypoints['W3'].distance!==undefined) window.estimatedEnd=totalTime+(routes['R1'].nearest ? waypoints['W2'].distance+routes['R2'].length : waypoints['W3'].distance)/1.5; }",
       
