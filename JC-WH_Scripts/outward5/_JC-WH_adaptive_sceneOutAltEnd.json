@@ -215,11 +215,11 @@
       ]
     },
     {
-      "name": "WollatonHallArriveA1",
+      "name": "WollatonHallArrivalMusic",
       "description": "this scene changes to the first layer of Wollaton Hall arrival music when approaching. There are four layers for this arrival music and which come in one by one all stacked togther. Would like a long cross-fade from track6/WaitingForGA into this",
       "partial": false,
-      "waypoints": {"W1": "LTA_LT", "W2": "LTA_WH"},
-      "routes": {"R1": "LTA_LT-LTA_WH", "Rnext": "LTA_WH-LTA_WHa"},
+      "waypoints": {"W1": "LTA_LT", "W2": "LTA_WH",  "W3": "LTA_WHa", "W4": "LTA_WHb", "W5": "WH1"},
+      "routes": {"R1": "LTA_LT-LTA_WH", "R2": "LTA_WH-LTA_WHa", "R3": "LTA_WHa-LTA_WHb", "R4": "LTA_WHb-WH1", "Rnext": "WH1-WH3"},
       "onupdate": "if (!routes['R1'].near) { daoplayer.setScene('Start/any'); } else if (routes['Rnext'].nearest) { daoplayer.setScene('WollatonHallArriveA2'); }",
       "updatePeriod": 1,
       "tracks": [
@@ -231,7 +231,17 @@
         {
           "name": "WollatonHallArriveA_Layer2",
           "pos": 0,
-          "volume": [0,0]
+          "volume": "[sceneTime,trackVolume,sceneTime+1,(routes['R2'].distanceAlong>0 ? 1 : 0)]"
+        },
+         {
+          "name": "WollatonHallArriveA_Layer3a",
+          "pos": 0,
+          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(routes['R3'].distanceAlong/routes['R3'].length, [0,0,0.1,1], trackVolume : (routes['R3'].distanceAlong/routes['R4'].length, [0,1,0.1,0], trackVolume))]"
+        },
+        {
+          "name": "WollatonHallArriveA_Layer3b",
+          "pos": 0,
+          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(routes['R4'].distanceAlong/routes['R4'].length, [0,0,0.1,1], trackVolume)]"
         },
         {
           "name": "WaitingForGA",
@@ -244,90 +254,7 @@
       ]
     },
     {
-      "name": "WollatonHallArriveA2",
-      "description": "second layer of Wollaton Hall arrival music when approaching",
-      "partial": false,
-      "waypoints": {"W1": "LTA_WH", "W2": "LTA_WHa"},
-      "routes": {"R1": "LTA_WH-LTA_WHa", "Rnext": "LTA_WHa-LTA_WHb"},
-      "onupdate": "if (!routes['R1'].near) { daoplayer.setScene('Start/any'); } else if (routes['Rnext'].nearest) { daoplayer.setScene('WollatonHallArriveA3'); }",
-      "updatePeriod": 1,
-      "tracks": [
-        {
-          "name": "WollatonHallArriveA_Layer1",
-          "volume": 1
-        },
-        {
-          "name": "WollatonHallArriveA_Layer2",
-          "volume": "sceneTime<2 ? [sceneTime,trackVolume,sceneTime+1,1] : 1"
-        },
-        {
-          "name": "holdingPad",
-          "volume": "sceneTime<2 ? [sceneTime,trackVolume,2,0] : 0"
-        }
-      ]
-    },
-    {
-      "name": "WollatonHallArriveA3",
-      "description": "third layer of arrival music for close proximity to Wollaton Hall",
-      "partial": false,
-      "waypoints": {"W1": "LTA_WHa", "W2": "LTA_WHb"},
-      "routes": {"R1": "LTA_WHa-LTA_WHb", "Rnext": "LTA_WHb-WH1"},
-      "onupdate": "if (!routes['R1'].near) { daoplayer.setScene('Start/any'); } else if (routes['Rnext'].nearest) { daoplayer.setScene('WollatonHallArriveA4'); }",
-      "updatePeriod": 1,
-      "tracks": [
-        {
-          "name": "WollatonHallArriveA_Layer1",
-          "volume": 1
-        },
-        {
-          "name": "WollatonHallArriveA_Layer2",
-          "volume": 1
-        },
-        {
-          "name": "WollatonHallArriveA_Layer3a",
-          "pos": 0,
-          "volume": "sceneTime<2 ? [sceneTime,trackVolume,sceneTime+2,0.5] : 0.5"
-        },
-        {
-          "name": "holdingPad",
-          "volume": "sceneTime<2 ? [sceneTime,trackVolume,2,0] : 0"
-        }
-      ]
-    },
-    {
-      "name": "WollatonHallArriveA4",
-      "description": "fourth layer of arrival music for close proximity to Wollaton Hall",
-      "partial": false,
-      "waypoints": {"W1": "LTA_WHb", "W2": "WH1"},
-      "routes": {"R1": "LTA_WHb-WH1", "Rnext": "WH1-WH3"},
-      "onupdate": "if (!routes['R1'].near) { daoplayer.setScene('Start/any'); } else if (routes['Rnext'].nearest) { daoplayer.setScene('WollatonHallArriveB'); }",
-      "updatePeriod": 1,
-      "tracks": [
-        {
-          "name": "WollatonHallArriveA_Layer1",
-          "volume": 1
-        },
-        {
-          "name": "WollatonHallArriveA_Layer2",
-          "volume": 1
-        },
-        {
-          "name": "WollatonHallArriveA_Layer3a",
-          "volume": "sceneTime<2 ? [sceneTime,trackVolume,2,0] : 0"
-        },
-        {
-          "name": "WollatonHallArriveA_Layer3b",
-          "pos": 0,
-          "volume": "sceneTime<2 ? [sceneTime,trackVolume,sceneTime+2,0.5] : 0.5"
-        },
-        {
-          "name": "holdingPad",
-          "volume": "sceneTime<2 ? [sceneTime,trackVolume,2,0] : 0"
-        }
-      ]
-    },
-    {
-      "name": "WollatonHallArriveB",
+      "name": "WollatonHallArrived",
       "description": "This is the final music for arrival at Wollaton Hall, which will continue to loop around as the participants fill in the questionnire. It has two layers, WollatonHallArriveB_Accent' sounds just once (has no repeats set on the track script), whereas 'WollatonHallArriveB_Layer1' loops indefinatley ",
       "partial": false,
       "waypoints": {"W1": "WH1", "W2": "WH3"},
