@@ -17,24 +17,18 @@
           "length": 178.17
         }
       ],
-      "unitTime": 7.7,
+      "unitTime": 4.25,
       "sections": [
           
         { "name": "intro1", "trackPos": 0.012, "length":  17.159, "startCost": 0,
           "next": [ {"name":"verse1","cost":0},
           {"name":"intro1","cost":5
           }]
-        } ,
-        { "name": "mainBody", "trackPos": 17.171, "length":  142.71,
-          "next": [ {"name":"outroA","cost":0},
-          
-          {"name":"outroB","cost":5}]
-        },  
-        
+        },
         { "name": "verse1", "trackPos": 17.171, "length":  29.989, "startCost": 1000, 
           "next": [ {"name":"verse2","cost":0
           },
-          {"name":"intro1","cost":5}, {"name":"mainBody","cost":40
+          {"name":"intro1","cost":5
           },
           {"name":"verse3","cost":5}]
           },
@@ -42,7 +36,7 @@
         { "name": "verse2", "trackPos": 47.159, "length":  28.404, "startCost": 1000, 
           "next": [ {"name":"intro2","cost":0
           },
-          {"name":"intro1","cost":5}, {"name":"mainBody","cost":40
+          {"name":"intro1","cost":5
           },
           {"name":"verse3","cost":5}]
           },
@@ -50,7 +44,7 @@
         { "name": "intro2", "trackPos": 75.564, "length":  8.563, 
           "next": [ {"name":"verse3","cost":0
         },
-          {"name":"verse1","cost":5}, {"name":"mainBody","cost":40
+          {"name":"verse1","cost":5
           },
           {"name":"verse4","cost":5}]
         },
@@ -58,7 +52,7 @@
         { "name": "verse3", "trackPos": 84.127, "length":  30.006, "startCost": 5000, 
           "next": [ {"name":"verse4","cost":0
         },
-          {"name":"intro1","cost":5}, {"name":"mainBody","cost":40
+          {"name":"intro1","cost":5
           },
           {"name":"intro3","cost":5}]
         },
@@ -66,7 +60,7 @@
         { "name": "verse4", "trackPos": 114.134, "length":  27.707,
           "next": [ {"name":"intro3","cost":0
         },
-          {"name":"intro1","cost":5}, {"name":"mainBody","cost":40
+          {"name":"intro1","cost":5
           },
           {"name":"intro3","cost":5}]
         },
@@ -74,7 +68,7 @@
         { "name": "intro3", "trackPos": 141.841, "length":  8.598,  "endCost": 1000,
           "next": [ {"name":"bridge","cost":0
         },
-          {"name":"intro1","cost":5}, {"name":"mainBody","cost":40
+          {"name":"intro1","cost":5
           },
           {"name":"outroA","cost":5}]
         },
@@ -82,7 +76,7 @@
         { "name": "bridge", "trackPos": 150.438, "length":  9.442, 
           "next": [ {"name":"outroA","cost":0
         },
-          {"name":"intro1","cost":5},{"name":"intro2","cost":5},{"name":"intro3","cost":5}, {"name":"mainBody","cost":40
+          {"name":"intro1","cost":5},{"name":"intro2","cost":5},{"name":"intro3","cost":5
           },
           {"name":"outroB","cost":5}]
         },
@@ -90,7 +84,7 @@
         { "name": "outroA", "trackPos": 159.881, "length":  7.596, "endCost": 0,
           "next": [ {"name":"outroB","cost":0
         },
-          {"name":"intro1","cost":5},{"name":"intro2","cost":5},{"name":"intro3","cost":5}, {"name":"mainBody","cost":40
+          {"name":"intro1","cost":5},{"name":"intro2","cost":5},{"name":"intro3","cost":5
           }]
         },
         
