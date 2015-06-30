@@ -131,7 +131,7 @@
 				"description": "Scene track1/MitaDelMundo stage 1",
 				"from": "J_CS",
 				"to": "J_CP",
-				"nearDistance": "100"
+				"nearDistance": "50"
 			},
 			{
 				"name": "J_CP-WR",
@@ -145,7 +145,7 @@
 				"description": "Scene track2/SisterCities stage 1",
 				"from": "WR",
 				"to": "WR_MR",
-				"nearDistance": "60"
+				"nearDistance": "50"
 			},
 			{
 				"name": "WR_MR-PC_A",
@@ -222,14 +222,14 @@
 				"description": "Scene WollatonHallArriveA1",
 				"from": "LTA_LT",
 				"to":"LTA_WH",
-				"nearDistance": "60"
+				"nearDistance": "50"
 			},
 			{
 				"name": "LTA_WH-LTA_WHa",
 				"description": "Scene WollatonHallArriveA2",
 				"from": "LTA_WH",
 				"to":"LTA_WHa",
-				"nearDistance": "60"
+				"nearDistance": "50"
 			},
 			{
 				"name": "LTA_WHa-LTA_WHb",
@@ -250,14 +250,14 @@
 				"description": "arrived at Wollaton Hall",
 				"from": "WH1",
 				"to":"WH3",
-				"nearDistance": "100"
+				"nearDistance": "50"
 			},
 			{
 				"name": "WH_EP-EP_LTA",
 				"description": "Scene fixedPlaylistIn",
 				"from": "WH_EP",
 				"to": "EP_LTA",
-				"nearDistance": "60"
+				"nearDistance": "50"
 	  	}
     ]
   }
