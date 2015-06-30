@@ -61,6 +61,11 @@
 		"description":"Digby Ave - approximately half-way - used as a trigger point for the transition  between Stella and The Bad Guys"
 		},
 		{
+		"name": "DA_TR",
+		"lat":52.949523,  "lng":-1.206471,
+		"description":"Digby Ave - when the path starts to turn - used to calculate the distance between the adjacent waypoints"
+		},
+		{
 		"name": "DA_TH",
 		"lat":52.948974000,  "lng":-1.206503200,
 		"description":"Digby Ave - Top of hill path intersection"
@@ -185,10 +190,17 @@
 				"nearDistance": "50"
 			},
 			{
-				"name": "DA_HW-DA_TH",
-				"description": "'The Bad Guys' to Digbey Ave and top of hill",
+				"name": "DA_HW-DA_TR",
 				"from": "DA_HW",
+				"to":"DA_TR",
+				"description": "'The Bad Guys' to Digbey Ave and top of hill",
+				"nearDistance": "50"
+			},
+			{
+				"name": "DA_TR-DA_TH",
+				"from": "DA_TR",
 				"to":"DA_TH",
+				"description": "'The Bad Guys' to Digbey Ave and top of hill",
 				"nearDistance": "50"
 			},
 			{
