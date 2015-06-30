@@ -23,7 +23,7 @@
         },
         {
           "name": "holdingPad",
-          "volume": "sceneTime<2 ? [sceneTime,trackVolume,sceneTime+2,0] : 0"
+          "volume": "sceneTime<2 ? [sceneTime,trackVolume,2,0] : 0"
         }
       ]
     },
@@ -155,10 +155,10 @@
       "name": "track5/TheBadGuys",
       "description": "this scene changes track to 'TheBadGuys' approx half-way along Digby Ave. Only uses 2 waypoint to form 1 route to calcuate walking distance/time",
       "partial": false,
-      "waypoints": {"W1": "DA_HW", "W2": "DA_TH"},
-      "routes": {"R1": "DA_HW-DA_TH", "Rnext": "DA_TH-DA_LTA"},
-      "onload": "if (waypoints['W2'].distance!==undefined) window.estimatedEnd=totalTime+(waypoints['W2'].distance)/1.5; else window.estimatedEnd=300;",
-      "onupdate": "if (!routes['R1'].near) { daoplayer.setScene('Start/any'); } else if (routes['Rnext'].nearest) { daoplayer.setScene('track6/WaitingForGA'); } else if (waypoints['W2'].distance!==undefined) window.estimatedEnd=totalTime+(waypoints['W2'].distance)/1.5; ",
+      "waypoints": {"W1": "DA_HW", "W2": "DA_TR", "W3": "DA_TH"},
+      "routes": {"R1": "DA_HW-DA_TR", "R2": "DA_TR-DA_TH", "Rnext": "DA_TH-DA_LTA"},
+      "onload": "if (waypoints['W3'].distance!==undefined) window.estimatedEnd=totalTime+(routes['R1'].nearest ? waypoints['W2'].distance+routes['R2'].length : waypoints['W3'].distance)/1.5; else window.estimatedEnd=300;",
+      "onupdate": "if (!routes['R1'].near) { daoplayer.setScene('Start/any'); } else if (routes['Rnext'].nearest) { daoplayer.setScene('track6/WaitingForGA'); } else if (waypoints['W3'].distance!==undefined) window.estimatedEnd=totalTime+(routes['R1'].nearest ? waypoints['W2'].distance+routes['R2'].length : waypoints['W3'].distance)/1.5;",
       "updatePeriod": 1,
       "tracks": [
         {
@@ -195,7 +195,7 @@
       "waypoints": {"W1": "DA_TH", "W2": "DA_LTA", "W3": "LTA_LT"},
       "routes": {"R1": "DA_TH-DA_LTA", "R2": "DA_LTA-LTA_LT", "Rnext": "LTA_LT-LTA_WH"},
       "onload": "if (waypoints['W3'].distance!==undefined) window.estimatedEnd=totalTime+(routes['R1'].nearest ? waypoints['W2'].distance+routes['R2'].length : waypoints['W3'].distance)/1.5; else window.estimatedEnd=totalTime+300; ",
-      "onupdate": "if (!routes['R1'].near && !routes['R2'].near) { daoplayer.setScene('Start/any'); } else if (routes['Rnext'].nearest) { daoplayer.setScene('WollatonHallArriveA1'); } else if (waypoints['W3'].distance!==undefined) window.estimatedEnd=totalTime+(routes['R1'].nearest ? waypoints['W2'].distance+routes['R2'].length : waypoints['W3'].distance)/1.5; ",
+      "onupdate": "if (!routes['R1'].near && !routes['R2'].near) { daoplayer.setScene('Start/any'); } else if (routes['Rnext'].nearest) { daoplayer.setScene('WollatonHallArrivalMusic'); } else if (waypoints['W3'].distance!==undefined) window.estimatedEnd=totalTime+(routes['R1'].nearest ? waypoints['W2'].distance+routes['R2'].length : waypoints['W3'].distance)/1.5; ",
       
       "updatePeriod": 1,
       "tracks": [
@@ -220,7 +220,7 @@
       "partial": false,
       "waypoints": {"W1": "LTA_LT", "W2": "LTA_WH",  "W3": "LTA_WHa", "W4": "LTA_WHb", "W5": "WH1"},
       "routes": {"R1": "LTA_LT-LTA_WH", "R2": "LTA_WH-LTA_WHa", "R3": "LTA_WHa-LTA_WHb", "R4": "LTA_WHb-WH1", "Rnext": "WH1-WH3"},
-      "onupdate": "if (!routes['R1'].near) { daoplayer.setScene('Start/any'); } else if (routes['Rnext'].nearest) { daoplayer.setScene('WollatonHallArriveA2'); }",
+      "onupdate": "if (!routes['R1'].near && !routes['R2'].near && !routes['R3'].near && !routes['R4'].near) { daoplayer.setScene('Start/any'); } else if (routes['Rnext'].nearest) { daoplayer.setScene('WollatonHallArrived'); }",
       "updatePeriod": 1,
       "tracks": [
         {
@@ -236,12 +236,12 @@
          {
           "name": "WollatonHallArriveA_Layer3a",
           "pos": 0,
-          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(routes['R3'].distanceAlong/routes['R3'].length, [0,0,0.1,1], trackVolume : (routes['R3'].distanceAlong/routes['R4'].length, [0,1,0.1,0], trackVolume))]"
+          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(routes['R3'].distanceAlong/routes['R3'].length, [0,0,0.1,0.5], trackVolume : (routes['R4'].distanceAlong/routes['R4'].length, [0,0.5,0.1,0], trackVolume))]"
         },
         {
           "name": "WollatonHallArriveA_Layer3b",
           "pos": 0,
-          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(routes['R4'].distanceAlong/routes['R4'].length, [0,0,0.1,1], trackVolume)]"
+          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(routes['R4'].distanceAlong/routes['R4'].length, [0,0,0.1,0.5], trackVolume)]"
         },
         {
           "name": "WaitingForGA",
@@ -259,7 +259,7 @@
       "partial": false,
       "waypoints": {"W1": "WH1", "W2": "WH3"},
       "routes": {"R1": "WH1-WH3", "Rnext": "WH_EP-EP_LTA"},
-      "onupdate": "if (routes['Rnext'].nearest) { daoplayer.setScene('fixedPlaylistIn'); }",
+      "onupdate": "if (!routes['R1'].near) { daoplayer.setScene('Start/return'); } else if (routes['Rnext'].nearest) { daoplayer.setScene('fixedPlaylistIn'); }",
       "updatePeriod": 1,
       "tracks": [
         {
