@@ -10,10 +10,10 @@
     "name": "fixedPlaylistIn",
     "description": "this scene initiates playback of the fixed playlist of music for the leg of the walk that goes from JC to WH. One route initiates the playlist, but after that no other GPS is used until the approach of Wollaton Hall",
       "partial": false,
-      "waypoints":{},
-     "routes":{"Rnext":"LTA_LT-LTA_WH"},
+      "waypoints":{"W1": "J-CS", "W2": "J-CP"},
+     "routes":{"R1":"J-CS_J-CP", "Rnext":"LTA_LT-LTA_WH"},
       "onload": "daoplayer.speak('fixed playlist', true); ",
-      "onupdate": "if (routes['Rnext'].nearest) { daoplayer.setScene('WollatonHallArriveA1');} ",
+      "onupdate": "if (routes['Rnext'].nearest) { daoplayer.setScene('WollatonHallArrivalMusic');} ",
       "updatePeriod":1.0,
       "tracks": [
         {
@@ -33,28 +33,28 @@
       "partial": false,
       "waypoints": {"W1": "LTA_LT", "W2": "LTA_WH",  "W3": "LTA_WHa", "W4": "LTA_WHb", "W5": "WH1"},
       "routes": {"R1": "LTA_LT-LTA_WH", "R2": "LTA_WH-LTA_WHa", "R3": "LTA_WHa-LTA_WHb", "R4": "LTA_WHb-WH1", "Rnext": "WH1-WH3"},
-      "onupdate": "if (!routes['R1'].near) { daoplayer.setScene('Start/any'); } else if (routes['Rnext'].nearest) { daoplayer.setScene('WollatonHallArriveA2'); }",
+      "onupdate": "if (!routes['R1'].near && !routes['R2'].near && !routes['R3'].near && !routes['R4'].near) { daoplayer.setScene('Start/out'); } else if (routes['Rnext'].nearest) { daoplayer.setScene('WollatonHallArrived'); }",
       "updatePeriod": 1,
       "tracks": [
         {
-          "name": "WollatonHallArriveA_Layer1",
+          "name": "ArriveA_Layer1",
           "pos": 0,
           "volume": "sceneTime<5 ? [sceneTime,trackVolume,sceneTime+5,1] : 1"
         },
         {
-          "name": "WollatonHallArriveA_Layer2",
+          "name": "ArriveA_Layer2",
           "pos": 0,
           "volume": "[sceneTime,trackVolume,sceneTime+1,(routes['R2'].distanceAlong>0 ? 1 : 0)]"
         },
          {
-          "name": "WollatonHallArriveA_Layer3a",
+          "name": "ArriveA_Layer3a",
           "pos": 0,
-          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(routes['R3'].distanceAlong/routes['R3'].length, [0,0,0.1,1], trackVolume : (routes['R3'].distanceAlong/routes['R4'].length, [0,1,0.1,0], trackVolume))]"
+          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(routes['R3'].distanceAlong/routes['R3'].length, [0,0,0.1,0.5], trackVolume)]"
         },
         {
-          "name": "WollatonHallArriveA_Layer3b",
+          "name": "ArriveA_Layer3b",
           "pos": 0,
-          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(routes['R4'].distanceAlong/routes['R4'].length, [0,0,0.1,1], trackVolume)]"
+          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(routes['R4'].distanceAlong/routes['R4'].length, [0,0,0.1,0.5], trackVolume)]"
         },
         {
           "name": "WaitingForGA",
@@ -67,40 +67,43 @@
       ]
     },
     {
-      "name": "WollatonHallArriveB",
-      "description": "Final arrival music for Wollaton Hall - this scene is for when a participant has walked up to the hall and this music continues to accompany them while they fill in the questionnaire - there are two layers, 'ArriveB_Accent' sounds only once, whereas 'ArriveB_Layer1' loops indefinately ",
+      "name": "WollatonHallArrived",
+      "description": "This is the final music for arrival at Wollaton Hall, which will continue to loop around as the participants fill in the questionnire. It has two layers, WollatonHallArriveB_Accent' sounds just once (has no repeats set on the track script), whereas 'WollatonHallArriveB_Layer1' loops indefinatley ",
       "partial": false,
-      "waypoints":{"W1":"WH1", "W2":"WH3"},
-      "routes":{"R1":"WH1-WH3", "Rnext": "WH_EP1-WH_EP2"},
-      
-      "onupdate": " if (routes['Rnext'].nearest) { daoplayer.setScene('track1/WaitingForGA'); }",
-      "updatePeriod":1.0,
+      "waypoints": {"W1": "WH1", "W2": "WH3"},
+      "routes": {"R1": "WH1-WH3", "Rnext": "WH_EP-EP_LTA"},
+      "onupdate": "if (!routes['R1'].near) { daoplayer.setScene('Start/any'); } else if (routes['Rnext'].nearest) { daoplayer.setScene('fixedPlaylistIn'); }",
+      "updatePeriod": 1,
       "tracks": [
         {
           "name": "ArriveB_Accent",
           "pos": 0,
-          "volume": 1
+          "volume": "sceneTime<2 ? [sceneTime,trackVolume,sceneTime+0.3,1] : 1"
         },
         {
           "name": "ArriveB_Layer1",
           "pos": 0,
-          "volume": "sceneTime<2 ? [sceneTime,trackVolume,sceneTime+1,1] : 1" 
+          "volume": "sceneTime<2 ? [sceneTime,trackVolume,sceneTime+0.3,1] : 1"
         },
         {
           "name": "ArriveA_Layer1",
-          "volume": "sceneTime<2 ? [sceneTime,trackVolume,1,0] : 0"  
+          "volume": "sceneTime<2 ? [sceneTime,trackVolume,0.5,0] : 0"
         },
         {
           "name": "ArriveA_Layer2",
-          "volume": "sceneTime<2 ? [sceneTime,trackVolume,1,0] : 0"   
+          "volume": "sceneTime<2 ? [sceneTime,trackVolume,0.5,0] : 0"
+        },
+        {
+          "name": "ArriveA_Layer3a",
+          "volume": "sceneTime<2 ? [sceneTime,trackVolume,0.5,0] : 0"
         },
         {
           "name": "ArriveA_Layer3b",
-          "volume": "sceneTime<2 ? [sceneTime,trackVolume,1,0] : 0"  
+          "volume": "sceneTime<2 ? [sceneTime,trackVolume,0.5,0] : 0"
         },
         {
           "name": "holdingPad",
-          "volume": "sceneTime<2 ? [sceneTime,trackVolume,2,0] : 0" 
+          "volume": "sceneTime<2 ? [sceneTime,trackVolume,sceneTime+2,0] : 0"
         }
       ]
     },
@@ -264,7 +267,7 @@
       "routes":{"R1":"JC_SFG-SF_JCCP", "R2":"SF_JCCP-JC_NCL", "R3":"JC_NCL-JC_RSL", "R4":"JC_RSL-JC_WF", "Rnext":"JC_WF-JC_A1"},
       "onload": "if (waypoints['W5'].distance!==undefined) window.estimatedEnd=totalTime+(routes['R1'].nearest ? waypoints['W2'].distance+routes['R2'].length+routes['R3'].length+routes['R4'].length : (routes['R2'].nearest ? waypoints['W3'].distance+routes['R3'].length+routes['R4'].length : (routes['R3'].nearest ? waypoints['W4'].distance+routes['R4'].length : waypoints['W5'].distance)))/1.5; else window.estimatedEnd=350;",
       
-      "onupdate": "if (!routes['R1'].near && !routes['R2'].near && !routes['R3'].near && !routes['R4'].near) { daoplayer.setScene('Start/any'); } else if (routes['Rnext'].nearest) { daoplayer.setScene('AtriumArriveA1'); } else if (waypoints['W5'].distance!==undefined) window.estimatedEnd=totalTime+(routes['R1'].nearest ? waypoints['W2'].distance+routes['R2'].length+routes['R3'].length+routes['R4'].length : (routes['R2'].nearest ? waypoints['W3'].distance+routes['R3'].length+routes['R4'].length : (routes['R3'].nearest ? waypoints['W4'].distance+routes['R4'].length : waypoints['W5'].distance)))/1.5; ",
+      "onupdate": "if (!routes['R1'].near && !routes['R2'].near && !routes['R3'].near && !routes['R4'].near) { daoplayer.setScene('Start/any'); } else if (routes['Rnext'].nearest) { daoplayer.setScene('AtriumArrival'); } else if (waypoints['W5'].distance!==undefined) window.estimatedEnd=totalTime+(routes['R1'].nearest ? waypoints['W2'].distance+routes['R2'].length+routes['R3'].length+routes['R4'].length : (routes['R2'].nearest ? waypoints['W3'].distance+routes['R3'].length+routes['R4'].length : (routes['R3'].nearest ? waypoints['W4'].distance+routes['R4'].length : waypoints['W5'].distance)))/1.5; ",
       "updatePeriod":1.0,
       "tracks": [
         {
@@ -274,7 +277,7 @@
         },
         {
           "name": "SisterCities_Drums",
-          "volume": "sceneTime<2 ? [sceneTime,trackVolume,+2,0] : 0"
+          "volume": "sceneTime<2 ? [sceneTime,trackVolume,2,0] : 0"
         },
         {
           "name": "SisterCities_Bass",
@@ -299,123 +302,47 @@
       ]
     },
     {
-      "name": "AtriumArriveA1",
+      "name": "AtriumArrival",
       "description": "this scene changes to the first layer of Atrium arrival music when approaching it",
       "partial": false,
-      "waypoints":{"W1":"JC_WF","W2":"JC_A1"},
-      "routes":{"R1":"JC_WF-JC_A1", "Rnext":"JC_A1-JC_A2"},
+      "waypoints":{"W1":"JC_WF","W2":"JC_A1", "W3":"JC_A2", "W4":"JC_A3", "W5":"JC_AB"},
+      "routes":{"R1":"JC_WF-JC_A1", "R2":"JC_A1-JC_A2", "R3":"JC_A2-JC_A3", "R4":"JC_A3-JC_AB", "Rnext":"JC_AB-J_CS"},
       
-      "onupdate": "if (!routes['R1'].near) { daoplayer.setScene('Start/any'); } else if (routes['Rnext'].nearest) { daoplayer.setScene('AtriumArriveA2'); }",
+      "onupdate": "if (!routes['R1'].near && !routes['R2'].near && !routes['R3'].near && !routes['R4'].near) { daoplayer.setScene('Start/any'); } else if (routes['Rnext'].nearest) { daoplayer.setScene('AtriumArrived'); }",
       "updatePeriod":1.0,
       "tracks": [
         {
           "name": "ArriveA_Layer1",
           "pos": 0,
-          "volume": "sceneTime<2 ? [sceneTime,trackVolume,sceneTime+5,1] : 1" 
+          "volume": "sceneTime<5 ? [sceneTime,trackVolume,sceneTime+5,1] : 1" 
         },
         {
           "name": "ArriveA_Layer2",
           "pos": 0,
-          "volume": "[0,0]"
-        },
-        {
-          "name": "NotAlone",
-          "volume": "sceneTime<2 ? [sceneTime,trackVolume,5,0] : 0"
-        },
-        {
-          "name": "holdingPad",
-          "volume": "sceneTime<2 ? [sceneTime,trackVolume,2,0] : 0" 
-        }
-      ]
-    },
-    {
-      "name": "AtriumArriveA2",
-      "description": "second layer of Atrium arrival music when approaching",
-      "partial": false,
-      "waypoints":{"W1":"JC_A1","W2":"JC_A2"},
-      "routes":{"R1":"JC_A1-JC_A2", "Rnext":"JC_A2-JC_A3"},
-      
-      "onupdate": "if (!routes['R1'].near) { daoplayer.setScene('Start/any'); } else if (routes['Rnext'].nearest) { daoplayer.setScene('AtriumArriveA3'); }",
-      "updatePeriod":1.0,
-      "tracks": [
-        {
-          "name": "ArriveA_Layer1",
-          "volume": 1 
-        },
-        {
-          "name": "ArriveA_Layer2",
-          "volume": "sceneTime<2 ? [sceneTime,trackVolume,sceneTime+1,1] : 0" 
-        },
-        {
-          "name": "holdingPad",
-          "volume": "sceneTime<2 ? [sceneTime,trackVolume,2,0] : 0" 
-        }
-      ]
-    },
-    {
-      "name": "AtriumArriveA3",
-      "description": "third layer of Atrium arrival music - high strings",
-      "partial": false,
-      "waypoints":{"W1":"JC_A2","W2":"JC_A3"},
-      "routes":{"R1":"JC_A2-JC_A3", "Rnext":"JC_A3-JC_AB"},
-      
-      "onupdate": "if (!routes['R1'].near) { daoplayer.setScene('Start/any'); } else if (routes['Rnext'].nearest) { daoplayer.setScene('AtriumArriveA4'); }",
-      "updatePeriod":1.0,
-      "tracks": [
-        {
-          "name": "ArriveA_Layer1",
-          "volume": 1 
-        },
-        {
-          "name": "ArriveA_Layer2",
-          "volume": 1 
+          "volume": "[sceneTime,trackVolume,sceneTime+1,(routes['R2'].distanceAlong>0 ? 1 : 0)]"
         },
         {
           "name": "ArriveA_Layer3a",
           "pos": 0,
-          "volume": "sceneTime<2 ? [sceneTime,trackVolume,sceneTime+1,0.5] : 0.5" 
-        },
-        {
-          "name": "holdingPad",
-          "volume": "sceneTime<2 ? [sceneTime,trackVolume,2,0] : 0" 
-        }
-      ]
-    },
-    {
-      "name": "AtriumArriveA4",
-      "description": "third layer of Atrium arrival music - higher strings",
-      "partial": false,
-      "waypoints":{"W1":"JC_A3","W2":"JC_AB"},
-      "routes":{"R1":"JC_A3-JC_AB", "Rnext":"JC_AB-J_CS"},
-
-      "onupdate": "if (!routes['R1'].near) { daoplayer.setScene('Start/any'); } else if (routes['Rnext'].nearest) { daoplayer.setScene('AtriumArriveB'); }",
-      "updatePeriod":1.0,
-      "tracks": [
-        {
-          "name": "ArriveA_Layer1",
-          "volume": 1 
-        },
-        {
-          "name": "ArriveA_Layer2",
-          "volume": 1 
-        },
-        {
-          "name": "ArriveA_Layer3a",
-          "volume": "sceneTime<2 ? [sceneTime,trackVolume,sceneTime+1,0] : 0" 
+          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(routes['R3'].distanceAlong/routes['R3'].length, [0,0,0.1,0.5], trackVolume)]" 
         },
         {
           "name": "ArriveA_Layer3b",
           "pos": 0,
-          "volume": "sceneTime<2 ? [sceneTime,trackVolume,sceneTime+1,0.5] : 0.5" 
+          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(routes['R4'].distanceAlong/routes['R4'].length, [0,0,0.1,0.5], trackVolume)]"
+        },
+        {
+          "name": "WaitingForGA",
+          "volume": "sceneTime<5 ? [sceneTime,trackVolume,5,0] : 0"
         },
         {
           "name": "holdingPad",
-          "volume": "sceneTime<2 ? [sceneTime,trackVolume,2,0] : 0" 
+          "volume": "sceneTime<2 ? [sceneTime,trackVolume,2,0] : 0"
         }
       ]
     },
     {
-      "name": "AtriumArriveB",
+      "name": "AtriumArrived",
       "description": "Final arrival music for completion of the walk",
       "partial": false,
       "waypoints":{"W1":"JC_AB", "W2":"J_CS"},
