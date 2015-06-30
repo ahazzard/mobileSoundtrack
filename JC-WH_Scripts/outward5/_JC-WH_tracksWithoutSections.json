@@ -21,7 +21,7 @@
       ]
     },
     {
-      "name": "WollatonHallArriveA_Layer1",
+      "name": "ArriveA_Layer1",
       "pauseIfSilent": false,
       "files": [
         { 
@@ -34,7 +34,7 @@
       ]
     },
     {
-      "name": "WollatonHallArriveA_Layer2",
+      "name": "ArriveA_Layer2",
       "pauseIfSilent": false,
       "files": [
         { 
@@ -47,7 +47,7 @@
       ]
     },
     {
-      "name": "WollatonHallArriveA_Layer3a",
+      "name": "ArriveA_Layer3a",
       "pauseIfSilent": true,
       "files": [
         { 
@@ -60,7 +60,7 @@
       ]
     },
     {
-      "name": "WollatonHallArriveA_Layer3b",
+      "name": "ArriveA_Layer3b",
       "pauseIfSilent": true,
       "files": [
         { 
@@ -73,7 +73,7 @@
       ]
     },
     {
-      "name": "WollatonHallArriveB_Accent",
+      "name": "ArriveB_Accent",
       "pauseIfSilent": false,
       "files": [
         { 
@@ -85,7 +85,7 @@
       ]
     },
     {
-      "name": "WollatonHallArriveB_Layer1",
+      "name": "ArriveB_Layer1",
       "pauseIfSilent": false,
       "files": [
         { 
