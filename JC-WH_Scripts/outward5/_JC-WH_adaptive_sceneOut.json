@@ -218,10 +218,10 @@
       "name": "WollatonHallArrivalMusic",
       "description": "this scene changes to the first layer of Wollaton Hall arrival music when approaching. There are four layers for this arrival music and which come in one by one all stacked togther. Would like a long cross-fade from track6/WaitingForGA into this",
       "partial": false,
-      "waypoints": {"W1": "LTA_LT", "W2": "LTA_WH",  "W3": "LTA_WHa", "W4": "LTA_WHb", "W5": "WH1"},
-      "routes": {"R1": "LTA_LT-LTA_WH", "R2": "LTA_WH-LTA_WHa", "R3": "LTA_WHa-LTA_WHb", "R4": "LTA_WHb-WH1", "Rnext": "WH1-WH3"},
+      "waypoints": {"W1": "LTA_LT", "W2": "LTA_WHb"},
+      "routes": {"R1": "LTA_LT-LTA_WHb", "Rnext": "WH1-WH3"},
       "onload": "window.lastGps=totalTime; ",
-      "onupdate": "if (activity=='NOGPS') { if (totalTime-window.lastGps>20) { daoplayer.setScene('Start'); } else if (window.estimatedEnd<totalTime+10) window.estimatedEnd=totalTime+10; } else { window.lastGps=totalTime; if (!routes['R1'].near && !routes['R2'].near && !routes['R3'].near && !routes['R4'].near) { daoplayer.setScene('Start/any'); } else if (routes['Rnext'].nearest) { daoplayer.setScene('WollatonHallArrived'); } }",
+      "onupdate": "if (activity=='NOGPS') { if (totalTime-window.lastGps>20) { daoplayer.setScene('Start'); } else if (window.estimatedEnd<totalTime+10) window.estimatedEnd=totalTime+10; } else { window.lastGps=totalTime; if (!routes['R1'].near) { daoplayer.setScene('Start/any'); } else if (routes['Rnext'].nearest) { daoplayer.setScene('WollatonHallArrived'); } }",
       "updatePeriod": 1,
       "tracks": [
         {
@@ -232,17 +232,17 @@
         {
           "name": "WollatonHallArriveA_Layer2",
           "pos": 0,
-          "volume": "[sceneTime,trackVolume,sceneTime+1,(routes['R2'].distanceAlong>0 ? 1 : 0)]"
+          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(routes['R1'].distanceAlong/routes['R1'].length, [0,0,0.25,1], trackVolume)]"
         },
          {
           "name": "WollatonHallArriveA_Layer3a",
           "pos": 0,
-          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(routes['R3'].distanceAlong/routes['R3'].length, [0,0,0.1,0.5], trackVolume)]"
+          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(routes['R1'].distanceAlong/routes['R1'].length, [0,0,0.5,0.5], trackVolume)]"
         },
         {
           "name": "WollatonHallArriveA_Layer3b",
           "pos": 0,
-          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(routes['R4'].distanceAlong/routes['R4'].length, [0,0,0.1,0.5], trackVolume)]"
+          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(routes['R1'].distanceAlong/routes['R1'].length, [0,0,0.75,0.5], trackVolume)]"
         },
         {
           "name": "WaitingForGA",
