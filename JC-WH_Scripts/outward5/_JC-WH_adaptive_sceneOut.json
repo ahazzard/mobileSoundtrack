@@ -225,22 +225,22 @@
       "updatePeriod": 1,
       "tracks": [
         {
-          "name": "WollatonHallArriveA_Layer1",
+          "name": "ArriveA_Layer1",
           "pos": 0,
           "volume": "sceneTime<5 ? [sceneTime,trackVolume,5,1] : 1"
         },
         {
-          "name": "WollatonHallArriveA_Layer2",
+          "name": "ArriveA_Layer2",
           "pos": 0,
           "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(routes['R1'].distanceAlong/routes['R1'].length, [0.24,0,0.25,1], trackVolume)]"
         },
          {
-          "name": "WollatonHallArriveA_Layer3a",
+          "name": "ArriveA_Layer3a",
           "pos": 0,
           "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(routes['R1'].distanceAlong/routes['R1'].length, [0.49,0,0.50,0.5], trackVolume),(routes['R1'].distanceAlong/routes['R1'].length, [0.49,0.5,0.50,0], trackVolume)]"
         },
         {
-          "name": "WollatonHallArriveA_Layer3b",
+          "name": "ArriveA_Layer3b",
           "pos": 0,
           "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(routes['R1'].distanceAlong/routes['R1'].length, [0.74,0,0.75,0.5], trackVolume)]"
         },
@@ -265,25 +265,29 @@
       "updatePeriod": 1,
       "tracks": [
         {
-          "name": "WollatonHallArriveB_Accent",
+          "name": "ArriveB_Accent",
           "pos": 0,
-          "volume": "sceneTime<2 ? [sceneTime,trackVolume,sceneTime+0.3,1] : 1"
+          "volume": 1
         },
         {
-          "name": "WollatonHallArriveB_Layer1",
+          "name": "ArriveB_Layer1",
           "pos": 0,
-          "volume": "sceneTime<2 ? [sceneTime,trackVolume,sceneTime+0.3,1] : 1"
+          "volume": 1
         },
         {
-          "name": "WollatonHallArriveA_Layer1",
+          "name": "ArriveA_Layer1",
+          "volume": "sceneTime<2 ? [sceneTime,trackVolume,1,0] : 0"
+        },
+        {
+          "name": "ArriveA_Layer2",
+          "volume": "sceneTime<2 ? [sceneTime,trackVolume,1,0] : 0"
+        },
+        {
+          "name": "ArriveA_Layer3a",
           "volume": "sceneTime<2 ? [sceneTime,trackVolume,0.5,0] : 0"
         },
         {
-          "name": "WollatonHallArriveA_Layer2",
-          "volume": "sceneTime<2 ? [sceneTime,trackVolume,0.5,0] : 0"
-        },
-        {
-          "name": "WollatonHallArriveA_Layer3b",
+          "name": "ArriveA_Layer3b",
           "volume": "sceneTime<2 ? [sceneTime,trackVolume,0.5,0] : 0"
         },
         {
@@ -305,16 +309,16 @@
           "volume": 1
         },
         {
-          "name": "WollatonHallArriveB_Accent",
-          "volume": "sceneTime<3 ? [sceneTime,trackVolume,2,0] : 0"
+          "name": "ArriveB_Accent",
+          "volume": "sceneTime<2 ? [sceneTime,trackVolume,2,0] : 0"
         },
         {
-          "name": "WollatonHallArriveB_Layer1",
-          "volume": "sceneTime<3 ? [sceneTime,trackVolume,2,0] : 0"
+          "name": "ArriveB_Layer1",
+          "volume": "sceneTime<2 ? [sceneTime,trackVolume,2,0] : 0"
         },
         {
           "name": "holdingPad",
-          "volume": "sceneTime<3 ? [sceneTime,trackVolume,2,0] : 0"
+          "volume": "sceneTime<2 ? [sceneTime,trackVolume,2,0] : 0"
         }
       ]
     }
