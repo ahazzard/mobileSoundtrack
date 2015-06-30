@@ -16,7 +16,7 @@
           "length": 280.48
         }
       ],
-      "unitTime": 6.1,
+      "unitTime": 5.3,
       "sections": [
         { "name": "drumFill", "trackPos": 0.0, "length":  0.49912, "startCost": 0,
           "next": [ {"name":"intro1A","cost":0}]
