@@ -121,7 +121,7 @@
       "waypoints": {"W1": "HR_DA", "W2": "DA_GC", "W3": "DA_HW"},
       "routes": {"R1": "HR_DA-DA_GC", "R2": "DA_GC-DA_HW", "Rnext": "DA_HW-DA_TH"},
       "onload": "if (waypoints['W3'].distance!==undefined) window.estimatedEnd=totalTime+(routes['R1'].nearest ? waypoints['W2'].distance+routes['R2'].length : waypoints['W3'].distance)/1.5; else window.estimatedEnd=totalTime+200; ",
-      "onupdate": "if (!routes['R1'].near && !routes['R2'].near) { daoplayer.setScene('Start/any'); } else if (routes['Rnext'].nearest) { daoplayer.setScene('track5/TheBadGuys'); } else if (waypoints['W3'].distance!==undefined) window.estimatedEnd=totalTime+(routes['R1'].nearest ? waypoints['W2'].distance+routes['R2'].length : waypoints['W3'].distance)/1.5; ",
+      "onupdate": "if (!routes['R1'].near && !routes['R2'].near) { daoplayer.setScene('Start/any'); } else if (routes['Rnext'].nearest) { daoplayer.setScene('track4a/transition'); } else if (waypoints['W3'].distance!==undefined) window.estimatedEnd=totalTime+(routes['R1'].nearest ? waypoints['W2'].distance+routes['R2'].length : waypoints['W3'].distance)/1.5; ",
       
       "updatePeriod": 1,
       "tracks": [
@@ -152,20 +152,13 @@
       ]
     },
     {
-      "name": "track5/TheBadGuys",
-      "description": "this scene changes track to 'TheBadGuys' approx half-way along Digby Ave. Only uses 2 waypoint to form 1 route to calcuate walking distance/time",
+      "name": "track4a/transition",
+      "description": "this scene adds ih a slight pause between the change over of track4/Stella and track5/TheBadGuys",
       "partial": false,
-      "waypoints": {"W1": "DA_HW", "W2": "DA_TR", "W3": "DA_TH"},
-      "routes": {"R1": "DA_HW-DA_TR", "R2": "DA_TR-DA_TH", "Rnext": "DA_TH-DA_LTA"},
-      "onload": "if (waypoints['W3'].distance!==undefined) window.estimatedEnd=totalTime+(routes['R1'].nearest ? waypoints['W2'].distance+routes['R2'].length : waypoints['W3'].distance)/1.5; else window.estimatedEnd=300;",
-      "onupdate": "if (!routes['R1'].near) { daoplayer.setScene('Start/any'); } else if (routes['Rnext'].nearest) { daoplayer.setScene('track6/WaitingForGA'); } else if (waypoints['W3'].distance!==undefined) window.estimatedEnd=totalTime+(routes['R1'].nearest ? waypoints['W2'].distance+routes['R2'].length : waypoints['W3'].distance)/1.5;",
+     
+      "onupdate": "if sceneTime>2 ? { daoplayer.setScene('track6/WaitingForGA'); ",
       "updatePeriod": 1,
       "tracks": [
-        {
-          "name": "TheBadGuys",
-          "pos": "daoplayer.selectSections('TheBadGuys',currentSection,sceneTime,window.estimatedEnd-totalTime,totalTime)",
-          "volume": 1
-        },
         {
           "name": "StellaVox",
           "volume": "sceneTime<2 ? [sceneTime,trackVolume,2,0] : 0"
@@ -181,6 +174,27 @@
         {
           "name": "StellaRhythm",
           "volume": "sceneTime<2 ? [sceneTime,trackVolume,2,0] : 0"
+        },
+        {
+          "name": "holdingPad",
+          "volume": "sceneTime<2 ? [sceneTime,trackVolume,2,0] : 0"
+        }
+      ]
+    },
+    {
+      "name": "track5/TheBadGuys",
+      "description": "this scene changes track to 'TheBadGuys' approx half-way along Digby Ave. Only uses 2 waypoint to form 1 route to calcuate walking distance/time",
+      "partial": false,
+      "waypoints": {"W1": "DA_HW", "W2": "DA_TR", "W3": "DA_TH"},
+      "routes": {"R1": "DA_HW-DA_TR", "R2": "DA_TR-DA_TH", "Rnext": "DA_TH-DA_LTA"},
+      "onload": "if (waypoints['W3'].distance!==undefined) window.estimatedEnd=totalTime+(routes['R1'].nearest ? waypoints['W2'].distance+routes['R2'].length : waypoints['W3'].distance)/1.5; else window.estimatedEnd=300;",
+      "onupdate": "if (!routes['R1'].near) { daoplayer.setScene('Start/any'); } else if (routes['Rnext'].nearest) { daoplayer.setScene('track6/WaitingForGA'); } else if (waypoints['W3'].distance!==undefined) window.estimatedEnd=totalTime+(routes['R1'].nearest ? waypoints['W2'].distance+routes['R2'].length : waypoints['W3'].distance)/1.5;",
+      "updatePeriod": 1,
+      "tracks": [
+        {
+          "name": "TheBadGuys",
+          "pos": "daoplayer.selectSections('TheBadGuys',currentSection,sceneTime,window.estimatedEnd-totalTime,totalTime)",
+          "volume": 1
         },
         {
           "name": "holdingPad",
