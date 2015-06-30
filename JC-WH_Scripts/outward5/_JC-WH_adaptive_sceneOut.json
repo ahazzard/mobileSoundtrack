@@ -121,7 +121,7 @@
       "waypoints": {"W1": "HR_DA", "W2": "DA_GC", "W3": "DA_HW"},
       "routes": {"R1": "HR_DA-DA_GC", "R2": "DA_GC-DA_HW", "Rnext": "DA_HW-DA_TR"},
       "onload": "window.lastGps=totalTime; if (waypoints['W3'].distance!==undefined) window.estimatedEnd=totalTime+(routes['R1'].nearest ? waypoints['W2'].distance+routes['R2'].length : waypoints['W3'].distance)/1.5; else window.estimatedEnd=totalTime+200; ",
-      "onupdate": "if (activity=='NOGPS') { if (totalTime-window.lastGps>20) { daoplayer.setScene('Start'); } else if (window.estimatedEnd<totalTime+10) window.estimatedEnd=totalTime+10; } else { window.lastGps=totalTime; if (!routes['R1'].near && !routes['R2'].near) { daoplayer.setScene('Start/any'); } else if (routes['Rnext'].nearest) { daoplayer.setScene('track4a/transition'); } else if (waypoints['W3'].distance!==undefined) window.estimatedEnd=totalTime+(routes['R1'].nearest ? waypoints['W2'].distance+routes['R2'].length : waypoints['W3'].distance)/1.5; }",
+      "onupdate": "if (activity=='NOGPS') { if (totalTime-window.lastGps>20) { daoplayer.setScene('Start'); } else if (window.estimatedEnd<totalTime+10) window.estimatedEnd=totalTime+10; } else { window.lastGps=totalTime; if (!routes['R1'].near && !routes['R2'].near) { daoplayer.setScene('Start/any'); } else if (routes['Rnext'].nearest) { daoplayer.setScene('track5/TheBadGuys'); } else if (waypoints['W3'].distance!==undefined) window.estimatedEnd=totalTime+(routes['R1'].nearest ? waypoints['W2'].distance+routes['R2'].length : waypoints['W3'].distance)/1.5; }",
       
       "updatePeriod": 1,
       "tracks": [
@@ -152,29 +152,6 @@
       ]
     },
     {
-      "name": "track4a/transition",
-      "partial": false,
-      "onupdate": "if(sceneTime>2) { daoplayer.setScene('track5/TheBadGuys'); }",
-      "updatePeriod": 1,
-      "tracks": [
-        {
-          "name": "StellaVox", "volume": "sceneTime<2 ? [sceneTime,trackVolume,2,0] : 0"
-        },
-        {
-          "name": "StellaPiano", "volume": "sceneTime<2 ? [sceneTime,trackVolume,2,0] : 0"
-        },
-        {
-          "name": "StellaKeys", "volume": "sceneTime<2 ? [sceneTime,trackVolume,2,0] : 0"
-        },
-        {
-          "name": "StellaRhythm", "volume": "sceneTime<2 ? [sceneTime,trackVolume,2,0] : 0"
-        },
-        {
-          "name": "holdingPad", "volume": "sceneTime<2 ? [sceneTime,trackVolume,2,0] : 0"
-        }
-      ]
-    },
-    {
       "name": "track5/TheBadGuys",
       "description": "this scene changes track to 'TheBadGuys' approx half-way along Digby Ave. Only uses 2 waypoint to form 1 route to calcuate walking distance/time",
       "partial": false,
@@ -188,6 +165,26 @@
           "name": "TheBadGuys",
           "pos": "daoplayer.selectSections('TheBadGuys',currentSection,sceneTime,window.estimatedEnd-totalTime,totalTime)",
           "volume": 1
+        },
+        {
+          "name": "StellaVox",
+          "volume": "sceneTime<2 ? [sceneTime,trackVolume,2,0] : 0"
+        },
+        {
+          "name": "StellaPiano",
+          "volume": "sceneTime<2 ? [sceneTime,trackVolume,2,0] : 0"
+        },
+        {
+          "name": "StellaKeys",
+          "volume": "sceneTime<2 ? [sceneTime,trackVolume,2,0] : 0"
+        },
+        {
+          "name": "StellaRhythm",
+          "volume": "sceneTime<2 ? [sceneTime,trackVolume,2,0] : 0"
+        },
+        {
+          "name": "holdingPad",
+          "volume": "sceneTime<2 ? [sceneTime,trackVolume,2,0] : 0"
         }
       ]
     },
