@@ -18,39 +18,39 @@
         }
       ],
       
-      "unitTime": 8.593,
+      "unitTime": 7.6,
       "sections": [
         { "name": "introA", "trackPos": 0.0, "length":  7.829, "startCost": 0, 
           "next": [ {"name":"introB","cost":0},
-          {"name":"introA","cost":5}, {"name":"mainBody","cost":5
+          {"name":"introA","cost":5
           },
           {"name":"introD","cost":5}]
         },
         
         { "name": "introB", "trackPos": 7.829, "length":  7.750,
           "next": [ {"name":"introC","cost":0},
-          {"name":"introA","cost":5}, {"name":"mainBody","cost":5
+          {"name":"introA","cost":5
           },
           {"name":"verse1","cost":5}]
         },
         
         { "name": "introC", "trackPos": 15.578, "length":  7.499, "startCost": 100,
           "next": [ {"name":"introD","cost":0},
-          {"name":"introB","cost":5}, {"name":"mainBody","cost":5
+          {"name":"introB","cost":5
           },
           {"name":"verse1","cost":5}]
         },
         
         { "name": "introD", "trackPos": 23.078, "length":  7.096, 
           "next": [ {"name":"verse1","cost":0},
-          {"name":"introA","cost":5}, {"name":"mainBody","cost":5
+          {"name":"introA","cost":5
           },
           {"name":"verse2","cost":5}]
         },
         
         { "name": "verse1", "trackPos": 30.173, "length":  29.109, "startCost": 500,
           "next": [ {"name":"verse2","cost":0},
-          {"name":"introA","cost":5}, {"name":"mainBody","cost":5
+          {"name":"introA","cost":5
           },
           {"name":"link1","cost":5}]
         },  
@@ -58,7 +58,7 @@
         { "name": "verse2", "trackPos": 59.283, "length":29.856, 
           "next": [ {"name":"link1","cost":0
           },
-          {"name":"introA","cost":5}, {"name":"mainBody","cost":5
+          {"name":"introA","cost":5
           },
           {"name":"chorus1","cost":5}]
           },
@@ -66,7 +66,7 @@
         { "name": "link1", "trackPos": 89.139, "length":  7.616, 
           "next": [ {"name":"chorus1","cost":0
           },
-          {"name":"introA","cost":5}, {"name":"mainBody","cost":5
+          {"name":"introA","cost":5
           },
           {"name":"verse3","cost":5}]
           },
@@ -74,7 +74,7 @@
           { "name": "chorus1", "trackPos": 96.755, "length":  29.292, 
           "next": [ {"name":"verse3","cost":0
           },
-          {"name":"chorus1","cost":5}, {"name":"mainBody","cost":5
+          {"name":"chorus1","cost":5
           },
           {"name":"link2","cost":5}]
           },
@@ -82,7 +82,7 @@
         { "name": "verse3", "trackPos": 126.047, "length":  30.023, 
           "next": [ {"name":"link2","cost":0
           },
-          {"name":"introA","cost":5}, {"name":"mainBody","cost":5
+          {"name":"introA","cost":5
           },
           {"name":"chorus2","cost":5}]
           },
@@ -90,7 +90,7 @@
         { "name": "link2", "trackPos": 156.070, "length":  7.591, 
           "next": [ {"name":"chorus2","cost":0
         },
-          {"name":"introA","cost":5}, {"name":"mainBody","cost":5
+          {"name":"introA","cost":5
           },
           {"name":"chorus3","cost":5}]
         },
@@ -98,7 +98,7 @@
         { "name": "chorus2", "trackPos": 163.661, "length":  29.131, "endCost": 1000,
           "next": [ {"name":"chorus3","cost":0
         },
-          {"name":"introA","cost":5},{"name":"introC","cost":5},{"name":"link1","cost":5},{"name":"chorus2","cost":5}, {"name":"mainBody","cost":5
+          {"name":"introA","cost":5},{"name":"introC","cost":5},{"name":"link1","cost":5},{"name":"chorus2","cost":5
           },
           {"name":"coda","cost":5}]
         },
@@ -106,7 +106,7 @@
         { "name": "chorus3", "trackPos": 192.792, "length": 29.204, "endCost": 500,
           "next": [ {"name":"coda","cost":0
         },
-          {"name":"introA","cost":5},{"name":"introC","cost":5},{"name":"link1","cost":5},{"name":"chorus2","cost":5}, {"name":"mainBody","cost":5
+          {"name":"introA","cost":5},{"name":"introC","cost":5},{"name":"link1","cost":5},{"name":"chorus2","cost":5
           },
           {"name":"finalChord","cost":5}]
         },
