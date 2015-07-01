@@ -377,16 +377,16 @@
           "volume": "sceneTime<2 ? [sceneTime,trackVolume,sceneTime+0.5,1] : 1" 
         },
         {
-          "name": "ArriveA_Layer1",
+          "name": "ArriveA_Layer2",
           "volume": "sceneTime<2 ? [sceneTime,trackVolume,1,0] : 0"  
         },
         {
-          "name": "ArriveA_Layer2",
-          "volume": "sceneTime<2 ? [sceneTime,trackVolume,1,0] : 0"   
+          "name": "ArriveA_Layer3a",
+          "volume": "sceneTime<2 ? [sceneTime,trackVolume,0.5,0] : 0"   
         },
         {
           "name": "ArriveA_Layer3b",
-          "volume": "sceneTime<2 ? [sceneTime,trackVolume,1,0] : 0"  
+          "volume": "sceneTime<2 ? [sceneTime,trackVolume,0.5,0] : 0"  
         },
         {
           "name": "holdingPad",
