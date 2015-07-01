@@ -117,7 +117,7 @@
       "routes":{"R1":"WH_EP1-WH_EP2", "R2":"WH_EP2-WH_EP3", "R3":"WH_EP3-EP_LTA", "R4":"EP_LTA-LTA_OP", "Rnext":"LTA_OP-LTA_HW"},
       "onload": "window.lastGps=totalTime; if (waypoints['W5'].distance!==undefined) window.estimatedEnd=totalTime+(routes['R1'].nearest ? waypoints['W2'].distance+routes['R2'].length+routes['R3'].length+routes['R4'].length : (routes['R2'].nearest ? waypoints['W3'].distance+routes['R3'].length+routes['R4'].length : (routes['R3'].nearest ? waypoints['W4'].distance+routes['R4'].length : waypoints['W5'].distance)))/1.5; else window.estimatedEnd=totalTime+240; ",
       
-      "onupdate": "if (activity=='NOGPS') { if (totalTime-window.lastGps>20) { daoplayer.setScene('Start'); } else if (window.estimatedEnd<totalTime+10) window.estimatedEnd=totalTime+10; } else { window.lastGps=totalTime; if (!routes['R1'].near && !routes['R2'].near && !routes['R3'].near && !routes['R4'].near) { daoplayer.setScene('Start/any'); } else if (routes['Rnext'].nearest) { daoplayer.setScene('transition'); } else if (waypoints['W5'].distance!==undefined) window.estimatedEnd=totalTime+(routes['R1'].nearest ? waypoints['W2'].distance+routes['R2'].length+routes['R3'].length+routes['R4'].length : (routes['R2'].nearest ? waypoints['W3'].distance+routes['R3'].length+routes['R4'].length : (routes['R3'].nearest ? waypoints['W4'].distance+routes['R4'].length : waypoints['W5'].distance)))/1.5; ",
+      "onupdate": "if (activity=='NOGPS') { if (totalTime-window.lastGps>20) { daoplayer.setScene('Start'); } else if (window.estimatedEnd<totalTime+10) window.estimatedEnd=totalTime+10; } else { window.lastGps=totalTime; if (!routes['R1'].near && !routes['R2'].near && !routes['R3'].near && !routes['R4'].near) { daoplayer.setScene('Start/any'); } else if (routes['Rnext'].nearest) { daoplayer.setScene('transition'); } else if (waypoints['W5'].distance!==undefined) window.estimatedEnd=totalTime+(routes['R1'].nearest ? waypoints['W2'].distance+routes['R2'].length+routes['R3'].length+routes['R4'].length : (routes['R2'].nearest ? waypoints['W3'].distance+routes['R3'].length+routes['R4'].length : (routes['R3'].nearest ? waypoints['W4'].distance+routes['R4'].length : waypoints['W5'].distance)))/1.5; }",
       
       "updatePeriod":1.0,
       "tracks": [
@@ -160,7 +160,7 @@
       "waypoints":{"W1":"LTA_OP","W2":"LTA_HW"},
       "routes":{"R1":"LTA_OP-LTA_HW", "Rnext":"LTA_HW-LTA_GIR1"},
       "onload": "window.lastGps=totalTime; if (waypoints['W2'].distance!==undefined) window.estimatedEnd=totalTime+(waypoints['W2'].distance)/1.5; else window.estimatedEnd=200;",
-      "onupdate": "if (activity=='NOGPS') { if (totalTime-window.lastGps>20) { daoplayer.setScene('Start'); } else if (window.estimatedEnd<totalTime+10) window.estimatedEnd=totalTime+10; } else { window.lastGps=totalTime; if (!routes['R1'].near) { daoplayer.setScene('Start/any'); } else if (routes['Rnext'].nearest) { daoplayer.setScene('track3/Stella'); } else if (waypoints['W2'].distance!==undefined) window.estimatedEnd=totalTime+(waypoints['W2'].distance)/1.5; ",
+      "onupdate": "if (activity=='NOGPS') { if (totalTime-window.lastGps>20) { daoplayer.setScene('Start'); } else if (window.estimatedEnd<totalTime+10) window.estimatedEnd=totalTime+10; } else { window.lastGps=totalTime; if (!routes['R1'].near) { daoplayer.setScene('Start/any'); } else if (routes['Rnext'].nearest) { daoplayer.setScene('track3/Stella'); } else if (waypoints['W2'].distance!==undefined) window.estimatedEnd=totalTime+(waypoints['W2'].distance)/1.5; }",
       "updatePeriod":1.0,
       "tracks": [
         {
@@ -185,7 +185,7 @@
       "waypoints":{"W1":"LTA_HW","W2":"LTA_GIR1"},
       "routes":{"R1":"LTA_HW-LTA_GIR1", "Rnext":"LTA_GIR1-LTA_GIR2"},
       "onload": "window.lastGps=totalTime; if (waypoints['W2'].distance!==undefined) window.estimatedEnd=totalTime+(waypoints['W2'].distance)/1.5; else window.estimatedEnd=180;",
-      "onupdate": "if (activity=='NOGPS') { if (totalTime-window.lastGps>20) { daoplayer.setScene('Start'); } else if (window.estimatedEnd<totalTime+10) window.estimatedEnd=totalTime+10; } else { window.lastGps=totalTime; if (!routes['R1'].near) { daoplayer.setScene('Start/any'); } else if (routes['Rnext'].nearest) { daoplayer.setScene('track4/MitaDelMundo'); } else if (waypoints['W2'].distance!==undefined) window.estimatedEnd=totalTime+(waypoints['W2'].distance)/1.5; ",
+      "onupdate": "if (activity=='NOGPS') { if (totalTime-window.lastGps>20) { daoplayer.setScene('Start'); } else if (window.estimatedEnd<totalTime+10) window.estimatedEnd=totalTime+10; } else { window.lastGps=totalTime; if (!routes['R1'].near) { daoplayer.setScene('Start/any'); } else if (routes['Rnext'].nearest) { daoplayer.setScene('track4/MitaDelMundo'); } else if (waypoints['W2'].distance!==undefined) window.estimatedEnd=totalTime+(waypoints['W2'].distance)/1.5; }",
       "updatePeriod":1.0,
       "tracks": [
         {
@@ -210,7 +210,7 @@
       "waypoints":{"W1":"LTA_GIR1","W2":"LTA_GIR2", "W3":"LTA_GIR3", "W4":"LTA_MB"},
       "routes":{"R1":"LTA_GIR1-LTA_GIR2", "R2":"LTA_GIR2-LTA_GIR3", "R3":"LTA_GIR3-LTA_MB", "Rnext":"LTA_MB-MB_PCA"},
       "onload": "window.lastGps=totalTime; if (waypoints['W4'].distance!==undefined) window.estimatedEnd=totalTime+(routes['R1'].nearest ? waypoints['W2'].distance+routes['R2'].length+routes['R3'].length : (routes['R2'].nearest ? waypoints['W3'].distance+routes['R3'].length : waypoints['W4'].distance))/1.5; else window.estimatedEnd=240;",
-      "onupdate": "if (activity=='NOGPS') { if (totalTime-window.lastGps>20) { daoplayer.setScene('Start'); } else if (window.estimatedEnd<totalTime+10) window.estimatedEnd=totalTime+10; } else { window.lastGps=totalTime; if (!routes['R1'].near && !routes['R2'].near && !routes['R3'].near) { daoplayer.setScene('Start/any'); } else if (routes['Rnext'].nearest) { daoplayer.setScene('track5/SisterCities'); } else if (waypoints['W4'].distance!==undefined) window.estimatedEnd=totalTime+(routes['R1'].nearest ? waypoints['W2'].distance+routes['R2'].length+routes['R3'].length : (routes['R2'].nearest ? waypoints['W3'].distance+routes['R3'].length : waypoints['W4'].distance))/1.5; ",
+      "onupdate": "if (activity=='NOGPS') { if (totalTime-window.lastGps>20) { daoplayer.setScene('Start'); } else if (window.estimatedEnd<totalTime+10) window.estimatedEnd=totalTime+10; } else { window.lastGps=totalTime; if (!routes['R1'].near && !routes['R2'].near && !routes['R3'].near) { daoplayer.setScene('Start/any'); } else if (routes['Rnext'].nearest) { daoplayer.setScene('track5/SisterCities'); } else if (waypoints['W4'].distance!==undefined) window.estimatedEnd=totalTime+(routes['R1'].nearest ? waypoints['W2'].distance+routes['R2'].length+routes['R3'].length : (routes['R2'].nearest ? waypoints['W3'].distance+routes['R3'].length : waypoints['W4'].distance))/1.5; }",
       "updatePeriod":1.0,
       "tracks": [
         {
@@ -236,7 +236,7 @@
       "routes": {"R1": "LTA_MB-MB_PCA", "R2": "MB_PCA-CA_LT", "R3": "CA_LT-JC_SFG", "Rnext": "JC_SFG-SF_JCCP"},
       "onload": "window.lastGps=totalTime; if (waypoints['W4'].distance!==undefined) window.estimatedEnd=totalTime+(routes['R1'].nearest ? waypoints['W2'].distance+routes['R2'].length+routes['R3'].length : (routes['R2'].nearest ? waypoints['W3'].distance+routes['R3'].length : waypoints['W4'].distance))/1.5;  else window.estimatedEnd=totalTime+350; ",
       
-      "onupdate": "if (activity=='NOGPS') { if (totalTime-window.lastGps>20) { daoplayer.setScene('Start'); } else if (window.estimatedEnd<totalTime+10) window.estimatedEnd=totalTime+10; } else { window.lastGps=totalTime; if (!routes['R1'].near && !routes['R2'].near && !routes['R3'].near) { daoplayer.setScene('Start/any'); } else if (routes['Rnext'].nearest) { daoplayer.setScene('track6/NotAlone'); } else if (waypoints['W4'].distance!==undefined) window.estimatedEnd=totalTime+(routes['R1'].nearest ? waypoints['W2'].distance+routes['R2'].length+routes['R3'].length : (routes['R2'].nearest ? waypoints['W3'].distance+routes['R3'].length : waypoints['W4'].distance))/1.5; ",
+      "onupdate": "if (activity=='NOGPS') { if (totalTime-window.lastGps>20) { daoplayer.setScene('Start'); } else if (window.estimatedEnd<totalTime+10) window.estimatedEnd=totalTime+10; } else { window.lastGps=totalTime; if (!routes['R1'].near && !routes['R2'].near && !routes['R3'].near) { daoplayer.setScene('Start/any'); } else if (routes['Rnext'].nearest) { daoplayer.setScene('track6/NotAlone'); } else if (waypoints['W4'].distance!==undefined) window.estimatedEnd=totalTime+(routes['R1'].nearest ? waypoints['W2'].distance+routes['R2'].length+routes['R3'].length : (routes['R2'].nearest ? waypoints['W3'].distance+routes['R3'].length : waypoints['W4'].distance))/1.5; }",
       "updatePeriod":1.0,
       "tracks": [
         {
@@ -282,7 +282,7 @@
       "routes":{"R1":"JC_SFG-SF_JCCP", "R2":"SF_JCCP-JC_NCL", "R3":"JC_NCL-JC_RSL", "R4":"JC_RSL-JC_WF", "Rnext":"JC_WF-JC_A1"},
       "onload": "window.lastGps=totalTime; if (waypoints['W5'].distance!==undefined) window.estimatedEnd=totalTime+(routes['R1'].nearest ? waypoints['W2'].distance+routes['R2'].length+routes['R3'].length+routes['R4'].length : (routes['R2'].nearest ? waypoints['W3'].distance+routes['R3'].length+routes['R4'].length : (routes['R3'].nearest ? waypoints['W4'].distance+routes['R4'].length : waypoints['W5'].distance)))/1.5; else window.estimatedEnd=350;",
       
-      "onupdate": "if (activity=='NOGPS') { if (totalTime-window.lastGps>20) { daoplayer.setScene('Start'); } else if (window.estimatedEnd<totalTime+10) window.estimatedEnd=totalTime+10; } else { window.lastGps=totalTime; if (!routes['R1'].near && !routes['R2'].near && !routes['R3'].near && !routes['R4'].near) { daoplayer.setScene('Start/any'); } else if (routes['Rnext'].nearest) { daoplayer.setScene('AtriumArrival'); } else if (waypoints['W5'].distance!==undefined) window.estimatedEnd=totalTime+(routes['R1'].nearest ? waypoints['W2'].distance+routes['R2'].length+routes['R3'].length+routes['R4'].length : (routes['R2'].nearest ? waypoints['W3'].distance+routes['R3'].length+routes['R4'].length : (routes['R3'].nearest ? waypoints['W4'].distance+routes['R4'].length : waypoints['W5'].distance)))/1.5; ",
+      "onupdate": "if (activity=='NOGPS') { if (totalTime-window.lastGps>20) { daoplayer.setScene('Start'); } else if (window.estimatedEnd<totalTime+10) window.estimatedEnd=totalTime+10; } else { window.lastGps=totalTime; if (!routes['R1'].near && !routes['R2'].near && !routes['R3'].near && !routes['R4'].near) { daoplayer.setScene('Start/any'); } else if (routes['Rnext'].nearest) { daoplayer.setScene('AtriumArrival'); } else if (waypoints['W5'].distance!==undefined) window.estimatedEnd=totalTime+(routes['R1'].nearest ? waypoints['W2'].distance+routes['R2'].length+routes['R3'].length+routes['R4'].length : (routes['R2'].nearest ? waypoints['W3'].distance+routes['R3'].length+routes['R4'].length : (routes['R3'].nearest ? waypoints['W4'].distance+routes['R4'].length : waypoints['W5'].distance)))/1.5; }",
       "updatePeriod":1.0,
       "tracks": [
         {
@@ -323,7 +323,7 @@
       "waypoints":{"W1":"JC_WF","W2":"JC_AB"},
       "routes":{"R1":"JC_WF-JC_AB", "Rnext":"JC_AB-J_CS"},
       "onload": "window.lastGps=totalTime; ",
-      "onupdate": "if (activity=='NOGPS') { if (totalTime-window.lastGps>20) { daoplayer.setScene('Start'); } else if (window.estimatedEnd<totalTime+10) window.estimatedEnd=totalTime+10; } else { window.lastGps=totalTime; if (!routes['R1'].near) { daoplayer.setScene('Start/any'); } else if (routes['Rnext'].nearest) { daoplayer.setScene('AtriumArrived'); }",
+      "onupdate": "if (activity=='NOGPS') { if (totalTime-window.lastGps>20) { daoplayer.setScene('Start'); } else if (window.estimatedEnd<totalTime+10) window.estimatedEnd=totalTime+10; } else { window.lastGps=totalTime; if (!routes['R1'].near) { daoplayer.setScene('Start/any'); } else if (routes['Rnext'].nearest) { daoplayer.setScene('AtriumArrived'); }}",
       "updatePeriod": 1,
       "tracks": [
         {
@@ -363,7 +363,7 @@
       "waypoints":{"W1":"JC_AB", "W2":"J_CS"},
       "routes":{"R1":"JC_AB-J_CS"},
       "onload": "window.lastGps=totalTime;",
-      "onupdate": "if (activity=='NOGPS') { if (totalTime-window.lastGps>20) { daoplayer.setScene('Start'); } else if (window.estimatedEnd<totalTime+10) window.estimatedEnd=totalTime+10; } else { window.lastGps=totalTime; if (!routes['R1'].near) { daoplayer.setScene('Start/any'); }",
+      "onupdate": "if (activity=='NOGPS') { if (totalTime-window.lastGps>20) { daoplayer.setScene('Start'); } else if (window.estimatedEnd<totalTime+10) window.estimatedEnd=totalTime+10; } else { window.lastGps=totalTime; if (!routes['R1'].near) { daoplayer.setScene('Start/any'); }}",
       "updatePeriod":1.0,
       "tracks": [
         {
