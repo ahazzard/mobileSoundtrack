@@ -144,6 +144,8 @@
       "name": "transition",
       "description": "this scene changes track to 'TheBadGuys' approx half-way along Digby Ave. Only uses 2 waypoint to form 1 route to calcuate walking distance/time",
       "partial": false,
+      "waypoints":{},
+      "routes":{},
       "onupdate": "if(sceneTime>3) { daoplayer.setScene('track2/TheBadGuys'); }",
       "updatePeriod": 1,
       "tracks": [
