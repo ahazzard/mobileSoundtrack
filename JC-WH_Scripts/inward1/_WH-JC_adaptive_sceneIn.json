@@ -34,7 +34,7 @@
       "waypoints": {"W1": "LTA_LT", "W2": "LTA_WHb"},
       "routes": {"R1": "LTA_LT-LTA_WHb", "Rnext": "WH1-WH3"},
       "onload": "window.lastGps=totalTime; ",
-      "onupdate": "if (activity=='NOGPS') { if (totalTime-window.lastGps>20) { daoplayer.setScene('Start'); } else if (window.estimatedEnd<totalTime+10) window.estimatedEnd=totalTime+10; } else { window.lastGps=totalTime; if (!routes['R1'].near) { daoplayer.setScene('Start/any'); } else if (routes['Rnext'].nearest) { daoplayer.setScene('WollatonHallArrived'); } }",
+      "onupdate": "if (activity=='NOGPS') { if (totalTime-window.lastGps>20) { daoplayer.setScene('Out'); } else if (window.estimatedEnd<totalTime+10) window.estimatedEnd=totalTime+10; } else { window.lastGps=totalTime; if (!routes['R1'].near) { daoplayer.setScene('Out/any'); } else if (routes['Rnext'].nearest) { daoplayer.setScene('WollatonHallArrived'); } }",
       "updatePeriod": 1,
       "tracks": [
         {
@@ -74,7 +74,7 @@
       "waypoints": {"W1": "WH1", "W2": "WH3"},
       "routes": {"R1": "WH1-WH3", "Rnext": "WH_EP1-WH_EP2"},
       "onload": "window.lastGps=totalTime; ",
-      "onupdate": "if (activity=='NOGPS') { if (totalTime-window.lastGps>20) { daoplayer.setScene('Return'); } else if (window.estimatedEnd<totalTime+10) window.estimatedEnd=totalTime+10; } else { window.lastGps=totalTime; if (!routes['R1'].near) { daoplayer.setScene('Start/return'); } else if (routes['Rnext'].nearest) { daoplayer.setScene('track1/WaitingForGA'); } }",
+      "onupdate": "if (activity=='NOGPS') { if (totalTime-window.lastGps>20) { daoplayer.setScene('Start'); } else if (window.estimatedEnd<totalTime+10) window.estimatedEnd=totalTime+10; } else { window.lastGps=totalTime; if (!routes['R1'].near) { daoplayer.setScene('Start/any'); } else if (routes['Rnext'].nearest) { daoplayer.setScene('track1/WaitingForGA'); } }",
       "updatePeriod": 1,
       "tracks": [
         {
@@ -167,10 +167,6 @@
           "name": "TheBadGuys",
           "pos": "daoplayer.selectSections('TheBadGuys',currentSection,sceneTime,window.estimatedEnd-totalTime,totalTime)",
           "volume": 1 
-        },
-        {
-          "name": "WaitingForGA",
-          "volume": "sceneTime<2 ? [sceneTime,trackVolume,2,0] : 0" 
         },
         {
           "name": "holdingPad",
