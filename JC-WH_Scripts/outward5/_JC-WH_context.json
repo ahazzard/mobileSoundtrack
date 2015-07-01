@@ -31,13 +31,12 @@
 		},
 		{
 		"name": "PC_A",
-		"lat":52.953895,  "lng":-1.192224,
-		"nearDistance": 20,
+		"lat":52.953765,  "lng":-1.192130,
 		"description":"Pedestrian crossing A - Middleton Blvd"
 		},
 		{
 		"name": "HR_L",
-		"lat":52.953800300,  "lng":-1.192787700,
+		"lat":52.953807,  "lng":-1.192714,
 		"description":"Harrow Road - Left turn"
 		},
 		{
@@ -47,7 +46,7 @@
 		},
 		{
 		"name": "HR_DA",
-		"lat":52.953477,  "lng":-1.199217,
+		"lat":52.953463,  "lng":-1.199558,
 		"description":"Harrow Road lead up to Digby Ave"
 		},
 		{
@@ -99,11 +98,6 @@
 		"name": "WH1",
 		"lat":52.948358,  "lng":-1.209481,
 		"description":"Wollaton Hall – arrive1"
-		},
-		{
-		"name": "WH2",
-		"lat":52.948135,  "lng":-1.209890,
-		"description":"Wollaton Hall – arrive"
 		},
 		{
 		"name": "WH3",
