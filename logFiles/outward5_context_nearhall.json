@@ -1,0 +1,65 @@
+{
+  "meta": {
+    "mimetype": "application/x-daoplayer-composition",
+    "version": 1,
+    "title": "JC-WH_context",
+    "description": "waypoints and routes for Jubilee Campus to Wollaton Hall and back"
+  },
+  "context": {
+    "waypoints": [
+		{
+		"name": "DA_LTA",
+		"lat":52.947997900,  "lng":-1.205663700,
+		"description":"Digby Ave and Lime Tree Ave intersection"
+		},
+		{
+		"name": "LTA_LT",
+		"lat":52.949134,  "lng":-1.208845,
+		"description":"Lime Tree Ave - left turn towards Wollaton Hall"
+		},
+		{
+		"name": "LTA_WH",
+		"lat":52.949064,  "lng":-1.209281,
+		"description":"Lime Tree Ave - Wollaton hall driveway"
+		},
+		{
+		"name": "LTA_WHa",
+		"lat":52.94892,  "lng":-1.209558,
+		"description":"Lime Tree Ave - Wollaton hall driveway approach point 1"
+		},
+		{
+		"name": "LTA_WHb",
+		"lat":52.948382,  "lng":-1.209751,
+		"description":"Lime Tree Ave - Wollaton hall driveway approach point 2"
+		},
+		{
+		"name": "WH1",
+		"lat":52.948358,  "lng":-1.209481,
+		"description":"Wollaton Hall – arrive1"
+		},
+		{
+		"name": "WH2",
+		"lat":52.948135,  "lng":-1.209890,
+		"description":"Wollaton Hall – arrive"
+		},
+		{
+		"name": "WH3",
+		"lat":52.947959,  "lng":-1.210323,
+		"description":"Wollaton Hall – arrive"
+		},
+		{
+		"name": "WH_EP",
+		"lat":52.948371200,  "lng":-1.209440200,
+		"description":"Wollaton Hall - alternative exit path"
+		},
+		{
+		"name": "EP_LTA",
+		"lat":52.948178900,  "lng":-1.206393200,
+		"description":"Alternative exit path intersection with Lime Tree Ave"
+		}
+    ],
+    
+    "routes": [
+   ]
+  }
+}

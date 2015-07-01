@@ -1,0 +1,55 @@
+{
+  "meta": {
+    "mimetype": "application/x-daoplayer-composition",
+    "version": 1,
+    "title": "WH-JC_context",
+    "description": "waypoints and routes for Wollaton Hall to Jubilee campus - return route"
+  },
+  "context": {
+    "waypoints": [
+		{
+		"name": "LTA_GIR3",
+		"lat":52.946832,  "lng":-1.192121,
+		"description":"Lime Tree Ave - Gate into Road section3"
+		},
+		{
+		"name": "LTA_MB",
+		"lat":52.946665400,  "lng":-1.191150200,
+		"description":"Lime Tree Ave intersection with Middleton Blvd"
+		},
+		{
+		"name": "MB_PCA",
+		"lat":52.947343400,  "lng":-1.190825700,
+		"description":"Middleton Blvd - Pedestrian crossing A"
+		},
+		{
+		"name": "MB_PCB",
+		"lat":52.947328000,  "lng":-1.190646000,
+		"description":"Middleton Blvd - Pedestrian crossing B"
+		},
+		{
+		"name": "MB_PCC",
+		"lat":52.947554300,  "lng":-1.190612500,
+		"description":"Middleton Blvd - Pedestrian crossing C"
+		},
+		{
+		"name": "MB_PCD",
+		"lat":52.947546200,  "lng":-1.190418000,
+		"description":"Middleton Blvd - Pedestrian crossing D"
+		},
+		{
+		"name": "CA_LT",
+		"lat":52.947419300,  "lng":-1.190309400,
+		"description":"Charnock Ave - Left turn"
+		},
+		{
+		"name": "CA_DD",
+		"lat":52.947959900,  "lng":-1.187645900,
+		"description":"Charnock Ave - intersection with Dorkey Dr"
+		}
+    ],
+    
+    "routes": [
+   ]
+  }
+}
