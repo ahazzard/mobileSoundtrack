@@ -226,7 +226,7 @@
 				"description": "long route for single scene at Wollaton hall",
 				"from": "LTA_LT",
 				"to":"LTA_WHb",
-				"nearDistance": "150"
+				"nearDistance": "50"
 			},
 			{
 				"name": "LTA_WH-LTA_WHa",
@@ -254,14 +254,14 @@
 				"description": "arrived at Wollaton Hall",
 				"from": "WH1",
 				"to":"WH3",
-				"nearDistance": "100"
+				"nearDistance": "50"
 			},
 			{
 				"name": "WH_EP-EP_LTA",
 				"description": "Scene fixedPlaylistIn",
 				"from": "WH_EP",
 				"to": "EP_LTA",
-				"nearDistance": "75"
+				"nearDistance": "50"
 	  	}
     ]
   }
