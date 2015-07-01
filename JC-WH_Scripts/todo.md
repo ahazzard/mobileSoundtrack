@@ -1,22 +1,19 @@
 # TO DO
 
-`outward5`
+Audio speach glitch??
 
-- scene `Start/return` 
-  - check/replace `routes['WH1-WH3'].nearest` -> `WollatonHallArrived`
-  - check/replace `routes['WH_EP-EP_LTA'].nearest` -> `fixedPlaylistIn`
-- scene `Start/any` 
-  - check `routes['WH1-WH3']`? call `Start/return`?
-
-- track `SisterCities_Drums`
-  - check unitTime "unitTime": 6.1 -> 5.3?
-- track `StellaVox`
-  - check unitTime 7.7 -> 4.25?
-  - remove section `mainBody`
-- track `TheBadGuys`
-  - check unitTime 8.593 -> 7.6?
-- track `WaitingForGA`
-  - check unitTime 8.484 -> 6.1?
+(Atrium Arrive?) - Note: also printed "native(music) rate=44100" again; no obvious reason
+E/daoplayer-engine( 7169): Error doing track write: null
+E/daoplayer-engine( 7169): java.util.ConcurrentModificationException
+E/daoplayer-engine( 7169): 	at java.util.TreeMap$MapIterator.stepForward(TreeMap.java:883)
+E/daoplayer-engine( 7169): 	at java.util.TreeMap$BoundedMap$BoundedIterator.stepForward(TreeMap.java:1485)
+E/daoplayer-engine( 7169): 	at java.util.TreeMap$BoundedMap$BoundedEntrySet$1.next(TreeMap.java:1513)
+E/daoplayer-engine( 7169): 	at java.util.TreeMap$BoundedMap$BoundedEntrySet$1.next(TreeMap.java:1511)
+E/daoplayer-engine( 7169): 	at org.opensharingtoolkit.daoplayer.audio.FileCache.update(FileCache.java:403)
+E/daoplayer-engine( 7169): 	at org.opensharingtoolkit.daoplayer.audio.FileCache.update(FileCache.java:371)
+E/daoplayer-engine( 7169): 	at org.opensharingtoolkit.daoplayer.audio.AudioEngine$PlayThread.fillBuffer(AudioEngine.java:310)
+E/daoplayer-engine( 7169): 	at org.opensharingtoolkit.daoplayer.audio.AudioEngine$PlayThread.run(AudioEngine.java:221)
+D/
 
 ## notes
 
@@ -47,23 +44,7 @@ tracks:
 
 ## script errors
 
-D/daoplayer-service(12483): Log LOG_ERROR: Section **** refers to unknown next section mainBody
-in:
-`_JC-WH_SisterCities_multiTrackSections.json`
-`_JC-WH_Stella_multiTrackSections.json`
-`_JC-WH_TheBadGuys_trackSections.json`
 
 ## done
 
-`outward5`
-
-- scene `Start/return` 
-  - replace -> `Start` (no gps) with `Return`
-  - add scene `Return` (no gps)
-- scene `Return` added
-- scene `track1/MitaDelMundo`
-  - 20s timeout for lost GPS
-- all remaining scenes - 20 second timeout for lost GPS
-- `_JC-WH_fixedPlaylist_tracks.json`
-  - missing commas, line 25, line 76
 
