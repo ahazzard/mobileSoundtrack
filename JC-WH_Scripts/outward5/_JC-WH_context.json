@@ -10,7 +10,12 @@
 		{
 		"name": "J_CS",
 		"lat": 52.953571600, 	"lng": -1.187735800,
-		"nearDistance": 20,
+		"description": "Start-Finish - Jubilee Campus CS",
+		"origin": true
+		},
+		{
+		"name": "J_BS",
+		"lat": 52.953571600, 	"lng": -1.187735800,
 		"description": "Start-Finish - Jubilee Campus CS",
 		"origin": true
 		},
@@ -118,9 +123,16 @@
     
     "routes": [
 			{
-				"name": "J_CS-J_CP",
-				"description": "Scene track1/MitaDelMundo stage 1",
+				"name": "J_CS-J_BS",
+				"description": "Scene track0/Start",
 				"from": "J_CS",
+				"to": "J_BS",
+				"nearDistance": "50"
+			},
+			{
+				"name": "J_BS-J_CP",
+				"description": "Scene track1/MitaDelMundo stage 1",
+				"from": "J_BS",
 				"to": "J_CP",
 				"nearDistance": "50"
 			},
