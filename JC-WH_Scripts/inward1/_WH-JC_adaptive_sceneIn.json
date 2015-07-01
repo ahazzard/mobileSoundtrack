@@ -38,24 +38,34 @@
       "updatePeriod": 1,
       "tracks": [
         {
-          "name": "ArriveA_Layer1",
+          "name": "arriveBassA",
+          "pos": 0,
+          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(routes['R1'].distanceAlong/routes['R1'].length, [0.1,0,0.5,1], trackVolume)]"
+        },
+        {
+          "name": "arrivePianoA",
           "pos": 0,
           "volume": "sceneTime<12 ? [sceneTime,trackVolume,12,1] : 1"
         },
         {
-          "name": "ArriveA_Layer2",
+          "name": "arriveMelA",
           "pos": 0,
-          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(routes['R1'].distanceAlong/routes['R1'].length, [0.24,0,0.25,1], trackVolume)]"
-        },
-         {
-          "name": "ArriveA_Layer3a",
-          "pos": 0,
-          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(routes['R1'].distanceAlong/routes['R1'].length, [0.49,0,0.50,0.5,0.74,0.5,0.75,0], trackVolume)]"
+          "volume": "sceneTime<12 ? [sceneTime,trackVolume,12,1] : 1"
         },
         {
-          "name": "ArriveA_Layer3b",
+          "name": "arriveSeqA",
           "pos": 0,
-          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(routes['R1'].distanceAlong/routes['R1'].length, [0.74,0,0.75,0.5], trackVolume)]"
+          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(routes['R1'].distanceAlong/routes['R1'].length, [0.1,0,1,1], trackVolume)]"
+        },
+        {
+          "name": "stringsCs",
+          "pos": 0,
+          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(routes['R1'].distanceAlong/routes['R1'].length, [0.49,0,0.50,0.7,0.74,0.7,0.75,0], trackVolume)]"
+        },
+        {
+          "name": "stringsE",
+          "pos": 0,
+          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(routes['R1'].distanceAlong/routes['R1'].length, [0.74,0,0.75,0.7], trackVolume)]"
         },
         {
           "name": "fixedPlaylist",
@@ -78,30 +88,47 @@
       "updatePeriod": 1,
       "tracks": [
         {
-          "name": "ArriveB_Accent",
+          "name": "arrivedpadFs",
           "pos": 0,
           "volume": 1
         },
         {
-          "name": "ArriveB_Layer1",
+          "name": "arrivedAccentFs",
           "pos": 0,
           "volume": 1
         },
         {
-          "name": "ArriveA_Layer1",
-          "volume": "sceneTime<2 ? [sceneTime,trackVolume,1,0] : 0"
+          "name": "stringsFs",
+          "pos": 0,
+          "volume": "sceneTime<10 ? [sceneTime,trackVolume,10,0] : 0"
         },
         {
-          "name": "ArriveA_Layer2",
-          "volume": "sceneTime<2 ? [sceneTime,trackVolume,1,0] : 0"
+          "name": "arriveBassA",
+          "volume": 0
         },
         {
-          "name": "ArriveA_Layer3a",
-          "volume": "sceneTime<2 ? [sceneTime,trackVolume,0.5,0] : 0"
+          "name": "arrivePianoA",
+          "volume": 0
         },
         {
-          "name": "ArriveA_Layer3b",
-          "volume": "sceneTime<2 ? [sceneTime,trackVolume,0.5,0] : 0"
+          "name": "arriveMelA",
+          "volume": 0
+        },
+        {
+          "name": "arriveSeqA",
+          "volume": 0
+        },
+        {
+          "name": "stringsCs",
+          "volume": 0
+        },
+        {
+          "name": "stringsE",
+          "volume": 0
+        },
+        {
+          "name": "fixedPlaylist",
+          "volume": 0
         },
         {
           "name": "holdingPad",
@@ -127,12 +154,16 @@
           "volume": 1 
         },
         {
-          "name": "ArriveB_Accent",
-          "volume": "sceneTime<2 ? [sceneTime,trackVolume,2,0] : 0"
+          "name": "arrivedpadFs",
+          "volume": "sceneTime<2 ? [sceneTime,trackVolume,2,0] : 0" 
         },
         {
-          "name": "ArriveB_Layer1",
-          "volume": "sceneTime<2 ? [sceneTime,trackVolume,2,0] : 0"
+          "name": "arrivedAccentFs",
+          "volume": "sceneTime<2 ? [sceneTime,trackVolume,2,0] : 0" 
+        },
+        {
+          "name": "stringsFs",
+          "volume": 0
         },
         {
           "name": "holdingPad",
@@ -230,11 +261,11 @@
       "name": "track5/SisterCities",
       "description": "the Sister Cities track starts when exiting Lime Tree avenue on to Middleton road It uses 4 waypoints and 3 routes to calculate the walking distance / time. This - as in the outward journey - is a multi-track and some stems are made silent when crossing the pedestrian crossing 'R2",
       "partial": false,
-      "waypoints": {"W1": "LTA_MB", "W2": "MB_PCA", "W3": "CA_LT", "W4": "JC_SFG"},
-      "routes": {"R1": "LTA_MB-MB_PCA", "R2": "MB_PCA-CA_LT", "R3": "CA_LT-JC_SFG", "Rnext": "JC_SFG-SF_JCCP"},
-      "onload": "window.lastGps=totalTime; if (waypoints['W4'].distance!==undefined) window.estimatedEnd=totalTime+(routes['R1'].nearest ? waypoints['W2'].distance+routes['R2'].length+routes['R3'].length : (routes['R2'].nearest ? waypoints['W3'].distance+routes['R3'].length : waypoints['W4'].distance))/1.5;  else window.estimatedEnd=totalTime+350; ",
+      "waypoints": {"W1": "LTA_MB", "W2": "MB_PCA", "W3": "CA_LT", "W4": "JC_SFG", "W5": "JC_SFV"},
+      "routes": {"R1": "LTA_MB-MB_PCA", "R2": "MB_PCA-CA_LT", "R3": "CA_LT-JC_SFG", "R4": "JC_SFG-JC_SFV", "Rnext": "JC_SFG-SF_JCCP"},
+      "onload": "window.lastGps=totalTime; if (waypoints['W5'].distance!==undefined) window.estimatedEnd=totalTime+(routes['R1'].nearest ? waypoints['W2'].distance+routes['R2'].length+routes['R3'].length+routes['R4'].length : (routes['R2'].nearest ? waypoints['W3'].distance+routes['R3'].length+routes['R4'].length : (routes['R3'].nearest ? waypoints['W4'].distance+routes['R4'].length : waypoints['W5'].distance)))/1.5;  else window.estimatedEnd=totalTime+350; ",
       
-      "onupdate": "if (activity=='NOGPS') { if (totalTime-window.lastGps>20) { daoplayer.setScene('Start'); } else if (window.estimatedEnd<totalTime+10) window.estimatedEnd=totalTime+10; } else { window.lastGps=totalTime; if (!routes['R1'].near && !routes['R2'].near && !routes['R3'].near) { daoplayer.setScene('Start/any'); } else if (routes['Rnext'].nearest) { daoplayer.setScene('track6/NotAlone'); } else if (waypoints['W4'].distance!==undefined) window.estimatedEnd=totalTime+(routes['R1'].nearest ? waypoints['W2'].distance+routes['R2'].length+routes['R3'].length : (routes['R2'].nearest ? waypoints['W3'].distance+routes['R3'].length : waypoints['W4'].distance))/1.5; }",
+      "onupdate": "if (activity=='NOGPS') { if (totalTime-window.lastGps>20) { daoplayer.setScene('Start'); } else if (window.estimatedEnd<totalTime+10) window.estimatedEnd=totalTime+10; } else { window.lastGps=totalTime; if (!routes['R1'].near && !routes['R2'].near && !routes['R3'].near && !routes['R4'].near) { daoplayer.setScene('Start/any'); } else if (routes['Rnext'].nearest) { daoplayer.setScene('track6/NotAlone'); } else if (waypoints['W5'].distance!==undefined) window.estimatedEnd=totalTime+(routes['R1'].nearest ? waypoints['W2'].distance+routes['R2'].length+routes['R3'].length+routes['R4'].length : (routes['R2'].nearest ? waypoints['W3'].distance+routes['R3'].length+routes['R4'].length : (routes['R3'].nearest ? waypoints['W4'].distance+routes['R4'].length : waypoints['W5'].distance)))/1.5; }",
       "updatePeriod":1.0,
       "tracks": [
         {
@@ -290,23 +321,23 @@
         },
         {
           "name": "SisterCities_Drums",
-          "volume": "sceneTime<2 ? [sceneTime,trackVolume,2,0] : 0"
+          "volume": "sceneTime<3 ? [sceneTime,trackVolume,3,0] : 0"
         },
         {
           "name": "SisterCities_Bass",
-          "volume": "sceneTime<2 ? [sceneTime,trackVolume,2,0] : 0" 
+          "volume": "sceneTime<3 ? [sceneTime,trackVolume,3,0] : 0" 
         },
         {
           "name": "SisterCities_Guitars",
-          "volume": "sceneTime<2 ? [sceneTime,trackVolume,2,0] : 0"
+          "volume": "sceneTime<3 ? [sceneTime,trackVolume,3,0] : 0"
         },
         {
           "name": "SisterCities_AcousticKeys",
-          "volume": "sceneTime<2 ? [sceneTime,trackVolume,2,0] : 0" 
+          "volume": "sceneTime<3 ? [sceneTime,trackVolume,3,0] : 0" 
         },
         {
           "name": "SisterCities_Vox",
-          "volume": "sceneTime<2 ? [sceneTime,trackVolume,2,0] : 0" 
+          "volume": "sceneTime<3 ? [sceneTime,trackVolume,3,0] : 0" 
         },
         {
           "name": "holdingPad",
@@ -325,24 +356,34 @@
       "updatePeriod": 1,
       "tracks": [
         {
-          "name": "ArriveA_Layer1",
+          "name": "arriveBassA",
+          "pos": 0,
+          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(routes['R1'].distanceAlong/routes['R1'].length, [0.1,0,0.5,1], trackVolume)]"
+        },
+        {
+          "name": "arrivePianoA",
           "pos": 0,
           "volume": "sceneTime<12 ? [sceneTime,trackVolume,12,1] : 1"
         },
         {
-          "name": "ArriveA_Layer2",
+          "name": "arriveMelA",
           "pos": 0,
-          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(routes['R1'].distanceAlong/routes['R1'].length, [0.24,0,0.25,1], trackVolume)]"
-        },
-         {
-          "name": "ArriveA_Layer3a",
-          "pos": 0,
-          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(routes['R1'].distanceAlong/routes['R1'].length, [0.49,0,0.50,0.5], trackVolume),(routes['R1'].distanceAlong/routes['R1'].length, [0.49,0.5,0.50,0], trackVolume)]"
+          "volume": "sceneTime<12 ? [sceneTime,trackVolume,12,1] : 1"
         },
         {
-          "name": "ArriveA_Layer3b",
+          "name": "arriveSeqA",
           "pos": 0,
-          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(routes['R1'].distanceAlong/routes['R1'].length, [0.74,0,0.75,0.5], trackVolume)]"
+          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(routes['R1'].distanceAlong/routes['R1'].length, [0.1,0,1,1], trackVolume)]"
+        },
+        {
+          "name": "stringsCs",
+          "pos": 0,
+          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(routes['R1'].distanceAlong/routes['R1'].length, [0.49,0,0.50,0.7,0.74,0.7,0.75,0], trackVolume)]"
+        },
+        {
+          "name": "stringsE",
+          "pos": 0,
+          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(routes['R1'].distanceAlong/routes['R1'].length, [0.74,0,0.75,0.7], trackVolume)]"
         },
         {
           "name": "NotAlone",
@@ -365,26 +406,43 @@
       "updatePeriod":1.0,
       "tracks": [
         {
-          "name": "ArriveB_Accent",
+          "name": "arrivedpadFs",
           "pos": 0,
           "volume": 1
         },
         {
-          "name": "ArriveB_Layer1",
+          "name": "arrivedAccentFs",
           "pos": 0,
-          "volume": "sceneTime<2 ? [sceneTime,trackVolume,sceneTime+0.5,1] : 1" 
+          "volume": 1
         },
         {
-          "name": "ArriveA_Layer2",
-          "volume": "sceneTime<2 ? [sceneTime,trackVolume,1,0] : 0"  
+          "name": "stringsFs",
+          "pos": 0,
+          "volume": "sceneTime<10 ? [sceneTime,trackVolume,10,0] : 0"
         },
         {
-          "name": "ArriveA_Layer3a",
-          "volume": "sceneTime<2 ? [sceneTime,trackVolume,0.5,0] : 0"   
+          "name": "arriveBassA",
+          "volume": 0
         },
         {
-          "name": "ArriveA_Layer3b",
-          "volume": "sceneTime<2 ? [sceneTime,trackVolume,0.5,0] : 0"  
+          "name": "arrivePianoA",
+          "volume": 0
+        },
+        {
+          "name": "arriveMelA",
+          "volume": 0
+        },
+        {
+          "name": "arriveSeqA",
+          "volume": 0
+        },
+        {
+          "name": "stringsCs",
+          "volume": 0
+        },
+        {
+          "name": "stringsE",
+          "volume": 0
         },
         {
           "name": "holdingPad",
