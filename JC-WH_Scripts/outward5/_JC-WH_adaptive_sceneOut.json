@@ -48,6 +48,14 @@
           "volume": 1
         },
         {
+          "name": "startPad",
+          "volume": "sceneTime<2 ? [sceneTime,trackVolume,2,0] : 0"
+        },
+        {
+          "name": "startSeq",
+          "volume": "sceneTime<2 ? [sceneTime,trackVolume,2,0] : 0"
+        },
+        {
           "name": "holdingPad",
           "volume": "sceneTime<2 ? [sceneTime,trackVolume,2,0] : 0"
         }
@@ -268,7 +276,7 @@
         {
           "name": "arriveBass",
           "pos": 0,
-          "volume": "sceneTime<12 ? [sceneTime,trackVolume,12,1] : 1"
+          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(routes['R1'].distanceAlong/routes['R1'].length, [0.1,0,0.5,1], trackVolume)]"
         },
         {
           "name": "arrivePiano",
@@ -278,7 +286,7 @@
         {
           "name": "arriveMel",
           "pos": 0,
-          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(routes['R1'].distanceAlong/routes['R1'].length, [0.1,0,0.5,1], trackVolume)]"
+          "volume": "sceneTime<12 ? [sceneTime,trackVolume,12,1] : 1"
         },
         {
           "name": "arriveSeq",
@@ -324,6 +332,11 @@
           "name": "arrivedAccentF",
           "pos": 0,
           "volume": 1
+        },
+        {
+          "name": "stringsF",
+          "pos": 0,
+          "volume": "sceneTime<10 ? [sceneTime,trackVolume,10,0] : 0"
         },
         {
           "name": "arriveBass",
@@ -374,6 +387,10 @@
         {
           "name": "arrivedAccentF",
           "volume": "sceneTime<2 ? [sceneTime,trackVolume,2,0] : 0"
+        },
+        {
+          "name": "stringsF",
+          "volume": 0
         },
         {
           "name": "holdingPad",
