@@ -24,7 +24,7 @@
         {
           "name": "startSeq",
           "pos": 0,
-          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(routes['R1'].distanceAlong/routes['R1'].length, [0,1,1,0], trackVolume)]"
+          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(routes['R1'].distanceAlong/routes['R1'].length, [0,0,1,1], trackVolume)]"
         },
         {
           "name": "holdingPad",
