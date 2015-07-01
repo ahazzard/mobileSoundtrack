@@ -37,8 +37,8 @@ inward1
 1-	fixedPlayList:
     a.	manually selected this scene when walking up the hill towards Wollaton Hall.
 2-	WollatonHallArrival:
-    a.	Music transitioned in, but fixed playlist continued to sound, volume fade did not take place.
-    b.	fixedPlaylist eventually stopped upon entry into ‘wollatonHallArrived’
+    a.	(Fixed) Music transitioned in, but fixed playlist continued to sound, volume fade did not take place.
+    b.	(Fixed) fixedPlaylist eventually stopped upon entry into ‘wollatonHallArrived’
 3-	track1/WaitingForGA:
     a.	transition effective
     b.	regular audio glitches
@@ -59,6 +59,6 @@ inward1
 9-	track6/NotAlone
     a.	Transition between scenes was effective. Although suggest a change, so that sister cities fades out gradually between the gate to Jubilee Campus sports field and where the grass starts. Bring track6/NotAlone in at that point. 
 10-	atriumArrival:
-    a.	Track6NotAlone continued to sound, volume command did not work. Track6/NotAlone Stopped upon entry into ‘AtriumArrived’.
+    a.	(Fixed) Track6NotAlone continued to sound, volume command did not work. Track6/NotAlone Stopped upon entry into ‘AtriumArrived’.
 11-	atriumArrived:
     a.	no issues.
