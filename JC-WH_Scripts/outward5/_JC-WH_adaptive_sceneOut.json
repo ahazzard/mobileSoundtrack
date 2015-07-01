@@ -7,11 +7,37 @@
   },
   "scenes": [
     {
+      "name": "track0/Start",
+      "description": "a variation of the Wollaton Hall music to start the walk with",
+      "partial": false,
+      "waypoints": {"W1": "J_CS", "W2": "J_BS"},
+      "routes": {"R1": "J_CS-J_BS", "Rnext": "J_BS-J_CP"},
+      "onload": "window.lastGps=totalTime;",
+      "onupdate": "if (activity=='NOGPS') { if (totalTime-window.lastGps>20) { daoplayer.setScene('Return'); } else if (window.estimatedEnd<totalTime+10) window.estimatedEnd=totalTime+10; } else { window.lastGps=totalTime; if (!routes['R1'].near) { daoplayer.setScene('Start/return'); } else if (routes['Rnext'].nearest) { daoplayer.setScene('track1/MitaDelMundo'); } }",
+      "updatePeriod": 1,
+      "tracks": [
+        {
+          "name": "startPad",
+          "pos": 0,
+          "volume": 1
+        },
+        {
+          "name": "startSeq",
+          "pos": 0,
+          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(routes['R1'].distanceAlong/routes['R1'].length, [0,1,1,0], trackVolume)]"
+        },
+        {
+          "name": "holdingPad",
+          "volume": "sceneTime<2 ? [sceneTime,trackVolume,2,0] : 0"
+        }
+      ]
+    },
+    {
       "name": "track1/MitaDelMundo",
       "description": "first track, starts at CS building on Jubilee campus and ends at the turning onto Wollaton Road. This uses three waypoints forming two routes to calculte the walking distance / time",
       "partial": false,
-      "waypoints": {"W1": "J_CS", "W2": "J_CP", "W3": "WR"},
-      "routes": {"R1": "J_CS-J_CP", "R2": "J_CP-WR", "Rnext": "WR-WR_MR"},
+      "waypoints": {"W1": "J_BS", "W2": "J_CP", "W3": "WR"},
+      "routes": {"R1": "J_BS-J_CP", "R2": "J_CP-WR", "Rnext": "WR-WR_MR"},
       "onload": "window.lastGps=totalTime; if (waypoints['W3'].distance!==undefined) window.estimatedEnd=totalTime+(routes['R1'].nearest ? waypoints['W2'].distance+routes['R2'].length : waypoints['W3'].distance)/1.5; else window.estimatedEnd=totalTime+170; ",
       "onupdate": "if (activity=='NOGPS') { if (totalTime-window.lastGps>20) { daoplayer.setScene('Start'); } else if (window.estimatedEnd<totalTime+10) window.estimatedEnd=totalTime+10; } else { window.lastGps=totalTime; if (routes['Rnext'].nearest) { daoplayer.setScene('track2/SisterCities'); } else if (!routes['R1'].near && !routes['R2'].near) { daoplayer.setScene('Start/any'); } else if (waypoints['W3'].distance!==undefined) window.estimatedEnd=totalTime+(routes['R1'].nearest ? waypoints['W2'].distance+routes['R2'].length : waypoints['W3'].distance)/1.5; }",
       "updatePeriod": 1,
@@ -41,7 +67,7 @@
         {
           "name": "SisterCities_Drums",
           "pos": "daoplayer.selectSections('SisterCities_Drums',currentSection,sceneTime,window.estimatedEnd-totalTime,totalTime)",
-          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(waypoints['W3'].distance,[7,0,8,1],1)*(routes['R3'].nearest ? 0 : 1)]"
+          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(waypoints['W3'].distance,[5,0,6,1],1)*(routes['R3'].nearest ? 0 : 1)]"
         },
         {
           "name": "SisterCities_Bass",
@@ -51,7 +77,7 @@
         {
           "name": "SisterCities_Guitars",
           "pos": "daoplayer.selectSections('SisterCities_Drums',currentSection,sceneTime,window.estimatedEnd-totalTime,totalTime)",
-          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(waypoints['W3'].distance,[7,0,8,1],1)*(routes['R3'].nearest ? 0 : 1)]"
+          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(waypoints['W3'].distance,[5,0.5,6,1],1)*(routes['R3'].nearest ? 0 : 1)]"
         },
         {
           "name": "SisterCities_AcousticKeys",
@@ -61,7 +87,7 @@
         {
           "name": "SisterCities_Vox",
           "pos": "daoplayer.selectSections('SisterCities_Drums',currentSection,sceneTime,window.estimatedEnd-totalTime,totalTime)",
-          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(waypoints['W3'].distance,[7,0,8,1],1)*(routes['R3'].nearest ? 0 : 1)]"
+          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(waypoints['W3'].distance,[5,0,6,1],1)*(routes['R3'].nearest ? 0 : 1)]"
         },
         {
           "name": "MitaDelMundo",
@@ -242,7 +268,7 @@
         {
           "name": "ArriveA_Layer1",
           "pos": 0,
-          "volume": "sceneTime<5 ? [sceneTime,trackVolume,5,1] : 1"
+          "volume": "sceneTime<12 ? [sceneTime,trackVolume,12,1] : 1"
         },
         {
           "name": "ArriveA_Layer2",
@@ -261,7 +287,7 @@
         },
         {
           "name": "WaitingForGA",
-          "volume": "sceneTime<5 ? [sceneTime,trackVolume,5,0] : 0"
+          "volume": "sceneTime<12 ? [sceneTime,trackVolume,12,0] : 0"
         },
         {
           "name": "holdingPad",
