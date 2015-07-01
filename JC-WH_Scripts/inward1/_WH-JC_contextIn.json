@@ -215,217 +215,224 @@
 				"description": "Scene WollatonHallArriveA4",
 				"from": "LTA_WHb",
 				"to":"WH1",
-				"nearDistance": "50"
+				"nearDistance": "100"
 			},
 			{
 				"name": "WH1-WH3",
 				"description": "Scene WollatonHallArriveB - music for the location of Wollaton Hall",
 				"from": "WH1",
 				"to":"WH3",
-				"nearDistance": "100"
+				"nearDistance": "150"
 			},
 			{ 
 			  "name": "WH_EP1-WH_EP2",
 			  "description": "waiting for GA stage 1",
 			  "from": "WH_EP1",
 			  "to": "WH_EP2",
-			  "nearDistance": "100"
+			  "nearDistance": "50"
 			},
 			{ 
 			  "name": "WH_EP2-WH_EP3",
 			  "description": "waiting for GA stage 2",
 			  "from": "WH_EP2",
 			  "to": "WH_EP3",
-			  "nearDistance": "100"
+			  "nearDistance": "50"
 			},
 			{ 
 			  "name": "WH_EP3-EP_LTA",
 			  "description": "waiting for GA stage 3",
 			  "from": "WH_EP3",
 			  "to": "EP_LTA",
-			  "nearDistance": "100"
+			  "nearDistance": "50"
 			},
 			{
 			  "name": "EP_LTA-LTA_OP",
 			  "description": "waiting for GA stage 4",
 			  "from": "EP_LTA",
 			  "to": "LTA_OP",
-			  "nearDistance": "100"
+			  "nearDistance": "50"
 			},
 			{ 
 			  "name": "LTA_OP-LTA_HW",
 			  "description": "The Bad Guys",
 			  "from": "LTA_OP",
 			  "to": "LTA_HW",
-			  "nearDistance": "100"
+			  "nearDistance": "50"
 			},
 			{ 
 			  "name": "LTA_HW-LTA_GIR1",
 			  "description": "Stella",
 			  "from": "LTA_HW",
 			  "to": "LTA_GIR1",
-			  "nearDistance": "100"
+			  "nearDistance": "50"
 			},
 			{ 
 			  "name": "LTA_GIR1-LTA_MB",
 			  "from": "LTA_GIR1",
 			  "to": "LTA_MB",
-			  "nearDistance": "100"
+			  "nearDistance": "50"
 			},
 			{ 
 			  "name": "LTA_GIR1-LTA_GIR2",
 			  "description": "MitaDelMundo - stage 1 multi-track reduced texture",
 			  "from": "LTA_GIR1",
 			  "to": "LTA_GIR2",
-			  "nearDistance": "100"
+			  "nearDistance": "50"
 			},
 			{ 
 			  "name": "LTA_GIR2-LTA_GIR3",
 			  "description": "MitaDelMundo - stage 2 multi-track full texture",
 			  "from": "LTA_GIR2",
 			  "to": "LTA_GIR3",
-			  "nearDistance": "100"
+			  "nearDistance": "50"
 			},
 			{ 
 			  "name": "LTA_GIR3-LTA_MB",
 			  "description": "MitaDelMundo - stage 3 multi-track reduced texture",
 			  "from": "LTA_GIR3",
 			  "to": "LTA_MB",
-			  "nearDistance": "100"
+			  "nearDistance": "50"
 			},
 			{ 
 			  "name": "LTA_MB-MB_PCA",
 			  "description": "Sister Cities stage 1 - multi-track full texture",
 			  "from": "LTA_MB",
 			  "to": "MB_PCA",
-			  "nearDistance": "100"
+			  "nearDistance": "50"
 			},
 			{ 
 			  "name": "MB_PCA-CA_LT",
 			  "description": "Sister Cities stage 2 - multi-track reduced texture",
 			  "from": "MB_PCA",
 			  "to": "CA_LT",
-			  "nearDistance": "100"
+			  "nearDistance": "50"
 			},
 			{ 
 			  "name": "MB_PCA-MB_PCB",
 			  "from": "MB_PCA",
 			  "to": "MB_PCB",
-			  "nearDistance": "100"
+			  "nearDistance": "50"
 			},
 			{ 
 			  "name": "MB_PCB-MB_PCC",
 			  "from": "MB_PCB",
 			  "to": "MB_PCC",
-			  "nearDistance": "100"
+			  "nearDistance": "50"
 			},
 			{ 
 			  "name": "MB_PCC-MB_PCD",
 			  "from": "MB_PCC",
 			  "to": "MB_PCD",
-			  "nearDistance": "100"
+			  "nearDistance": "50"
 			},
 			{ 
 			  "name": "MB_PCD-CA_LT",
 			  "from": "MB_PCD",
 			  "to": "CA_LT",
-			  "nearDistance": "100"
+			  "nearDistance": "50"
 			},
 			{ 
 			  "name": "CA_LT-JC_SFG",
 			  "description": "Sister Cities stage 4 - multi-track full texture",
 			  "from": "CA_LT",
 			  "to": "JC_SFG",
-			  "nearDistance": "100"
+			  "nearDistance": "50"
 			},
 			{ 
 			  "name": "CA_LT-CA_DD",
 			  "from": "CA_LT",
 			  "to": "CA_DD",
-			  "nearDistance": "100"
+			  "nearDistance": "50"
 			},
 			{ 
 			  "name": "CA_DD-JC_SFG",
 			  "from": "CA_DD",
 			  "to": "JC_SFG",
-			  "nearDistance": "100"
+			  "nearDistance": "50"
 			},
 			{ 
 			  "name": "JC_SFG-JC_SFV",
 			  
 			  "from": "JC_SFG",
 			  "to": "JC_SFV",
-			  "nearDistance": "100"
+			  "nearDistance": "50"
 			},
 			{ 
 			  "name": "JC_SFG-SF_JCCP",
 			  "description": "Not Alone - Stage 1",
 			  "from": "JC_SFG",
 			  "to": "SF_JCCP",
-			  "nearDistance": "100"
+			  "nearDistance": "50"
 			},
 			{ 
 			  "name": "JC_SFV-SF_JCCP",
 			  "description": "Not Alone - Stage 2",
 			  "from": "JC_SFV",
 			  "to": "SF_JCCP",
-			  "nearDistance": "100"
+			  "nearDistance": "50"
 			},
 			{ 
 			  "name": "SF_JCCP-JC_NCL",
 			  "description": "Not Alone - Stage 3",
 			  "from": "SF_JCCP",
 			  "to": "JC_NCL",
-			  "nearDistance": "100"
+			  "nearDistance": "50"
 			},
 			{ 
 			  "name": "JC_NCL-JC_RSL",
 			  "description": "Not Alone - Stage 4",
 			  "from": "JC_NCL",
 			  "to": "JC_RSL",
-			  "nearDistance": "100"
+			  "nearDistance": "50"
 			},
 			{ 
 			  "name": "JC_RSL-JC_WF",
 			  "description": "Not Alone - Stage 4",
 			  "from": "JC_RSL",
 			  "to": "JC_WF",
-			  "nearDistance": "100"
+			  "nearDistance": "50"
 			},
 			{ 
 			  "name": "JC_WF-JC_A1",
 			  "description": "Scene AtriumArriveA1",
 			  "from": "JC_WF",
 			  "to": "JC_A1",
-			  "nearDistance": "100"
+			  "nearDistance": "50"
+			},
+			{ 
+			  "name": "JC_WF-JC_AB",
+			  "description": "long route for single scene atrium approach",
+			  "from": "JC_WF",
+			  "to": "JC_A1",
+			  "nearDistance": "50"
 			},
 			{ 
 			  "name": "JC_A1-JC_A2",
 			  "description": "Scene AtriumArriveA2",
 			  "from": "JC_A1",
 			  "to": "JC_A2",
-			  "nearDistance": "100"
+			  "nearDistance": "50"
 			},
 			{ 
 			  "name": "JC_A2-JC_A3",
 			  "description": "Scene AtriumArriveA3",
 			  "from": "JC_A2",
 			  "to": "JC_A3",
-			  "nearDistance": "100"
+			  "nearDistance": "50"
 			},
 			{ 
 			  "name": "JC_A3-JC_AB",
 			  "description": "Scene AtriumArriveA4",
 			  "from": "JC_A3",
 			  "to": "JC_AB",
-			  "nearDistance": "100"
+			  "nearDistance": "50"
 			},
 			{ 
 			  "name": "JC_AB-J_CS",
 			  "description": "Scene AtriumArriveB",
 			  "from": "JC_AB",
 			  "to": "J_CS",
-			  "nearDistance": "100"
+			  "nearDistance": "50"
 			}
     ]
   }
