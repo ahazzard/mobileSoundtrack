@@ -266,24 +266,34 @@
       "updatePeriod": 1,
       "tracks": [
         {
-          "name": "ArriveA_Layer1",
+          "name": "arriveBass",
           "pos": 0,
           "volume": "sceneTime<12 ? [sceneTime,trackVolume,12,1] : 1"
         },
         {
-          "name": "ArriveA_Layer2",
+          "name": "arrivePiano",
           "pos": 0,
-          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(routes['R1'].distanceAlong/routes['R1'].length, [0.24,0,0.25,1], trackVolume)]"
-        },
-         {
-          "name": "ArriveA_Layer3a",
-          "pos": 0,
-          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(routes['R1'].distanceAlong/routes['R1'].length, [0.49,0,0.50,0.5], trackVolume),(routes['R1'].distanceAlong/routes['R1'].length, [0.49,0.5,0.50,0], trackVolume)]"
+          "volume": "sceneTime<12 ? [sceneTime,trackVolume,12,1] : 1"
         },
         {
-          "name": "ArriveA_Layer3b",
+          "name": "arriveMel",
           "pos": 0,
-          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(routes['R1'].distanceAlong/routes['R1'].length, [0.74,0,0.75,0.5], trackVolume)]"
+          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(routes['R1'].distanceAlong/routes['R1'].length, [0.1,0,0.5,1], trackVolume)]"
+        },
+        {
+          "name": "arriveSeq",
+          "pos": 0,
+          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(routes['R1'].distanceAlong/routes['R1'].length, [0.1,0,1,1], trackVolume)]"
+        },
+        {
+          "name": "stringsC",
+          "pos": 0,
+          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(routes['R1'].distanceAlong/routes['R1'].length, [0.49,0,0.50,0.7], trackVolume),(routes['R1'].distanceAlong/routes['R1'].length, [0.49,0.5,0.50,0], trackVolume)]"
+        },
+        {
+          "name": "stringsEb",
+          "pos": 0,
+          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(routes['R1'].distanceAlong/routes['R1'].length, [0.74,0,0.75,0.7], trackVolume)]"
         },
         {
           "name": "WaitingForGA",
