@@ -1,3 +1,5 @@
+Wollaton Hall walk 01/07/15
+
 Outward5 
 1-	track1/MitaDelMundo: 
     a.	no issues, some effective adaptations
@@ -18,6 +20,7 @@ Outward5
     a.	Fade out on track4/Stella worked well, but track5/TheBadGuys did not enter.
 6-	track5/TheBadGuys:
     a.	Track did not enter continued to walk and nothing happened. Looked at Status which said that “R1”: “DA_HW-DA_TR” was nearest. Walked back and re-selected track4/Stella, which did not start, walked forward again and manually selected track5/TheBadGuys which started playing.
+    b.	Just before the transition into track6/WaitingForGA, the music cut out abruptly three times for about a second each time (e.g. 5-7 metres from transition point)
 7-	track6/WaitingForGA
     a.	Good transition from previous track to this one.
     b.	regular audio glitches
@@ -29,5 +32,33 @@ Outward5
     a.	No issues
 10-	fixedPlayList:
     a.	no issues
-    
-    
+
+inward1
+1-	fixedPlayList:
+    a.	manually selected this scene when walking up the hill towards Wollaton Hall.
+2-	WollatonHallArrival:
+    a.	Music transitioned in, but fixed playlist continued to sound, volume fade did not take place.
+    b.	fixedPlaylist eventually stopped upon entry into ‘wollatonHallArrived’
+3-	track1/WaitingForGA:
+    a.	transition effective
+    b.	regular audio glitches
+4-	transition:
+    a.	worked well
+5-	track2/TheBadGuys:
+    a.	effective transition from track 1 to track 2
+    b.	no noticeable segment adaptations, track appeared to just play until the transition into track3/Stella.
+6-	track3/Stella:
+    a.	Effective transition between tracks
+    b.	Some good adaptations, but also some jerky ones (check segment timings)
+7-	track4/MitaDeMundo:
+    a.	transition happened a little early (before reaching the gate – re-position waypoint)
+8-	track5/SisterCities:
+    a.	transition into this scene happened a little late, sometime after leaving Lime Tree Avenue (check position of waypoint).
+    b.	Effective volume commands on stems for the pedestrian crossing section. Although mixed feelings about how well it works musically.
+    c.	Effective adaptations of segments.
+9-	track6/NotAlone
+    a.	Transition between scenes was effective. Although suggest a change, so that sister cities fades out gradually between the gate to Jubilee Campus sports field and where the grass starts. Bring track6/NotAlone in at that point. 
+10-	atriumArrival:
+    a.	Track6NotAlone continued to sound, volume command did not work. Track6/NotAlone Stopped upon entry into ‘AtriumArrived’.
+11-	atriumArrived:
+    a.	no issues.
