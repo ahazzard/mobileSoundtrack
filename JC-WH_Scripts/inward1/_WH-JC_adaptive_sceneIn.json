@@ -40,7 +40,7 @@
         {
           "name": "ArriveA_Layer1",
           "pos": 0,
-          "volume": "sceneTime<5 ? [sceneTime,trackVolume,5,1] : 1"
+          "volume": "sceneTime<12 ? [sceneTime,trackVolume,12,1] : 1"
         },
         {
           "name": "ArriveA_Layer2",
@@ -58,8 +58,8 @@
           "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(routes['R1'].distanceAlong/routes['R1'].length, [0.74,0,0.75,0.5], trackVolume)]"
         },
         {
-          "name": "WaitingForGA",
-          "volume": "sceneTime<5 ? [sceneTime,trackVolume,5,0] : 0"
+          "name": "fixedPlaylist",
+          "volume": "sceneTime<12 ? [sceneTime,trackVolume,12,0] : 0"
         },
         {
           "name": "holdingPad",
@@ -327,7 +327,7 @@
         {
           "name": "ArriveA_Layer1",
           "pos": 0,
-          "volume": "sceneTime<5 ? [sceneTime,trackVolume,5,1] : 1"
+          "volume": "sceneTime<12 ? [sceneTime,trackVolume,12,1] : 1"
         },
         {
           "name": "ArriveA_Layer2",
@@ -345,8 +345,8 @@
           "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(routes['R1'].distanceAlong/routes['R1'].length, [0.74,0,0.75,0.5], trackVolume)]"
         },
         {
-          "name": "WaitingForGA",
-          "volume": "sceneTime<5 ? [sceneTime,trackVolume,5,0] : 0"
+          "name": "NotAlone",
+          "volume": "sceneTime<12 ? [sceneTime,trackVolume,12,0] : 0"
         },
         {
           "name": "holdingPad",
