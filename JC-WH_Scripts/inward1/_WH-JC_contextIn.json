@@ -20,6 +20,11 @@
 		"description":"Jubilee campus - right turn towards car park"
 		},
 		{
+		"name": "DA_LTA",
+		"lat":52.947997900,  "lng":-1.205663700,
+		"description":"Digby Ave and Lime Tree Ave intersection"
+		},
+		{
 		"name": "LTA_LT",
 		"lat":52.949134,  "lng":-1.208845,
 		"description":"Lime Tree Ave - left turn towards Wollaton Hall"
@@ -192,6 +197,13 @@
 				"description": "Fixed Playlist",
 				"from": "J_CS",
 				"to":"J_CP",
+				"nearDistance": "50"
+			},
+			{
+				"name": "DA_LTA-LTA_LT",
+				"description": "Scene track6/WaitingForGA - stage 2",
+				"from": "DA_LTA",
+				"to":"LTA_LT",
 				"nearDistance": "50"
 			},
 			{

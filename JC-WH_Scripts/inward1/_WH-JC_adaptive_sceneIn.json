@@ -10,10 +10,10 @@
     "name": "fixedPlaylistIn",
     "description": "this scene initiates playback of the fixed playlist of music for the leg of the walk that goes from JC to WH. One route initiates the playlist, but after that no other GPS is used until the approach of Wollaton Hall",
       "partial": false,
-      "waypoints":{"W1": "J-CS", "W2": "J-CP"},
-     "routes":{"R1":"J-CS_J-CP", "Rnext":"LTA_LT-LTA_WHb"},
+      "waypoints":{},
+     "routes":{"R1": "DA_LTA-LTA_LT", "Rnext":"LTA_LT-LTA_WHb",  "WH1-WH3":"WH1-WH3"},
       "onload": "window.lastGps=totalTime; ",
-      "onupdate": "if (routes['Rnext'].nearest) { daoplayer.setScene('WollatonHallArrivalMusic');} ",
+      "onupdate": "if (routes['Rnext'].nearest) { daoplayer.setScene('WollatonHallArrivalMusic');} else if (routes['WH1-WH3'].nearest) { daoplayer.setScene('WollatonHallArrived');} ",
       "updatePeriod":1.0,
       "tracks": [
         {
@@ -50,7 +50,7 @@
          {
           "name": "ArriveA_Layer3a",
           "pos": 0,
-          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(routes['R1'].distanceAlong/routes['R1'].length, [0.49,0,0.50,0.5], trackVolume),(routes['R1'].distanceAlong/routes['R1'].length, [0.49,0.5,0.50,0], trackVolume)]"
+          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(routes['R1'].distanceAlong/routes['R1'].length, [0.49,0,0.50,0.5,0.74,0.5,0.75,0], trackVolume)]"
         },
         {
           "name": "ArriveA_Layer3b",
@@ -238,7 +238,7 @@
         {
           "name": "SisterCities_Drums",
           "pos": "daoplayer.selectSections('SisterCities_Drums',currentSection,sceneTime,window.estimatedEnd-totalTime,totalTime)",
-          "volume": "[sceneTime,trackVolume,sceneTime+1,(routes['R3'].distanceAlong>0 ? 0 : 1)]"
+          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(waypoints['W2'].distance,[7,0,8,1],1)*(routes['R2'].nearest ? 0 : 1)]"
         },
         {
           "name": "SisterCities_Bass",
@@ -248,7 +248,7 @@
         {
           "name": "SisterCities_Guitars",
           "pos": "daoplayer.selectSections('SisterCities_Drums',currentSection,sceneTime,window.estimatedEnd-totalTime,totalTime)",
-          "volume": "[sceneTime,trackVolume,sceneTime+1,(routes['R3'].distanceAlong>0 ? 0 : 1)]"
+          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(waypoints['W2'].distance,[7,0,8,1],1)*(routes['R2'].nearest ? 0 : 1)]"
         },
         {
           "name": "SisterCities_AcousticKeys",
@@ -359,7 +359,7 @@
       "waypoints":{"W1":"JC_AB", "W2":"J_CS"},
       "routes":{"R1":"JC_AB-J_CS"},
       "onload": "window.lastGps=totalTime;",
-      "onupdate": "if (activity=='NOGPS') { if (totalTime-window.lastGps>20) { daoplayer.setScene('Start'); } else if (window.estimatedEnd<totalTime+10) window.estimatedEnd=totalTime+10; } else { window.lastGps=totalTime; if (!routes['R1'].near) { daoplayer.setScene('Start/any'); }}",
+      "onupdate": "",
       "updatePeriod":1.0,
       "tracks": [
         {

@@ -41,7 +41,7 @@
         {
           "name": "SisterCities_Drums",
           "pos": "daoplayer.selectSections('SisterCities_Drums',currentSection,sceneTime,window.estimatedEnd-totalTime,totalTime)",
-          "volume": "[sceneTime,trackVolume,sceneTime+1,(routes['R3'].distanceAlong>0 ? 0 : 1)]"
+          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(waypoints['W3'].distance,[7,0,8,1],1)*(routes['R3'].nearest ? 0 : 1)]"
         },
         {
           "name": "SisterCities_Bass",
@@ -51,7 +51,7 @@
         {
           "name": "SisterCities_Guitars",
           "pos": "daoplayer.selectSections('SisterCities_Drums',currentSection,sceneTime,window.estimatedEnd-totalTime,totalTime)",
-          "volume": "[sceneTime,trackVolume,sceneTime+1,(routes['R3'].distanceAlong>0 ? 0 : 1)]"
+          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(waypoints['W3'].distance,[7,0,8,1],1)*(routes['R3'].nearest ? 0 : 1)]"
         },
         {
           "name": "SisterCities_AcousticKeys",
@@ -61,7 +61,7 @@
         {
           "name": "SisterCities_Vox",
           "pos": "daoplayer.selectSections('SisterCities_Drums',currentSection,sceneTime,window.estimatedEnd-totalTime,totalTime)",
-          "volume": "[sceneTime,trackVolume,sceneTime+1,(routes['R3'].distanceAlong>0 ? 0 : 1)]"
+          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(waypoints['W3'].distance,[7,0,8,1],1)*(routes['R3'].nearest ? 0 : 1)]"
         },
         {
           "name": "MitaDelMundo",
