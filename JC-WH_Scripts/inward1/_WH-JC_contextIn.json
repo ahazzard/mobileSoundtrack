@@ -8,6 +8,18 @@
   "context": {
     "waypoints": [
 		{
+		"name": "J_CS",
+		"lat": 52.953571600, 	"lng": -1.187735800,
+		"nearDistance": 20,
+		"description": "Start-Finish - Jubilee Campus CS",
+		"origin": true
+		},
+		{
+		"name": "J_CP",
+		"lat":52.954441000,  "lng":-1.189575800, 
+		"description":"Jubilee campus - right turn towards car park"
+		},
+		{
 		"name": "LTA_LT",
 		"lat":52.949134,  "lng":-1.208845,
 		"description":"Lime Tree Ave - left turn towards Wollaton Hall"
@@ -176,53 +188,25 @@
     
     "routes": [
 			{
-				"name": "J_CS-WR",
+				"name": "J_CS-J_CP",
 				"description": "Fixed Playlist",
 				"from": "J_CS",
-				"to":"WR",
-				"nearDistance": "100"
-			},
-			{
-				"name": "LTA_LT-LTA_WH",
-				"description": "Scene WollatonHallArriveA1",
-				"from": "LTA_LT",
-				"to":"LTA_WH",
-				"nearDistance": "100"
+				"to":"J_CP",
+				"nearDistance": "50"
 			},
 			{
 				"name": "LTA_LT-LTA_WHb",
 				"description": "long route for single scene at Wollaton hall",
 				"from": "LTA_LT",
 				"to":"LTA_WHb",
-				"nearDistance": "150"
-			},
-			{
-				"name": "LTA_WH-LTA_WHa",
-				"description": "Scene WollatonHallArriveA2",
-				"from": "LTA_WH",
-				"to":"LTA_WHa",
-				"nearDistance": "100"
-			},
-			{
-				"name": "LTA_WHa-LTA_WHb",
-				"description": "Scene WollatonHallArriveA3",
-				"from": "LTA_WHa",
-				"to":"LTA_WHb",
 				"nearDistance": "50"
-			},
-			{
-				"name": "LTA_WHb-WH1",
-				"description": "Scene WollatonHallArriveA4",
-				"from": "LTA_WHb",
-				"to":"WH1",
-				"nearDistance": "100"
 			},
 			{
 				"name": "WH1-WH3",
 				"description": "Scene WollatonHallArriveB - music for the location of Wollaton Hall",
 				"from": "WH1",
 				"to":"WH3",
-				"nearDistance": "150"
+				"nearDistance": "50"
 			},
 			{ 
 			  "name": "WH_EP1-WH_EP2",
@@ -267,12 +251,6 @@
 			  "nearDistance": "50"
 			},
 			{ 
-			  "name": "LTA_GIR1-LTA_MB",
-			  "from": "LTA_GIR1",
-			  "to": "LTA_MB",
-			  "nearDistance": "50"
-			},
-			{ 
 			  "name": "LTA_GIR1-LTA_GIR2",
 			  "description": "MitaDelMundo - stage 1 multi-track reduced texture",
 			  "from": "LTA_GIR1",
@@ -308,30 +286,6 @@
 			  "nearDistance": "50"
 			},
 			{ 
-			  "name": "MB_PCA-MB_PCB",
-			  "from": "MB_PCA",
-			  "to": "MB_PCB",
-			  "nearDistance": "50"
-			},
-			{ 
-			  "name": "MB_PCB-MB_PCC",
-			  "from": "MB_PCB",
-			  "to": "MB_PCC",
-			  "nearDistance": "50"
-			},
-			{ 
-			  "name": "MB_PCC-MB_PCD",
-			  "from": "MB_PCC",
-			  "to": "MB_PCD",
-			  "nearDistance": "50"
-			},
-			{ 
-			  "name": "MB_PCD-CA_LT",
-			  "from": "MB_PCD",
-			  "to": "CA_LT",
-			  "nearDistance": "50"
-			},
-			{ 
 			  "name": "CA_LT-JC_SFG",
 			  "description": "Sister Cities stage 4 - multi-track full texture",
 			  "from": "CA_LT",
@@ -339,35 +293,9 @@
 			  "nearDistance": "50"
 			},
 			{ 
-			  "name": "CA_LT-CA_DD",
-			  "from": "CA_LT",
-			  "to": "CA_DD",
-			  "nearDistance": "50"
-			},
-			{ 
-			  "name": "CA_DD-JC_SFG",
-			  "from": "CA_DD",
-			  "to": "JC_SFG",
-			  "nearDistance": "50"
-			},
-			{ 
-			  "name": "JC_SFG-JC_SFV",
-			  
-			  "from": "JC_SFG",
-			  "to": "JC_SFV",
-			  "nearDistance": "50"
-			},
-			{ 
 			  "name": "JC_SFG-SF_JCCP",
 			  "description": "Not Alone - Stage 1",
 			  "from": "JC_SFG",
-			  "to": "SF_JCCP",
-			  "nearDistance": "50"
-			},
-			{ 
-			  "name": "JC_SFV-SF_JCCP",
-			  "description": "Not Alone - Stage 2",
-			  "from": "JC_SFV",
 			  "to": "SF_JCCP",
 			  "nearDistance": "50"
 			},
@@ -393,38 +321,10 @@
 			  "nearDistance": "50"
 			},
 			{ 
-			  "name": "JC_WF-JC_A1",
-			  "description": "Scene AtriumArriveA1",
-			  "from": "JC_WF",
-			  "to": "JC_A1",
-			  "nearDistance": "50"
-			},
-			{ 
 			  "name": "JC_WF-JC_AB",
 			  "description": "long route for single scene atrium approach",
 			  "from": "JC_WF",
 			  "to": "JC_A1",
-			  "nearDistance": "50"
-			},
-			{ 
-			  "name": "JC_A1-JC_A2",
-			  "description": "Scene AtriumArriveA2",
-			  "from": "JC_A1",
-			  "to": "JC_A2",
-			  "nearDistance": "50"
-			},
-			{ 
-			  "name": "JC_A2-JC_A3",
-			  "description": "Scene AtriumArriveA3",
-			  "from": "JC_A2",
-			  "to": "JC_A3",
-			  "nearDistance": "50"
-			},
-			{ 
-			  "name": "JC_A3-JC_AB",
-			  "description": "Scene AtriumArriveA4",
-			  "from": "JC_A3",
-			  "to": "JC_AB",
 			  "nearDistance": "50"
 			},
 			{ 
