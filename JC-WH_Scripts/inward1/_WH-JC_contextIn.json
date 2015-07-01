@@ -336,7 +336,7 @@
 			  "name": "JC_WF-JC_AB",
 			  "description": "long route for single scene atrium approach",
 			  "from": "JC_WF",
-			  "to": "JC_A1",
+			  "to": "JC_AB",
 			  "nearDistance": "50"
 			},
 			{ 
