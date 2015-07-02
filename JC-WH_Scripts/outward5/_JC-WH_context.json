@@ -9,7 +9,7 @@
     "waypoints": [
 		{
 		"name": "J_CS",
-		"lat": 52.953575, 	"lng": -1.187670,
+		"lat": 52.953478, 	"lng": -1.187670,
 		"description": "Start-Finish - Jubilee Campus CS",
 		"origin": true
 		},
