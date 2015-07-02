@@ -21,11 +21,11 @@
       ]
     },
     {
-      "name": "ArriveA_Layer1",
+      "name": "arriveBass",
       "pauseIfSilent": false,
       "files": [
         { 
-          "path": "WollatonHallArriveA_Layer1.wav",
+          "path": "arriveBass.wav",
           "trackPos": 0,
           "filePos": 0,
           "length": 118.154,
@@ -34,11 +34,11 @@
       ]
     },
     {
-      "name": "ArriveA_Layer2",
+      "name": "arrivePiano",
       "pauseIfSilent": false,
       "files": [
         { 
-          "path": "WollatonHallArriveA_Layer2.wav",
+          "path": "arrivePiano.wav",
           "trackPos": 0,
           "filePos": 0,
           "length": 118.154,
@@ -47,11 +47,139 @@
       ]
     },
     {
-      "name": "ArriveA_Layer3a",
+      "name": "arriveSeq",
+      "pauseIfSilent": false,
+      "files": [
+        { 
+          "path": "arriveSeq.wav",
+          "trackPos": 0,
+          "filePos": 0,
+          "length": 118.154,
+          "repeats": -1
+        }
+      ]
+    },
+    {
+      "name": "arriveMel",
+      "pauseIfSilent": false,
+      "files": [
+        { 
+          "path": "arriveMel.wav",
+          "trackPos": 0,
+          "filePos": 0,
+          "length": 118.154,
+          "repeats": -1
+        }
+      ]
+    },
+    {
+      "name": "arrivedpadF",
+      "pauseIfSilent": false,
+      "files": [
+        { 
+          "path": "arrivedpadF.wav",
+          "trackPos": 0,
+          "filePos": 0,
+          "length": 118.154,
+          "repeats": -1
+        }
+      ]
+    },
+    {
+      "name": "arrivedAccentF",
+      "pauseIfSilent": false,
+      "files": [
+        { 
+          "path": "arrivedAccentF.wav",
+          "trackPos": 0,
+          "filePos": 0,
+          "length": 118.154,
+        }
+      ]
+    },
+    {
+      "name": "arriveBassA",
+      "pauseIfSilent": false,
+      "files": [
+        { 
+          "path": "arriveBassA.wav",
+          "trackPos": 0,
+          "filePos": 0,
+          "length": 118.154,
+          "repeats": -1
+        }
+      ]
+    },
+    {
+      "name": "arrivePianoA",
+      "pauseIfSilent": false,
+      "files": [
+        { 
+          "path": "arrivePianoA.wav",
+          "trackPos": 0,
+          "filePos": 0,
+          "length": 118.154,
+          "repeats": -1
+        }
+      ]
+    },
+    {
+      "name": "arriveSeqA",
+      "pauseIfSilent": false,
+      "files": [
+        { 
+          "path": "arriveSeqA.wav",
+          "trackPos": 0,
+          "filePos": 0,
+          "length": 118.154,
+          "repeats": -1
+        }
+      ]
+    },
+    {
+      "name": "arriveMelA",
+      "pauseIfSilent": false,
+      "files": [
+        { 
+          "path": "arriveMelA.wav",
+          "trackPos": 0,
+          "filePos": 0,
+          "length": 118.154,
+          "repeats": -1
+        }
+      ]
+    },
+    {
+      "name": "arrivedpadFs",
+      "pauseIfSilent": false,
+      "files": [
+        { 
+          "path": "arrivedpadFs.wav",
+          "trackPos": 0,
+          "filePos": 0,
+          "length": 118.154,
+          "repeats": -1
+        }
+      ]
+    },
+    {
+      "name": "arrivedAccentFs",
+      "pauseIfSilent": false,
+      "files": [
+        { 
+          "path": "arrivedAccentFs.wav",
+          "trackPos": 0,
+          "filePos": 0,
+          "length": 118.154,
+        }
+      ]
+    },
+    {
+      "name": "stringsC",
       "pauseIfSilent": true,
       "files": [
         { 
-          "path": "WollatonHallArriveA_Layer3a.wav",
+          "path": "stringsC.wav",
           "trackPos": 0,
           "filePos": 0,
           "length": 119.94,
@@ -60,11 +188,11 @@
       ]
     },
     {
-      "name": "ArriveA_Layer3b",
+      "name": "stringsCs",
       "pauseIfSilent": true,
       "files": [
         { 
-          "path": "WollatonHallArriveA_Layer3b.wav",
+          "path": "stringsCs.wav",
           "trackPos": 0,
           "filePos": 0,
           "length": 119.94,
@@ -73,23 +201,89 @@
       ]
     },
     {
-      "name": "ArriveB_Accent",
-      "pauseIfSilent": false,
+      "name": "stringsD",
+      "pauseIfSilent": true,
       "files": [
         { 
-          "path": "WollatonHallArriveB_Accent.wav",
+          "path": "stringsD.wav",
           "trackPos": 0,
           "filePos": 0,
-          "length": 30
+          "length": 119.94,
+          "repeats": -1
         }
       ]
     },
     {
-      "name": "ArriveB_Layer1",
+      "name": "stringsEb",
+      "pauseIfSilent": true,
+      "files": [
+        { 
+          "path": "stringsEb.wav",
+          "trackPos": 0,
+          "filePos": 0,
+          "length": 119.94,
+          "repeats": -1
+        }
+      ]
+    },
+    {
+      "name": "stringsE",
+      "pauseIfSilent": true,
+      "files": [
+        { 
+          "path": "stringsE.wav",
+          "trackPos": 0,
+          "filePos": 0,
+          "length": 119.94,
+          "repeats": -1
+        }
+      ]
+    },
+    {
+      "name": "stringsF",
+      "pauseIfSilent": true,
+      "files": [
+        { 
+          "path": "stringsF.wav",
+          "trackPos": 0,
+          "filePos": 0,
+          "length": 119.94,
+          "repeats": -1
+        }
+      ]
+    },
+    {
+      "name": "stringsFs",
+      "pauseIfSilent": true,
+      "files": [
+        { 
+          "path": "stringsFs.wav",
+          "trackPos": 0,
+          "filePos": 0,
+          "length": 119.94,
+          "repeats": -1
+        }
+      ]
+    },
+    {
+      "name": "startPad",
       "pauseIfSilent": false,
       "files": [
         { 
-          "path": "WollatonHallArriveB_Layer1.wav",
+          "path": "startPad.wav",
+          "trackPos": 0,
+          "filePos": 0,
+          "length": 118.154,
+          "repeats": -1
+        }
+      ]
+    },
+    {
+      "name": "startSeq",
+      "pauseIfSilent": false,
+      "files": [
+        { 
+          "path": "startSeq.wav",
           "trackPos": 0,
           "filePos": 0,
           "length": 118.154,
