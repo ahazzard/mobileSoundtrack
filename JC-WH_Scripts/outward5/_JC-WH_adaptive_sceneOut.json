@@ -85,7 +85,7 @@
         {
           "name": "SisterCities_Guitars",
           "pos": "daoplayer.selectSections('SisterCities_Drums',currentSection,sceneTime,window.estimatedEnd-totalTime,totalTime)",
-          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(waypoints['W3'].distance,[5,0.8,6,1],1)*(routes['R3'].nearest ? 0.8 : 1)]"
+          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(waypoints['W3'].distance,[5,1,6,1],1)*(routes['R3'].nearest ? 1 : 1)]"
         },
         {
           "name": "SisterCities_AcousticKeys",
@@ -191,28 +191,28 @@
       "partial": false,
       "waypoints":{},
       "routes":{},
-      "onupdate": "if(sceneTime>4) { daoplayer.setScene('track5/TheBadGuys'); }",
+      "onupdate": "if(sceneTime>3) { daoplayer.setScene('track5/TheBadGuys'); }",
       "updatePeriod": 1,
       "tracks": [
         {
           "name": "StellaVox",
-          "volume": "sceneTime<4 ? [sceneTime,trackVolume,4,0] : 0"
+          "volume": "sceneTime<3 ? [sceneTime,trackVolume,3,0] : 0"
         },
         {
           "name": "StellaPiano",
-          "volume": "sceneTime<4 ? [sceneTime,trackVolume,4,0] : 0"
+          "volume": "sceneTime<3 ? [sceneTime,trackVolume,3,0] : 0"
         },
         {
           "name": "StellaKeys",
-          "volume": "sceneTime<4 ? [sceneTime,trackVolume,4,0] : 0"
+          "volume": "sceneTime<3 ? [sceneTime,trackVolume,3,0] : 0"
         },
         {
           "name": "StellaRhythm",
-          "volume": "sceneTime<4 ? [sceneTime,trackVolume,4,0] : 0"
+          "volume": "sceneTime<3 ? [sceneTime,trackVolume,3,0] : 0"
         },
         {
           "name": "holdingPad",
-          "volume": "sceneTime<4 ? [sceneTime,trackVolume,4,0] : 0"
+          "volume": "sceneTime<3 ? [sceneTime,trackVolume,3,0] : 0"
         }
       ]
     },
@@ -276,37 +276,37 @@
         {
           "name": "arriveBassAb",
           "pos": 0,
-          "volume": "sceneTime<16 ? [sceneTime,trackVolume,16,1] : 1"
+          "volume": "sceneTime<15 ? [sceneTime,trackVolume,15,1] : 1"
         },
         {
           "name": "arrivePianoAb",
           "pos": 0,
-          "volume": "sceneTime<16 ? [sceneTime,trackVolume,16,1] : 1"
+          "volume": "sceneTime<15 ? [sceneTime,trackVolume,15,1] : 1"
         },
         {
           "name": "arriveMelAb",
           "pos": 0,
-          "volume": "sceneTime<16 ? [sceneTime,trackVolume,16,1] : 1"
+          "volume": "sceneTime<15 ? [sceneTime,trackVolume,15,1] : 1"
         },
         {
           "name": "arriveSeqAb",
           "pos": 0,
-          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(routes['R1'].distanceAlong/routes['R1'].length, [0,0,0.5,1], trackVolume)]"
+          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(routes['R1'].distanceAlong/routes['R1'].length, [0,0.45,0.5,1], trackVolume)]"
         },
         {
           "name": "stringsC",
           "pos": 0,
-          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(routes['R1'].distanceAlong/routes['R1'].length, [0.54,0,0.55,0.4,0.69,0.4,0.70,0], trackVolume)]"
+          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(routes['R1'].distanceAlong/routes['R1'].length, [0.62,0,0.63,0.2,0.74,0.2,0.75,0], trackVolume)]"
         },
         {
-          "name": "stringsD",
+          "name": "stringsCs",
           "pos": 0,
-          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(routes['R1'].distanceAlong/routes['R1'].length, [0.69,0,0.70,0.4,0.85,0.4,0.86,0], trackVolume)]"
+          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(routes['R1'].distanceAlong/routes['R1'].length, [0.74,0,0.75,0.2,0.89,0.2,0.90,0], trackVolume)]"
         },
         {
           "name": "stringsEb",
           "pos": 0,
-          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(routes['R1'].distanceAlong/routes['R1'].length, [0.85,0,0.86,0.4], trackVolume)]"
+          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(routes['R1'].distanceAlong/routes['R1'].length, [0.89,0,0.90,0.2], trackVolume)]"
         },
         {
           "name": "WaitingForGA",
@@ -341,31 +341,35 @@
         {
           "name": "stringsF",
           "pos": 0,
-          "volume": "sceneTime<10 ? [0,0.4,10,0] : 0"
+          "volume": "sceneTime<9 ? [0,0.2,9,0] : 0"
         },
         {
           "name": "arriveBassAb",
-          "volume": 0
+          "volume": "sceneTime<2 ? [sceneTime,trackVolume,0.5,0] : 0"
         },
         {
           "name": "arrivePianoAb",
-          "volume": 0
+          "volume": "sceneTime<2 ? [sceneTime,trackVolume,0.5,0] : 0"
         },
         {
           "name": "arriveMelAb",
-          "volume": 0
+          "volume": "sceneTime<2 ? [sceneTime,trackVolume,0.5,0] : 0"
         },
         {
           "name": "arriveSeqAb",
-          "volume": 0
+          "volume": "sceneTime<2 ? [sceneTime,trackVolume,0.5,0] : 0"
         },
         {
           "name": "stringsC",
-          "volume": 0
+          "volume": "sceneTime<2 ? [sceneTime,trackVolume,0.5,0] : 0"
+        },
+        {
+          "name": "stringsCs",
+          "volume": "sceneTime<2 ? [sceneTime,trackVolume,0.5,0] : 0"
         },
         {
           "name": "stringsEb",
-          "volume": 0
+          "volume": "sceneTime<2 ? [sceneTime,trackVolume,0.5,0] : 0"
         },
         {
           "name": "holdingPad",
@@ -395,7 +399,7 @@
         },
         {
           "name": "stringsF",
-          "volume": 0
+          "volume": "sceneTime<2 ? [sceneTime,trackVolume,2,0] : 0"
         },
         {
           "name": "holdingPad",
