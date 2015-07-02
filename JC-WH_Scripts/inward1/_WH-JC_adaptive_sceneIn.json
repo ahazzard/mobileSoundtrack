@@ -73,7 +73,7 @@
           "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(routes['R1'].distanceAlong/routes['R1'].length, [0.85,0,0.86,0.4], trackVolume)]"
         },
         {
-          "name": "fixedPlaylistIn",
+          "name": "fixedPlaylist",
           "volume": "sceneTime<16 ? [sceneTime,trackVolume,16,0] : 0"
         },
         {
