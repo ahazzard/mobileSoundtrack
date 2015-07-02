@@ -40,36 +40,41 @@
         {
           "name": "arriveBassA",
           "pos": 0,
-          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(routes['R1'].distanceAlong/routes['R1'].length, [0,0,0.5,1], trackVolume)]"
+          "volume": "sceneTime<16 ? [sceneTime,trackVolume,16,1] : 1"
         },
         {
           "name": "arrivePianoA",
           "pos": 0,
-          "volume": "sceneTime<12 ? [sceneTime,trackVolume,12,1] : 1"
+          "volume": "sceneTime<16 ? [sceneTime,trackVolume,16,1] : 1"
         },
         {
           "name": "arriveMelA",
           "pos": 0,
-          "volume": "sceneTime<12 ? [sceneTime,trackVolume,12,1] : 1"
+          "volume": "sceneTime<16 ? [sceneTime,trackVolume,16,1] : 1"
         },
         {
           "name": "arriveSeqA",
           "pos": 0,
-          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(routes['R1'].distanceAlong/routes['R1'].length, [0,0,1,1], trackVolume)]"
+          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(routes['R1'].distanceAlong/routes['R1'].length, [0,0,0.5,1], trackVolume)]"
         },
         {
           "name": "stringsCs",
           "pos": 0,
-          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(routes['R1'].distanceAlong/routes['R1'].length, [0.49,0,0.50,0.7,0.74,0.7,0.75,0], trackVolume)]"
+          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(routes['R1'].distanceAlong/routes['R1'].length, [0.54,0,0.55,0.4,0.69,0.4,0.70,0], trackVolume)]"
+        },
+        {
+          "name": "stringsEb",
+          "pos": 0,
+          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(routes['R1'].distanceAlong/routes['R1'].length, [0.69,0,0.70,0.4,0.85,0.4,0.86,0], trackVolume)]"
         },
         {
           "name": "stringsE",
           "pos": 0,
-          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(routes['R1'].distanceAlong/routes['R1'].length, [0.74,0,0.75,0.7], trackVolume)]"
+          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(routes['R1'].distanceAlong/routes['R1'].length, [0.85,0,0.86,0.4], trackVolume)]"
         },
         {
-          "name": "WaitingForGA",
-          "volume": "sceneTime<12 ? [sceneTime,trackVolume,12,0] : 0"
+          "name": "fixedPlaylistIn",
+          "volume": "sceneTime<16 ? [sceneTime,trackVolume,16,0] : 0"
         },
         {
           "name": "holdingPad",
@@ -100,7 +105,7 @@
         {
           "name": "stringsFs",
           "pos": 0,
-          "volume": "sceneTime<10 ? [sceneTime,trackVolume,10,0] : 0"
+          "volume": "sceneTime<10 ? [0,0.4,10,0] : 0"
         },
         {
           "name": "arriveBassA",
@@ -173,12 +178,12 @@
       "partial": false,
       "waypoints":{},
       "routes":{},
-      "onupdate": "if(sceneTime>3) { daoplayer.setScene('track2/TheBadGuys'); }",
+      "onupdate": "if(sceneTime>5) { daoplayer.setScene('track2/TheBadGuys'); }",
       "updatePeriod": 1,
       "tracks": [
         {
           "name": "WaitingForGA",
-          "volume": "sceneTime<3 ? [sceneTime,trackVolume,3,0] : 0" 
+          "volume": "sceneTime<5 ? [sceneTime,trackVolume,5,0] : 0" 
         }
       ]
     },
@@ -216,11 +221,11 @@
         {
           "name": "Stella",
           "pos": "daoplayer.selectSections('Stella',currentSection,sceneTime,window.estimatedEnd-totalTime,totalTime)",
-          "volume": 1
+          "volume": "sceneTime<2 ? [sceneTime,trackVolume,2,1] : 1" 
         },
         {
           "name": "TheBadGuys",
-          "volume": "sceneTime<2 ? [sceneTime,trackVolume,2,0] : 0"  
+          "volume": "sceneTime<3 ? [sceneTime,trackVolume,3,0] : 0"  
         },
         {
           "name": "holdingPad",
@@ -232,36 +237,16 @@
       "name": "track4/MitaDelMundo",
       "description": "the Mita Del Mundo track commences after walking through the gate on lime tree avenue. There are a set of 4 waypoints and 3 routes, which are currently not needed to calculate the walking distance / time, but rather these are in place as there may be a plan to introduce a multi-track varient, so these routes would then control the volumes of different stems",
       "partial": false,
-      "waypoints":{"W1":"LTA_GIR1","W2":"LTA_GIR2", "W3":"LTA_GIR3", "W4":"LTA_MB"},
-      "routes":{"R1":"LTA_GIR1-LTA_GIR2", "R2":"LTA_GIR2-LTA_GIR3", "R3":"LTA_GIR3-LTA_MB", "Rnext":"LTA_MB-MB_PCA"},
-      "onload": "window.lastGps=totalTime; if (waypoints['W4'].distance!==undefined) window.estimatedEnd=totalTime+(routes['R1'].nearest ? waypoints['W2'].distance+routes['R2'].length+routes['R3'].length : (routes['R2'].nearest ? waypoints['W3'].distance+routes['R3'].length : waypoints['W4'].distance))/1.5; else window.estimatedEnd=240;",
-      "onupdate": "if (activity=='NOGPS') { if (totalTime-window.lastGps>20) { daoplayer.setScene('Start'); } else if (window.estimatedEnd<totalTime+10) window.estimatedEnd=totalTime+10; } else { window.lastGps=totalTime; if (!routes['R1'].near && !routes['R2'].near && !routes['R3'].near) { daoplayer.setScene('Start/any'); } else if (routes['Rnext'].nearest) { daoplayer.setScene('track5/SisterCities'); } else if (waypoints['W4'].distance!==undefined) window.estimatedEnd=totalTime+(routes['R1'].nearest ? waypoints['W2'].distance+routes['R2'].length+routes['R3'].length : (routes['R2'].nearest ? waypoints['W3'].distance+routes['R3'].length : waypoints['W4'].distance))/1.5; }",
+      "waypoints":{"W1":"LTA_GIR1", "W2":"LTA_MB"},
+      "routes":{"R1":"LTA_GIR1-LTA_MB", "Rnext":"LTA_MB-MB_OP"},
+      "onload": "window.lastGps=totalTime; if (waypoints['W2'].distance!==undefined) window.estimatedEnd=totalTime+(waypoints['W2'].distance)/1.5; else window.estimatedEnd=240;",
+      "onupdate": "if (activity=='NOGPS') { if (totalTime-window.lastGps>20) { daoplayer.setScene('Start'); } else if (window.estimatedEnd<totalTime+10) window.estimatedEnd=totalTime+10; } else { window.lastGps=totalTime; if (!routes['R1'].near) { daoplayer.setScene('Start/any'); } else if (routes['Rnext'].nearest) { daoplayer.setScene('track5/SisterCities'); } else if (waypoints['W2'].distance!==undefined) window.estimatedEnd=totalTime+(waypoints['W2'].distance)/1.5; }",
       "updatePeriod":1.0,
       "tracks": [
         {
-          "name": "mdmVox",
-          "pos": "daoplayer.selectSections('mdmVox',currentSection,sceneTime,window.estimatedEnd-totalTime,totalTime)",
-          "volume": 1 
-        },
-        {
-          "name": "mdmChop",
-          "pos": "daoplayer.selectSections('mdmVox',currentSection,sceneTime,window.estimatedEnd-totalTime,totalTime)",
-          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(waypoints['W2'].distance,[5,0,6,1],1)*(routes['R2'].nearest ? 0 : 1)]" 
-        },
-        {
-          "name": "mdmBass",
-          "pos": "daoplayer.selectSections('mdmVox',currentSection,sceneTime,window.estimatedEnd-totalTime,totalTime)",
-          "volume": 1
-        },
-        {
-          "name": "mdmDrums",
-          "pos": "daoplayer.selectSections('mdmVox',currentSection,sceneTime,window.estimatedEnd-totalTime,totalTime)",
-          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(waypoints['W2'].distance,[5,0,6,1],1)*(routes['R2'].nearest ? 0 : 1)]" 
-        },
-        {
-          "name": "mdmTextures",
-          "pos": "daoplayer.selectSections('mdmVox',currentSection,sceneTime,window.estimatedEnd-totalTime,totalTime)",
-          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(waypoints['W1'].distance,[5,0,6,1],1)*(routes['R1'].nearest ? 0 : 1)]" 
+          "name": "MitaDelMundo",
+          "pos": "daoplayer.selectSections('MitaDelMundo',currentSection,sceneTime,window.estimatedEnd-totalTime,totalTime)",
+          "volume": "sceneTime<2 ? [sceneTime,trackVolume,2,1] : 1" 
         },
         {
           "name": "Stella",
@@ -292,17 +277,17 @@
         {
           "name": "SisterCities_Bass",
           "pos": "daoplayer.selectSections('SisterCities_Drums',currentSection,sceneTime,window.estimatedEnd-totalTime,totalTime)",
-          "volume": 1 
+          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(waypoints['W2'].distance,[5,0.85,6,1],1)*(routes['R2'].nearest ? 0.85 : 1)]" 
         },
         {
           "name": "SisterCities_Guitars",
           "pos": "daoplayer.selectSections('SisterCities_Drums',currentSection,sceneTime,window.estimatedEnd-totalTime,totalTime)",
-          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(waypoints['W2'].distance,[5,0.5,6,1],1)*(routes['R2'].nearest ? 0.5 : 1)]"
+          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(waypoints['W2'].distance,[5,0.85,6,1],1)*(routes['R2'].nearest ? 0.85 : 1)]"
         },
         {
           "name": "SisterCities_AcousticKeys",
           "pos": "daoplayer.selectSections('SisterCities_Drums',currentSection,sceneTime,window.estimatedEnd-totalTime,totalTime)",
-          "volume": 1 
+          "volume": 0.95 
         },
         {
           "name": "SisterCities_Vox",
@@ -310,23 +295,7 @@
           "volume": 1  
         },
         {
-          "name": "mdmVox",
-          "volume": "sceneTime<2 ? [sceneTime,trackVolume,2,0] : 0" 
-        },
-        {
-          "name": "mdmChop",
-          "volume": "sceneTime<2 ? [sceneTime,trackVolume,2,0] : 0" 
-        },
-        {
-          "name": "mdmBass",
-          "volume": "sceneTime<2 ? [sceneTime,trackVolume,2,0] : 0" 
-        },
-        {
-          "name": "mdmDrums",
-          "volume": "sceneTime<2 ? [sceneTime,trackVolume,2,0] : 0" 
-        },
-        {
-          "name": "mdmTextures",
+          "name": "MitaDelMundo",
           "volume": "sceneTime<2 ? [sceneTime,trackVolume,2,0] : 0" 
         },
         {
@@ -349,27 +318,27 @@
         {
           "name": "NotAlone",
           "pos": "daoplayer.selectSections('NotAlone',currentSection,sceneTime,window.estimatedEnd-totalTime,totalTime)",
-          "volume": 1 
+          "volume": "sceneTime<2 ? [sceneTime,trackVolume,2,1] : 1"  
         },
         {
           "name": "SisterCities_Drums",
-          "volume": "sceneTime<3 ? [sceneTime,trackVolume,3,0] : 0"
+          "volume": "sceneTime<4 ? [sceneTime,trackVolume,4,0] : 0"
         },
         {
           "name": "SisterCities_Bass",
-          "volume": "sceneTime<3 ? [sceneTime,trackVolume,3,0] : 0" 
+          "volume": "sceneTime<4 ? [sceneTime,trackVolume,4,0] : 0" 
         },
         {
           "name": "SisterCities_Guitars",
-          "volume": "sceneTime<3 ? [sceneTime,trackVolume,3,0] : 0"
+          "volume": "sceneTime<4 ? [sceneTime,trackVolume,4,0] : 0"
         },
         {
           "name": "SisterCities_AcousticKeys",
-          "volume": "sceneTime<3 ? [sceneTime,trackVolume,3,0] : 0" 
+          "volume": "sceneTime<4 ? [sceneTime,trackVolume,4,0] : 0" 
         },
         {
           "name": "SisterCities_Vox",
-          "volume": "sceneTime<3 ? [sceneTime,trackVolume,3,0] : 0" 
+          "volume": "sceneTime<4 ? [sceneTime,trackVolume,4,0] : 0" 
         },
         {
           "name": "holdingPad",
@@ -390,36 +359,41 @@
         {
           "name": "arriveBassA",
           "pos": 0,
-          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(routes['R1'].distanceAlong/routes['R1'].length, [0,0,0.5,1], trackVolume)]"
+          "volume": "sceneTime<16 ? [sceneTime,trackVolume,16,1] : 1"
         },
         {
           "name": "arrivePianoA",
           "pos": 0,
-          "volume": "sceneTime<10 ? [sceneTime,trackVolume,10,1] : 1"
+          "volume": "sceneTime<16 ? [sceneTime,trackVolume,16,1] : 1"
         },
         {
           "name": "arriveMelA",
           "pos": 0,
-          "volume": "sceneTime<10 ? [sceneTime,trackVolume,10,1] : 1"
+          "volume": "sceneTime<16 ? [sceneTime,trackVolume,16,1] : 1"
         },
         {
           "name": "arriveSeqA",
           "pos": 0,
-          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(routes['R1'].distanceAlong/routes['R1'].length, [0,0,1,1], trackVolume)]"
+          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(routes['R1'].distanceAlong/routes['R1'].length, [0,0,0.5,1], trackVolume)]"
         },
         {
           "name": "stringsCs",
           "pos": 0,
-          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(routes['R1'].distanceAlong/routes['R1'].length, [0.49,0,0.50,0.7,0.74,0.7,0.75,0], trackVolume)]"
+          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(routes['R1'].distanceAlong/routes['R1'].length, [0.55,0,0.56,0.4,0.69,0.4,0.70,0], trackVolume)]"
+        },
+        {
+          "name": "stringsEb",
+          "pos": 0,
+          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(routes['R1'].distanceAlong/routes['R1'].length, [0.69,0,0.70,0.4,0.85,0.4,0.86,0], trackVolume)]"
         },
         {
           "name": "stringsE",
           "pos": 0,
-          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(routes['R1'].distanceAlong/routes['R1'].length, [0.74,0,0.75,0.7], trackVolume)]"
+          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(routes['R1'].distanceAlong/routes['R1'].length, [0.85,0,0.86,0.4], trackVolume)]"
         },
         {
           "name": "NotAlone",
-          "volume": "sceneTime<10 ? [sceneTime,trackVolume,10,0] : 0"
+          "volume": "sceneTime<16 ? [sceneTime,trackVolume,16,0] : 0"
         },
         {
           "name": "holdingPad",
@@ -450,7 +424,7 @@
         {
           "name": "stringsFs",
           "pos": 0,
-          "volume": "sceneTime<10 ? [sceneTime,trackVolume,10,0] : 0"
+          "volume": "sceneTime<10 ? [0,0.4,10,0] : 0"
         },
         {
           "name": "arriveBassA",
