@@ -11,7 +11,7 @@
       "pauseIfSilent": true,
       "files": [
         { 
-          "path": "SC_Drums.wav",
+          "path": "SC_DrumsM.wav",
           "trackPos": 0,
           "length": 280.48
         }
@@ -241,7 +241,7 @@
       "pauseIfSilent": true,
       "files": [
         { 
-          "path": "SC_Bass.wav",
+          "path": "SC_BassM.wav",
           "trackPos": 0,
           "length": 841.425
         }
@@ -471,7 +471,7 @@
       "pauseIfSilent": true,
       "files": [
         { 
-          "path": "SC_Guitars.wav",
+          "path": "SC_GuitarsM.wav",
           "trackPos": 0,
           "length": 841.425
         }
@@ -701,7 +701,7 @@
       "pauseIfSilent": true,
       "files": [
         { 
-          "path": "SC_AcousticKeys.wav",
+          "path": "SC_AcousticKeysM.wav",
           "trackPos": 0,
           "length": 841.425
         }
@@ -931,7 +931,7 @@
       "pauseIfSilent": true,
       "files": [
         { 
-          "path": "SC_Vox.wav",
+          "path": "SC_VoxM.wav",
           "trackPos": 0,
           "length": 841.425
         }
