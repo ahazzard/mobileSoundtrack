@@ -110,6 +110,11 @@
 		"description":"Lime Tree Ave intersection with Middleton Blvd"
 		},
 		{
+		"name": "MB_OP",
+		"lat":52.946672,  "lng":-1.191185,
+		"description":"opposite LTA_MB"
+		},
+		{
 		"name": "MB_PCA",
 		"lat":52.947343400,  "lng":-1.190825700,
 		"description":"Middleton Blvd - Pedestrian crossing A"
@@ -281,6 +286,13 @@
 			  "description": "MitaDelMundo - stage 3 multi-track reduced texture",
 			  "from": "LTA_GIR3",
 			  "to": "LTA_MB",
+			  "nearDistance": "50"
+			},
+			{ 
+			  "name": "LTA_MB-MB_OP",
+			  "description": "transition to SisterCities - dummy route",
+			  "from": "LTA_MB",
+			  "to": "MB_OP",
 			  "nearDistance": "50"
 			},
 			{ 
