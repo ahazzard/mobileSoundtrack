@@ -85,7 +85,7 @@
         {
           "name": "SisterCities_Guitars",
           "pos": "daoplayer.selectSections('SisterCities_Drums',currentSection,sceneTime,window.estimatedEnd-totalTime,totalTime)",
-          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(waypoints['W3'].distance,[5,0.5,6,1],1)*(routes['R3'].nearest ? 0 : 1)]"
+          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(waypoints['W3'].distance,[5,0.5,6,1],1)*(routes['R3'].nearest ? 0.5 : 1)]"
         },
         {
           "name": "SisterCities_AcousticKeys",
@@ -276,7 +276,7 @@
         {
           "name": "arriveBassAb",
           "pos": 0,
-          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(routes['R1'].distanceAlong/routes['R1'].length, [0.1,0,0.5,1], trackVolume)]"
+          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(routes['R1'].distanceAlong/routes['R1'].length, [0,0,0.5,1], trackVolume)]"
         },
         {
           "name": "arrivePianoAb",
@@ -291,7 +291,7 @@
         {
           "name": "arriveSeqAb",
           "pos": 0,
-          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(routes['R1'].distanceAlong/routes['R1'].length, [0.1,0,1,1], trackVolume)]"
+          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(routes['R1'].distanceAlong/routes['R1'].length, [0,0,1,1], trackVolume)]"
         },
         {
           "name": "stringsC",
