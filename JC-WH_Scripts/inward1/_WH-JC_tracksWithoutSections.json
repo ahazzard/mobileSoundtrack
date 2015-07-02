@@ -21,11 +21,11 @@
       ]
     },
     {
-      "name": "arriveBass",
+      "name": "arriveBassAb",
       "pauseIfSilent": false,
       "files": [
         { 
-          "path": "arriveBass.wav",
+          "path": "arriveBassAb.wav",
           "trackPos": 0,
           "filePos": 0,
           "length": 118.154,
@@ -34,11 +34,11 @@
       ]
     },
     {
-      "name": "arrivePiano",
+      "name": "arrivePianoAb",
       "pauseIfSilent": false,
       "files": [
         { 
-          "path": "arrivePiano.wav",
+          "path": "arrivePianoAb.wav",
           "trackPos": 0,
           "filePos": 0,
           "length": 118.154,
@@ -47,11 +47,11 @@
       ]
     },
     {
-      "name": "arriveSeq",
+      "name": "arriveSeqAb",
       "pauseIfSilent": false,
       "files": [
         { 
-          "path": "arriveSeq.wav",
+          "path": "arriveSeqAb.wav",
           "trackPos": 0,
           "filePos": 0,
           "length": 118.154,
@@ -60,11 +60,11 @@
       ]
     },
     {
-      "name": "arriveMel",
+      "name": "arriveMelAb",
       "pauseIfSilent": false,
       "files": [
         { 
-          "path": "arriveMel.wav",
+          "path": "arriveMelAb.wav",
           "trackPos": 0,
           "filePos": 0,
           "length": 118.154,
@@ -73,11 +73,11 @@
       ]
     },
     {
-      "name": "arrivedpadF",
+      "name": "arrivedPadF",
       "pauseIfSilent": false,
       "files": [
         { 
-          "path": "arrivedpadF.wav",
+          "path": "arrivedPadF.wav",
           "trackPos": 0,
           "filePos": 0,
           "length": 118.154,
@@ -150,11 +150,11 @@
       ]
     },
     {
-      "name": "arrivedpadFs",
+      "name": "arrivedPadFs",
       "pauseIfSilent": false,
       "files": [
         { 
-          "path": "arrivedpadFs.wav",
+          "path": "arrivedPadFs.wav",
           "trackPos": 0,
           "filePos": 0,
           "length": 118.154,
@@ -182,7 +182,7 @@
           "path": "stringsC.wav",
           "trackPos": 0,
           "filePos": 0,
-          "length": 119.94,
+          "length": 118.154,
           "repeats": -1
         }
       ]
@@ -195,7 +195,7 @@
           "path": "stringsCs.wav",
           "trackPos": 0,
           "filePos": 0,
-          "length": 119.94,
+          "length": 118.154,
           "repeats": -1
         }
       ]
@@ -208,7 +208,7 @@
           "path": "stringsD.wav",
           "trackPos": 0,
           "filePos": 0,
-          "length": 119.94,
+          "length": 118.154,
           "repeats": -1
         }
       ]
@@ -221,7 +221,7 @@
           "path": "stringsEb.wav",
           "trackPos": 0,
           "filePos": 0,
-          "length": 119.94,
+          "length": 118.154,
           "repeats": -1
         }
       ]
@@ -234,7 +234,7 @@
           "path": "stringsE.wav",
           "trackPos": 0,
           "filePos": 0,
-          "length": 119.94,
+          "length": 118.154,
           "repeats": -1
         }
       ]
@@ -247,7 +247,7 @@
           "path": "stringsF.wav",
           "trackPos": 0,
           "filePos": 0,
-          "length": 119.94,
+          "length": 118.154,
           "repeats": -1
         }
       ]
@@ -260,17 +260,17 @@
           "path": "stringsFs.wav",
           "trackPos": 0,
           "filePos": 0,
-          "length": 119.94,
+          "length": 118.154,
           "repeats": -1
         }
       ]
     },
     {
-      "name": "startPad",
+      "name": "outwardStartPad",
       "pauseIfSilent": false,
       "files": [
         { 
-          "path": "startPad.wav",
+          "path": "outwardStartPad.wav",
           "trackPos": 0,
           "filePos": 0,
           "length": 118.154,
@@ -279,11 +279,11 @@
       ]
     },
     {
-      "name": "startSeq",
+      "name": "outwardStartSeq",
       "pauseIfSilent": false,
       "files": [
         { 
-          "path": "startSeq.wav",
+          "path": "outwardStartSeq.wav",
           "trackPos": 0,
           "filePos": 0,
           "length": 118.154,
