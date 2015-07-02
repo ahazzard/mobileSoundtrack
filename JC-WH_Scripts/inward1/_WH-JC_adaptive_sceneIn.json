@@ -246,7 +246,7 @@
         {
           "name": "MitaDelMundo",
           "pos": "daoplayer.selectSections('MitaDelMundo',currentSection,sceneTime,window.estimatedEnd-totalTime,totalTime)",
-          "volume": "sceneTime<2 ? [sceneTime,trackVolume,2,1] : 1" 
+          "volume": "sceneTime<2 ? [sceneTime,trackVolume,2,0.95] : 0.95" 
         },
         {
           "name": "Stella",
