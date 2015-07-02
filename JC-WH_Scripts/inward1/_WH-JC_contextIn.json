@@ -305,9 +305,16 @@
 			  "nearDistance": "50"
 			},
 			{ 
-			  "name": "JC_SFG-SF_JCCP",
-			  "description": "Not Alone - Stage 1",
+			  "name": "JC_SFG-JC_SFV",
+			  "description": "Sister Cities stage 5 - multi-track full texture - fade out",
 			  "from": "JC_SFG",
+			  "to": "JC_SFV",
+			  "nearDistance": "50"
+			},
+			{ 
+			  "name": "JC_SFV-SF_JCCP",
+			  "description": "Not Alone - Stage 1",
+			  "from": "JC_SFV",
 			  "to": "SF_JCCP",
 			  "nearDistance": "50"
 			},
