@@ -40,7 +40,7 @@
         {
           "name": "arriveBassA",
           "pos": 0,
-          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(routes['R1'].distanceAlong/routes['R1'].length, [0.1,0,0.5,1], trackVolume)]"
+          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(routes['R1'].distanceAlong/routes['R1'].length, [0,0,0.5,1], trackVolume)]"
         },
         {
           "name": "arrivePianoA",
@@ -55,7 +55,7 @@
         {
           "name": "arriveSeqA",
           "pos": 0,
-          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(routes['R1'].distanceAlong/routes['R1'].length, [0.1,0,1,1], trackVolume)]"
+          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(routes['R1'].distanceAlong/routes['R1'].length, [0,0,1,1], trackVolume)]"
         },
         {
           "name": "stringsCs",
@@ -68,7 +68,7 @@
           "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(routes['R1'].distanceAlong/routes['R1'].length, [0.74,0,0.75,0.7], trackVolume)]"
         },
         {
-          "name": "fixedPlaylist",
+          "name": "WaitingForGA",
           "volume": "sceneTime<12 ? [sceneTime,trackVolume,12,0] : 0"
         },
         {
@@ -88,7 +88,7 @@
       "updatePeriod": 1,
       "tracks": [
         {
-          "name": "arrivedpadFs",
+          "name": "arrivedPadFs",
           "pos": 0,
           "volume": 1
         },
@@ -127,10 +127,6 @@
           "volume": 0
         },
         {
-          "name": "fixedPlaylist",
-          "volume": 0
-        },
-        {
           "name": "holdingPad",
           "volume": "sceneTime<2 ? [sceneTime,trackVolume,sceneTime+2,0] : 0"
         }
@@ -154,7 +150,7 @@
           "volume": 1 
         },
         {
-          "name": "arrivedpadFs",
+          "name": "arrivedPadFs",
           "volume": "sceneTime<2 ? [sceneTime,trackVolume,2,0] : 0" 
         },
         {
@@ -262,7 +258,7 @@
       "description": "the Sister Cities track starts when exiting Lime Tree avenue on to Middleton road It uses 4 waypoints and 3 routes to calculate the walking distance / time. This - as in the outward journey - is a multi-track and some stems are made silent when crossing the pedestrian crossing 'R2",
       "partial": false,
       "waypoints": {"W1": "LTA_MB", "W2": "MB_PCA", "W3": "CA_LT", "W4": "JC_SFG", "W5": "JC_SFV"},
-      "routes": {"R1": "LTA_MB-MB_PCA", "R2": "MB_PCA-CA_LT", "R3": "CA_LT-JC_SFG", "R4": "JC_SFG-JC_SFV", "Rnext": "JC_SFG-SF_JCCP"},
+      "routes": {"R1": "LTA_MB-MB_PCA", "R2": "MB_PCA-CA_LT", "R3": "CA_LT-JC_SFG", "R4": "JC_SFG-JC_SFV", "Rnext": "JC_SFV-SF_JCCP"},
       "onload": "window.lastGps=totalTime; if (waypoints['W5'].distance!==undefined) window.estimatedEnd=totalTime+(routes['R1'].nearest ? waypoints['W2'].distance+routes['R2'].length+routes['R3'].length+routes['R4'].length : (routes['R2'].nearest ? waypoints['W3'].distance+routes['R3'].length+routes['R4'].length : (routes['R3'].nearest ? waypoints['W4'].distance+routes['R4'].length : waypoints['W5'].distance)))/1.5;  else window.estimatedEnd=totalTime+350; ",
       
       "onupdate": "if (activity=='NOGPS') { if (totalTime-window.lastGps>20) { daoplayer.setScene('Start'); } else if (window.estimatedEnd<totalTime+10) window.estimatedEnd=totalTime+10; } else { window.lastGps=totalTime; if (!routes['R1'].near && !routes['R2'].near && !routes['R3'].near && !routes['R4'].near) { daoplayer.setScene('Start/any'); } else if (routes['Rnext'].nearest) { daoplayer.setScene('track6/NotAlone'); } else if (waypoints['W5'].distance!==undefined) window.estimatedEnd=totalTime+(routes['R1'].nearest ? waypoints['W2'].distance+routes['R2'].length+routes['R3'].length+routes['R4'].length : (routes['R2'].nearest ? waypoints['W3'].distance+routes['R3'].length+routes['R4'].length : (routes['R3'].nearest ? waypoints['W4'].distance+routes['R4'].length : waypoints['W5'].distance)))/1.5; }",
@@ -271,7 +267,7 @@
         {
           "name": "SisterCities_Drums",
           "pos": "daoplayer.selectSections('SisterCities_Drums',currentSection,sceneTime,window.estimatedEnd-totalTime,totalTime)",
-          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(waypoints['W2'].distance,[7,0,8,1],1)*(routes['R2'].nearest ? 0 : 1)]"
+          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(waypoints['W2'].distance,[5,0,6,1],1)*(routes['R2'].nearest ? 0 : 1)]"
         },
         {
           "name": "SisterCities_Bass",
@@ -281,7 +277,7 @@
         {
           "name": "SisterCities_Guitars",
           "pos": "daoplayer.selectSections('SisterCities_Drums',currentSection,sceneTime,window.estimatedEnd-totalTime,totalTime)",
-          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(waypoints['W2'].distance,[7,0,8,1],1)*(routes['R2'].nearest ? 0 : 1)]"
+          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(waypoints['W2'].distance,[5,0.5,6,1],1)*(routes['R2'].nearest ? 0.5 : 1)]"
         },
         {
           "name": "SisterCities_AcousticKeys",
@@ -307,8 +303,8 @@
       "name": "track6/NotAlone",
       "description": "this scene changes track to 'Not Alone' when entering the jubilee campus sports field. This uses 5 waypoints and 4 routes to calculate the walking distance / time",
       "partial": false,
-      "waypoints":{"W1":"JC_SFG","W2":"SF_JCCP", "W3":"JC_NCL","W4":"JC_RSL", "W5":"JC_WF"},
-      "routes":{"R1":"JC_SFG-SF_JCCP", "R2":"SF_JCCP-JC_NCL", "R3":"JC_NCL-JC_RSL", "R4":"JC_RSL-JC_WF", "Rnext":"JC_WF-JC_AB"},
+      "waypoints":{"W1":"JC_SFV","W2":"SF_JCCP", "W3":"JC_NCL","W4":"JC_RSL", "W5":"JC_WF"},
+      "routes":{"R1":"JC_SFV-SF_JCCP", "R2":"SF_JCCP-JC_NCL", "R3":"JC_NCL-JC_RSL", "R4":"JC_RSL-JC_WF", "Rnext":"JC_WF-JC_AB"},
       "onload": "window.lastGps=totalTime; if (waypoints['W5'].distance!==undefined) window.estimatedEnd=totalTime+(routes['R1'].nearest ? waypoints['W2'].distance+routes['R2'].length+routes['R3'].length+routes['R4'].length : (routes['R2'].nearest ? waypoints['W3'].distance+routes['R3'].length+routes['R4'].length : (routes['R3'].nearest ? waypoints['W4'].distance+routes['R4'].length : waypoints['W5'].distance)))/1.5; else window.estimatedEnd=350;",
       
       "onupdate": "if (activity=='NOGPS') { if (totalTime-window.lastGps>20) { daoplayer.setScene('Start'); } else if (window.estimatedEnd<totalTime+10) window.estimatedEnd=totalTime+10; } else { window.lastGps=totalTime; if (!routes['R1'].near && !routes['R2'].near && !routes['R3'].near && !routes['R4'].near) { daoplayer.setScene('Start/any'); } else if (routes['Rnext'].nearest) { daoplayer.setScene('AtriumArrival'); } else if (waypoints['W5'].distance!==undefined) window.estimatedEnd=totalTime+(routes['R1'].nearest ? waypoints['W2'].distance+routes['R2'].length+routes['R3'].length+routes['R4'].length : (routes['R2'].nearest ? waypoints['W3'].distance+routes['R3'].length+routes['R4'].length : (routes['R3'].nearest ? waypoints['W4'].distance+routes['R4'].length : waypoints['W5'].distance)))/1.5; }",
@@ -358,22 +354,22 @@
         {
           "name": "arriveBassA",
           "pos": 0,
-          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(routes['R1'].distanceAlong/routes['R1'].length, [0.1,0,0.5,1], trackVolume)]"
+          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(routes['R1'].distanceAlong/routes['R1'].length, [0,0,0.5,1], trackVolume)]"
         },
         {
           "name": "arrivePianoA",
           "pos": 0,
-          "volume": "sceneTime<12 ? [sceneTime,trackVolume,12,1] : 1"
+          "volume": "sceneTime<10 ? [sceneTime,trackVolume,10,1] : 1"
         },
         {
           "name": "arriveMelA",
           "pos": 0,
-          "volume": "sceneTime<12 ? [sceneTime,trackVolume,12,1] : 1"
+          "volume": "sceneTime<10 ? [sceneTime,trackVolume,10,1] : 1"
         },
         {
           "name": "arriveSeqA",
           "pos": 0,
-          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(routes['R1'].distanceAlong/routes['R1'].length, [0.1,0,1,1], trackVolume)]"
+          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(routes['R1'].distanceAlong/routes['R1'].length, [0,0,1,1], trackVolume)]"
         },
         {
           "name": "stringsCs",
@@ -387,7 +383,7 @@
         },
         {
           "name": "NotAlone",
-          "volume": "sceneTime<12 ? [sceneTime,trackVolume,12,0] : 0"
+          "volume": "sceneTime<10 ? [sceneTime,trackVolume,10,0] : 0"
         },
         {
           "name": "holdingPad",
@@ -406,7 +402,7 @@
       "updatePeriod":1.0,
       "tracks": [
         {
-          "name": "arrivedpadFs",
+          "name": "arrivedPadFs",
           "pos": 0,
           "volume": 1
         },
