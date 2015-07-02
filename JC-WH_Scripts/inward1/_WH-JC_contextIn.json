@@ -268,23 +268,9 @@
 			  "nearDistance": "50"
 			},
 			{ 
-			  "name": "LTA_GIR1-LTA_GIR2",
-			  "description": "MitaDelMundo - stage 1 multi-track reduced texture",
+			  "name": "LTA_GIR1-LTA_MB",
+			  "description": "MitaDelMundo",
 			  "from": "LTA_GIR1",
-			  "to": "LTA_GIR2",
-			  "nearDistance": "50"
-			},
-			{ 
-			  "name": "LTA_GIR2-LTA_GIR3",
-			  "description": "MitaDelMundo - stage 2 multi-track full texture",
-			  "from": "LTA_GIR2",
-			  "to": "LTA_GIR3",
-			  "nearDistance": "50"
-			},
-			{ 
-			  "name": "LTA_GIR3-LTA_MB",
-			  "description": "MitaDelMundo - stage 3 multi-track reduced texture",
-			  "from": "LTA_GIR3",
 			  "to": "LTA_MB",
 			  "nearDistance": "50"
 			},
