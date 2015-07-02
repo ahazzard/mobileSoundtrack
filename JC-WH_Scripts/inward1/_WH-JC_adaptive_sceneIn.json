@@ -239,29 +239,29 @@
       "updatePeriod":1.0,
       "tracks": [
         {
-          "name": "MitaDelMundo",
-          "pos": "daoplayer.selectSections('MitaDelMundo',currentSection,sceneTime,window.estimatedEnd-totalTime,totalTime)",
-          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(waypoints['W2'].distance,[5,0.5,6,1],1)*(routes['R2'].nearest ? 0.5 : 1)]" 
+          "name": "mdmVox",
+          "pos": "daoplayer.selectSections('mdmVox',currentSection,sceneTime,window.estimatedEnd-totalTime,totalTime)",
+          "volume": 1 
         },
         {
-          "name": "MitaDelMundo",
-          "pos": "daoplayer.selectSections('MitaDelMundo',currentSection,sceneTime,window.estimatedEnd-totalTime,totalTime)",
-          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(waypoints['W2'].distance,[5,0.5,6,1],1)*(routes['R2'].nearest ? 0.5 : 1)]" 
+          "name": "mdmChop",
+          "pos": "daoplayer.selectSections('mdmVox',currentSection,sceneTime,window.estimatedEnd-totalTime,totalTime)",
+          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(waypoints['W2'].distance,[5,0,6,1],1)*(routes['R2'].nearest ? 0 : 1)]" 
         },
         {
-          "name": "MitaDelMundo",
-          "pos": "daoplayer.selectSections('MitaDelMundo',currentSection,sceneTime,window.estimatedEnd-totalTime,totalTime)",
-          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(waypoints['W2'].distance,[5,0.5,6,1],1)*(routes['R2'].nearest ? 0.5 : 1)]" 
+          "name": "mdmBass",
+          "pos": "daoplayer.selectSections('mdmVox',currentSection,sceneTime,window.estimatedEnd-totalTime,totalTime)",
+          "volume": 1
         },
         {
-          "name": "MitaDelMundo",
-          "pos": "daoplayer.selectSections('MitaDelMundo',currentSection,sceneTime,window.estimatedEnd-totalTime,totalTime)",
-          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(waypoints['W2'].distance,[5,0.5,6,1],1)*(routes['R2'].nearest ? 0.5 : 1)]" 
+          "name": "mdmDrums",
+          "pos": "daoplayer.selectSections('mdmVox',currentSection,sceneTime,window.estimatedEnd-totalTime,totalTime)",
+          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(waypoints['W2'].distance,[5,0,6,1],1)*(routes['R2'].nearest ? 0 : 1)]" 
         },
         {
-          "name": "MitaDelMundo",
-          "pos": "daoplayer.selectSections('MitaDelMundo',currentSection,sceneTime,window.estimatedEnd-totalTime,totalTime)",
-          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(waypoints['W2'].distance,[5,0.5,6,1],1)*(routes['R2'].nearest ? 0.5 : 1)]" 
+          "name": "mdmTextures",
+          "pos": "daoplayer.selectSections('mdmVox',currentSection,sceneTime,window.estimatedEnd-totalTime,totalTime)",
+          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(waypoints['W1'].distance,[5,0,6,1],1)*(routes['R1'].nearest ? 0 : 1)]" 
         },
         {
           "name": "Stella",
@@ -310,7 +310,23 @@
           "volume": 1  
         },
         {
-          "name": "MitaDelMundo",
+          "name": "mdmVox",
+          "volume": "sceneTime<2 ? [sceneTime,trackVolume,2,0] : 0" 
+        },
+        {
+          "name": "mdmChop",
+          "volume": "sceneTime<2 ? [sceneTime,trackVolume,2,0] : 0" 
+        },
+        {
+          "name": "mdmBass",
+          "volume": "sceneTime<2 ? [sceneTime,trackVolume,2,0] : 0" 
+        },
+        {
+          "name": "mdmDrums",
+          "volume": "sceneTime<2 ? [sceneTime,trackVolume,2,0] : 0" 
+        },
+        {
+          "name": "mdmTextures",
           "volume": "sceneTime<2 ? [sceneTime,trackVolume,2,0] : 0" 
         },
         {
