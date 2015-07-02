@@ -221,40 +221,13 @@
 				"nearDistance": "50"
 			},
 			{
-				"name": "LTA_LT-LTA_WH",
-				"description": "Scene WollatonHallArriveA1",
-				"from": "LTA_LT",
-				"to":"LTA_WH",
-				"nearDistance": "50"
-			},
-			{
 				"name": "LTA_LT-LTA_WHb",
 				"description": "long route for single scene at Wollaton hall",
 				"from": "LTA_LT",
 				"to":"LTA_WHb",
 				"nearDistance": "50"
 			},
-			{
-				"name": "LTA_WH-LTA_WHa",
-				"description": "Scene WollatonHallArriveA2",
-				"from": "LTA_WH",
-				"to":"LTA_WHa",
-				"nearDistance": "50"
-			},
-			{
-				"name": "LTA_WHa-LTA_WHb",
-				"description": "Scene WollatonHallArriveA3",
-				"from": "LTA_WHa",
-				"to":"LTA_WHb",
-				"nearDistance": "50"
-			},
-			{
-				"name": "LTA_WHb-WH1",
-				"description": "Scene WollatonHallArriveA4",
-				"from": "LTA_WHb",
-				"to":"WH1",
-				"nearDistance": "50"
-			},
+			
 			{
 				"name": "WH1-WH3",
 				"description": "arrived at Wollaton Hall",
