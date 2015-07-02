@@ -17,12 +17,12 @@
       "updatePeriod": 1,
       "tracks": [
         {
-          "name": "startPad",
+          "name": "outwardStartPad",
           "pos": 0,
           "volume": 1
         },
         {
-          "name": "startSeq",
+          "name": "outwardStartSeq",
           "pos": 0,
           "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(routes['R1'].distanceAlong/routes['R1'].length, [0,0,1,1], trackVolume)]"
         },
@@ -48,11 +48,11 @@
           "volume": 1
         },
         {
-          "name": "startPad",
+          "name": "outwardStartPad",
           "volume": "sceneTime<2 ? [sceneTime,trackVolume,2,0] : 0"
         },
         {
-          "name": "startSeq",
+          "name": "outwardStartSeq",
           "volume": "sceneTime<2 ? [sceneTime,trackVolume,2,0] : 0"
         },
         {
@@ -274,22 +274,22 @@
       "updatePeriod": 1,
       "tracks": [
         {
-          "name": "arriveBass",
+          "name": "arriveBassAb",
           "pos": 0,
           "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(routes['R1'].distanceAlong/routes['R1'].length, [0.1,0,0.5,1], trackVolume)]"
         },
         {
-          "name": "arrivePiano",
+          "name": "arrivePianoAb",
           "pos": 0,
           "volume": "sceneTime<12 ? [sceneTime,trackVolume,12,1] : 1"
         },
         {
-          "name": "arriveMel",
+          "name": "arriveMelAb",
           "pos": 0,
           "volume": "sceneTime<12 ? [sceneTime,trackVolume,12,1] : 1"
         },
         {
-          "name": "arriveSeq",
+          "name": "arriveSeqAb",
           "pos": 0,
           "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(routes['R1'].distanceAlong/routes['R1'].length, [0.1,0,1,1], trackVolume)]"
         },
@@ -324,7 +324,7 @@
       "updatePeriod": 1,
       "tracks": [
         {
-          "name": "arrivedpadF",
+          "name": "arrivedPadF",
           "pos": 0,
           "volume": 1
         },
@@ -339,19 +339,19 @@
           "volume": "sceneTime<10 ? [sceneTime,trackVolume,10,0] : 0"
         },
         {
-          "name": "arriveBass",
+          "name": "arriveBassAb",
           "volume": 0
         },
         {
-          "name": "arrivePiano",
+          "name": "arrivePianoAb",
           "volume": 0
         },
         {
-          "name": "arriveMel",
+          "name": "arriveMelAb",
           "volume": 0
         },
         {
-          "name": "arriveSeq",
+          "name": "arriveSeqAb",
           "volume": 0
         },
         {
@@ -381,7 +381,7 @@
           "volume": 1
         },
         {
-          "name": "arrivedpadF",
+          "name": "arrivedPadF",
           "volume": "sceneTime<2 ? [sceneTime,trackVolume,2,0] : 0"
         },
         {
