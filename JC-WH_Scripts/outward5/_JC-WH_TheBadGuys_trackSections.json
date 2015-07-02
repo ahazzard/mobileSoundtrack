@@ -20,42 +20,42 @@
       
       "unitTime": 7.6,
       "sections": [
-        { "name": "introA", "trackPos": 0.0, "length":  7.829, "startCost": 0, 
+        { "name": "introA", "trackPos": 0.0, "length":  7.803, "startCost": 0, 
           "next": [ {"name":"introB","cost":0},
           {"name":"introA","cost":5
           },
           {"name":"introD","cost":5}]
         },
         
-        { "name": "introB", "trackPos": 7.829, "length":  7.750,
+        { "name": "introB", "trackPos": 7.803, "length":  7.772,
           "next": [ {"name":"introC","cost":0},
           {"name":"introA","cost":5
           },
           {"name":"verse1","cost":5}]
         },
         
-        { "name": "introC", "trackPos": 15.578, "length":  7.499, "startCost": 100,
+        { "name": "introC", "trackPos": 15.575, "length":  7.915, "startCost": 100,
           "next": [ {"name":"introD","cost":0},
           {"name":"introB","cost":5
           },
           {"name":"verse1","cost":5}]
         },
         
-        { "name": "introD", "trackPos": 23.078, "length":  7.096, 
+        { "name": "introD", "trackPos": 23.49, "length":  6.653, 
           "next": [ {"name":"verse1","cost":0},
           {"name":"introA","cost":5
           },
           {"name":"verse2","cost":5}]
         },
         
-        { "name": "verse1", "trackPos": 30.173, "length":  29.109, "startCost": 500,
+        { "name": "verse1", "trackPos": 30.143, "length":  29.114, "startCost": 500,
           "next": [ {"name":"verse2","cost":0},
           {"name":"introA","cost":5
           },
           {"name":"link1","cost":5}]
         },  
         
-        { "name": "verse2", "trackPos": 59.283, "length":29.856, 
+        { "name": "verse2", "trackPos": 59.257, "length":29.882, 
           "next": [ {"name":"link1","cost":0
           },
           {"name":"introA","cost":5
@@ -63,7 +63,7 @@
           {"name":"chorus1","cost":5}]
           },
           
-        { "name": "link1", "trackPos": 89.139, "length":  7.616, 
+        { "name": "link1", "trackPos": 89.139, "length":  7.62, 
           "next": [ {"name":"chorus1","cost":0
           },
           {"name":"introA","cost":5
@@ -71,7 +71,7 @@
           {"name":"verse3","cost":5}]
           },
           
-          { "name": "chorus1", "trackPos": 96.755, "length":  29.292, 
+          { "name": "chorus1", "trackPos": 96.759, "length":  29.921, 
           "next": [ {"name":"verse3","cost":0
           },
           {"name":"chorus1","cost":5
@@ -79,7 +79,7 @@
           {"name":"link2","cost":5}]
           },
           
-        { "name": "verse3", "trackPos": 126.047, "length":  30.023, 
+        { "name": "verse3", "trackPos": 126.68, "length":  30.09, 
           "next": [ {"name":"link2","cost":0
           },
           {"name":"introA","cost":5
@@ -87,7 +87,7 @@
           {"name":"chorus2","cost":5}]
           },
           
-        { "name": "link2", "trackPos": 156.070, "length":  7.591, 
+        { "name": "link2", "trackPos": 156.77, "length":  6.899, 
           "next": [ {"name":"chorus2","cost":0
         },
           {"name":"introA","cost":5
@@ -95,7 +95,7 @@
           {"name":"chorus3","cost":5}]
         },
         
-        { "name": "chorus2", "trackPos": 163.661, "length":  29.131, "endCost": 1000,
+        { "name": "chorus2", "trackPos": 163.669, "length":  29.141, "endCost": 1000,
           "next": [ {"name":"chorus3","cost":0
         },
           {"name":"introA","cost":5},{"name":"introC","cost":5},{"name":"link1","cost":5},{"name":"chorus2","cost":5
@@ -103,7 +103,7 @@
           {"name":"coda","cost":5}]
         },
         
-        { "name": "chorus3", "trackPos": 192.792, "length": 29.204, "endCost": 500,
+        { "name": "chorus3", "trackPos": 192.810, "length": 29.29, "endCost": 500,
           "next": [ {"name":"coda","cost":0
         },
           {"name":"introA","cost":5},{"name":"introC","cost":5},{"name":"link1","cost":5},{"name":"chorus2","cost":5
@@ -111,12 +111,12 @@
           {"name":"finalChord","cost":5}]
         },
         
-         { "name": "coda", "trackPos": 221.998, "length":  15.555, "endCost": 0,
+         { "name": "coda", "trackPos": 222.100, "length":  15.457, "endCost": 0,
           "next": [ {"name":"finalChord","cost":0
         }]
         },
         
-        { "name": "finalChord", "trackPos": 237.552, "length":  16.846, "endCost": 1000,
+        { "name": "finalChord", "trackPos": 237.557, "length":  16.841, "endCost": 1000,
           "next": [ {"name":"end","cost":0
         }]
           
