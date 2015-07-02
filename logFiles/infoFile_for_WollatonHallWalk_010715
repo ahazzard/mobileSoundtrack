@@ -5,29 +5,29 @@ Outward5
     a.	no issues, some effective adaptations
 2-	track2/SisterCities:
     a.	transition positioned well and smooth
-    b.	Waypoint leading up to pedestrian crossing (PC_A) was too soon before arriving at crossing.
-    c.	Volume commands on stems went through 3 fluctuations prior to crossing the road (i.e. down / up / down / up / down/up and then when I crossed they stayed down as desired.
-    d.	There is an issue with the stems I’m choosing to lower the volume on here, as on this occasion the song played a section that only uses the stems that have been set to ‘0’, so track went silent for a short time (need addressing)
+    b.	(fix added) Waypoint leading up to pedestrian crossing (PC_A) was too soon before arriving at crossing.
+    c.	(adjusted distances???) Volume commands on stems went through 3 fluctuations prior to crossing the road (i.e. down / up / down / up / down/up and then when I crossed they stayed down as desired.
+    d.	(some adjustment made, not sure its enough) There is an issue with the stems I’m choosing to lower the volume on here, as on this occasion the song played a section that only uses the stems that have been set to ‘0’, so track went silent for a short time (need addressing)
 3-	track3/NotAlone:
     a.	effective transition, although a little late down into Harrow Road (bring waypoint forward a little)
     b.	Long volume fade on R2 during track3/NotAlone was effective
     c.	Some minor audio glitches
 4-	track4/Stella:
-    a.	waypoint needs re-positioning as the transition occurred too soon, as track started some distance from gate (re-position this waypoint).
+    a.	(fix added) waypoint needs re-positioning as the transition occurred too soon, as track started some distance from gate (re-position this waypoint).
     b.	Some effective adaptations, but also some jerky ones. Need to look at segment positions
     c.	Volume commands on stems worked well (R2)
 5-	transition:
     a.	Fade out on track4/Stella worked well, but track5/TheBadGuys did not enter.
 6-	track5/TheBadGuys:
     a.	Track did not enter continued to walk and nothing happened. Looked at Status which said that “R1”: “DA_HW-DA_TR” was nearest. Walked back and re-selected track4/Stella, which did not start, walked forward again and manually selected track5/TheBadGuys which started playing.
-    b.	Just before the transition into track6/WaitingForGA, the music cut out abruptly three times for about a second each time (e.g. 5-7 metres from transition point)
+    b.	(fix added) Just before the transition into track6/WaitingForGA, the music cut out abruptly three times for about a second each time (e.g. 5-7 metres from transition point)
 7-	track6/WaitingForGA
     a.	Good transition from previous track to this one.
     b.	regular audio glitches
     c.	some effective adaptations
 8-	WollatonArrival:
     a.	Good transition, although fade too quick, needs extending further
-    b.	Level of string melody (arrival_layer3a/3b) very low volume in mix (needs addressing)
+    b.	(fix added) Level of string melody (arrival_layer3a/3b) very low volume in mix (needs addressing)
 9-	WollatonArrived:
     a.	No issues
 10-	fixedPlayList:
@@ -51,9 +51,9 @@ inward1
     a.	Effective transition between tracks
     b.	Some good adaptations, but also some jerky ones (check segment timings)
 7-	track4/MitaDeMundo:
-    a.	transition happened a little early (before reaching the gate – re-position waypoint)
+    a.	(fix added) transition happened a little early (before reaching the gate – re-position waypoint)
 8-	track5/SisterCities:
-    a.	transition into this scene happened a little late, sometime after leaving Lime Tree Avenue (check position of waypoint).
+    a.	(fix added) transition into this scene happened a little late, sometime after leaving Lime Tree Avenue (check position of waypoint).
     b.	Effective volume commands on stems for the pedestrian crossing section. Although mixed feelings about how well it works musically.
     c.	Effective adaptations of segments.
 9-	track6/NotAlone
