@@ -49,11 +49,11 @@
         },
         {
           "name": "outwardStartPad",
-          "volume": "sceneTime<2 ? [sceneTime,trackVolume,2,0] : 0"
+          "volume": "sceneTime<3 ? [sceneTime,trackVolume,3,0] : 0"
         },
         {
           "name": "outwardStartSeq",
-          "volume": "sceneTime<2 ? [sceneTime,trackVolume,2,0] : 0"
+          "volume": "sceneTime<3 ? [sceneTime,trackVolume,3,0] : 0"
         },
         {
           "name": "holdingPad",
