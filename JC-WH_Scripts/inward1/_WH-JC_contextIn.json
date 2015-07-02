@@ -332,7 +332,7 @@
 			},
 			{ 
 			  "name": "JC_RSL-JC_WF",
-			  "description": "Not Alone - Stage 4",
+			  "description": "Not Alone - Stage 5",
 			  "from": "JC_RSL",
 			  "to": "JC_WF",
 			  "nearDistance": "50"
