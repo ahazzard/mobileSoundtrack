@@ -19,7 +19,7 @@
         {
           "name": "outwardStartPad",
           "pos": 0,
-          "volume": 1
+          "volume": "sceneTime<2 ? [sceneTime,trackVolume,2,1] : 1"
         },
         {
           "name": "outwardStartSeq",
@@ -45,15 +45,15 @@
         {
           "name": "MitaDelMundo",
           "pos": "daoplayer.selectSections('MitaDelMundo',currentSection,sceneTime,window.estimatedEnd-totalTime,totalTime)",
-          "volume": "sceneTime<8 ? [sceneTime,trackVolume,8,0.85] : 0.85"
+          "volume": "sceneTime<12 ? [sceneTime,trackVolume,12,0.85] : 0.85"
         },
         {
           "name": "outwardStartPad",
-          "volume": "sceneTime<8 ? [sceneTime,trackVolume,8,0] : 0"
+          "volume": "sceneTime<12 ? [sceneTime,trackVolume,12,0] : 0"
         },
         {
           "name": "outwardStartSeq",
-          "volume": "sceneTime<8 ? [sceneTime,trackVolume,8,0] : 0"
+          "volume": "sceneTime<12 ? [sceneTime,trackVolume,12,0] : 0"
         },
         {
           "name": "holdingPad",
