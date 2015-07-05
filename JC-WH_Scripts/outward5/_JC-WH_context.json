@@ -40,6 +40,11 @@
 		"description":"Pedestrian crossing A - Middleton Blvd"
 		},
 		{
+		"name": "PC_D",
+		"lat":52.953725100,  "lng":-1.192614700,
+		"description": "Pedestrian crossing D - Middleton Blvd"
+		},
+		{
 		"name": "HR_L",
 		"lat":52.953807,  "lng":-1.192714,
 		"description":"Harrow Road - Left turn"
@@ -158,9 +163,16 @@
 				"nearDistance": "50"
 			},
 			{
-				"name": "PC_A-HR_L",
+				"name": "PC_A-PC_D",
 				"description": "Scene track2/SisterCities stage 3",
 				"from": "PC_A",
+				"to":"PC_D",
+				"nearDistance": "50"
+			},
+			{
+				"name": "PC_D-HR_L",
+				"description": "Scene track2/SisterCities stage 3",
+				"from": "PC_D",
 				"to":"HR_L",
 				"nearDistance": "50"
 			},
