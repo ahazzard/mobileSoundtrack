@@ -38,17 +38,7 @@
       "updatePeriod": 1,
       "tracks": [
         {
-          "name": "arriveBassA",
-          "pos": 0,
-          "volume": "sceneTime<18 ? [sceneTime,trackVolume,18,1] : 1"
-        },
-        {
-          "name": "arrivePianoA",
-          "pos": 0,
-          "volume": "sceneTime<18 ? [sceneTime,trackVolume,18,1] : 1"
-        },
-        {
-          "name": "arriveMelA",
+          "name": "arriveMixA",
           "pos": 0,
           "volume": "sceneTime<18 ? [sceneTime,trackVolume,18,1] : 1"
         },
@@ -112,15 +102,7 @@
           "volume": "sceneTime<10 ? [0,1,10,0] : 0"
         },
         {
-          "name": "arriveBassA",
-          "volume": "sceneTime<2 ? [sceneTime,trackVolume,0.5,0] : 0"
-        },
-        {
-          "name": "arrivePianoA",
-          "volume": "sceneTime<2 ? [sceneTime,trackVolume,0.5,0] : 0"
-        },
-        {
-          "name": "arriveMelA",
+          "name": "arriveMixA",
           "volume": "sceneTime<2 ? [sceneTime,trackVolume,0.5,0] : 0"
         },
         {
@@ -160,7 +142,7 @@
         {
           "name": "WaitingForGA",
           "pos": "daoplayer.selectSections('WaitingForGA',currentSection,sceneTime,window.estimatedEnd-totalTime,totalTime)",
-          "volume": 0.95 
+          "volume": 0.90 
         },
         {
           "name": "arrivedPadFs",
@@ -208,7 +190,7 @@
         {
           "name": "TheBadGuys",
           "pos": "daoplayer.selectSections('TheBadGuys',currentSection,sceneTime,window.estimatedEnd-totalTime,totalTime)",
-          "volume": 0.95 
+          "volume": 0.90 
         },
         {
           "name": "holdingPad",
@@ -285,22 +267,22 @@
         {
           "name": "SisterCities_Bass",
           "pos": "daoplayer.selectSections('SisterCities_Drums',currentSection,sceneTime,window.estimatedEnd-totalTime,totalTime)",
-          "volume": 1
+          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(waypoints['W2'].distance,[5,0.70,6,1],1)*(routes['R2'].nearest ? 0.70 : 1)]"
         },
         {
           "name": "SisterCities_Guitars",
           "pos": "daoplayer.selectSections('SisterCities_Drums',currentSection,sceneTime,window.estimatedEnd-totalTime,totalTime)",
-          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(waypoints['W2'].distance,[5,0.85,6,1],1)*(routes['R2'].nearest ? 0.85 : 1)]"
+          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(waypoints['W2'].distance,[5,0.70,6,1],1)*(routes['R2'].nearest ? 0.70 : 1)]"
         },
         {
           "name": "SisterCities_AcousticKeys",
           "pos": "daoplayer.selectSections('SisterCities_Drums',currentSection,sceneTime,window.estimatedEnd-totalTime,totalTime)",
-          "volume": 0.95 
+          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(waypoints['W2'].distance,[5,0.70,6,1],1)*(routes['R2'].nearest ? 0.70 : 0.95)]" 
         },
         {
           "name": "SisterCities_Vox",
           "pos": "daoplayer.selectSections('SisterCities_Drums',currentSection,sceneTime,window.estimatedEnd-totalTime,totalTime)",
-          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(waypoints['W2'].distance,[5,0,6,1],1)*(routes['R2'].nearest ? 0 : 1)]"  
+          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(waypoints['W2'].distance,[5,0.70,6,1],1)*(routes['R2'].nearest ? 0.70 : 1)]"  
         },
         {
           "name": "MitaDelMundo",
@@ -365,17 +347,7 @@
       "updatePeriod": 1,
       "tracks": [
         {
-          "name": "arriveBassA",
-          "pos": 0,
-          "volume": "sceneTime<18 ? [sceneTime,trackVolume,18,1] : 1"
-        },
-        {
-          "name": "arrivePianoA",
-          "pos": 0,
-          "volume": "sceneTime<18 ? [sceneTime,trackVolume,18,1] : 1"
-        },
-        {
-          "name": "arriveMelA",
+          "name": "arriveMixA",
           "pos": 0,
           "volume": "sceneTime<18 ? [sceneTime,trackVolume,18,1] : 1"
         },
@@ -439,15 +411,7 @@
           "volume": "sceneTime<10 ? [0,1,10,0] : 0"
         },
         {
-          "name": "arriveBassA",
-          "volume": "sceneTime<2 ? [sceneTime,trackVolume,0.5,0] : 0"
-        },
-        {
-          "name": "arrivePianoA",
-          "volume": "sceneTime<2 ? [sceneTime,trackVolume,0.5,0] : 0"
-        },
-        {
-          "name": "arriveMelA",
+          "name": "arriveMixA",
           "volume": "sceneTime<2 ? [sceneTime,trackVolume,0.5,0] : 0"
         },
         {
