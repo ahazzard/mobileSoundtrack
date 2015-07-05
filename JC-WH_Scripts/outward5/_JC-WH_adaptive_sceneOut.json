@@ -338,15 +338,7 @@
           "volume": "sceneTime<9 ? [0,1,9,0] : 0"
         },
         {
-          "name": "arriveBassAb",
-          "volume": "sceneTime<2 ? [sceneTime,trackVolume,0.5,0] : 0"
-        },
-        {
-          "name": "arrivePianoAb",
-          "volume": "sceneTime<2 ? [sceneTime,trackVolume,0.5,0] : 0"
-        },
-        {
-          "name": "arriveMelAb",
+          "name": "arriveMixAb",
           "volume": "sceneTime<2 ? [sceneTime,trackVolume,0.5,0] : 0"
         },
         {
