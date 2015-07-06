@@ -76,7 +76,7 @@
       "pauseIfSilent": false,
       "files": [
         { 
-          "path": "arriveBassA.wav",
+          "path": "arriveMixA.wav",
           "trackPos": 0,
           "filePos": 0,
           "length": 118.154,
