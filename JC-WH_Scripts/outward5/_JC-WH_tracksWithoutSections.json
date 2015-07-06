@@ -21,24 +21,11 @@
       ]
     },
     {
-      "name": "arriveBassAb",
+      "name": "arriveMixAb",
       "pauseIfSilent": false,
       "files": [
         { 
-          "path": "arriveBassAb.wav",
-          "trackPos": 0,
-          "filePos": 0,
-          "length": 118.154,
-          "repeats": -1
-        }
-      ]
-    },
-    {
-      "name": "arrivePianoAb",
-      "pauseIfSilent": false,
-      "files": [
-        { 
-          "path": "arrivePianoAb.wav",
+          "path": "arriveMixAb.wav",
           "trackPos": 0,
           "filePos": 0,
           "length": 118.154,
@@ -52,19 +39,6 @@
       "files": [
         { 
           "path": "arriveSeqAb.wav",
-          "trackPos": 0,
-          "filePos": 0,
-          "length": 118.154,
-          "repeats": -1
-        }
-      ]
-    },
-    {
-      "name": "arriveMelAb",
-      "pauseIfSilent": false,
-      "files": [
-        { 
-          "path": "arriveMelAb.wav",
           "trackPos": 0,
           "filePos": 0,
           "length": 118.154,
@@ -98,24 +72,11 @@
       ]
     },
     {
-      "name": "arriveBassA",
+      "name": "arriveMixA",
       "pauseIfSilent": false,
       "files": [
         { 
           "path": "arriveBassA.wav",
-          "trackPos": 0,
-          "filePos": 0,
-          "length": 118.154,
-          "repeats": -1
-        }
-      ]
-    },
-    {
-      "name": "arrivePianoA",
-      "pauseIfSilent": false,
-      "files": [
-        { 
-          "path": "arrivePianoA.wav",
           "trackPos": 0,
           "filePos": 0,
           "length": 118.154,
@@ -129,19 +90,6 @@
       "files": [
         { 
           "path": "arriveSeqA.wav",
-          "trackPos": 0,
-          "filePos": 0,
-          "length": 118.154,
-          "repeats": -1
-        }
-      ]
-    },
-    {
-      "name": "arriveMelA",
-      "pauseIfSilent": false,
-      "files": [
-        { 
-          "path": "arriveMelA.wav",
           "trackPos": 0,
           "filePos": 0,
           "length": 118.154,
