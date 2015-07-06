@@ -14,7 +14,7 @@
           "path": "NotAlone.wav",
           "filePos": 0,
           "trackPos": 0,
-          "length": 285.362
+          "length": 256.528
         }
       ],
       "unitTime": 3.565,
@@ -232,8 +232,7 @@
           {"name":"NA_bridge2a","cost":5},{"name":"NA_bridge1a","cost":5},{"name":"NA_bridge1b","cost":5},{"name":"NA_bridge1c","cost":5},{"name":"NA_bridge1d","cost":5}]
           },
         
-        { "name": "NA_bridge2b", "trackPos": 249.339, "length":  7.189,"endCost": 0,
-          "next": [{"name":"NA_bridge2a","cost":5},{"name":"NA_bridge2b","cost":5},{"name":"NA_bridge1a","cost":5},{"name":"NA_bridge1b","cost":5},{"name":"NA_bridge1c","cost":5},{"name":"NA_bridge1d","cost":5}]
+        { "name": "NA_bridge2b", "trackPos": 249.339, "length":  7.189,"endCost": 0
         }
       ]
     }
