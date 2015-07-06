@@ -66,7 +66,7 @@
       "description": "second track, Sister Cities starts at the left hand trun from the main enterance onto Wollaton Road. This route uses 4 waypoints that from 3 routes to calculate the walking distance (wollaton rd to wollaton rd. and middleton rd. roundabout, the middleton rd. roundabout to the pedestrain crossing, then the pedestrian crossing to enterace of Harrow Rd. This is a multitrack scene - routes R1 and R2 have all stems at full volume, whereas R3 drops the volume on the 'drums' 'guitars' and 'vox', to cover the full duration of the pedestrain crossing",
       "partial": false,
       "waypoints": {"W1": "WR", "W2": "WR_MR", "W3": "PC_A", "W4": "PC_D", "W5": "HR_L"},
-      "routes": {"R1": "WR-WR_MR", "R2": "WR_MR-PC_A", "R3": "PC_A-PC_D", "R3": "PC_D-HR_L", "Rnext": "HR_L-HR_HG"},
+      "routes": {"R1": "WR-WR_MR", "R2": "WR_MR-PC_A", "R3": "PC_A-PC_D", "R4": "PC_D-HR_L", "Rnext": "HR_L-HR_HG"},
       "onload": "window.lastGps=totalTime; if (waypoints['W5'].distance!==undefined) window.estimatedEnd=totalTime+(routes['R1'].nearest ? waypoints['W2'].distance+routes['R2'].length+routes['R3'].length+routes['R4'].length : (routes['R2'].nearest ? waypoints['W3'].distance+routes['R3'].length+routes['R4'].length : (routes['R3'].nearest ? waypoints['W4'].distance+routes['R4'].length : waypoints['W5'].distance)))/1.5; else window.estimatedEnd=totalTime+220; ",
       "onupdate": "if (activity=='NOGPS') { if (totalTime-window.lastGps>20) { daoplayer.setScene('Start'); } else if (window.estimatedEnd<totalTime+10) window.estimatedEnd=totalTime+10; } else { window.lastGps=totalTime; if (!routes['R1'].near && !routes['R2'].near && !routes['R3'].near && !routes['R4'].near) { daoplayer.setScene('Start/any'); } else if (routes['Rnext'].nearest) { daoplayer.setScene('track3/NotAlone'); } else if (waypoints['W5'].distance!==undefined) window.estimatedEnd=totalTime+(routes['R1'].nearest ? waypoints['W2'].distance+routes['R2'].length+routes['R3'].length+routes['R4'].length : (routes['R2'].nearest ? waypoints['W3'].distance+routes['R3'].length+routes['R4'].length : (routes['R3'].nearest ? waypoints['W4'].distance+routes['R4'].length : waypoints['W5'].distance)))/1.5; }",
       
@@ -281,7 +281,7 @@
         {
           "name": "arriveSeqAb",
           "pos": 0,
-          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(routes['R1'].distanceAlong/routes['R1'].length, [0.40,0,0.45,1], trackVolume)]"
+          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(routes['R1'].distanceAlong/routes['R1'].length, [0.40,0,0.65,1], trackVolume)]"
         },
         {
           "name": "stringsC",
