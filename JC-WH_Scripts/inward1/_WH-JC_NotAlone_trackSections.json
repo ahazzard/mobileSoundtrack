@@ -233,8 +233,7 @@
           },
         
         { "name": "NA_bridge2b", "trackPos": 249.339, "length":  7.189,"endCost": 0,
-          },
-          {"name":"NA_bridge2a","cost":5},{"name":"NA_bridge2b","cost":5},{"name":"NA_bridge1a","cost":5},{"name":"NA_bridge1b","cost":5},{"name":"NA_bridge1c","cost":5},{"name":"NA_bridge1d","cost":5}]
+          "next": [{"name":"NA_bridge2a","cost":5},{"name":"NA_bridge2b","cost":5},{"name":"NA_bridge1a","cost":5},{"name":"NA_bridge1b","cost":5},{"name":"NA_bridge1c","cost":5},{"name":"NA_bridge1d","cost":5}]
         }
       ]
     }
