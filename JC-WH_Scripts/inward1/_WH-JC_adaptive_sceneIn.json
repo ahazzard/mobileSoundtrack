@@ -168,12 +168,12 @@
       "partial": false,
       "waypoints":{},
       "routes":{},
-      "onupdate": "if(sceneTime>5) { daoplayer.setScene('track2/TheBadGuys'); }",
+      "onupdate": "if(sceneTime>7) { daoplayer.setScene('track2/TheBadGuys'); }",
       "updatePeriod": 1,
       "tracks": [
         {
           "name": "WaitingForGA",
-          "volume": "sceneTime<5 ? [sceneTime,trackVolume,5,0] : 0" 
+          "volume": "sceneTime<7 ? [sceneTime,trackVolume,7,0] : 0" 
         }
       ]
     },
@@ -277,7 +277,7 @@
         {
           "name": "SisterCities_AcousticKeys",
           "pos": "daoplayer.selectSections('SisterCities_Drums',currentSection,sceneTime,window.estimatedEnd-totalTime,totalTime)",
-          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(waypoints['W2'].distance,[5,0.70,6,1],1)*(routes['R2'].nearest ? 0.70 : 0.95)]" 
+          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(waypoints['W2'].distance,[5,0.70,6,1],1)*(routes['R2'].nearest ? 0.70 : 0.90)]" 
         },
         {
           "name": "SisterCities_Vox",
