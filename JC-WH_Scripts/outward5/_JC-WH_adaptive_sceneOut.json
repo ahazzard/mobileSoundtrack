@@ -19,12 +19,12 @@
         {
           "name": "outwardStartPad",
           "pos": 0,
-          "volume": "sceneTime<2 ? [sceneTime,trackVolume,2,1] : 1"
+          "volume": "sceneTime<4 ? [sceneTime,trackVolume,4,1] : 1"
         },
         {
           "name": "outwardStartSeq",
           "pos": 0,
-          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(routes['R1'].distanceAlong/routes['R1'].length, [0,0,1,1], trackVolume)]"
+          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(routes['R1'].distanceAlong/routes['R1'].length, [0.1,0,1,1], trackVolume)]"
         },
         {
           "name": "holdingPad",
@@ -80,22 +80,22 @@
         {
           "name": "SisterCities_Bass",
           "pos": "daoplayer.selectSections('SisterCities_Drums',currentSection,sceneTime,window.estimatedEnd-totalTime,totalTime)",
-          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(waypoints['W3'].distance,[5,0,6,1],1)*(routes['R3'].nearest ? 0 : 1)]"
+          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(waypoints['W3'].distance,[5,0.50,6,1],1)*(routes['R3'].nearest ? 0.50 : 1)]"
         },
         {
           "name": "SisterCities_Guitars",
           "pos": "daoplayer.selectSections('SisterCities_Drums',currentSection,sceneTime,window.estimatedEnd-totalTime,totalTime)",
-          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(waypoints['W3'].distance,[5,0.70,6,1],1)*(routes['R3'].nearest ? 0.70 : 1)]"
+          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(waypoints['W3'].distance,[5,0.75,6,1],1)*(routes['R3'].nearest ? 0.75 : 1)]"
         },
         {
           "name": "SisterCities_AcousticKeys",
           "pos": "daoplayer.selectSections('SisterCities_Drums',currentSection,sceneTime,window.estimatedEnd-totalTime,totalTime)",
-          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(waypoints['W3'].distance,[5,0.70,6,1],1)*(routes['R3'].nearest ? 0.70 : 1)]"
+          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(waypoints['W3'].distance,[5,0.75,6,1],1)*(routes['R3'].nearest ? 0.75 : 1)]"
         },
         {
           "name": "SisterCities_Vox",
           "pos": "daoplayer.selectSections('SisterCities_Drums',currentSection,sceneTime,window.estimatedEnd-totalTime,totalTime)",
-          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(waypoints['W3'].distance,[5,0.70,6,1],1)*(routes['R3'].nearest ? 0.70 : 1)]"
+          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(waypoints['W3'].distance,[5,0.75,6,1],1)*(routes['R3'].nearest ? 0.75 : 1)]"
         },
         {
           "name": "MitaDelMundo",
@@ -191,24 +191,24 @@
       "partial": false,
       "waypoints":{},
       "routes":{},
-      "onupdate": "if(sceneTime>5) { daoplayer.setScene('track5/TheBadGuys'); }",
+      "onupdate": "if(sceneTime>6) { daoplayer.setScene('track5/TheBadGuys'); }",
       "updatePeriod": 1,
       "tracks": [
         {
           "name": "StellaVox",
-          "volume": "sceneTime<5 ? [sceneTime,trackVolume,5,0] : 0"
+          "volume": "sceneTime<6 ? [sceneTime,trackVolume,6,0] : 0"
         },
         {
           "name": "StellaPiano",
-          "volume": "sceneTime<5 ? [sceneTime,trackVolume,5,0] : 0"
+          "volume": "sceneTime<6 ? [sceneTime,trackVolume,6,0] : 0"
         },
         {
           "name": "StellaKeys",
-          "volume": "sceneTime<5 ? [sceneTime,trackVolume,5,0] : 0"
+          "volume": "sceneTime<6 ? [sceneTime,trackVolume,6,0] : 0"
         },
         {
           "name": "StellaRhythm",
-          "volume": "sceneTime<5 ? [sceneTime,trackVolume,5,0] : 0"
+          "volume": "sceneTime<6 ? [sceneTime,trackVolume,6,0] : 0"
         },
         {
           "name": "holdingPad",
@@ -281,7 +281,7 @@
         {
           "name": "arriveSeqAb",
           "pos": 0,
-          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(routes['R1'].distanceAlong/routes['R1'].length, [0.40,0,0.65,1], trackVolume)]"
+          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(routes['R1'].distanceAlong/routes['R1'].length, [0.35,0,0.65,1], trackVolume)]"
         },
         {
           "name": "stringsC",
