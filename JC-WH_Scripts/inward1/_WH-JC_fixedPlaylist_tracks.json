@@ -2,7 +2,7 @@
   "meta": {
     "mimetype": "application/x-daoplayer-composition",
     "version": 1,
-    "title":  "WH-JC_fixedPlaylist_tracks",
+    "title":  "JC_WH_fixedPlaylist_tracks",
     "description": "the fixed soundtrack for non adaptive half of the journey"
   },
   
@@ -51,37 +51,37 @@
           "path": "MitaDelMundo.wav",
           "length": 181,
           "filePos": 0,
-          "trackPos": 0
+          "trackPos": 1595
         },
         {
           "path": "SisterCities.wav",
           "length": 280,
           "filePos": 0,
-          "trackPos": 183
+          "trackPos": 1778
         },
         {
           "path": "Stella.wav",
           "length": 195,
           "filePos": 0,
-          "trackPos": 465
+          "trackPos": 2060
         },
         { 
           "path": "WaitingForGA.wav",
           "length": 255,
           "filePos": 0,
-          "trackPos": 662
+          "trackPos": 2257
         },
         { 
           "path": "TheBadGuys.wav",
           "length": 254,
           "filePos": 0,
-          "trackPos": 919
+          "trackPos": 2514
         },
         { 
           "path": "NotAlone.wav",
           "length": 418,
           "filePos": 0,
-          "trackPos": 1175
+          "trackPos": 2770
         }
       ]
     }
