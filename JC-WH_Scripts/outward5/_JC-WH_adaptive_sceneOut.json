@@ -286,22 +286,22 @@
         {
           "name": "stringsC",
           "pos": 0,
-          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(routes['R1'].distanceAlong/routes['R1'].length, [0.61,0,0.62,0.8,0.71,0.8,0.72,0], trackVolume)]"
+          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(routes['R1'].distanceAlong/routes['R1'].length, [0.61,0,0.62,0.5,0.71,0.5,0.72,0], trackVolume)]"
         },
         {
           "name": "stringsCs",
           "pos": 0,
-          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(routes['R1'].distanceAlong/routes['R1'].length, [0.71,0,0.72,0.8,0.81,0.8,0.82,0], trackVolume)]"
+          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(routes['R1'].distanceAlong/routes['R1'].length, [0.71,0,0.72,0.5,0.81,0.5,0.82,0], trackVolume)]"
         },
         {
           "name": "stringsEb",
           "pos": 0,
-          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(routes['R1'].distanceAlong/routes['R1'].length, [0.81,0,0.82,0.8,0.91,0.8,0.92,0], trackVolume)]"
+          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(routes['R1'].distanceAlong/routes['R1'].length, [0.81,0,0.82,0.5,0.91,0.5,0.92,0], trackVolume)]"
         },
         {
           "name": "stringsF",
           "pos": 0,
-          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(routes['R1'].distanceAlong/routes['R1'].length, [0.91,0,0.92,0.8], trackVolume)]"
+          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(routes['R1'].distanceAlong/routes['R1'].length, [0.91,0,0.92,0.5], trackVolume)]"
         },
         {
           "name": "WaitingForGA",
@@ -325,7 +325,7 @@
       "tracks": [
         {
           "name": "arrivedPadF",
-          "pos": 0,
+          "pos": -1,
           "volume": 1
         },
         {
@@ -339,23 +339,23 @@
         },
         {
           "name": "arriveMixAb",
-          "volume": "sceneTime<2 ? [sceneTime,trackVolume,0.5,0] : 0"
+          "volume": "sceneTime<2 ? [sceneTime,trackVolume,1,0] : 0"
         },
         {
           "name": "arriveSeqAb",
-          "volume": "sceneTime<2 ? [sceneTime,trackVolume,0.5,0] : 0"
+          "volume": "sceneTime<2 ? [sceneTime,trackVolume,1,0] : 0"
         },
         {
           "name": "stringsC",
-          "volume": "sceneTime<2 ? [sceneTime,trackVolume,0.5,0] : 0"
+          "volume": "sceneTime<2 ? [sceneTime,trackVolume,1,0] : 0"
         },
         {
           "name": "stringsCs",
-          "volume": "sceneTime<2 ? [sceneTime,trackVolume,0.5,0] : 0"
+          "volume": "sceneTime<2 ? [sceneTime,trackVolume,1,0] : 0"
         },
         {
           "name": "stringsEb",
-          "volume": "sceneTime<2 ? [sceneTime,trackVolume,0.5,0] : 0"
+          "volume": "sceneTime<2 ? [sceneTime,trackVolume,1,0] : 0"
         },
         {
           "name": "holdingPad",
