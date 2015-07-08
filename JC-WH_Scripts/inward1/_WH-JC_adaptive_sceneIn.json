@@ -140,9 +140,29 @@
       "updatePeriod":1.0,
       "tracks": [
         {
-          "name": "WaitingForGA",
+          "name": "WaitingForGAVox",
           "pos": "daoplayer.selectSections('WaitingForGA',currentSection,sceneTime,window.estimatedEnd-totalTime,totalTime)",
-          "volume": 0.90 
+          "volume": 1 
+        },
+        {
+          "name": "WaitingForGAKeys",
+          "pos": "daoplayer.selectSections('WaitingForGA',currentSection,sceneTime,window.estimatedEnd-totalTime,totalTime)",
+          "volume": 1
+        },
+        {
+          "name": "WaitingForGAGuitar1",
+          "pos": "daoplayer.selectSections('WaitingForGA',currentSection,sceneTime,window.estimatedEnd-totalTime,totalTime)",
+          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(waypoints['W3'].distance,[5,0,6,1],1)*(routes['R3'].nearest ? 0 : 1)]" 
+        },
+        {
+          "name": "WaitingForGAGuitars",
+          "pos": "daoplayer.selectSections('WaitingForGA',currentSection,sceneTime,window.estimatedEnd-totalTime,totalTime)",
+          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(waypoints['W4'].distance,[5,1,6,0],0)*(routes['R4'].nearest ? 1 : 0)]" 
+        },
+        {
+          "name": "WaitingForGARhythm",
+          "pos": "daoplayer.selectSections('WaitingForGA',currentSection,sceneTime,window.estimatedEnd-totalTime,totalTime)",
+          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(waypoints['W4'].distance,[5,1,6,0],0)*(routes['R4'].nearest ? 1 : 0)]" 
         },
         {
           "name": "arrivedPadFs",
@@ -172,7 +192,23 @@
       "updatePeriod": 1,
       "tracks": [
         {
-          "name": "WaitingForGA",
+          "name": "WaitingForGAVox",
+          "volume": "sceneTime<7 ? [sceneTime,trackVolume,7,0] : 0" 
+        },
+        {
+          "name": "WaitingForGAKeys",
+          "volume": "sceneTime<7 ? [sceneTime,trackVolume,7,0] : 0" 
+        },
+        {
+          "name": "WaitingForGAGuitar1",
+          "volume": "sceneTime<7 ? [sceneTime,trackVolume,7,0] : 0"  
+        },
+        {
+          "name": "WaitingForGAGuitars",
+          "volume": "sceneTime<7 ? [sceneTime,trackVolume,7,0] : 0"  
+        },
+        {
+          "name": "WaitingForGARhythm",
           "volume": "sceneTime<7 ? [sceneTime,trackVolume,7,0] : 0" 
         }
       ]
