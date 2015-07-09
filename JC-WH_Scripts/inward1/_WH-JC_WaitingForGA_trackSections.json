@@ -1,0 +1,139 @@
+{
+  "meta": {
+    "mimetype": "application/x-daoplayer-composition",
+    "version": 1,
+    "title":  "WaitingForGA_trackSections"
+  },
+  
+  "tracks": [
+    {
+      "name": "WaitingForGA",
+      "pauseIfSilent": true,
+      "files": [
+        { 
+          "path": "WaitingForGA.wav",
+          "filePos": 0,
+          "trackPos": 0,
+          "length": 255.673
+        }
+      ],
+      "unitTime": 6.1,
+      "sections": [
+        { "name": "intro", "trackPos": 0.0, "length":  17.906, "startCost": 0,
+          "next": [ {"name":"verse1","cost":0},
+          {"name":"intro","cost":5
+          },
+          {"name":"bridge1A","cost":5},{"name":"verse2","cost":5}]
+        },
+        
+        { "name": "verse1", "trackPos": 17.906, "length":  24.381, "startCost": 1000,
+          "next": [ {"name":"bridge1A","cost":0},
+          {"name":"intro","cost":5
+          },
+          {"name":"bridge1B","cost":5},{"name":"verse2","cost":5}]
+        },  
+        
+        { "name": "bridge1A", "trackPos": 42.287, "length": 12.135, 
+          "next": [ {"name":"bridge1B","cost":0
+          },
+          {"name":"intro","cost":5},{"name":"verse1","cost":5
+          },
+          {"name":"verse2","cost":5},{"name":"bridge2A","cost":5}]
+          },
+          
+        { "name": "bridge1B", "trackPos": 54.422, "length":  12.278, 
+          "next": [ {"name":"verse2","cost":0
+          }]
+          },
+          
+          { "name": "verse2", "trackPos": 66.7, "length":  24.393, "startCost": 5000,
+          "next": [ {"name":"bridge2A","cost":0
+          },
+          {"name":"verse1","cost":5},{"name":"bridge1A","cost":5
+          },
+          {"name":"chorus1A","cost":5},{"name":"chorus1B","cost":5}]
+          },
+          
+        { "name": "bridge2A", "trackPos": 91.093, "length":  12.213, 
+          "next": [ {"name":"bridge2B","cost":0
+          },
+          {"name":"verse1","cost":5},{"name":"bridge1A","cost":5
+          },
+          {"name":"chorus1A","cost":5},{"name":"chorus1B","cost":5}]
+          },
+          
+        { "name": "bridge2B", "trackPos": 103.306, "length":  12.202, 
+          "next": [ {"name":"chorus1A","cost":0
+        }]
+        },
+        
+        { "name": "chorus1A", "trackPos": 115.508, "length":  12.191, 
+          "next": [ {"name":"chorus1B","cost":0
+        },
+          {"name":"verse1","cost":5},{"name":"bridge1A","cost":5},{"name":"verse2","cost":5
+          },
+          {"name":"verse3","cost":5},{"name":"link","cost":5}]
+        },
+        
+        { "name": "chorus1B", "trackPos": 127.699, "length": 12.247, 
+          "next": [ {"name":"verse3","cost":0
+        },
+          {"name":"verse1","cost":5},{"name":"bridge1A","cost":5},{"name":"verse2","cost":5
+          },
+          {"name":"link","cost":5},{"name":"chorus2A","cost":5}]
+        },
+        
+         { "name": "verse3", "trackPos": 139.946, "length":  24.365,
+          "next": [ {"name":"link","cost":0
+        },
+          {"name":"verse1","cost":5},{"name":"bridge1A","cost":5},{"name":"verse2","cost":5
+          },
+          {"name":"chorus2A","cost":5},{"name":"chorus2B","cost":5},{"name":"outroA","cost":5}]
+        },
+        
+        { "name": "link", "trackPos": 164.312, "length":  12.1427, 
+          "next": [ {"name":"chorus2A","cost":0
+        },
+          {"name":"verse1","cost":5},{"name":"bridge1A","cost":5},{"name":"verse2","cost":5
+          },
+          {"name":"chorus2B","cost":5},{"name":"outroA","cost":5},{"name":"outroB","cost":5}]
+        },
+        
+        { "name": "chorus2A", "trackPos": 176.455, "length":  12.231, 
+          "next": [ {"name":"chorus2B","cost":0
+        },
+          {"name":"verse1","cost":5},{"name":"bridge1A","cost":5},{"name":"verse2","cost":5
+          },
+          {"name":"outroA","cost":5},{"name":"outroB","cost":5}]
+        },
+        
+        { "name": "chorus2B", "trackPos": 188.686, "length":  12.249, 
+          "next": [ {"name":"outroA","cost":0
+        },
+          {"name":"chorus1A","cost":5},{"name":"bridge1A","cost":5},{"name":"verse2","cost":5
+          },
+          {"name":"outroB","cost":5}]
+        },
+        
+        { "name": "outroA", "trackPos": 200.935, "length":  12.131, "endCost": 1000,
+          "next": [ {"name":"outroB","cost":0
+        },
+          {"name":"chorus1A","cost":5},{"name":"chorus2A","cost":5},{"name":"verse2","cost":5}]
+        },
+        
+        { "name": "outroB", "trackPos": 213.067, "length":  12.214, "endCost": 0,
+          "next": [ {"name":"outroFade","cost":0
+        },
+          {"name":"outroA","cost":5},{"name":"chorus2A","cost":5},{"name":"verse2","cost":5}]
+        },
+        
+        { "name": "outroFade", "trackPos": 225.280, "length":  30.393, 
+          "next": [ {"name":"end","cost":0}]
+        },
+        
+        { "name": "end", "trackPos": 255.673
+        }
+      ]
+    }
+  ]
+}
