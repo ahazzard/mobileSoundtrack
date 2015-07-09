@@ -50,22 +50,22 @@
         {
           "name": "stringsCs",
           "pos": 0,
-          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(routes['R1'].distanceAlong/routes['R1'].length, [0.61,0,0.62,0.35,0.71,0.35,0.72,0], trackVolume)]"
+          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(routes['R1'].distanceAlong/routes['R1'].length, [0.61,0,0.62,0.3,0.71,0.3,0.72,0], trackVolume)]"
         },
         {
           "name": "stringsD",
           "pos": 0,
-          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(routes['R1'].distanceAlong/routes['R1'].length, [0.71,0,0.72,0.35,0.81,0.35,0.82,0], trackVolume)]"
+          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(routes['R1'].distanceAlong/routes['R1'].length, [0.71,0,0.72,0.3,0.81,0.3,0.82,0], trackVolume)]"
         },
         {
           "name": "stringsE",
           "pos": 0,
-          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(routes['R1'].distanceAlong/routes['R1'].length, [0.81,0,0.82,0.35,0.91,0.35,0.92,0], trackVolume)]"
+          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(routes['R1'].distanceAlong/routes['R1'].length, [0.81,0,0.82,0.3,0.91,0.3,0.92,0], trackVolume)]"
         },
         {
           "name": "stringsFs",
           "pos": 0,
-          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(routes['R1'].distanceAlong/routes['R1'].length, [0.91,0,0.92,0.35], trackVolume)]"
+          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(routes['R1'].distanceAlong/routes['R1'].length, [0.91,0,0.92,0.3], trackVolume)]"
         },
         {
           "name": "fixedPlaylist",
@@ -140,29 +140,9 @@
       "updatePeriod":1.0,
       "tracks": [
         {
-          "name": "WaitingForGAVox",
-          "pos": "daoplayer.selectSections('WaitingForGAVox',currentSection,sceneTime,window.estimatedEnd-totalTime,totalTime)",
-          "volume": 1 
-        },
-        {
-          "name": "WaitingForGAKeys",
-          "pos": "daoplayer.selectSections('WaitingForGAVox',currentSection,sceneTime,window.estimatedEnd-totalTime,totalTime)",
-          "volume": 1
-        },
-        {
-          "name": "WaitingForGAGuitar1",
-          "pos": "daoplayer.selectSections('WaitingForGAVox',currentSection,sceneTime,window.estimatedEnd-totalTime,totalTime)",
-          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(waypoints['W3'].distance,[5,0,6,1],1)*(routes['R3'].nearest ? 0 : 1)]" 
-        },
-        {
-          "name": "WaitingForGAGuitars",
-          "pos": "daoplayer.selectSections('WaitingForGAVox',currentSection,sceneTime,window.estimatedEnd-totalTime,totalTime)",
-          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(waypoints['W4'].distance,[5,1,6,0],0)*(routes['R4'].nearest ? 1 : 0)]" 
-        },
-        {
-          "name": "WaitingForGARhythm",
-          "pos": "daoplayer.selectSections('WaitingForGAVox',currentSection,sceneTime,window.estimatedEnd-totalTime,totalTime)",
-          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(waypoints['W4'].distance,[5,1,6,0],0)*(routes['R4'].nearest ? 1 : 0)]" 
+          "name": "WaitingForGA",
+          "pos": "daoplayer.selectSections('WaitingForGA',currentSection,sceneTime,window.estimatedEnd-totalTime,totalTime)",
+          "volume": 0.90 
         },
         {
           "name": "arrivedPadFs",
@@ -192,23 +172,7 @@
       "updatePeriod": 1,
       "tracks": [
         {
-          "name": "WaitingForGAVox",
-          "volume": "sceneTime<7 ? [sceneTime,trackVolume,7,0] : 0" 
-        },
-        {
-          "name": "WaitingForGAKeys",
-          "volume": "sceneTime<7 ? [sceneTime,trackVolume,7,0] : 0" 
-        },
-        {
-          "name": "WaitingForGAGuitar1",
-          "volume": "sceneTime<7 ? [sceneTime,trackVolume,7,0] : 0"  
-        },
-        {
-          "name": "WaitingForGAGuitars",
-          "volume": "sceneTime<7 ? [sceneTime,trackVolume,7,0] : 0"  
-        },
-        {
-          "name": "WaitingForGARhythm",
+          "name": "WaitingForGA",
           "volume": "sceneTime<7 ? [sceneTime,trackVolume,7,0] : 0" 
         }
       ]
@@ -308,7 +272,7 @@
         {
           "name": "SisterCities_Guitars",
           "pos": "daoplayer.selectSections('SisterCities_Drums',currentSection,sceneTime,window.estimatedEnd-totalTime,totalTime)",
-          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(waypoints['W2'].distance,[5,0.70,6,1],1)*(routes['R2'].nearest ? 0.70 : 1)]"
+          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(waypoints['W2'].distance,[5,0.75,6,1],1)*(routes['R2'].nearest ? 0.75 : 1)]"
         },
         {
           "name": "SisterCities_AcousticKeys",
@@ -395,22 +359,22 @@
         {
           "name": "stringsCs",
           "pos": 0,
-          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(routes['R1'].distanceAlong/routes['R1'].length, [0.61,0,0.62,0.35,0.71,0.35,0.72,0], trackVolume)]"
+          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(routes['R1'].distanceAlong/routes['R1'].length, [0.61,0,0.62,0.3,0.71,0.3,0.72,0], trackVolume)]"
         },
         {
           "name": "stringsD",
           "pos": 0,
-          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(routes['R1'].distanceAlong/routes['R1'].length, [0.71,0,0.72,0.35,0.81,0.35,0.82,0], trackVolume)]"
+          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(routes['R1'].distanceAlong/routes['R1'].length, [0.71,0,0.72,0.3,0.81,0.3,0.82,0], trackVolume)]"
         },
         {
           "name": "stringsE",
           "pos": 0,
-          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(routes['R1'].distanceAlong/routes['R1'].length, [0.81,0,0.82,0.35,0.91,0.35,0.92,0], trackVolume)]"
+          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(routes['R1'].distanceAlong/routes['R1'].length, [0.81,0,0.82,0.3,0.91,0.3,0.92,0], trackVolume)]"
         },
         {
           "name": "stringsFs",
           "pos": 0,
-          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(routes['R1'].distanceAlong/routes['R1'].length, [0.91,0,0.92,0.35], trackVolume)]"
+          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(routes['R1'].distanceAlong/routes['R1'].length, [0.91,0,0.92,0.3], trackVolume)]"
         },
         {
           "name": "NotAlone",
