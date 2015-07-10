@@ -24,7 +24,7 @@
         {
           "name": "outwardStartSeq",
           "pos": 0,
-          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(routes['R1'].distanceAlong/routes['R1'].length, [0.1,0,1,1], trackVolume)]"
+          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(routes['R1'].distanceAlong/routes['R1'].length, [0,0,1,1], trackVolume)]"
         },
         {
           "name": "holdingPad",
@@ -75,12 +75,12 @@
         {
           "name": "SisterCities_Drums",
           "pos": "daoplayer.selectSections('SisterCities_Drums',currentSection,sceneTime,window.estimatedEnd-totalTime,totalTime)",
-          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(waypoints['W3'].distance,[5,0,6,1],1)*(routes['R3'].nearest ? 0 : 1)]"
+          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(waypoints['W3'].distance,[5,0.5,6,1],1)*(routes['R3'].nearest ? 0.5 : 1)]"
         },
         {
           "name": "SisterCities_Bass",
           "pos": "daoplayer.selectSections('SisterCities_Drums',currentSection,sceneTime,window.estimatedEnd-totalTime,totalTime)",
-          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(waypoints['W3'].distance,[5,0.50,6,1],1)*(routes['R3'].nearest ? 0.50 : 1)]"
+          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(waypoints['W3'].distance,[5,0.5,6,1],1)*(routes['R3'].nearest ? 0.5 : 1)]"
         },
         {
           "name": "SisterCities_Guitars",
@@ -286,22 +286,22 @@
         {
           "name": "stringsC",
           "pos": 0,
-          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(routes['R1'].distanceAlong/routes['R1'].length, [0.61,0,0.62,0.35,0.71,0.35,0.72,0], trackVolume)]"
+          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(routes['R1'].distanceAlong/routes['R1'].length, [0.61,0,0.62,0.3,0.71,0.3,0.72,0], trackVolume)]"
         },
         {
           "name": "stringsCs",
           "pos": 0,
-          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(routes['R1'].distanceAlong/routes['R1'].length, [0.71,0,0.72,0.35,0.81,0.35,0.82,0], trackVolume)]"
+          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(routes['R1'].distanceAlong/routes['R1'].length, [0.71,0,0.72,0.3,0.81,0.3,0.82,0], trackVolume)]"
         },
         {
           "name": "stringsEb",
           "pos": 0,
-          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(routes['R1'].distanceAlong/routes['R1'].length, [0.81,0,0.82,0.35,0.91,0.35,0.92,0], trackVolume)]"
+          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(routes['R1'].distanceAlong/routes['R1'].length, [0.81,0,0.82,0.3,0.91,0.3,0.92,0], trackVolume)]"
         },
         {
           "name": "stringsF",
           "pos": 0,
-          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(routes['R1'].distanceAlong/routes['R1'].length, [0.91,0,0.92,0.35], trackVolume)]"
+          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(routes['R1'].distanceAlong/routes['R1'].length, [0.91,0,0.92,0.3], trackVolume)]"
         },
         {
           "name": "WaitingForGA",
