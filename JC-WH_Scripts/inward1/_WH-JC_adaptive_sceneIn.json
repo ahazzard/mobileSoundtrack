@@ -262,12 +262,12 @@
         {
           "name": "SisterCities_Drums",
           "pos": "daoplayer.selectSections('SisterCities_Drums',currentSection,sceneTime,window.estimatedEnd-totalTime,totalTime)",
-          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(waypoints['W2'].distance,[5,0.5,6,1],1)*(routes['R2'].nearest ? 0.5 : 1)]"
+          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(waypoints['W2'].distance,[5,0.3,6,1],1)*(routes['R2'].nearest ? 0.3 : 1)]"
         },
         {
           "name": "SisterCities_Bass",
           "pos": "daoplayer.selectSections('SisterCities_Drums',currentSection,sceneTime,window.estimatedEnd-totalTime,totalTime)",
-          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(waypoints['W2'].distance,[5,0.5,6,1],1)*(routes['R2'].nearest ? 0.5 : 1)]"
+          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(waypoints['W2'].distance,[5,0.3,6,1],1)*(routes['R2'].nearest ? 0.3 : 1)]"
         },
         {
           "name": "SisterCities_Guitars",
