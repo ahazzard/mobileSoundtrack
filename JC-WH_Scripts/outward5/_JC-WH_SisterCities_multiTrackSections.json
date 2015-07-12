@@ -195,8 +195,11 @@
         },
         
         { "name": "bridge8A", "trackPos": 203.18694, "length":  5.31773, "endCost": 1000,
-          "next": [ {"name":"link","cost":0
-        }]
+          "next": [ {"name":"link","cost":20
+          },
+          {"name":"intro1A","cost":5},{"name":"verse1A","cost":5},{"name":"verse2A","cost":5},{"name":"verse3A","cost":5
+          },
+          {"name":"intro2A","cost":5}]
         },
         
         { "name": "link", "trackPos": 208.50467, "length":  7.02367, "endCost": 1000,
@@ -425,8 +428,11 @@
         },
         
         { "name": "bridge8A", "trackPos": 203.18694, "length":  5.31773, "endCost": 1000,
-          "next": [ {"name":"link","cost":0
-        }]
+          "next": [ {"name":"link","cost":20
+          },
+          {"name":"intro1A","cost":5},{"name":"verse1A","cost":5},{"name":"verse2A","cost":5},{"name":"verse3A","cost":5
+          },
+          {"name":"intro2A","cost":5}]
         },
         
         { "name": "link", "trackPos": 208.50467, "length":  7.02367, "endCost": 1000,
@@ -655,8 +661,11 @@
         },
         
         { "name": "bridge8A", "trackPos": 203.18694, "length":  5.31773, "endCost": 1000,
-          "next": [ {"name":"link","cost":0
-        }]
+          "next": [ {"name":"link","cost":20
+          },
+          {"name":"intro1A","cost":5},{"name":"verse1A","cost":5},{"name":"verse2A","cost":5},{"name":"verse3A","cost":5
+          },
+          {"name":"intro2A","cost":5}]
         },
         
         { "name": "link", "trackPos": 208.50467, "length":  7.02367, "endCost": 1000,
@@ -885,8 +894,11 @@
         },
         
         { "name": "bridge8A", "trackPos": 203.18694, "length":  5.31773, "endCost": 1000,
-          "next": [ {"name":"link","cost":0
-        }]
+          "next": [ {"name":"link","cost":20
+          },
+          {"name":"intro1A","cost":5},{"name":"verse1A","cost":5},{"name":"verse2A","cost":5},{"name":"verse3A","cost":5
+          },
+          {"name":"intro2A","cost":5}]
         },
         
         { "name": "link", "trackPos": 208.50467, "length":  7.02367, "endCost": 1000,
@@ -1115,8 +1127,11 @@
         },
         
         { "name": "bridge8A", "trackPos": 203.18694, "length":  5.31773, "endCost": 1000,
-          "next": [ {"name":"link","cost":0
-        }]
+          "next": [ {"name":"link","cost":20
+          },
+          {"name":"intro1A","cost":5},{"name":"verse1A","cost":5},{"name":"verse2A","cost":5},{"name":"verse3A","cost":5
+          },
+          {"name":"intro2A","cost":5}]
         },
         
         { "name": "link", "trackPos": 208.50467, "length":  7.02367, "endCost": 1000,
