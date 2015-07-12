@@ -75,12 +75,12 @@
         {
           "name": "SisterCities_Drums",
           "pos": "daoplayer.selectSections('SisterCities_Drums',currentSection,sceneTime,window.estimatedEnd-totalTime,totalTime)",
-          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(waypoints['W3'].distance,[5,0.5,6,1],1)*(routes['R3'].nearest ? 0.5 : 1)]"
+          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(waypoints['W3'].distance,[5,0.3,6,1],1)*(routes['R3'].nearest ? 0.3 : 1)]"
         },
         {
           "name": "SisterCities_Bass",
           "pos": "daoplayer.selectSections('SisterCities_Drums',currentSection,sceneTime,window.estimatedEnd-totalTime,totalTime)",
-          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(waypoints['W3'].distance,[5,0.5,6,1],1)*(routes['R3'].nearest ? 0.5 : 1)]"
+          "volume": "[sceneTime,trackVolume,sceneTime+1,pwl(waypoints['W3'].distance,[5,0.3,6,1],1)*(routes['R3'].nearest ? 0.3 : 1)]"
         },
         {
           "name": "SisterCities_Guitars",
@@ -229,7 +229,7 @@
         {
           "name": "TheBadGuys",
           "pos": "daoplayer.selectSections('TheBadGuys',currentSection,sceneTime,window.estimatedEnd-totalTime,totalTime)",
-          "volume": 0.90
+          "volume": 0.85
         },
         {
           "name": "holdingPad",
@@ -326,7 +326,7 @@
         {
           "name": "arrivedPadF",
           "pos": -1,
-          "volume": 1
+          "volume": 0.80
         },
         {
           "name": "arrivedAccentF",
@@ -339,23 +339,23 @@
         },
         {
           "name": "arriveMixAb",
-          "volume": "sceneTime<2 ? [sceneTime,trackVolume,1,0] : 0"
+          "volume": "sceneTime<2 ? [sceneTime,trackVolume,2,0] : 0"
         },
         {
           "name": "arriveSeqAb",
-          "volume": "sceneTime<2 ? [sceneTime,trackVolume,1,0] : 0"
+          "volume": "sceneTime<2 ? [sceneTime,trackVolume,2,0] : 0"
         },
         {
           "name": "stringsC",
-          "volume": "sceneTime<2 ? [sceneTime,trackVolume,1,0] : 0"
+          "volume": "sceneTime<2 ? [sceneTime,trackVolume,2,0] : 0"
         },
         {
           "name": "stringsCs",
-          "volume": "sceneTime<2 ? [sceneTime,trackVolume,1,0] : 0"
+          "volume": "sceneTime<2 ? [sceneTime,trackVolume,2,0] : 0"
         },
         {
           "name": "stringsEb",
-          "volume": "sceneTime<2 ? [sceneTime,trackVolume,1,0] : 0"
+          "volume": "sceneTime<2 ? [sceneTime,trackVolume,2,0] : 0"
         },
         {
           "name": "holdingPad",
