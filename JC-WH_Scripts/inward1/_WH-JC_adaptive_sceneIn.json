@@ -90,7 +90,7 @@
         {
           "name": "arrivedPadFs",
           "pos": -1,
-          "volume": 1
+          "volume": 0.80
         },
         {
           "name": "arrivedAccentFs",
@@ -103,23 +103,23 @@
         },
         {
           "name": "arriveMixA",
-          "volume": "sceneTime<2 ? [sceneTime,trackVolume,1,0] : 0"
+          "volume": "sceneTime<2 ? [sceneTime,trackVolume,2,0] : 0"
         },
         {
           "name": "arriveSeqA",
-          "volume": "sceneTime<2 ? [sceneTime,trackVolume,1,0] : 0"
+          "volume": "sceneTime<2 ? [sceneTime,trackVolume,2,0] : 0"
         },
         {
           "name": "stringsCs",
-          "volume": "sceneTime<2 ? [sceneTime,trackVolume,1,0] : 0"
+          "volume": "sceneTime<2 ? [sceneTime,trackVolume,2,0] : 0"
         },
         {
           "name": "stringsD",
-          "volume": "sceneTime<2 ? [sceneTime,trackVolume,1,0] : 0"
+          "volume": "sceneTime<2 ? [sceneTime,trackVolume,2,0] : 0"
         },
         {
           "name": "stringsE",
-          "volume": "sceneTime<2 ? [sceneTime,trackVolume,1,0] : 0"
+          "volume": "sceneTime<2 ? [sceneTime,trackVolume,2,0] : 0"
         },
         {
           "name": "holdingPad",
@@ -190,7 +190,7 @@
         {
           "name": "TheBadGuys",
           "pos": "daoplayer.selectSections('TheBadGuys',currentSection,sceneTime,window.estimatedEnd-totalTime,totalTime)",
-          "volume": 0.90 
+          "volume": 0.85 
         },
         {
           "name": "holdingPad",
@@ -399,7 +399,7 @@
         {
           "name": "arrivedPadFs",
           "pos": -1,
-          "volume": 1
+          "volume": 0.80
         },
         {
           "name": "arrivedAccentFs",
@@ -412,23 +412,23 @@
         },
         {
           "name": "arriveMixA",
-          "volume": "sceneTime<2 ? [sceneTime,trackVolume,1,0] : 0"
+          "volume": "sceneTime<2 ? [sceneTime,trackVolume,2,0] : 0"
         },
         {
           "name": "arriveSeqA",
-          "volume": "sceneTime<2 ? [sceneTime,trackVolume,1,0] : 0"
+          "volume": "sceneTime<2 ? [sceneTime,trackVolume,2,0] : 0"
         },
         {
           "name": "stringsCs",
-          "volume": "sceneTime<2 ? [sceneTime,trackVolume,1,0] : 0"
+          "volume": "sceneTime<2 ? [sceneTime,trackVolume,2,0] : 0"
         },
         {
           "name": "stringsD",
-          "volume": "sceneTime<2 ? [sceneTime,trackVolume,1,0] : 0"
+          "volume": "sceneTime<2 ? [sceneTime,trackVolume,2,0] : 0"
         },
         {
           "name": "stringsE",
-          "volume": "sceneTime<2 ? [sceneTime,trackVolume,1,0] : 0"
+          "volume": "sceneTime<2 ? [sceneTime,trackVolume,2,0] : 0"
         },
         {
           "name": "holdingPad",
