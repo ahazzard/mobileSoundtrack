@@ -31,14 +31,14 @@
           "next": [ {"name":"introB","cost":0},
           {"name":"introA","cost":5
           },
-          {"name":"verse1","cost":5},{"name":"verse2","cost":5},{"name":"verse3","cost":5}]
+          {"name":"verse1","cost":5},{"name":"verse2","cost":20},{"name":"verse3","cost":50}]
         },
         
         { "name": "introB", "trackPos": 12.289, "length":  11.262,
           "next": [ {"name":"verse1","cost":0},
           {"name":"introA","cost":5
           },
-          {"name":"verse2","cost":5},{"name":"verse3","cost":5},{"name":"verse4","cost":5}]
+          {"name":"verse2","cost":15},{"name":"verse3","cost":20},{"name":"verse4","cost":50}]
         },
         
         { "name": "verse1", "trackPos": 23.551, "length":  12.005, 
