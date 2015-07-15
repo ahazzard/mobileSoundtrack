@@ -40,7 +40,7 @@
         {
           "name": "arriveMixA",
           "pos": 0,
-          "volume": "sceneTime<18 ? [sceneTime,trackVolume,18,1] : 1"
+          "volume": "sceneTime<14 ? [sceneTime,trackVolume,14,1] : 1"
         },
         {
           "name": "arriveSeqA",
@@ -349,7 +349,7 @@
         {
           "name": "arriveMixA",
           "pos": 0,
-          "volume": "sceneTime<18 ? [sceneTime,trackVolume,18,1] : 1"
+          "volume": "sceneTime<14 ? [sceneTime,trackVolume,14,1] : 1"
         },
         {
           "name": "arriveSeqA",
